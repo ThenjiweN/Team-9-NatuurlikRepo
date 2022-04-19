@@ -1,0 +1,15 @@
+﻿@page
+@model ConfirmEmailModel
+
+@section account {
+    <link href="@Url.Content("~/css/account.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="container" id="sucemail">
+    <div id="center">
+        <h2 class="head" id="good">SUCCESSFUL EMAIL CONFIRMATION</h2>
+         <p>
+            Your email address has been confirmed. <a asp-page="./Login"> Click here to log in</a>.
+        </p>
+    </div>
+</div>

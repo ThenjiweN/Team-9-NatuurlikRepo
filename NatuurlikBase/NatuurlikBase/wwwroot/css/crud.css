@@ -1,0 +1,11 @@
+﻿#page-content-wrapper {
+    width: calc(100% - 250px);
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

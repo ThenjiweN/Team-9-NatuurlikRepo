@@ -1,0 +1,58 @@
+﻿@page
+@model RegisterModel
+
+@section account {
+    <link href="@Url.Content("~/css/account.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="container-fluid">
+    <div class="row justify-content-center" id="reg">
+        <div class="card col-md-4">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h2 class="head">REGISTER</h2> 
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>                   
+                <div class="row">
+                    <div class="form-floating col-md-6 " id="formspace">                       
+                        <label asp-for="Input.FirstName">First Name</label>
+                        <input asp-for="Input.FirstName" class="form-control" autocomplete="firstname" aria-required="true" />  
+                        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.LastName">Last Name</label>
+                        <input asp-for="Input.LastName" class="form-control" autocomplete="lastname" aria-required="true" />
+                        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-floating" id="formspace">
+                    <label asp-for="Input.PhoneNumber">Phone Number</label>
+                    <input asp-for="Input.PhoneNumber" class="form-control" autocomplete="phonenumber" aria-required="true" />
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-floating" id="formspace">
+                    <label asp-for="Input.Email">Email</label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating" id="formspace">
+                    <label asp-for="Input.Password">Password</label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-floating" id="formspace">
+                    <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />                
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Create Account</button>
+            </form>
+                 <p id="center">
+                    Already have an account?
+                    <a class="one" asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login</a>
+                 </p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
