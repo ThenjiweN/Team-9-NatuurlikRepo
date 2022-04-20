@@ -4,45 +4,115 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - NatuurlikBase</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/NatuurlikBase.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
+    @RenderSection("fonts", false)
+    @RenderSection("home", false)
+    @RenderSection("site", false)
+    @RenderSection("account", false)
 </head>
+
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NatuurlikBase</a>
+        <div class="container-fluid d-none d-lg-block" id="strip" >
+            <div class="d-flex bd-highlight mb-3" id="top">
+                <div class="p-2 bd-highlight"><i class="bi bi-telephone"></i> 072 596 3150</div>
+                <div class="p-2 bd-highlight"><i class="bi bi-envelope"></i> natuurlikwild@gmail.com</div>
+                <div class="ml-auto p-2 bd-highlight">Follow Us</div>
+                <div class="p-2 bd-highlight"><i class="bi bi-facebook"></i></div>
+                <div class="p-2 bd-highlight"><i class="bi bi-instagram"></i></div>
+            </div> 
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/Natuurlik-Logo.png" height="30">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between id="navbarSupportedContent"">
+                    <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">ADMIN</a>
                         </li>
                     </ul>
+                   <partial name="_loginPartial"/>           
                 </div>
-            </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main" style="width:100%; height:100%">
+         @RenderBody()
+    </main>
+
+
+    <footer> 
         <div class="container">
-            &copy; 2022 - NatuurlikBase - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+             <div class="row justify-content-around">                     
+                <div class="col-sm-2 col-md-2 col-lg-2">
+                    <p><strong> ACCOUNTS  </strong></p>
+                        <p><a id ="footerlink" href=""> Sign In</a></p>
+                        <p><a id ="footerlink" href=""> Register</a></p>
+                        <p><a id ="footerlink" href=""> Orders</a></p> 
+               </div>
+               <div class="col-sm-2 col-md-2 col-lg-2">
+                    <p><strong> QUICK LINKS   </strong></p>
+                        <p><a id ="footerlink" href=""> Products </a></p>
+                        <p><a id ="footerlink" href=""> Blog </a></p>
+                        <p><a id ="footerlink" href=""> About Us </a></p>
+                        <p><a id ="footerlink" href=""> Contact us </a></p>
+               </div>
+               <div class="col-sm-2 col-md-2 col-lg-2">
+                    <p><strong> CUSTOMER SERVICE  </strong></p>
+                        <p><a id ="footerlink" href=""> FAQ</a></p>
+                        <p><a id ="footerlink" href=""> About Us</a></p>
+                        <p><a id ="footerlink" href=""> Contact Us</a></p>
+                        <p><a id ="footerlink" href=""> Delivery Information</a></p>
+                        <p><a id ="footerlink" href=""> Returns</a></p>
+                        <p><a id ="footerlink" href=""> Terms and Conditions</a></p>
+               </div>
+               <div class="col-sm-2 col-md-2 col-lg-3">
+                    <p><strong> FOLLOW US  </strong></p>                   
+                        <p><a id ="footerlink" href=""><i class="bi bi-facebook"></i>&nbsp; Facebook</a></p>
+                        <p><a id ="footerlink" href=""><i class="bi bi-instagram"></i>&nbsp; Instagram</a></p>
+                        <br>
+                    <p><strong> CONTACT US  </strong></p> 
+                        <p><i class="bi bi-envelope"></i>&nbsp; natuurlikwild@gmail.com</p>
+                        <p><i class="bi bi-telephone"></i>&nbsp; Customer Care: 072 596 3150</p>
+                </div>
+              </div>
+        </div>
+        <div class="footerstrip">
+            <div class="container">
+                <div class="row justify-content-center">                    
+                    <img id="footerimg" src="~/images/copy.png"> &nbsp;&nbsp;  
+                        <p id="right"><strong>2022 All rights reserved. </strong> </p> &nbsp; 
+                    <img id="footerimg" src="~/images/Natuurlik-Logo.png">                       
+                </div>            
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

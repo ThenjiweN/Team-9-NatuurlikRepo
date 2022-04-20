@@ -1,0 +1,75 @@
+﻿#registerSubmit, #login-submit, #reset, #update-profile-button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+    #registerSubmit:hover, #login-submit:hover, #reset:hover, #update-profile-button:hover {
+        background-color: #DA3F48;
+        border: 1px solid #DA3F48;
+    }
+
+#formspace {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.head {
+    padding-top: 10%;
+    font-family: Montserrat-Medium;
+    padding-bottom: 20px;
+    text-align:center;
+}
+
+#reg, #log{
+    margin-bottom: 50px;
+}
+
+#center{
+    text-align:center;
+}
+
+#foremail {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#sucemail {
+    margin-top: 90px;
+    margin-bottom: 200px;
+}
+
+#good {
+    color: #4FA643;
+}
+
+.acc {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.man{
+    color: black;
+}
+
+#side {
+    width: 80%;
+    background-color: #FDFDFD;
+}
+
+@media (min-width: 1024px) {
+
+    #log, #res {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #reg {
+        margin-top: 50px;
+    }
+
+    #under{
+        margin-bottom: 100px;
+    }
+}

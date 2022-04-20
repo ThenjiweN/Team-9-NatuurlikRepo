@@ -1,0 +1,27 @@
+﻿@page
+@model ResendEmailConfirmationModel
+
+@section account {
+    <link href="@Url.Content("~/css/account.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="container">
+    <div class="row justify-content-center" id="res">
+        <div class="card col-md-4">
+            <form method="post">
+                <h2 class="head">RESEND EMAIL CONFIRMATION</h2>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-floating">
+                    <label asp-for="Input.Email" class="form-label"></label>
+                    <input asp-for="Input.Email" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <button id="reset" type="submit" class="btn btn-primary btn-block">Resend</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

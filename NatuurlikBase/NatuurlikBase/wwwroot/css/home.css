@@ -1,0 +1,231 @@
+﻿#beans {
+    color: #D7D7D7;
+    font-family: Montserrat-Bold;
+    margin-left: 5px;
+}
+
+#rand {
+    color: white;
+    font-family: Montserrat-Bold;
+}
+
+
+#shop:hover {
+    border: 2px solid #DA3F48;
+    background-color: #DA3F48;
+}
+
+#shop {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    width: 25%;
+    margin-left: 10px;
+    font-family: Montserrat-Medium;
+    border-radius: 0;
+}
+
+
+#blog {
+    border: none;
+    width:250px;
+    margin:auto;
+    margin-bottom: 40px;
+}
+
+.card-img-top {
+    background-color: #EBEBEB;
+}
+
+#products {
+    margin-top: 15%;
+    padding-bottom: 10%;
+}
+
+.price {
+    font-family: Montserrat-Bold;
+}
+
+.item {
+    padding-top: 10px;
+}
+
+#prodbtn {
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 0;
+}
+
+    #prodbtn:hover {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        border-radius: 0;
+    }
+
+#slogan {
+    height: 100%;
+    width: 100%;
+}
+
+#our {
+    font-family: Montserrat-Regular;
+}
+
+
+.posts {
+    background-color: #F3F3F3;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.date {
+    font-family: Montserrat-Regular;
+    font-size: small;
+}
+
+#read {
+    font-family: Montserrat-Regular;
+    color: black;
+}
+
+    #read:hover {
+        text-decoration: underline;
+    }
+
+#latest {
+    font-family: Montserrat-Regular;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+#prod {
+    width:250px;
+    border: none;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 1025px){
+
+    .coffee {
+        background-image: url("../images/annie.png");
+        height: 90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #beans {
+        margin-top: 200px;
+    }
+
+    #shop {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    #cof {
+        height: 250px;
+    }
+
+    .coffee {
+        background-image: url("../images/cofe.png");
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    #shop {
+        margin-top: 20px;
+        margin-left:0;
+        width: 50%;
+    }
+
+    #cof {
+        padding-top: 20px;
+        height: 350px;
+        margin-left: 10%;
+    }
+
+    #beans {
+        padding-top: 60px;
+    }
+
+    .posts {
+        padding-top: 80px;
+    }
+
+    #latest {
+        padding-bottom: 40px;
+    }
+
+    #prod {
+        padding-left:10px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .coffee {
+        background-image: url("../images/cofe.png");
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 40px;
+    }
+
+    #cof {
+        padding-top: 20px;
+        height: 300px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    #shop {        
+        margin-top: 20px;
+        width: 70%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+
+    #beans, #rand {
+        padding-top: 20px;
+        text-align:center;
+    }
+
+    .posts{
+        padding-top: 80px;
+    }
+
+    #latest {
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    #cof {
+        padding-top: 20px;
+        height: 300px;
+        margin-left: 70%;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #cof {
+        padding-top: 20px;
+        height: 300px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+}

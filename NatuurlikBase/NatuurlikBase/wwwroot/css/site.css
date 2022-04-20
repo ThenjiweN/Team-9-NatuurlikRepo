@@ -1,7 +1,3 @@
-html {
-  font-size: 14px;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -11,8 +7,63 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  font-size: 16px;
 }
 
-body {
-  margin-bottom: 60px;
+
+#strip {
+    background-color: black;
+    height: 40px;
 }
+
+#top {
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+}
+
+li {
+    font-family: Montserrat-Medium;
+    margin-right: 10px;
+    color: black;
+}
+
+.nav-link:hover {
+    color: #F8444F;
+}
+
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-family: Montserrat-Regular;
+    padding-top: 5%;
+    font-size: small;
+    width: 100%;
+    position: absolute;
+}
+
+#footerlink {
+    color: white;
+    text-decoration: none;
+}
+
+    #footerlink:hover {
+        color: #DA3F48;
+    }
+
+.footerstrip {
+    margin-top: 4%;
+    background-color: white;
+    height: 30px;
+    color: black;
+    padding-top: 10px;
+}
+
+#footerimg {
+    margin-top: 3px;
+    height: 15px;
+}
+
+
+
