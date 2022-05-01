@@ -1,0 +1,108 @@
+﻿@model NatuurlikBase.ViewModels.UserVM
+
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+    <input asp-for="User.Id" hidden />
+
+
+    <div class="col-10">
+         <div class="border p-3 mt-4">
+        <div class="col-12 pb-2">
+            <h2 class="text-primary">Update User Details</h2>
+            <hr />
+        </div>
+      @*  <div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="User.FirstName"> First Name </label>
+            <input asp-for="User.FirstName" class="form-control" />
+            <span asp-validation-for="User.FirstName" class="text-danger"></span>
+        </div>
+
+            <div class="mb-3">
+            <label asp-for="User.Surname"> Surname </label>
+            <input asp-for="User.Surname" class="form-control" />
+            <span asp-validation-for="User.Surname" class="text-danger"></span>
+            </div>
+
+          <div class="mb-3">
+            <label asp-for="User.Email"> Email Address </label>
+            <input asp-for="User.Email" class="form-control" disabled />
+            <span asp-validation-for="User.Email" class="text-danger"></span>
+            </div>
+
+           <div class="mb-3">
+            <label asp-for="User.PhoneNumber"> Phone Number </label>
+            <input asp-for="User.PhoneNumber" class="form-control" />
+            <span asp-validation-for="User.PhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+            <label asp-for="User.StreetAddress"> Street Address </label>
+            <input asp-for="User.StreetAddress" class="form-control" />
+            <span asp-validation-for="User.StreetAddress" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3 col-6">
+			<label asp-for="User.CountryId">Country: </label>
+			<select asp-for="User.CountryId" asp-items="@Model.CountryList" class="form-select">
+				<option disabled selected>--Select Country--</option>
+			</select>
+			<span asp-validation-for="User.CountryId" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3 col-6">
+			<label asp-for="User.ProvinceId"> Province: </label>
+			<select asp-for="User.ProvinceId" asp-items="@Model.ProvinceForCountryList" class="form-select">
+				<option disabled selected>--Select Province--</option>
+			</select>
+			<span asp-validation-for="User.ProvinceId" class="text-danger"></span>
+		</div>
+
+        <div class="mb-3 col-6">
+			<label asp-for="User.CityId">City: </label>
+			<select asp-for="User.CityId" asp-items="@Model.CityForProvinceList" class="form-select">
+				<option disabled selected>--Select City--</option>
+			</select>
+			<span asp-validation-for="User.CityId" class="text-danger"></span>
+		</div>
+
+        <div class="mb-3 col-6">
+			<label asp-for="User.SuburbId">Suburb: </label>
+			<select asp-for="User.SuburbId" asp-items="@Model.SuburbForCityList" class="form-select">
+				<option disabled selected>--Select Suburb--</option>
+			</select>
+			<span asp-validation-for="User.SuburbId" class="text-danger"></span>
+		</div>
+
+
+        	<div class="col-12 text-end">
+			@if (Model.User.Id != null)
+			{
+				<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+			}
+			else
+			{
+				<button type="submit" onclick="return ValidateInput()" class="btn btn-primary" style="width:150px">Create</button>
+			}
+			<a asp-controller="User" asp-action="Index" class="btn btn-secondary" style="width:150px">
+				Back to List
+			</a>
+		</div>
+     
+        
+       
+
+    </div>
+   
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+     }
+     
+
+    
+     <script>
+ 
+    </script>
+    }

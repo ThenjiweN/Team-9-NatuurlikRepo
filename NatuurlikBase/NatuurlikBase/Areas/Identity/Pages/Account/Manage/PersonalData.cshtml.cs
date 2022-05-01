@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using NatuurlikBase.Areas.Identity.Data;
+using NatuurlikBase.Data;
+using NatuurlikBase.Models;
 
 namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
 {

@@ -1,0 +1,61 @@
+﻿@model NatuurlikBase.ViewModels.CityVM
+
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+    <input asp-for="City.Id" hidden />
+
+
+    <div class="col-10">
+         <div class="border p-3 mt-4">
+        <div class="col-12 pb-2">
+            <h2 class="text-primary">@(Model.City.Id!=0?"Update": "Create") City Details</h2>
+            <hr />
+        </div>
+      @*  <div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="City.CityName"> Name </label>
+            <input asp-for="City.CityName" class="form-control" />
+            <span asp-validation-for="City.CityName" class="text-danger"></span>
+        </div>
+
+
+     
+
+        <div class="mb-3 col-6">
+            <label asp-for="City.ProvinceId">Province</label>
+            <select asp-for="City.ProvinceId" asp-items="@Model.ProvinceList" class="form-select">
+                <option disabled selected>-- Select a Province --</option>
+            </select>
+            <span asp-validation-for="City.ProvinceId" class="text-danger"></span>
+        </div>
+
+     
+        <div class="container text-end">
+         @if(Model.City.Id!=0)
+            {
+                <button type="submit" class="btn btn-success" style="width:150px;"> Update </button>
+            }
+            else
+            {
+                 <button type="submit" onclick="return ValidateInput()" class="btn btn-success" style="width:150px;"> Create </button>
+            }
+            <a asp-controller="City" asp-action="Index" class="btn btn-primary" style="width:150px;"> Back </a>
+       
+       
+        </div>
+       
+
+    </div>
+   
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+     }
+     
+
+    
+     <script>
+ 
+    </script>
+    }

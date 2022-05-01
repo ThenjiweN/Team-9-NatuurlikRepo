@@ -13,7 +13,8 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
-using NatuurlikBase.Areas.Identity.Data;
+using NatuurlikBase.Data;
+using NatuurlikBase.Models;
 
 namespace NatuurlikBase.Areas.Identity.Pages.Account
 {
@@ -21,6 +22,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
+
 
         public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender)
         {

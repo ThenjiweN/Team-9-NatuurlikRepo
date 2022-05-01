@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "My Profile";
+    ViewData["Title"] = "Profile Details";
     ViewData["ActivePage"] = ManageNavPages.Index;
 }
 
@@ -17,14 +17,56 @@
                 <span asp-validation-for="Input.FirstName" class="text-danger"></span>
             </div>
             <div class="form-floating" id="formspace">
-                <label asp-for="Input.LastName"></label>
-                <input asp-for="Input.LastName" class="form-control" autocomplete="lastname" aria-required="true" />
-                <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                <label asp-for="Input.Surname"></label>
+                <input asp-for="Input.Surname" class="form-control" autocomplete="lastname" aria-required="true" />
+                <span asp-validation-for="Input.Surname" class="text-danger"></span>
+            </div>
+            <div class="form-floating" id="formspace">
+                <label asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="form-control" autocomplete="lastname" disabled />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-floating" id="formspace">
                 <label asp-for="Input.PhoneNumber" class="form-label"></label>
                 <input asp-for="Input.PhoneNumber" class="form-control" />
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-floating" id="formspace">
+                <label asp-for="Input.StreetAddress"></label>
+                <input asp-for="Input.StreetAddress" class="form-control" aria-required="true" />
+                <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3 col-6">
+                <label asp-for="Input.Country">Country: </label>
+                <select asp-for="Input.Country" asp-items="@Model.Input.CountryList" class="form-select">
+                    <option disabled selected>--Select Country--</option>
+                </select>
+                <span asp-validation-for="Input.Country" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3 col-6">
+                <label asp-for="Input.Province"> Province: </label>
+                <select asp-for="Input.Province" asp-items="@Model.Input.ProvinceList" class="form-select">
+                    <option disabled selected>--Select Province--</option>
+                </select>
+                <span asp-validation-for="Input.Province" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3 col-6">
+                <label asp-for="Input.City">City: </label>
+                <select asp-for="Input.City" asp-items="@Model.Input.CityList" class="form-select">
+                    <option disabled selected>--Select City--</option>
+                </select>
+                <span asp-validation-for="Input.City" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3 col-6">
+                <label asp-for="Input.Suburb">Suburb: </label>
+                <select asp-for="Input.Suburb" asp-items="@Model.Input.SuburbList" class="form-select">
+                    <option disabled selected>--Select Suburb--</option>
+                </select>
+                <span asp-validation-for="Input.Suburb" class="text-danger"></span>
             </div>
             <button id="update-profile-button" type="submit" class="btn btn-primary btn-block">Save</button>
         </form>
@@ -32,5 +74,5 @@
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+<partial name="_ValidationScriptsPartial" />
 }

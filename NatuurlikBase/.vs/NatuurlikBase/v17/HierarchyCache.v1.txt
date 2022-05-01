@@ -1,0 +1,576 @@
+﻿++Solution 'NatuurlikBase' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:NatuurlikBase.sln
+++NatuurlikBase
+i:{00000000-0000-0000-0000-000000000000}:NatuurlikBase
+++Connected Services 
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1222
+++Dependencies
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1221
+++Properties
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\properties\
+++wwwroot
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\
+++Areas
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\
+++Identity
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\
+++Pages
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\
+++Account
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\
+++Manage
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\
+++_Layout.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_layout.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\_layout.cshtml
+++_ManageNav.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_managenav.cshtml
+++_ViewImports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_viewimports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\_viewimports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\_viewimports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\_viewimports.cshtml
+++Email.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\email.cshtml
+++Index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\user\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\city\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\country\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\dashboard\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\home\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\province\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\suburb\index.cshtml
+++Index.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\index.cshtml.cs
+++ManageNavPages.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\managenavpages.cs
+++PersonalData.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\personaldata.cshtml
+++ConfirmEmail.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\confirmemail.cshtml
+++ForgotPassword.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpassword.cshtml
+++ForgotPasswordConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpasswordconfirmation.cshtml
+++Login.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\login.cshtml
+++Logout.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\logout.cshtml
+++Register.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\register.cshtml
+++Register.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\register.cshtml.cs
+++RegisterConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\registerconfirmation.cshtml
+++RegisterUser.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\registeruser.cshtml
+++RegisterUser.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\registeruser.cshtml.cs
+++ResendEmailConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\resendemailconfirmation.cshtml
+++ResetPassword.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpassword.cshtml
+++ResetPasswordConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpasswordconfirmation.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\_validationscriptspartial.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\_validationscriptspartial.cshtml
+++_ViewStart.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\_viewstart.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\_viewstart.cshtml
+++Controllers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\
+++CityController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\citycontroller.cs
+++CountryController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\countrycontroller.cs
+++DashboardController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\dashboardcontroller.cs
+++HomeController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\homecontroller.cs
+++ProvinceController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\provincecontroller.cs
+++SuburbController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\suburbcontroller.cs
+++UserController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\controllers\usercontroller.cs
+++Data
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\data\
+++DatabaseContext.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\data\databasecontext.cs
+++Migrations
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\migrations\
+++Models
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\
+++Repository
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\
+++IRepository
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\
+++ICityRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\icityrepository.cs
+++ICountryRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\icountryrepository.cs
+++IProvinceRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\iprovincerepository.cs
+++IRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\irepository.cs
+++ISuburbRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\isuburbrepository.cs
+++IUnitOfWork.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\iunitofwork.cs
+++IUserRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\irepository\iuserrepository.cs
+++CityRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\cityrepository.cs
+++CountryRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\countryrepository.cs
+++ProvinceRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\provincerepository.cs
+++Repository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\repository.cs
+++SuburbRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\suburbrepository.cs
+++UnitOfWork.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\unitofwork.cs
+++UserRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\repository\userrepository.cs
+++Services
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\services\
+++ViewModels
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\viewmodels\
+++CityVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\viewmodels\cityvm.cs
+++CountryVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\viewmodels\countryvm.cs
+++ProvinceVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\viewmodels\provincevm.cs
+++SuburbVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\viewmodels\suburbvm.cs
+++UserVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\viewmodels\uservm.cs
+++Views
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\
+++Admin
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\admin\
+++City
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\city\
+++Country
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\country\
+++Dashboard
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\dashboard\
+++Home
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\home\
+++Province
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\province\
+++Shared
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\
+++Suburb
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\suburb\
+++User
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\user\
+++Upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\user\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\city\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\country\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\province\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\suburb\upsert.cshtml
+++appsettings.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\appsettings.json
+++bundleconfig.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\bundleconfig.json
+++Program.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\program.cs
+++ScaffoldingReadMe.txt
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\scaffoldingreadme.txt
+++SQL Server Express LocalDB (Local) (ConnectionStrings:ApplicationDbContextConnection)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1253
+++Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:analyzers
+++Frameworks
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:frameworks
+++Packages
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:packages
+++launchSettings.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\properties\launchsettings.json
+++serviceDependencies.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\properties\servicedependencies.json
+++css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\
+++fonts
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\
+++images
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\
+++js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\
+++favicon.ico
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\favicon.ico
+++Email.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\email.cshtml.cs
+++PersonalData.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\personaldata.cshtml.cs
+++ConfirmEmail.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\confirmemail.cshtml.cs
+++ForgotPassword.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpassword.cshtml.cs
+++ForgotPasswordConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpasswordconfirmation.cshtml.cs
+++Login.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\login.cshtml.cs
+++Logout.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\logout.cshtml.cs
+++RegisterConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\registerconfirmation.cshtml.cs
+++ResendEmailConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\resendemailconfirmation.cshtml.cs
+++ResetPassword.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpassword.cshtml.cs
+++ResetPasswordConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
+++20220422082251_reInitNatuurlikDb.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\migrations\20220422082251_reinitnatuurlikdb.cs
+++DatabaseContextModelSnapshot.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\migrations\databasecontextmodelsnapshot.cs
+++ApplicationUser.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\applicationuser.cs
+++City.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\city.cs
+++Country.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\country.cs
+++ErrorViewModel.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\errorviewmodel.cs
+++Province.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\province.cs
+++SR.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\sr.cs
+++Suburb.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\models\suburb.cs
+++SendGridEmailSender.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\services\sendgridemailsender.cs
+++Privacy.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\home\privacy.cshtml
+++_AdminLayout.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\_adminlayout.cshtml
+++_LoginPartial.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\_loginpartial.cshtml
+++_Notification.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\_notification.cshtml
+++Error.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\error.cshtml
+++appsettings.Development.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\appsettings.development.json
+++MessagePackAnalyzer
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.104\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\microsoft.netcore.app
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1248
+++Microsoft.AspNetCore.Identity.UI (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1252
+++Microsoft.EntityFrameworkCore (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1244
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1245
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1250
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1251
+++SendGrid (9.27.0)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1247
+++Swashbuckle.AspNetCore (6.3.0)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1246
+++System.Configuration.ConfigurationManager (6.0.0)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1249
+++serviceDependencies.local.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\properties\servicedependencies.local.json
+++account.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\account.css
+++admin.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\admin.css
+++crud.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\crud.css
+++fonts.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\fonts.css
+++home.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\home.css
+++site.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\css\site.css
+++Montserrat-Black.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-black.ttf
+++Montserrat-BlackItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-blackitalic.ttf
+++Montserrat-Bold.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-bold.ttf
+++Montserrat-BoldItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-bolditalic.ttf
+++Montserrat-ExtraBold.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-extrabold.ttf
+++Montserrat-ExtraBoldItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-extrabolditalic.ttf
+++Montserrat-ExtraLight.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-extralight.ttf
+++Montserrat-ExtraLightItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-extralightitalic.ttf
+++Montserrat-Italic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-italic.ttf
+++Montserrat-Light.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-light.ttf
+++Montserrat-LightItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-lightitalic.ttf
+++Montserrat-Medium.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-medium.ttf
+++Montserrat-MediumItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-mediumitalic.ttf
+++Montserrat-Regular.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-regular.ttf
+++Montserrat-SemiBold.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-semibold.ttf
+++Montserrat-SemiBoldItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-semibolditalic.ttf
+++Montserrat-Thin.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-thin.ttf
+++Montserrat-ThinItalic.ttf
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\montserrat-thinitalic.ttf
+++OFL.txt
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\fonts\ofl.txt
+++accept.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\accept.png
+++annie.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\annie.png
+++august.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\august.png
+++bill.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\bill.png
+++chili.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\chili.png
+++cofe.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\cofe.png
+++coffee.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\coffee.png
+++copy.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\copy.png
+++emile.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\emile.png
+++hannes.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\hannes.png
+++honey.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\honey.png
+++jannes.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\jannes.png
+++logo.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\logo.png
+++mail.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\mail.png
+++main.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\main.png
+++meat.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\meat.png
+++mince.jpg
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\mince.jpg
+++mobhome.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\mobhome.png
+++Natuurlik-Logo.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\natuurlik-logo.png
+++nuts.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\nuts.png
+++olive.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\olive.png
+++post1.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\post1.png
+++post2.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\post2.png
+++post3.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\post3.png
+++slogan.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\slogan.png
+++soap.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\soap.png
+++try.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\try.png
+++wors.jpg
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\images\wors.jpg
+++city.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\city.js
+++country.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\country.js
+++province.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\province.js
+++site.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\site.js
+++suburb.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\suburb.js
+++user.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\js\user.js
+++bootstrap
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\
+++jquery
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\
+++jquery-validation
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\
+++20220422082251_reInitNatuurlikDb.Designer.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\migrations\20220422082251_reinitnatuurlikdb.designer.cs
+++_Layout.cshtml.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\views\shared\_layout.cshtml.css
+++dist
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\license.txt
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-theme.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css
+++bootstrap-utilities.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-theme.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css
+++bootstrap-utilities.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-theme.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map
+++bootstrap-utilities.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++_StatusMessage.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\the vault\natuurlik-bytexecom\natuurlik-bytexecom\integration\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_statusmessage.cshtml
