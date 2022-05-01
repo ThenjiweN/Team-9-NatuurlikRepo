@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/catalogue.css" asp-append-version="true" />
     @RenderSection("fonts", false)
     @RenderSection("home", false)
     @RenderSection("site", false)
     @RenderSection("account", false)
+    @RenderSection("catalogue", false)
 </head>
 
 
@@ -45,7 +47,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">PRODUCTS</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="ProductCatalogue" asp-action="Index">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">BLOG</a>
@@ -55,10 +57,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">ADMIN</a>
-                        </li>
-                         
-                         
-                        
+                        </li>                                                                       
                     </ul>
                    <partial name="_loginPartial"/>           
                 </div>

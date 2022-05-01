@@ -7,6 +7,7 @@
 #rand {
     color: white;
     font-family: Montserrat-Bold;
+    padding-bottom:20px;
 }
 
 
@@ -40,7 +41,7 @@
 #products {
     margin-top: 15%;
     padding-bottom: 10%;
-}
+} 
 
 .price {
     font-family: Montserrat-Bold;

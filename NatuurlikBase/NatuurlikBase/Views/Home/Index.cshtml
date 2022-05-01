@@ -5,7 +5,7 @@
 @section home {
     <link href="@Url.Content("~/css/home.css")" rel="stylesheet" type="text/css" />
 }
-
+ 
 <div class="d-none d-lg-block">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -44,12 +44,12 @@
             <div class="col">
                 <h2 id="beans"> MEDIUM/DARK <br> ROASTED <br> COFFEE BEANS </h2>
                 <h1 id="rand">R169.99</h1>                   
-                <button class="btn btn-primary btn-block" id="shop">SHOP NOW</button>
+                <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="shop">SHOP NOW</a>
             </div>
         </div>
     </div>
 </div>
-
+ 
 <div class="container" >
     <div class="row justify-content-center" id="products">
         <div class="col-lg-3 col" >
@@ -57,7 +57,7 @@
                 <img class="card-img-top" src="~/images/chili.png" alt="Card image cap">               
                   <p class="item">Chili Sauce</p>
                   <p class="price">R 34.99</p>
-                  <a href="/client-item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
+                  <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
               </div>
         </div>
         <div class="col-lg-3 col">
@@ -65,7 +65,7 @@
                 <img class="card-img-top" src="~/images/olive.png" alt="Card image cap">
                 <p class="item">Cold Pressed Pure Olive Oil</p>
                 <p class="price">R 79.99</p>
-                <a href="/client-item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
+                <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
             </div>
         </div>
         <div class="col-lg-3 col">
@@ -73,7 +73,7 @@
                 <img class="card-img-top" src="~/images/honey.png" alt="Card image cap">
                 <p class="item">Pure Farm Honey</p>
                 <p class="price">R 74.99</p>
-                <a href="/client-item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
+                <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
             </div>
         </div>
         <div class="col-lg-3 col"> 
@@ -81,7 +81,7 @@
               <img class="card-img-top" src="~/images/soap.png" alt="Card image cap">
               <p class="item">Handmade Pure Glycerin Soap</p>
               <p class="price">R 25.00</p>
-              <a href="/client-item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
+              <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</a>
           </div>
       </div>
     </div>
@@ -106,7 +106,7 @@
               <p class="date">2 MAY 2020</p>
               <h5 class="card-title">MAIN TITLE</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <a href="/client-post" id="read">READ MORE</a>
+              <a asp-area="" asp-controller="" asp-action="" id="read">READ MORE</a>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
               <p class="date">2 MAY 2020</p>
               <h5 class="card-title">MAIN TITLE</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <a href="/client-post" id="read">READ MORE</a>
+              <a asp-area="" asp-controller="" asp-action="" id="read">READ MORE</a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
               <p class="date">2 MAY 2020</p>
               <h5 class="card-title">MAIN TITLE</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <a href="/client-post" id="read">READ MORE</a>
+              <a asp-area="" asp-controller="" asp-action="" id="read">READ MORE</a>
             </div>
           </div>
         </div>
