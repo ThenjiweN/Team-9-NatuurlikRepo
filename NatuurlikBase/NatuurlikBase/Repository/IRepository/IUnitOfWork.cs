@@ -13,6 +13,9 @@ namespace NatuurlikBase.Repository.IRepository
         ICityRepository City { get; }
         ISuburbRepository Suburb { get; }
         IUserRepository User { get; }
+        IProductRepository Product { get; }
+        IProductBrandRepository Brand { get; }
+        IProductCategoryRepository Category { get; }
 
         void Save();
     }

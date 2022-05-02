@@ -18,6 +18,9 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<City> City { get; set; }
     public DbSet<Suburb> Suburb { get; set; }
     public DbSet<ApplicationUser> User { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<ProductBrand> Brands { get; set; }
+    public DbSet<ProductCategory> Categories { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)

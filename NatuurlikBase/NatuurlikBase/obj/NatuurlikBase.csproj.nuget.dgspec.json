@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {}
+    "C:\\Users\\thenj\\Desktop\\INF 370 2022\\Coding\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {}
   },
   "projects": {
-    "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {
+    "C:\\Users\\thenj\\Desktop\\INF 370 2022\\Coding\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+        "projectUniqueName": "C:\\Users\\thenj\\Desktop\\INF 370 2022\\Coding\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
         "projectName": "NatuurlikBase",
-        "projectPath": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
-        "packagesPath": "C:\\Users\\vumis\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
+        "projectPath": "C:\\Users\\thenj\\Desktop\\INF 370 2022\\Coding\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+        "packagesPath": "C:\\Users\\thenj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thenj\\Desktop\\INF 370 2022\\Coding\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vumis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thenj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

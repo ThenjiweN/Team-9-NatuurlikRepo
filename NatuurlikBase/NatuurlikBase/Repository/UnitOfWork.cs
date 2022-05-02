@@ -23,13 +23,19 @@ namespace NatuurlikBase.Repository
             City = new CityRepository(_db);
             Suburb = new SuburbRepository(_db);
             User = new UserRepository(_db);
-          
+            Product = new ProductRepository(_db);
+            Brand = new ProductBrandRepository(_db);
+            Category = new ProductCategoryRepository(_db);
+
         }
         public ICountryRepository Country { get; private set; }
         public IProvinceRepository Province { get; private set; }
         public ICityRepository City { get; private set; }
         public ISuburbRepository Suburb { get; private set; }
         public IUserRepository User { get; private set; }
+        public IProductRepository Product { get; private set; }
+        public IProductBrandRepository Brand { get; private set; }
+        public IProductCategoryRepository Category { get; private set; }
 
 
         public void Save()
