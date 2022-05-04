@@ -21,7 +21,7 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<Product> Products { get; set; }
     public DbSet<ProductBrand> Brands { get; set; }
     public DbSet<ProductCategory> Categories { get; set; }
-
+    public DbSet<ReturnReason> ReturnReason { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
