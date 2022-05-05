@@ -59,7 +59,7 @@ namespace NatuurlikBase.Controllers
             {
                 if (db.ReturnReason.Any(c => c.ReturnReasonName.Equals(returnReason.ReturnReasonName)))
                 {
-                    ViewBag.CountryError = "Return reason Already exist in the database.";
+                    ViewBag.ReturnError = "Return reason Already exist in the database.";
 
                     TempData["AlertMessages"] = "Return reason Already exist in the database.";
                 }
@@ -113,7 +113,7 @@ namespace NatuurlikBase.Controllers
 
                 if (db.ReturnReason.Any(c => c.ReturnReasonName.Equals(returnReason.ReturnReasonName)))
                 {
-                    ViewBag.CountryError = "Return Reason Already exist in the database.";
+                    ViewBag.ReturnError = "Return Reason Already exist in the database.";
 
                 }
                 else

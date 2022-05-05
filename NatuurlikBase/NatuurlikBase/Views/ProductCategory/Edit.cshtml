@@ -23,5 +23,35 @@
 @section Scripts{
 	@{
 		<partial name="_ValidationScriptsPartial" />
+
 	}
+
+	  @if (ViewBag.CountryError != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    }
+
+    @if (ViewBag.CountryConfirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
 }

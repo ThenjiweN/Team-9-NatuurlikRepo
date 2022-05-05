@@ -5,42 +5,29 @@
  
 }
 
-<form method="post" asp-action="Create" enctype="multipart/form-data">
-    <input asp-for="Id" hidden />
-
-
+<form method="post">
+	
     <div class="shadow-lg p-3 mb-5 bg-white rounded">
         <div class="card">
             <div class="card-header text-white" style="background-color: #292b2c">
                 <h5>Add Return Reason</h5>
             </div>
             <div class="card-body">
-      @*  <div asp-validation-summary="All"></div>*@
-        <div class="col-md-10">
-            <label asp-for="ReturnReasonName"> Name </label>
-            <input asp-for="ReturnReasonName" class="form-control "/>
-            <span asp-validation-for="ReturnReasonName" class="text-danger"></span>
-       
-
-        <br />
-       <div>
-        <div>
-        
-            
-               <button type="submit" onclick="return ValidateInput()" class="btn btn-outline-dark" data-toggle="modal" style="width:150px;"> Create </button>
-            
-            <a asp-controller="ReturnReason" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
-       
-       
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="mb-3">
+			<label asp-for="ReturnReasonName"></label>
+			<input asp-for="ReturnReasonName" class="form-control" />
+			<span asp-validation-for="ReturnReasonName" class="text-danger"></span>
+		</div>
+		
+		<button type="submit" class="btn btn-outline-dark" data-toggle="modal" style="width:150px">Create</button>
+		<a asp-controller="ReturnReason" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+	</div>
+     </div>
         </div>
-         </div>
-          </div>
-          </div>
-        </div>
-    </div> 
-    
-    
-       <div class="modal fade" id="exampleModal1" >
+	     <div class="modal" id="exampleModal1" >
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0">
@@ -50,7 +37,7 @@
 
                 </div>
                 <h6 class="col-md-10">
-                   Return Reason already exist on the database
+                   Return Reason Already Exist On The Database
                 </h6>
 
                 <div class="modal-footer border-0">
@@ -66,13 +53,9 @@
 </form>
 
 @section Scripts{
-    @{
-        <partial name="_ValidationScriptsPartial" />
-     }
-     
-
-    
-      @if (ViewBag.CountryError != null)
+	
+	 
+      @if (ViewBag.ReturnError != null)
     {
         <script>
 
@@ -86,6 +69,6 @@
         </script>
     
     }
-    
-    
-    }
+}
+
+

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NatuurlikBase.Data;
 using NatuurlikBase.Models;
 using NatuurlikBase.Repository.IRepository;
 
@@ -7,10 +8,11 @@ namespace NatuurlikBase.Controllers
     public class ProductBrandController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-
-        public ProductBrandController(IUnitOfWork unitOfWork)
+        private readonly DatabaseContext _db;
+        public ProductBrandController(IUnitOfWork unitOfWork, DatabaseContext db)
         {
             _unitOfWork = unitOfWork;
+            _db = db;
         }
 
         public IActionResult Index()
@@ -32,10 +34,18 @@ namespace NatuurlikBase.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                if (_db.Brands.Any(c => c.Name.Equals(obj.Name)))
+                {
+                    ViewBag.Error = "Product Brand Name Already Exist In The Database.";
+
+                }
+                else { 
                 _unitOfWork.Brand.Add(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Brand created successfully";
+                TempData["success"] = "Product Brand created successfully";
                 return RedirectToAction("Index");
+                }
             }
             return View(obj);
         }
@@ -65,10 +75,18 @@ namespace NatuurlikBase.Controllers
 
             if (ModelState.IsValid)
             {
+
+                if (_db.Brands.Any(c => c.Name.Equals(obj.Name)))
+                {
+                    ViewBag.Error = "Product Brand Name Already Exist In The Database.";
+
+                }
+                else { 
                 _unitOfWork.Brand.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Brand updated successfully";
+                TempData["success"] = "Product Brand Updated Successfully";
                 return RedirectToAction("Index");
+                }
             }
             return View(obj);
         }
@@ -101,8 +119,9 @@ namespace NatuurlikBase.Controllers
             }
 
             _unitOfWork.Brand.Remove(obj);
+            ViewBag.Confirmation = "Are You Sure You Want To Delete A Product.";
             _unitOfWork.Save();
-            TempData["success"] = "Brand deleted successfully";
+            TempData["success"] = "Product Brand deleted successfully";
             return RedirectToAction("Index");
 
         }
