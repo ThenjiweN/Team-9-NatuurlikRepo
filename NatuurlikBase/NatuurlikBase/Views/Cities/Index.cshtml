@@ -1,0 +1,78 @@
+﻿@model IEnumerable<NatuurlikBase.Models.City>
+
+@{
+    ViewData["Title"] = "Index";
+
+}
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+        @TempData["success"]
+
+    </div>
+
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>City List</h2>
+		</div>
+        <div class="col-6 text-end">
+            <a asp-controller="Cities" asp-action="Create" class="btn btn-success">
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Product Brand
+			</a>
+		</div>
+	</div>
+    <br /><br />
+
+<table class="table" id="tblData" style="background-color: #232323">
+    <thead>
+        <tr>
+            <th class="text-light">
+                City Name
+			</th>
+            <th class="text-light">Action</th>
+		</tr>
+	</thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td width="50%">
+                    @obj.CityName
+				</td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Cities" asp-action="Edit" asp-route-id="@obj.Id"
+                        class="btn btn btn-outline-dark mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        <a asp-controller="Cities" asp-action="Delete" asp-route-id="@obj.Id"
+                        class="btn btn btn-outline-dark mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+					</div>
+				</td>
+			</tr>
+        }
+    </tbody>
+
+</table>
+</div>
+
+@section Scripts {
+     <script>
+          var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#tblData").DataTable({
+
+
+            });
+        })
+        $(document).ready(function () {
+            $("#success-alert").hide();
+            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+                $("#success-alert").slideUp(500);
+            });
+
+        });
+
+        </script>
+}

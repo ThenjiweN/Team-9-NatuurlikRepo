@@ -12,8 +12,8 @@ using NatuurlikBase.Data;
 namespace NatuurlikBase.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220422082251_reInitNatuurlikDb")]
-    partial class reInitNatuurlikDb
+    [Migration("20220506132611_newNatuurlikDb")]
+    partial class newNatuurlikDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -303,6 +303,83 @@ namespace NatuurlikBase.Migrations
                     b.ToTable("Country");
                 });
 
+            modelBuilder.Entity("NatuurlikBase.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("CustomerPrice")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PictureUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductBrandId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ResellerPrice")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("ProductBrandId");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.ProductBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Brands");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.ProductCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("NatuurlikBase.Models.Province", b =>
                 {
                     b.Property<int>("Id")
@@ -324,6 +401,24 @@ namespace NatuurlikBase.Migrations
                     b.HasIndex("CountryId");
 
                     b.ToTable("Province");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.ReturnReason", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ReturnReasonName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ReturnReason");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.Suburb", b =>
@@ -443,12 +538,31 @@ namespace NatuurlikBase.Migrations
             modelBuilder.Entity("NatuurlikBase.Models.City", b =>
                 {
                     b.HasOne("NatuurlikBase.Models.Province", "Province")
-                        .WithMany()
+                        .WithMany("City")
                         .HasForeignKey("ProvinceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Province");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.Product", b =>
+                {
+                    b.HasOne("NatuurlikBase.Models.ProductCategory", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.ProductBrand", "Brand")
+                        .WithMany()
+                        .HasForeignKey("ProductBrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Brand");
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.Province", b =>
@@ -465,11 +579,21 @@ namespace NatuurlikBase.Migrations
             modelBuilder.Entity("NatuurlikBase.Models.Suburb", b =>
                 {
                     b.HasOne("NatuurlikBase.Models.City", "City")
-                        .WithMany()
+                        .WithMany("Suburb")
                         .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("City");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.City", b =>
+                {
+                    b.Navigation("Suburb");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.Province", b =>
+                {
                     b.Navigation("City");
                 });
 #pragma warning restore 612, 618

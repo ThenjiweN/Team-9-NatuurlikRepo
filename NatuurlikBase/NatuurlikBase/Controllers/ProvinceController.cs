@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
 using NatuurlikBase.Repository.IRepository;
@@ -18,124 +19,155 @@ namespace NatuurlikBase.Controllers
             _unitOfWork = unitOfWork;
             _db = db;
         }
-        public IActionResult Index()
+        // GET: Cities
+        public async Task<IActionResult> Index()
         {
-            //IList<Brand> objList = _unitOfWork.Brand.GetAll();
+            var databaseContext = _db.Province.Include(c => c.Country);
+            return View(await databaseContext.ToListAsync());
+        }
+
+        // GET: Cities/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var province = await _db.Province
+                .Include(c => c.Country)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (province == null)
+            {
+                return NotFound();
+            }
+
+            return View(province);
+        }
+
+        // GET: Cities/Create
+        public IActionResult Create()
+        {
+            ViewData["CountryId"] = new SelectList(_db.Country, "Id", "CountryName");
             return View();
         }
 
-        //GET
-        public IActionResult Upsert(int? id)
-        {
-            //Product product = new();
-            //IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(
-            //    u => new SelectListItem
-            //    {
-            //        Text=u.CategoryName,
-            //        Value= u.Id.ToString()
-            //    });
-
-            //IEnumerable<SelectListItem> BrandsList = _unitOfWork.Brand.GetAll().Select(
-            //   u => new SelectListItem
-            //   {
-            //       Text = u.Name,
-            //       Value = u.Id.ToString()
-            //   });
-
-            ProvinceVM provinceVM = new()
-            {
-                Province = new(),
-                CountryList = _unitOfWork.Country.GetAll().Select(i => new SelectListItem
-                {
-                    Text = i.CountryName,
-                    Value = i.Id.ToString()
-                })
-            };
-
-        
-
-            if (id== null || id == 0)
-            {
-                //Create the product
-                //ViewBag.CategoryList = CategoryList;
-                //ViewData["BrandsList"] = BrandsList;
-                return View(provinceVM);
-            }
-            else
-            {
-                //update the product
-                provinceVM.Province = _unitOfWork.Province.GetFirstOrDefault(u => u.Id == id);
-                return View(provinceVM);
-            }
-      
-        }
-
+        // POST: Cities/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //protect against anti forgery token attacks.
-        public IActionResult Upsert(ProvinceVM obj)
+        public async Task<IActionResult> Create([Bind("Id,ProvinceName,CountryId")] Province province)
         {
-         
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-
-              
-                if(obj.Province.Id == 0)
+                if (_db.Province.Any(c => c.ProvinceName.Equals(province.ProvinceName)))
                 {
-                    _unitOfWork.Province.Add(obj.Province);
-                    TempData["success"] = "Province Created Successfully!";
+                    ViewBag.Error = "Province Name Already Exist In The Database.";
+
                 }
                 else
                 {
-                    _unitOfWork.Province.Update(obj.Province);
-                    TempData["success"] = "Province Updated Successfully!";
+                   
+                    _db.Province.Add(province);
+                    await _db.SaveChangesAsync();
+                    TempData["success"] = "Province Created Successfully";
+                    return RedirectToAction(nameof(Index));
+                  
                 }
-                
-                _unitOfWork.Save();
                
-                return RedirectToAction("Index");
             }
-            return View(obj);
-       
+            ViewData["CountryId"] = new SelectList(_db.Province, "Id", "CountryName", province.CountryId);
+            return View(province);
         }
 
-        
-
-        #region API CALLS
-        [HttpGet]
-        public IActionResult GetAll()
+        // GET: Cities/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
-            var objList = _unitOfWork.Province.GetAll(includeProperties: "Country");
-            return Json(new {data = objList });
-        }
-        [HttpDelete]
-        
-        public IActionResult Delete(int? id)
-        {
-
-            var hasFk = _unitOfWork.City.GetAll().Any(x => x.Id == id);
-
-            if (!hasFk)
+            if (id == null)
             {
-                var obj = _unitOfWork.Province.GetFirstOrDefault(u => u.Id == id);
-                if (obj == null)
-                {
-                    return Json(new { success = false, message = "An error occured while deleting" });
-                }
-                _unitOfWork.Province.Remove(obj);
-                _unitOfWork.Save();
-                return Json(new { success = true, message = "Province Deleted Successfully" });
+                return NotFound();
             }
 
-            return Ok(TempData["error"] = "Province cannot be deleted since it has a City associated");
-
+            var province = await _db.Province.FindAsync(id);
+            if (province == null)
+            {
+                return NotFound();
+            }
+            ViewData["CountryId"] = new SelectList(_db.Country, "Id", "CountryName", province.CountryId);
+            return View(province);
         }
 
+        // POST: Cities/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ProvinceName,CountryId")] Province province)
+        {
+            if (id != province.Id)
+            {
+                return NotFound();
+            }
 
-       
+            if (ModelState.IsValid)
+            {
+                if (_db.Province.Any(c => c.ProvinceName.Equals(province.ProvinceName)))
+                {
+                    ViewBag.Error = "Province Name Already Exist In The Database.";
+                    ViewData["CountryId"] = new SelectList(_db.Province, "Id", "CountryName", province.CountryId);
+                }
+                else { 
+                
+                {
+                        _db.Entry(province).State = EntityState.Modified;
+                        
+                        TempData["success"] = "Province Created Successfully";
+                        await _db.SaveChangesAsync();
+                    }
+               
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            ViewData["CountryId"] = new SelectList(_db.Province, "Id", "CountryName", province.CountryId);
+            return View(province);
+        }
 
-        #endregion
+        // GET: Cities/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
+            var province = _db.Province
+                .Include(c => c.Country)
+                .FirstOrDefault(m => m.Id == id);
+            if (province == null)
+            {
+                return NotFound();
+            }
+
+            return View(province);
+        }
+
+        // POST: Cities/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var province = await _db.Province.FindAsync(id);
+            _db.Province.Remove(province);
+            await _db.SaveChangesAsync();
+            TempData["success"] = "Province Deleted successfully";
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool ProvinceExists(int id)
+        {
+            return _db.Province.Any(e => e.Id == id);
+        }
     }
 
 }

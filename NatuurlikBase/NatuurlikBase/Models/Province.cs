@@ -6,7 +6,13 @@ namespace NatuurlikBase.Models
 {
     public class Province
     {
+        public Province()
+        {
+            this.City = new HashSet<City>();
+        }
+
         [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
@@ -17,5 +23,7 @@ namespace NatuurlikBase.Models
         [ValidateNever]
         [ForeignKey("CountryId")]
         public Country Country { get; set; }
+        public ICollection<City> City { get; set; }
+
     }
 }

@@ -7,6 +7,7 @@ namespace NatuurlikBase.Models
     public class Suburb
     {
         [Key]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
         [MaxLength(50)]
