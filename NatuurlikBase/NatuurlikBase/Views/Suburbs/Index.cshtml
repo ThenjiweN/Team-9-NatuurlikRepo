@@ -1,0 +1,83 @@
+﻿@model IEnumerable<NatuurlikBase.Models.Suburb>
+
+@{
+    ViewData["Title"] = "Index";
+   
+}
+@if (TempData["success"] != null){
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+        @TempData["success"]
+
+    </div>
+
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>Suburb List</h2>
+		</div>
+        <div class="col-6 text-end">
+            <a asp-controller="Suburbs" asp-action="Create" class="btn btn-success">
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Suburb
+			</a>
+		</div>
+	</div>
+    <br /><br />
+
+<table class="table" id="tblData" style="background-color: #232323">
+    <thead>
+        <tr>
+            <th class="text-light">
+                Suburb Name
+			</th>
+            <th class="text-light">
+                Postal Code
+			</th> 
+            <th class="text-light">Action</th>
+		</tr>
+	</thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <td >
+                    @obj.SuburbName
+				</td> <td>
+                    @obj.PostalCode
+				</td>
+				
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-action="Edit" asp-route-id="@obj.Id"
+                        class="btn btn btn-outline-dark mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        <a asp-action="Delete" asp-route-id="@obj.Id"
+                        class="btn btn btn-outline-dark mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+					</div>
+				</td>
+			</tr>
+        }
+    </tbody>
+
+</table>
+</div>
+
+@section Scripts {
+     <script>
+          var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#tblData").DataTable({
+
+
+            });
+        })
+        $(document).ready(function () {
+            $("#success-alert").hide();
+            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+                $("#success-alert").slideUp(500);
+            });
+
+        });
+
+        </script>
+}

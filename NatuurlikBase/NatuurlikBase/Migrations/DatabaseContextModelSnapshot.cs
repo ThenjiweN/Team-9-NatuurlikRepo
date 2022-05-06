@@ -536,7 +536,7 @@ namespace NatuurlikBase.Migrations
             modelBuilder.Entity("NatuurlikBase.Models.City", b =>
                 {
                     b.HasOne("NatuurlikBase.Models.Province", "Province")
-                        .WithMany()
+                        .WithMany("City")
                         .HasForeignKey("ProvinceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -577,11 +577,21 @@ namespace NatuurlikBase.Migrations
             modelBuilder.Entity("NatuurlikBase.Models.Suburb", b =>
                 {
                     b.HasOne("NatuurlikBase.Models.City", "City")
-                        .WithMany()
+                        .WithMany("Suburb")
                         .HasForeignKey("CityId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("City");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.City", b =>
+                {
+                    b.Navigation("Suburb");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.Province", b =>
+                {
                     b.Navigation("City");
                 });
 #pragma warning restore 612, 618

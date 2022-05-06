@@ -15,18 +15,17 @@
 }
 
  <div class="container pt-3">
- <div class="pt-4">
-         <div class="col-6">
-             <h2> All Return Reason</h2>
-         </div>
-         <br>
-         <div class="col-6 text-end pb-3">
-             <a asp-controller="ReturnReason" asp-action="Create" class="btn btn-success">
-                All New Return Reason &nbsp; <i class="bi bi-file-earmark-plus"></i>
-             </a>
-         </div>
-     </div>
-
+ <div class="row pt-4">
+        <div class="col-6">
+            <h2>Return Reason List</h2>
+		</div>
+        <div class="col-6 text-end">
+            <a asp-controller="ReturnReason" asp-action="Create" class="btn btn-success">
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Return Reason
+			</a>
+		</div>
+	</div>
+      <br /><br />
 <table class="table" id="tblData">
     <thead style="background-color: #232323">
         <tr>
