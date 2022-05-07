@@ -8,16 +8,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
+using NatuurlikBase.Repository.IRepository;
 
 namespace NatuurlikBase.Controllers
 {
     public class ProvincesController : Controller
     {
         private readonly DatabaseContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ProvincesController(DatabaseContext context)
+        public ProvincesController(DatabaseContext context, IUnitOfWork unitOfWork)
         {
             _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         // GET: Provinces
@@ -128,29 +131,44 @@ namespace NatuurlikBase.Controllers
         {
             if (id == null)
             {
+
                 return NotFound();
             }
-
-            var province = await _context.Province
-                .Include(p => p.Country)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            Province province = _context.Province.Find(id);
             if (province == null)
             {
                 return NotFound();
             }
-
             return View(province);
         }
 
         // POST: Provinces/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var province = await _context.Province.FindAsync(id);
-            _context.Province.Remove(province);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            Province province = _context.Province.Find(id);
+            ViewBag.CountryConfirmation = "Are you sure you want to delete this province?";
+
+            var hasFk = _unitOfWork.City.GetAll().Any(x => x.ProvinceId == id);
+
+            if (!hasFk)
+            {
+                var obj = _unitOfWork.Province.GetFirstOrDefault(u => u.Id == id);
+                if (obj == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                _unitOfWork.Province.Remove(obj);
+                _unitOfWork.Save();
+                TempData["AlertMessage"] = "Province successfully Deleted.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["AlertMessage"] = "Province cannot be deleted since it has a City associated";
+                return RedirectToAction("Index");
+            }
         }
 
         private bool ProvinceExists(int id)

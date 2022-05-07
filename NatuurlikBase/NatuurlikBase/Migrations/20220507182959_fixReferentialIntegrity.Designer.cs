@@ -12,8 +12,8 @@ using NatuurlikBase.Data;
 namespace NatuurlikBase.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220506132611_newNatuurlikDb")]
-    partial class newNatuurlikDb
+    [Migration("20220507182959_fixReferentialIntegrity")]
+    partial class fixReferentialIntegrity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -314,13 +314,17 @@ namespace NatuurlikBase.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<double>("CustomerPrice")
-                        .HasColumnType("float");
+                    b.Property<decimal>("CustomerPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("DisplayProduct")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -333,8 +337,11 @@ namespace NatuurlikBase.Migrations
                     b.Property<int>("ProductBrandId")
                         .HasColumnType("int");
 
-                    b.Property<double>("ResellerPrice")
-                        .HasColumnType("float");
+                    b.Property<int>("QuantityOnHand")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("ResellerPrice")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 

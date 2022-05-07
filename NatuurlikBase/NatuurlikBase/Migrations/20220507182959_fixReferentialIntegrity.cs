@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace NatuurlikBase.Migrations
 {
-    public partial class newNatuurlikDb : Migration
+    public partial class fixReferentialIntegrity : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -104,11 +104,13 @@ namespace NatuurlikBase.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    CustomerPrice = table.Column<double>(type: "float", nullable: false),
-                    ResellerPrice = table.Column<double>(type: "float", nullable: false),
+                    QuantityOnHand = table.Column<int>(type: "int", nullable: false),
+                    CustomerPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ResellerPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
-                    ProductBrandId = table.Column<int>(type: "int", nullable: false)
+                    ProductBrandId = table.Column<int>(type: "int", nullable: false),
+                    DisplayProduct = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -118,13 +120,13 @@ namespace NatuurlikBase.Migrations
                         column: x => x.ProductBrandId,
                         principalTable: "Brands",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Products_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -144,7 +146,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.CountryId,
                         principalTable: "Country",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -164,7 +166,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.ProvinceId,
                         principalTable: "Province",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -185,7 +187,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.CityId,
                         principalTable: "City",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -223,7 +225,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.CityId,
                         principalTable: "City",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Country_CountryId",
                         column: x => x.CountryId,

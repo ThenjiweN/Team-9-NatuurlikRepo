@@ -8,16 +8,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
+using NatuurlikBase.Repository.IRepository;
 
 namespace NatuurlikBase.Controllers
 {
     public class CountriesController : Controller
     {
         private readonly DatabaseContext db;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CountriesController(DatabaseContext context)
+        public CountriesController(DatabaseContext context, IUnitOfWork unitOfWork)
         {
             db = context;
+            _unitOfWork = unitOfWork;
         }
 
         // GET: Countries
@@ -61,7 +64,7 @@ namespace NatuurlikBase.Controllers
                 {
                     ViewBag.CountryError = "Country name Already exist in the database.";
 
-                    TempData["AlertMessages"] = "Country name Already exist in the database.";
+                    TempData["AlertMessage"] = "Country name Already exist in the database.";
                 }
                 else
                 {
@@ -150,12 +153,34 @@ namespace NatuurlikBase.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
+
             Country country = db.Country.Find(id);
             db.Country.Remove(country);
-            ViewBag.CountryConfirmation = "Are you sure you want to delete a country.";
-            TempData["AlertMessage"] = "Country name successfully Deleted.";
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            ViewBag.CountryConfirmation = "Are you sure you want to delete this country?";
+
+            var hasFk = _unitOfWork.Province.GetAll().Any(x => x.CountryId == id);
+
+            if (!hasFk)
+            {
+                var obj = _unitOfWork.Country.GetFirstOrDefault(u => u.Id == id);
+                if (obj == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                _unitOfWork.Country.Remove(obj);
+                _unitOfWork.Save();
+                TempData["AlertMessage"] = "Country name successfully Deleted.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["AlertMessage"] = "Country cannot be deleted since it has a Province associated";
+                return RedirectToAction("Index");
+            }
+
+           
+
+            //db.SaveChanges();
         }
 
         protected override void Dispose(bool disposing)
