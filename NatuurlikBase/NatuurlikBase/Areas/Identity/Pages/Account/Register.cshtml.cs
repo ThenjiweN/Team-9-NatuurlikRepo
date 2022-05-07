@@ -82,10 +82,11 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             public string Password { get; set; }
 
             [Required]
+            [Display(Name = "First Name")]
             [RegularExpression(@"^[ a-zA-Z ]+$", ErrorMessage = "Invalid First Name provided. No digits or special characters are allowed.")]
             [MaxLength(50)]
-            [Display(Name = "First Name")]
             public string FirstName { get; set; }
+
             [Required]
             [RegularExpression(@"^[ a-zA-Z ]+$", ErrorMessage = "Invalid Surname provided. No digits or special characters are allowed.")]
             [MaxLength(50)]
@@ -98,9 +99,11 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             [Required]
             public int Province { get; set; }
             [Required]
+
             public int Suburb { get; set; }
             [Required]
             public int City { get; set; }
+
             [Required]
             [RegularExpression(@"^(\d{10})$", ErrorMessage = "Please enter a valid Phone Number.")]
             [Display(Name = "Phone Number")]
@@ -112,16 +115,16 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             public IEnumerable<SelectListItem> RoleList { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> CountryList { get; set; }
-            
+
             [ValidateNever]
             public IEnumerable<SelectListItem> ProvinceList { get; set; }
-           
+
             [ValidateNever]
             public IEnumerable<SelectListItem> CityList { get; set; }
-            
+
             [ValidateNever]
             public IEnumerable<SelectListItem> SuburbList { get; set; }
-           
+
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
@@ -204,6 +207,8 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
 
 
 
+
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
@@ -248,7 +253,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
+            // Dispplay Validation error when redisplaying form.
             return Page();
         }
 

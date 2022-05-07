@@ -115,16 +115,16 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             public IEnumerable<SelectListItem> RoleList { get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> CountryList { get; set; }
-            
+
             [ValidateNever]
             public IEnumerable<SelectListItem> ProvinceList { get; set; }
-            
+
             [ValidateNever]
             public IEnumerable<SelectListItem> CityList { get; set; }
-            
+
             [ValidateNever]
             public IEnumerable<SelectListItem> SuburbList { get; set; }
-            
+
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
@@ -155,26 +155,28 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                     Text = i,
                     Value = i
                 }),
+
+                //Cascade Droplists
                 CountryList = _unitOfWork.Country.GetAll().Select(u => new SelectListItem
                 {
                     Text = u.CountryName,
                     Value = u.Id.ToString()
                 }),
-                ProvinceList = _unitOfWork.Province.GetAll().Select(u => new SelectListItem
-                {
-                    Text = u.ProvinceName,
-                    Value = u.Id.ToString()
-                }),
-                CityList = _unitOfWork.City.GetAll().Select(u => new SelectListItem
-                {
-                    Text = u.CityName,
-                    Value = u.Id.ToString()
-                }),
-                SuburbList = _unitOfWork.Suburb.GetAll().Select(u => new SelectListItem
-                {
-                    Text = u.SuburbName,
-                    Value = u.Id.ToString()
-                })
+                //ProvinceList = _unitOfWork.Province.GetAll().Select(u => new SelectListItem
+                //{
+                //    Text = u.ProvinceName,
+                //    Value = u.Id.ToString()
+                //}),
+                //CityList = _unitOfWork.City.GetAll().Select(u => new SelectListItem
+                //{
+                //    Text = u.CityName,
+                //    Value = u.Id.ToString()
+                //}),
+                //SuburbList = _unitOfWork.Suburb.GetAll().Select(u => new SelectListItem
+                //{
+                //    Text = u.SuburbName,
+                //    Value = u.Id.ToString()
+                //})
 
             };
         }
@@ -185,30 +187,9 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = CreateUser();
-
-                user.FirstName = Input.FirstName;
-                user.Surname = Input.Surname;
-                user.PhoneNumber = Input.PhoneNumber;
-
+                var user = CreateUser(Input);
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                user.FirstName = Input.FirstName;
-                user.Surname = Input.Surname;
-                user.StreetAddress = Input.StreetAddress;
-                user.PhoneNumber = Input.PhoneNumber;
-                user.CountryId = Input.Country;
-                user.ProvinceId = Input.Province;
-                user.CityId = Input.City;
-                user.SuburbId = Input.Suburb;
-               
-
-
-
-
-
-
-
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
@@ -247,28 +228,63 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                         return LocalRedirect(returnUrl);
                     }
                 }
-                foreach (var error in result.Errors)
+                else
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+
+                    Input = new InputModel()
+                    {
+                        RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
+                        {
+                            Text = i,
+                            Value = i
+                        }),
+                        CountryList = _unitOfWork.Country.GetAll().Select(u => new SelectListItem
+                        {
+                            Text = u.CountryName,
+                            Value = u.Id.ToString()
+                        }),
+                        ProvinceList = _unitOfWork.Province.GetAll().Select(u => new SelectListItem
+                        {
+                            Text = u.ProvinceName,
+                            Value = u.Id.ToString()
+                        }),
+                        CityList = _unitOfWork.City.GetAll().Select(u => new SelectListItem
+                        {
+                            Text = u.CityName,
+                            Value = u.Id.ToString()
+                        }),
+                        SuburbList = _unitOfWork.Suburb.GetAll().Select(u => new SelectListItem
+                        {
+                            Text = u.SuburbName,
+                            Value = u.Id.ToString()
+                        })
+
+                    };
                 }
             }
-
             // If we got this far, something failed, redisplay form
             return Page();
         }
 
-        private ApplicationUser CreateUser()
+        private ApplicationUser CreateUser(InputModel Input)
         {
-            try
+            var user = new ApplicationUser
             {
-                return Activator.CreateInstance<ApplicationUser>();
-            }
-            catch
-            {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(ApplicationUser)}'. " +
-                    $"Ensure that '{nameof(ApplicationUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
-                    $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
-            }
+                FirstName = Input.FirstName,
+                Surname = Input.Surname,
+                PhoneNumber = Input.PhoneNumber,
+                StreetAddress = Input.StreetAddress,
+                CountryId = Input.Country,
+                ProvinceId = Input.Province,
+                CityId = Input.City,
+                SuburbId = Input.Suburb
+            };
+            _userManager.CreateAsync(user);
+            return user;
         }
 
         private IUserEmailStore<ApplicationUser> GetEmailStore()
