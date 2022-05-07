@@ -1,0 +1,43 @@
+﻿
+
+<partial name="_Notification" />
+
+<div class="container pt-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary"> All Users</h2>
+        </div>
+        <div class="col-6 text-end pb-3">
+            <a asp-area="Identity" asp-page="/Account/RegisterUser" class="btn btn-success">
+                Register New User &nbsp; <i class="bi bi-file-earmark-plus"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <table class="table table-bordered table-striped" id="tblData" style="width:100%">
+        <thead>
+            <tr>
+                <th> First Name </th>
+                <th> Surname</th>
+                <th> Email</th>
+                <th> Phone Number</th>
+                @*<th> Country </th>
+                <th> Province </th>
+                <th> City </th>
+                <th> Suburb</th>*@
+                <th> </th>
+            </tr>
+        </thead>
+
+    </table>
+</div>
+
+ @section Scripts {
+<script src="~/js/user.js"></script>
+ }
+
+
+

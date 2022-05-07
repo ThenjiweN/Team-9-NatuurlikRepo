@@ -1,0 +1,79 @@
+﻿@model NatuurlikBase.Models.Province
+
+@{
+    ViewData["Title"] = "Create";
+  }
+<div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #292b2c">
+                <h5>Add Province</h5>
+            </div>
+            <div class="card-body">
+    <div class="col-md-10">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProvinceName" class="control-label"></label>
+                <input asp-for="ProvinceName" class="form-control col-md-10" />
+                <span asp-validation-for="ProvinceName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              
+                @if(ViewBag.Error==null){
+                      <label asp-for="CountryId" class="control-label">Country Name</label>
+                <select asp-for="CountryId" class ="form-control col-md-10" asp-items="ViewBag.CountryId"></select>}
+            </div>
+           <button type="submit" class="btn btn-outline-dark" data-toggle="modal" style="width:150px">Create</button>
+		<a asp-controller="Province" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+                 <div class="modal" id="exampleModal1" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <h6 class="col-md-10">
+                   Province Already Exist On The Database
+                </h6>
+
+                <div class="modal-footer border-0">
+                    <div class="form-actions no-color">
+                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "Province")'"/>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        </form>
+    </div>
+</div>
+</div>
+     </div>
+     
+
+@section Scripts{
+	
+	 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+}
+
+

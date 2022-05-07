@@ -1,0 +1,72 @@
+﻿@model IEnumerable<NatuurlikBase.Models.ReturnReason>
+
+@{
+    ViewData["Title"] = "Index";
+  
+}
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+        @TempData["AlertMessage"]
+
+    </div>
+
+}
+
+ <div class="container pt-3">
+ <div class="row pt-4">
+        <div class="col-6">
+            <h2>Return Reason List</h2>
+		</div>
+        <div class="col-6 text-end">
+            <a asp-controller="ReturnReason" asp-action="Create" class="btn btn-success">
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Return Reason
+			</a>
+		</div>
+	</div>
+      <br /><br />
+<table class="table" id="tblData">
+    <thead style="background-color: #232323">
+        <tr>
+            <th class="text-light">
+                @Html.DisplayNameFor(model => model.ReturnReasonName)
+            </th>
+            <th class="text-light">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnReasonName)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id"  class="btn btn btn-outline-dark mx-2"> <i class="bi bi-pencil-square"></i>Edit</a> 
+             
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn btn-outline-dark mx-2"> <i class="bi bi-trash-fill"></i>Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+@section Scripts {
+     <script>
+          var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#tblData").DataTable({
+
+
+            });
+        })
+        $(document).ready(function () {
+            $("#success-alert").hide();
+            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+                $("#success-alert").slideUp(500);
+            });
+
+        });
+
+        </script>
+}

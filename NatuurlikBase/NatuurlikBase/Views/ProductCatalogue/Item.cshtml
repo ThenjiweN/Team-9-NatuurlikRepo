@@ -1,0 +1,72 @@
+﻿@section catalogue {
+    <link href="@Url.Content("~/css/catalogue.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="container">
+    <div class="itemspace row justify-content-center">
+        <div class="col-lg-6 left">
+            <img class="prodimg" src="~/images/chili.png">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="itemTitle">Chili Sauce</h2>
+            <h3><strong>R150.00</strong> </h3> 
+            <p id="itemdesc">
+                Lorem ipsum dolor sit amet, consecte1tur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consecte1tur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consecte1tur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-primary btn-block" id="itembtn">Add</button>
+                </div>
+                <div class="col-5">
+                    <button asp-area="" asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-primary btn-block" id="itembtn">Add to Cart</button>
+                </div>
+            </div>
+            <h6>Categories</h6>
+            <p id="itemcat">Sauce</p>
+        </div>       
+    </div>
+
+    <h4>Related Products</h4>
+        <div class="container" >
+            <div class="row justify-content-center" id="products">
+                <div class="col-lg-3 col" >
+                    <div class="rela card" id="prod">
+                        <img class="card-img-top" src="~/images/chili.png" alt="Card image cap">               
+                          <p class="item">Chili Sauce</p>
+                          <p class="price">R 34.99</p>
+                          <button asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</button>
+                      </div>
+                </div>
+                <div class="col-lg-3 col">
+                    <div class="rela card" id="prod">
+                        <img class="card-img-top" src="~/images/olive.png" alt="Card image cap">
+                        <p class="item">Cold Pressed Pure Olive Oil</p>
+                        <p class="price">R 79.99</p>
+                        <button asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col">
+                    <div class="rela card" id="prod">
+                        <img class="card-img-top" src="~/images/honey.png" alt="Card image cap">
+                        <p class="item">Pure Farm Honey</p>
+                        <p class="price">R 74.99</p>
+                        <button asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col"> 
+                    <div class="rela card" id="prod">
+                      <img class="card-img-top" src="~/images/soap.png" alt="Card image cap">
+                      <p class="item">Handmade Pure Glycerin Soap</p>
+                      <p class="price">R 25.00</p>
+                      <button asp-area="" asp-controller="ProductCatalogue" asp-action="Item" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-cart2"></i>&nbsp;Add to cart</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+</div>

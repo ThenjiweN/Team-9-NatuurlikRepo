@@ -1,0 +1,85 @@
+﻿@model NatuurlikBase.Models.Country
+
+@{
+    ViewData["Title"] = "Create";
+ 
+}
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    <input asp-for="Id" hidden />
+
+
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #292b2c">
+                <h5>Add Country</h5>
+            </div>
+            <div class="card-body">
+      @*  <div asp-validation-summary="All"></div>*@
+        <div class="col-md-10">
+            <label asp-for="CountryName"> Name </label>
+            <input asp-for="CountryName" class="form-control "/>
+            <span asp-validation-for="CountryName" class="text-danger"></span>
+       
+
+        <br />
+       
+        <div>
+               <button type="submit" onclick="return ValidateInput()" class="btn btn-outline-dark" data-toggle="modal" style="width:150px;"> Create </button>            
+            <a asp-controller="Countries" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
+        </div>
+          </div>
+          </div>
+        </div>
+    </div> 
+ 
+       <div class="modal" id="exampleModal1" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <h6 class="col-md-10">
+                    Country Name Already Exist On The Database
+                </h6>
+
+                <div class="modal-footer border-0">
+                    <div class="form-actions no-color">
+                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "Countries")'" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+     }
+     
+
+    
+      @if (ViewBag.CountryError != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+    
+    
+    }

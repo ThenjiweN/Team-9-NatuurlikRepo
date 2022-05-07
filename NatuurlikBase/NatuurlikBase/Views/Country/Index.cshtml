@@ -1,0 +1,34 @@
+﻿<partial name="_Notification" />
+
+ <div class="container pt-3">
+     <div class="row pt-4">
+         <div class="col-6">
+             <h2 class="text-primary"> All Countries</h2>
+         </div>
+         <div class="col-6 text-end pb-3">
+             <a asp-controller="Country" asp-action="Upsert" class="btn btn-success">
+                 Create New Country &nbsp; <i class="bi bi-file-earmark-plus"></i>
+             </a>
+         </div>
+     </div>
+
+     
+
+
+<table class="table table-bordered table-striped" id="tblData" style="width:100%">
+    <thead>
+        <tr>
+            <th> Name </th>
+            <th> </th>
+        </tr>
+    </thead>
+    
+</table>
+ </div>
+
+ @section Scripts {
+     <script src="~/js/country.js"></script>
+ }
+
+
+

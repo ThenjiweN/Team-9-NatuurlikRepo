@@ -1,0 +1,68 @@
+﻿@model ProductBrand
+
+<form method="post">
+	
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #292b2c">
+                <h5>Add Product Brand</h5>
+            </div>
+            <div class="card-body">
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="mb-3">
+			<label asp-for="Name"></label>
+			<input asp-for="Name" class="form-control" />
+			<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+		
+		<button type="submit" class="btn btn-outline-dark" data-toggle="modal" style="width:150px">Create</button>
+		<a asp-controller="ProductBrand" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+	</div>
+     </div>
+        </div>
+	     <div class="modal" id="exampleModal1" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <h6 class="col-md-10">
+                   Product Brand already exist on the database
+                </h6>
+
+                <div class="modal-footer border-0">
+                    <div class="form-actions no-color">
+                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+	
+	 
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+}
+
