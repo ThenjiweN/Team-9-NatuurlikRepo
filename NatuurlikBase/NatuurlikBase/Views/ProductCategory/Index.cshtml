@@ -2,7 +2,14 @@
 @{
     ViewData["Title"] = "Index";
 }
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+        @TempData["success"]
 
+    </div>
+
+}
 
 <div class="container p-3">
     <div class="row pt-4">
@@ -17,14 +24,13 @@
 	</div>
     <br /><br />
 
-<table class="table table-bordered table-striped" style="width:100%">
+<table class="table" id="tblData" style="background-color: #232323">
     <thead>
         <tr>
-            <th>
+            <th class="text-light">
                 Category Name
 			</th>
-            
-            <th></th>
+             <th class="text-light">Action</th>
 		</tr>
 	</thead>
     <tbody>
@@ -49,3 +55,23 @@
 
 </table>
 </div>
+
+@section Scripts {
+     <script>
+          var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#tblData").DataTable({
+
+
+            });
+        })
+        $(document).ready(function () {
+            $("#success-alert").hide();
+            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+                $("#success-alert").slideUp(500);
+            });
+
+        });
+
+        </script>
+}

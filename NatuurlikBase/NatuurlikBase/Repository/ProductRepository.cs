@@ -25,6 +25,8 @@ namespace NatuurlikBase.Repository
                 objFromDb.ResellerPrice = obj.ResellerPrice;
                 objFromDb.CategoryId = obj.CategoryId;
                 objFromDb.ProductBrandId = obj.ProductBrandId;
+                objFromDb.QuantityOnHand = obj.QuantityOnHand;
+                objFromDb.DisplayProduct = obj.DisplayProduct;
                 if (obj.PictureUrl != null)
                 {
                     objFromDb.PictureUrl = obj.PictureUrl;

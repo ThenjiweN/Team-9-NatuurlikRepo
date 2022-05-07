@@ -1,9 +1,10 @@
 ﻿@model ProductCategory
 
 <form method="post">
+
 	<div class="border p-3 mt-4">
 		<div class="row pb-2">
-			<h2 class="text-primary">Create Product Category</h2>
+			<h2 class="text-primary">Add Product Category</h2>
 			<hr />
 		</div>
 		@*<div asp-validation-summary="All"></div>*@
@@ -14,15 +15,52 @@
 		</div>
 		
 		
-		<button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+		<button type="submit" class="btn btn-primary" data-toggle="modal" style="width:150px">Create</button>
 		<a asp-controller="ProductCategory" asp-action="Index" class="btn btn-secondary" style="width:150px">
-			Back to List
+			Cancel
 		</a>
 	</div>
+
+	 <div class="modal" id="exampleModal1" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <h6 class="col-md-10">
+                   Product Category already exists!
+                </h6>
+
+                <div class="modal-footer border-0">
+                    <div class="form-actions no-color">
+                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" 
+                        onclick="location.href='@Url.Action("Index", "ProductCategory")'"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </form>
 
 @section Scripts{
-	@{
-		<partial name="_ValidationScriptsPartial" />
-	}
+	
+	 
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
 }

@@ -1,11 +1,13 @@
 ﻿@model ProductCategory
 
 <form method="post" asp-action="Edit">
-	<div class="border p-3 mt-4">
-		<div class="row pb-2">
-			<h2 class="text-primary">Edit Product Category</h2>
-			<hr />
-		</div>
+	
+    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card">
+            <div class="card-header text-white" style="background-color: #292b2c">
+                <h5>Update Product Category</h5>
+            </div>
+            <div class="card-body">
 		@*<div asp-validation-summary="All"></div>*@
 		<div class="mb-3">
 			<label asp-for="Name"></label>
@@ -13,20 +15,69 @@
 			<span asp-validation-for="Name" class="text-danger"></span>
 		</div>
 		
-		<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
-		<a asp-controller="ProductCategory" asp-action="Index" class="btn btn-secondary" style="width:150px">
-			Back to List
+		<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+		<a asp-controller="ProductCategory" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
+			Cancel
 		</a>
 	</div>
+        </div>
+        </div>
+    
+	 <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Product Category Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header  border-0">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                      <h6 class="col-md-10">
+                    Product Category Already Exists!
+                </h6>
+
+                    <div class="modal-footer  border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"
+                            onclick="location.href='@Url.Action("Index", "ProductCategory")'"/>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </form>
 
 @section Scripts{
 	@{
 		<partial name="_ValidationScriptsPartial" />
-
 	}
-
-	  @if (ViewBag.CountryError != null)
+      @if (ViewBag.Error != null)
     {
         <script>
 
@@ -41,7 +92,7 @@
         </script>
     }
 
-    @if (ViewBag.CountryConfirmation != null)
+    @if (ViewBag.Confirmation != null)
     {
         <script>
 
@@ -55,3 +106,5 @@
         </script>
     }
 }
+
+

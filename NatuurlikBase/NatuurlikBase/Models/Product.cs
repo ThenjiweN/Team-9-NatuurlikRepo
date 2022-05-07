@@ -13,18 +13,23 @@ namespace NatuurlikBase.Models
         [MaxLength(255)]
         public string Description { get; set; }
 
-        [Required]
-        [Range(1, 10000)]
-        [Display(Name = "Customer Price")]
-        public double CustomerPrice { get; set; }
+        [Display(Name = "Quantity On Hand")]
+        public int QuantityOnHand { get; set; } = 0;
 
-        [Required]
         [Range(1, 10000)]
-        [Display(Name = "Reseller Price")]
-        public double ResellerPrice { get; set; }
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal CustomerPrice { get; set; }
+
+
+        [Range(1, 10000)]
+        [DataType(DataType.Currency)]
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal ResellerPrice { get; set; }
 
 
         [ValidateNever]
+        [Display(Name = "Product Image")]
         public string PictureUrl { get; set; }
 
         [Required]
@@ -39,5 +44,8 @@ namespace NatuurlikBase.Models
         public int ProductBrandId { get; set; }
         [ValidateNever]
         public ProductBrand Brand { get; set; }
+
+        [Display(Name = "Display Product")]
+        public string DisplayProduct { get; set; }
     }
 }

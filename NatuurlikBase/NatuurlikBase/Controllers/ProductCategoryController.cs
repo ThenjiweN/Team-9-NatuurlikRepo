@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NatuurlikBase.Data;
 using NatuurlikBase.Models;
 using NatuurlikBase.Repository.IRepository;
 
@@ -7,10 +8,12 @@ namespace NatuurlikBase.Controllers
     public class ProductCategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly DatabaseContext _db;
 
-        public ProductCategoryController(IUnitOfWork unitOfWork)
+        public ProductCategoryController(IUnitOfWork unitOfWork, DatabaseContext db)
         {
             _unitOfWork = unitOfWork;
+            _db = db;
         }
 
         public IActionResult Index()
@@ -32,10 +35,18 @@ namespace NatuurlikBase.Controllers
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Add(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "Category created successfully";
-                return RedirectToAction("Index");
+                if (_db.Categories.Any(c => c.Name.Equals(obj.Name)))
+                {
+                    ViewBag.Error = "Product Category Already Exists!";
+
+                }
+                else
+                {
+                    _unitOfWork.Category.Add(obj);
+                    _unitOfWork.Save();
+                    TempData["success"] = "Category created successfully";
+                    return RedirectToAction("Index");
+                }
             }
             return View(obj);
         }
@@ -67,10 +78,19 @@ namespace NatuurlikBase.Controllers
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(obj);
-                _unitOfWork.Save();
-                TempData["success"] = "Category updated successfully";
-                return RedirectToAction("Index");
+                if (_db.Categories.Any(c => c.Name.Equals(obj.Name)))
+                {
+                    ViewBag.Error = "Product Category Already Exists!";
+
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(obj);
+                    _unitOfWork.Save();
+                    TempData["success"] = "Category updated successfully";
+                    return RedirectToAction("Index");
+                }
+
             }
             return View(obj);
         }
@@ -104,6 +124,7 @@ namespace NatuurlikBase.Controllers
             }
 
             _unitOfWork.Category.Remove(obj);
+            ViewBag.Confirmation = "Are You Sure You Want To Delete This Category?.";
             _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");

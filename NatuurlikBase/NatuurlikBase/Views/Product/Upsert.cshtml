@@ -17,6 +17,12 @@
 			<input asp-for="Product.Name" class="form-control" />
 			<span asp-validation-for="Product.Name" class="text-danger"></span>
 		</div>
+
+		<div class="mb-3">
+			<label asp-for="Product.QuantityOnHand"></label>
+			<input asp-for="Product.QuantityOnHand" class="form-control" disabled />
+		</div>
+
 		<div class="mb-3">
 			<label asp-for="Product.Description"></label>
 			<textarea asp-for="Product.Description" rows="3" class="form-control"></textarea>
@@ -50,6 +56,15 @@
 			<label asp-for="Product.ProductBrandId"></label>
 			<select asp-for="Product.ProductBrandId" asp-items="@Model.CoverTypeList" class="form-select">
 				<option disabled selected>--Select Brand--</option>
+			</select>
+			<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
+		</div>
+		<div class="mb-3 col-6">
+			<label asp-for="Product.DisplayProduct"></label>
+			<select asp-for="Product.DisplayProduct" class="form-select">
+				<option disabled selected>--Select Display Options--</option>
+				<option> Yes </option>
+				<option> No </option>
 			</select>
 			<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
 		</div>
