@@ -1,4 +1,12 @@
-﻿<div class="container p-3">
+﻿@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+        @TempData["success"]
+
+    </div>
+
+}
+<div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
             <h2 class="text-primary">Products List</h2>
@@ -28,4 +36,15 @@
 
 @section Scripts{
     <script src="~/js/product.js"></script>
+     <script>
+      
+        $(document).ready(function () {
+            $("#success-alert").hide();
+            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+                $("#success-alert").slideUp(500);
+            });
+
+        });
+
+        </script>
 }
