@@ -71,11 +71,11 @@
 		<div class="col-12">
 			@if (Model.Product.Id != 0)
 			{
-				<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+				 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
 			}
 			else
 			{
-				<button type="submit" onclick="return ValidateInput()" class="btn btn-primary" style="width:150px">Create</button>
+				<button type="submit" data-toggle="modal" onclick="return ValidateInput()"  class="btn btn-dark" style="width:150px">Create</button>
 			}
 			<a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px">
 				Back to List
@@ -92,7 +92,54 @@
 
 	
 
+	 <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
 
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Prdouct Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header  border-0">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                      <h6 class="col-md-10">
+                   Product Already Exist On The Database
+                </h6>
+
+                    <div class="modal-footer  border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "Product")'" />
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
 
@@ -109,7 +156,7 @@
       toolbar_mode: 'floating',
    });
   
-	function ValidateInput(){
+	@*function ValidateInput(){
 		if(document.getElementById("uploadBox").value==""){
 			Swal.fire({
 			  icon: 'error',
@@ -119,7 +166,35 @@
 			return false;
 		}
 		return true;
-	}
+	}*@
 </script>
-}
+       @if (ViewBag.Error != null)
+    {
+        <script>
 
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    
+
+    @if (ViewBag.Confirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}
+}

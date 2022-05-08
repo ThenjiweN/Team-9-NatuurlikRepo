@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using NatuurlikBase.Data;
 using NatuurlikBase.Models.ViewModels;
 using NatuurlikBase.Repository.IRepository;
 
@@ -9,12 +11,13 @@ namespace NatuurlikBase.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _hostEnvironment;
+        private readonly DatabaseContext _context;
 
-
-        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment, DatabaseContext context)
         {
             _unitOfWork = unitOfWork;
             _hostEnvironment = hostEnvironment;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -66,40 +69,66 @@ namespace NatuurlikBase.Controllers
 
             if (ModelState.IsValid)
             {
-                string wwwRootPath = _hostEnvironment.WebRootPath;
-                if (file != null)
-                {
-                    string fileName = Guid.NewGuid().ToString();
-                    var uploads = Path.Combine(wwwRootPath, @"images\products");
-                    var extension = Path.GetExtension(file.FileName);
 
-                    if (obj.Product.PictureUrl != null)
+                if (_context.Products.Any(c => c.Name.Equals(obj.Product.Name)))
+               
                     {
-                        var oldImagePath = Path.Combine(wwwRootPath, obj.Product.PictureUrl.TrimStart('\\'));
-                        if (System.IO.File.Exists(oldImagePath))
+                        if (_context.Products.Any(b => b.CustomerPrice.Equals(obj.Product.CustomerPrice)))
                         {
-                            System.IO.File.Delete(oldImagePath);
+                            {
+                                if (_context.Products.Any(b => b.Description.Equals(obj.Product.Description)))
+                                {
+                                    if (_context.Products.Any(b => b.ResellerPrice.Equals(obj.Product.ResellerPrice)))
+                                    {
+                                        
+                                            
+                                            
+                                                ViewBag.Error = "Product Already Exist In The Database.";
+                                            
+                                        
+                                    }
+                                }
+                            }
                         }
-                    }
-
-                    using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                    
+                }
+                    else 
+                {
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    if (file != null)
                     {
-                        file.CopyTo(fileStreams);
-                    }
-                    obj.Product.PictureUrl = @"\images\products\" + fileName + extension;
+                        string fileName = Guid.NewGuid().ToString();
+                        var uploads = Path.Combine(wwwRootPath, @"images\products");
+                        var extension = Path.GetExtension(file.FileName);
 
+                        if (obj.Product.PictureUrl != null)
+                        {
+                            var oldImagePath = Path.Combine(wwwRootPath, obj.Product.PictureUrl.TrimStart('\\'));
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+
+                        using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                        {
+                            file.CopyTo(fileStreams);
+                        }
+                        obj.Product.PictureUrl = @"\images\products\" + fileName + extension;
+
+                    }
+                    if (obj.Product.Id == 0)
+                    {
+                        _unitOfWork.Product.Add(obj.Product);
+                    }
+                    else
+                    {
+                        _unitOfWork.Product.Update(obj.Product);
+                    }
+                    _unitOfWork.Save();
+                    TempData["success"] = "Product created successfully";
+                    return RedirectToAction("Index");
                 }
-                if (obj.Product.Id == 0)
-                {
-                    _unitOfWork.Product.Add(obj.Product);
-                }
-                else
-                {
-                    _unitOfWork.Product.Update(obj.Product);
-                }
-                _unitOfWork.Save();
-                TempData["success"] = "Product created successfully";
-                return RedirectToAction("Index");
             }
             return View(obj);
         }
@@ -114,8 +143,7 @@ namespace NatuurlikBase.Controllers
             return Json(new { data = productList });
         }
 
-        //POST
-        [HttpDelete]
+
         public IActionResult Delete(int? id)
         {
             var obj = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
@@ -131,7 +159,11 @@ namespace NatuurlikBase.Controllers
             }
 
             _unitOfWork.Product.Remove(obj);
+       
             _unitOfWork.Save();
+            //keeps callling Product Created successfully not deleted...
+           // TempData["success"] = "Product Deleted successfully";
+
             return Json(new { success = true, message = "Delete Successful" });
 
         }
