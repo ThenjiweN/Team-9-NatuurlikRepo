@@ -2,12 +2,13 @@
 
 @{
     ViewData["Title"] = "Create";
-
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="shadow-lg p-3 mb-5 bg-white rounded">
+<div id="page-content-wrapper">
+<div>
         <div class="card">
-            <div class="card-header text-white" style="background-color: #292b2c">
+            <div class="card-header" style="background-color: #F2F2F2">
                 <h5>Add City</h5>
             </div>
             <div class="card-body">
@@ -25,7 +26,7 @@
                       <label asp-for="ProvinceId" class="control-label"></label>
                 <select asp-for="ProvinceId" class ="form-control" asp-items="ViewBag.ProvinceId"></select>}
             </div>
-           <button type="submit" class="btn btn-outline-dark" data-toggle="modal" style="width:150px">Create</button>
+           <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
 		<a asp-controller="Cities" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
 			Cancel
 		</a>
@@ -39,7 +40,7 @@
 
                 </div>
                 <h6 class="col-md-10">
-                   City Already Exist On The Database
+                   City Already Exists
                 </h6>
 
                 <div class="modal-footer border-0">
@@ -57,7 +58,7 @@
 </div>
 </div>
      </div>
-     
+</div>     
 
 @section Scripts{
 	

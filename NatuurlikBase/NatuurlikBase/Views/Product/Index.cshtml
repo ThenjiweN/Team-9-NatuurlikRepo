@@ -1,4 +1,10 @@
-﻿@if (TempData["success"] != null)
+﻿
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+@if (TempData["success"] != null)
 {
     <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
         @TempData["success"]
@@ -6,33 +12,35 @@
     </div>
 
 }
-<div class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2 class="text-primary">Products List</h2>
-		</div>
-        <div class="col-6 text-end">
-            <a asp-controller="Product" asp-action="Upsert" class="btn btn-primary">
-               <i class="bi bi-plus-circle"></i> &nbsp; Create New Product
-			</a>
-		</div>
-	</div>
-    <br /><br />
+ <div class="container-fluid">
+     <div class="row justify-content-start">
+            <div class="col-10 col-sm-10 col-md-10">
+                    <h2 class="cheading">Products List</h2>
+		        </div>
+                <div class="col-md-9 col-lg-8">
+                    <a asp-controller="Product" asp-action="Upsert" class="btn btn-success">
+                       <i class="bi bi-plus-circle"></i> &nbsp; Create New Product
+			        </a>
+		        </div>
+	        </div>
+            <br /><br />
 
-<table  id="tblData"  class="table table-bordered table-striped" style="width:100%">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Customer Price</th>
-            <th>Reseller Price</th>
-            <th>Category</th>
-            <th>Brand</th>
-            <th></th>
-		</tr>
-	</thead>
-</table>
+        <table class="table"  id="tblData"  style="background-color: #232323">
+            <thead>
+                <tr>
+                    <th class="text-light">Name</th>
+                    <th class="text-light">Description</th>
+                    <th class="text-light">Customer Price</th>
+                    <th class="text-light">Reseller Price</th>
+                    <th class="text-light">Category</th>
+                    <th class="text-light">Brand</th>
+                    <th class="text-light">Action</th>
+		        </tr>
+	        </thead>
+        </table>
+    </div>
 </div>
+
 
 @section Scripts{
     <script src="~/js/product.js"></script>

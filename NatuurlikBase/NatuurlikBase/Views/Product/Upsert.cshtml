@@ -1,90 +1,105 @@
 ﻿@model NatuurlikBase.Models.ViewModels.ProductVM
 
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
 <form method="post" asp-action="Upsert" enctype="multipart/form-data">
 	<input asp-for="Product.Id" hidden />
 	<input asp-for="Product.PictureUrl" hidden />
 
 	<div class="row">
 		<div class="col-10">
-			<div class="border p-3 mt-4 row">
-		<div class="col-12 pb-2">
-			<h2 class="text-primary">@(Model.Product.Id!=0?"Update": "Create")  Product</h2>
-			<hr />
+			<div class="card">
+		<div class="card-header" style="background-color: #F2F2F2">
+			<h5>@(Model.Product.Id!=0?"Update": "Create")  Product</h5>
 		</div>
+		<div class="card-body">
 		@*<div asp-validation-summary="All"></div>*@
-		<div class="mb-3">
+		<div class="col">
 			<label asp-for="Product.Name"></label>
 			<input asp-for="Product.Name" class="form-control" />
 			<span asp-validation-for="Product.Name" class="text-danger"></span>
 		</div>
-
-		<div class="mb-3">
+		<br />
+		<div class="col">
 			<label asp-for="Product.QuantityOnHand"></label>
 			<input asp-for="Product.QuantityOnHand" class="form-control" disabled />
 		</div>
-
-		<div class="mb-3">
+		<br />
+		<div class="col">
 			<label asp-for="Product.Description"></label>
 			<textarea asp-for="Product.Description" rows="3" class="form-control"></textarea>
 			<span asp-validation-for="Product.Description" class="text-danger"></span>
 		</div>
-		<div class="mb-3 col-6">
-			<label asp-for="Product.CustomerPrice"></label>
-			<input asp-for="Product.CustomerPrice" class="form-control" />
-			<span asp-validation-for="Product.CustomerPrice" class="text-danger"></span>
-		</div>
-		<div class="mb-3 col-6">
-			<label asp-for="Product.ResellerPrice"></label>
-			<input asp-for="Product.ResellerPrice" class="form-control" />
-			<span asp-validation-for="Product.ResellerPrice" class="text-danger"></span>
-		</div>
-		
-		<div class="mb-3">
-			<label asp-for="Product.PictureUrl"></label>
-			<input type="file" id="uploadBox" name="file" class="form-control" />
-		</div>
+		<br />
+		<div class="row col">
+			<div class="col-6 col">
+				<label asp-for="Product.CustomerPrice"></label>
+				<input asp-for="Product.CustomerPrice" class="form-control" />
+				<span asp-validation-for="Product.CustomerPrice" class="text-danger"></span>
+			</div>
 
-		<div class="mb-3 col-6">
-			<label asp-for="Product.CategoryId"></label>
-			<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
-				<option disabled selected>--Select Category--</option>
-			</select>
-			<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+			<div class="col-6 col">
+				<label asp-for="Product.ResellerPrice"></label>
+				<input asp-for="Product.ResellerPrice" class="form-control" />
+				<span asp-validation-for="Product.ResellerPrice" class="text-danger"></span>
+			</div>
 		</div>
-
-		<div class="mb-3 col-6">
-			<label asp-for="Product.ProductBrandId"></label>
-			<select asp-for="Product.ProductBrandId" asp-items="@Model.CoverTypeList" class="form-select">
-				<option disabled selected>--Select Brand--</option>
-			</select>
-			<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
+		<br />
+		<div class="row col">
+			<div class="col-6 col">
+				<label asp-for="Product.CategoryId"></label>
+				<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-control">
+					<option disabled selected>--Select Category--</option>
+				</select>
+				<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+			</div>
+			<div class="col-6 col">
+				<label asp-for="Product.ProductBrandId"></label>
+				<select asp-for="Product.ProductBrandId" asp-items="@Model.CoverTypeList" class="form-control">
+					<option disabled selected>--Select Brand--</option>
+				</select>
+				<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
+			</div>
 		</div>
-		<div class="mb-3 col-6">
+		<br />
+		<div class="row col">
+			<div class="col-6 col">
+				<label asp-for="Product.PictureUrl"></label>
+				<input type="file" id="uploadBox" name="file" class="form-control" />
+			</div>
+		</div>
+		<br />
+		<div class="col-4  col">
 			<label asp-for="Product.DisplayProduct"></label>
-			<select asp-for="Product.DisplayProduct" class="form-select">
+			<select asp-for="Product.DisplayProduct" class="form-control">
 				<option disabled selected>--Select Display Options--</option>
 				<option> Yes </option>
 				<option> No </option>
 			</select>
 			<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
 		</div>
+		<br />
+		<br />
 		<div class="col-12">
 			@if (Model.Product.Id != 0)
 			{
-				 <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+				 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
 			}
 			else
 			{
-				<button type="submit" data-toggle="modal" onclick="return ValidateInput()"  class="btn btn-dark" style="width:150px">Create</button>
+				<button type="submit" data-toggle="modal" onclick="return ValidateInput()"  class="btn btn-success" style="width:150px">Create</button>
 			}
-			<a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			<a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
 				Back to List
 			</a>
 		</div>
-
+		</div>
 	</div>
 		</div>
-		<div class="col-2 pt-4">
+		<div class="col-2">
 			<img src="@Model.Product.PictureUrl"
 			width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
 		</div>
@@ -109,7 +124,7 @@
 
                     <div class="modal-footer border-0">
                         <div class="form-actions no-color">
-                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
                             <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
                         </div>
                     </div>
@@ -127,7 +142,7 @@
 
                     </div>
                       <h6 class="col-md-10">
-                   Product Already Exist On The Database
+                   Product Already Exists
                 </h6>
 
                     <div class="modal-footer  border-0">
@@ -140,10 +155,8 @@
                 </div>
             </div>
         </div>
-
-
-
 </form>
+</div>
 
 @section Scripts{
 	@{

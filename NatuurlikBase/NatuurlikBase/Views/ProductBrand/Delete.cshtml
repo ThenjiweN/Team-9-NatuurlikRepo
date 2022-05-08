@@ -1,28 +1,29 @@
 ﻿@model ProductBrand
 
-<div class="shadow-lg p-3 mb-5 bg-white rounded">
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";    
+}
+
+<div id="page-content-wrapper">
+<div>
             <div class="card">
-                <div class="card-header text-white" style="background-color: #292b2c">
+                <div class="card-header" style="background-color: #F2F2F2">
                     <h5>Delete Product Brand Details</h5>
                 </div>
 <div>
     
      <div class="card-body">
-    <dl class="row">
-        <dt class = "col-sm-1">
-            @Html.DisplayNameFor(model => model.Name) :
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-    </dl>
-    
-   
-       <button type="submit"  class="btn btn-outline-dark" data-toggle="modal" style="width:150px;" data-target="#exampleModal"> Delete </button>
-            
-            <a asp-controller="ProductBrand" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
- 
+        <div class="deldetails">
+            <div class="col">
+                <label> <strong>Brand :</strong>  @Html.DisplayFor(model => model.Name)</label> 
+            </div>             
+        </div>
+            <div class="col">
+               <button type="submit"  class="btn btn-danger" data-toggle="modal" style="width:150px;" data-target="#exampleModal"> Delete </button>            
+               <a asp-controller="ProductBrand" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
+            </div>
 </div>
+
        </div>
                 </div>
             </div>
@@ -43,18 +44,23 @@
 
                     <div class="modal-footer border-0">
                          <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="Id" />
                         <div class="form-actions no-color">
-                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
+                            <input type="submit" value="Confirm" class="btn btn-danger" style="width:150px;"/> 
                             <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
                         </div>
                               
-    </form>
+                    </form>
                     </div>
 
                 </div>
             </div>
         </div>
+
+</div>
+
+
+
  @section scripts{
    
     @if (ViewBag.Confirmation != null)

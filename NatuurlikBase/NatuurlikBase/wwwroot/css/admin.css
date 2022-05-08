@@ -1,4 +1,14 @@
 ﻿
+#alogout:hover {
+    background-color: black;
+    color: #3BDD74;
+}
+
+.log:hover {
+    background-color: black;
+    color: #3BDD74;
+}
+
 .one {
     color: white;
     margin-top: 10px;
@@ -134,11 +144,15 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding-top: 15px;
-    padding-bottom: 7px;
     background-color: black;
     color: white;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+.sidebar-header {
+    padding-top: 15px;
+    padding-bottom: 7px;
+    height: 54px;
 }
 
 
@@ -154,13 +168,14 @@ a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 15px;
+    font-size: 14px;
     display: block;
-    font-family: Montserrat-Light;
+    font-family: Montserrat-Medium;
+    padding-left: 15px;
 }
 
     #sidebar ul li a:hover {
-        color: black;
+        color: #3BDD74;
         background: #F2F2F2;
     }
 
@@ -202,12 +217,12 @@ ul.CTAs {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #3BDD74;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #3BDD74 !important;
     color: #fff !important;
 }
 
@@ -215,8 +230,8 @@ a.article:hover {
     color: white;
 }
 
-.nav-link{
-    color:white;
+.nav-link {
+    color: white;
 }
 
 

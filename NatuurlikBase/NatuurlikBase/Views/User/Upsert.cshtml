@@ -1,47 +1,57 @@
 ﻿@model NatuurlikBase.ViewModels.UserVM
 
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+<div class="card">
 <form method="post" asp-action="Upsert" enctype="multipart/form-data">
     <input asp-for="User.Id" hidden />
-
-
-    <div class="col-10">
-         <div class="border p-3 mt-4">
-        <div class="col-12 pb-2">
-            <h2 class="text-primary">Update User Details</h2>
-            <hr />
+        <div class="card-header" style="background-color: #F2F2F2">
+            <h5>Update User Details</h5>
         </div>
       @*  <div asp-validation-summary="All"></div>*@
-        <div class="mb-3">
+      <div class="card-body">
+
+        <div class="row">
+        <div class="col-md-6">
             <label asp-for="User.FirstName"> First Name </label>
             <input asp-for="User.FirstName" class="form-control" />
             <span asp-validation-for="User.FirstName" class="text-danger"></span>
         </div>
 
-            <div class="mb-3">
+        <div class="col-md-6">
             <label asp-for="User.Surname"> Surname </label>
             <input asp-for="User.Surname" class="form-control" />
             <span asp-validation-for="User.Surname" class="text-danger"></span>
             </div>
+        </div>
 
-          <div class="mb-3">
-            <label asp-for="User.Email"> Email Address </label>
-            <input asp-for="User.Email" class="form-control" disabled />
-            <span asp-validation-for="User.Email" class="text-danger"></span>
-            </div>
 
-           <div class="mb-3">
-            <label asp-for="User.PhoneNumber"> Phone Number </label>
-            <input asp-for="User.PhoneNumber" class="form-control" />
-            <span asp-validation-for="User.PhoneNumber" class="text-danger"></span>
-            </div>
+          <div class="row">
+               <div class="col-md-6">
+                <label asp-for="User.PhoneNumber"> Phone Number </label>
+                <input asp-for="User.PhoneNumber" class="form-control" />
+                <span asp-validation-for="User.PhoneNumber" class="text-danger"></span>
+                </div>
+              <div class="col-md-6">
+                <label asp-for="User.Email"> Email Address </label>
+                <input asp-for="User.Email" class="form-control" disabled />
+                <span asp-validation-for="User.Email" class="text-danger"></span>
+                </div>
+          </div>  
 
-            <div class="mb-3">
-            <label asp-for="User.StreetAddress"> Street Address </label>
-            <input asp-for="User.StreetAddress" class="form-control" />
-            <span asp-validation-for="User.StreetAddress" class="text-danger"></span>
-            </div>
+          <div class="row">
+                <div class="col-md-6">
+                <label asp-for="User.StreetAddress"> Street Address </label>
+                <input asp-for="User.StreetAddress" class="form-control" />
+                <span asp-validation-for="User.StreetAddress" class="text-danger"></span>
+                </div>
+          </div>
 
-            <div class="mb-3 col-6">
+
+            <div class="col-3">
 			<label asp-for="User.CountryId">Country: </label>
 			<select asp-for="User.CountryId" asp-items="@Model.CountryList" class="form-select">
 				<option disabled selected>--Select Country--</option>
@@ -49,7 +59,7 @@
 			<span asp-validation-for="User.CountryId" class="text-danger"></span>
 		</div>
 
-		<div class="mb-3 col-6">
+		<div class="col-3">
 			<label asp-for="User.ProvinceId"> Province: </label>
 			<select asp-for="User.ProvinceId" asp-items="@Model.ProvinceForCountryList" class="form-select">
 				<option disabled selected>--Select Province--</option>
@@ -57,7 +67,7 @@
 			<span asp-validation-for="User.ProvinceId" class="text-danger"></span>
 		</div>
 
-        <div class="mb-3 col-6">
+        <div class="col-3">
 			<label asp-for="User.CityId">City: </label>
 			<select asp-for="User.CityId" asp-items="@Model.CityForProvinceList" class="form-select">
 				<option disabled selected>--Select City--</option>
@@ -65,7 +75,7 @@
 			<span asp-validation-for="User.CityId" class="text-danger"></span>
 		</div>
 
-        <div class="mb-3 col-6">
+        <div class="col-3">
 			<label asp-for="User.SuburbId">Suburb: </label>
 			<select asp-for="User.SuburbId" asp-items="@Model.SuburbForCityList" class="form-select">
 				<option disabled selected>--Select Suburb--</option>
@@ -91,10 +101,11 @@
         
        
 
-    </div>
-   
+    
+</div>  
 </form>
-
+</div>
+</div>
 @section Scripts{
     @{
         <partial name="_ValidationScriptsPartial" />

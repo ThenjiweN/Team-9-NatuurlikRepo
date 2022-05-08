@@ -2,56 +2,58 @@
 
 @{
     ViewData["Title"] = "Create";
- 
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form method="post">
-	
-    <div class="shadow-lg p-3 mb-5 bg-white rounded">
-        <div class="card">
-            <div class="card-header text-white" style="background-color: #292b2c">
-                <h5>Add Return Reason</h5>
-            </div>
-            <div class="card-body">
-		@*<div asp-validation-summary="All"></div>*@
-		<div class="mb-3">
-			<label asp-for="ReturnReasonName"></label>
-			<input asp-for="ReturnReasonName" class="form-control" />
-			<span asp-validation-for="ReturnReasonName" class="text-danger"></span>
-		</div>
-		
-		<button type="submit" class="btn btn-outline-dark" data-toggle="modal" style="width:150px">Create</button>
-		<a asp-controller="ReturnReason" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
-			Cancel
-		</a>
-	</div>
-     </div>
-        </div>
-	     <div class="modal" id="exampleModal1" >
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-
+<div id="page-content-wrapper">
+    <form method="post">	
+        <div>
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Add Return Reason</h5>
                 </div>
-                <h6 class="col-md-10">
-                   Return Reason Already Exist On The Database
-                </h6>
-
-                <div class="modal-footer border-0">
-                    <div class="form-actions no-color">
-                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "ReturnReason")'" />
+                <div class="card-body">
+		    @*<div asp-validation-summary="All"></div>*@
+		    <div class="col-md-10">
+			    <label asp-for="ReturnReasonName"></label>
+			    <input asp-for="ReturnReasonName" class="form-control" />
+			    <span asp-validation-for="ReturnReasonName" class="text-danger"></span>
+            <br />
+            <div>
+		        <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
+		        <a asp-controller="ReturnReason" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			        Cancel
+		        </a>
+            </div>	
+            </div>
+	    </div>
+         </div>
+            </div>
+	         <div class="modal" id="exampleModal1" >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
 
                     </div>
-                </div>
+                    <h6 class="col-md-10">
+                       Return Reason Already Exists
+                    </h6>
 
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "ReturnReason")'" />
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-</form>
-
+    </form>
+</div>
 @section Scripts{
 	
 	 

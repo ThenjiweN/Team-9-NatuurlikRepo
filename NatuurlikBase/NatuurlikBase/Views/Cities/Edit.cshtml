@@ -2,91 +2,92 @@
 
 @{
     ViewData["Title"] = "Edit";
-   
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";  
 }
 
-<form asp-action="Edit">
+<div id="page-content-wrapper">
+    <form asp-action="Edit">
 	
-    <div class="shadow-lg p-3 mb-5 bg-white rounded">
-        <div class="card">
-            <div class="card-header text-white" style="background-color: #292b2c">
-                <h5>Update City</h5>
-            </div>
-            <div class="card-body">
-		@*<div asp-validation-summary="All"></div>*@
-		     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="CityName" class="control-label"></label>
-                <input asp-for="CityName" class="form-control" />
-                <span asp-validation-for="CityName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                @if(ViewBag.Error==null){
-                <label asp-for="ProvinceId" class="control-label">Country Name</label>
-                <select asp-for="ProvinceId" class="form-control" asp-items="ViewBag.ProvinceId"></select>
-                <span asp-validation-for="ProvinceId" class="text-danger"></span>
-                }
-            </div>
+        <div>
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Update City</h5>
+                </div>
+                <div class="card-body">
+		    @*<div asp-validation-summary="All"></div>*@
+		         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="CityName" class="control-label"></label>
+                    <input asp-for="CityName" class="form-control" />
+                    <span asp-validation-for="CityName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    @if(ViewBag.Error==null){
+                    <label asp-for="ProvinceId" class="control-label">Country Name</label>
+                    <select asp-for="ProvinceId" class="form-control" asp-items="ViewBag.ProvinceId"></select>
+                    <span asp-validation-for="ProvinceId" class="text-danger"></span>
+                    }
+                </div>
 		
-		<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
-		<a asp-controller="Cities" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
-			Cancel
-		</a>
-	</div>
-        </div>
-        </div>
+		    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+		    <a asp-controller="Cities" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
+			    Cancel
+		    </a>
+	    </div>
+            </div>
+            </div>
     
-	 <div class="modal fade" id="exampleModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header border-0">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+	     <div class="modal fade" id="exampleModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="col-md-10"> 
+                           Confirm City Details
+                        </h6>
+                        </div>
+
+                        <div class="modal-footer border-0">
+                            <div class="form-actions no-color">
+                                <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                                <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="modal-body">
-                        <h6 class="col-md-10"> 
-                       Confirm City Details
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header  border-0">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+                        </div>
+                          <h6 class="col-md-10">
+                       City Already Exists
                     </h6>
-                    </div>
 
-                    <div class="modal-footer border-0">
-                        <div class="form-actions no-color">
-                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
-                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        <div class="modal-footer  border-0">
+                            <div class="form-actions no-color">
+                                <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "Cities")'" />
+
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="exampleModal1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header  border-0">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-
-                    </div>
-                      <h6 class="col-md-10">
-                   City Already Exist On The Database
-                </h6>
-
-                    <div class="modal-footer  border-0">
-                        <div class="form-actions no-color">
-                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "Cities")'" />
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-</form>
-
+    </form>
+</div>
 @section Scripts{
 	@{
 		<partial name="_ValidationScriptsPartial" />

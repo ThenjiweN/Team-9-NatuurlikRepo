@@ -6,6 +6,9 @@
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="~/css/crud.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
@@ -25,14 +28,15 @@
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h5>N a t u u r l i k</h5>
+                <img src="~/images/whitel.png" height="30">
             </div>
             <ul class="list-unstyled components">
+
                 <li>
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Teas" asp-action="Index"><i class="bi bi-house-door-fill"></i> &nbsp;Tea</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-house-door-fill">&nbsp;</i> Store</a>
                 </li>
                 <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-chat-dots-fill">&nbsp;</i> Blogs</a>
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-chat-dots-fill">&nbsp;</i> Blogs</a>
                 </li>
                 <li>
                     <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-cart-fill">&nbsp;</i> Products</a>
@@ -52,7 +56,7 @@
                     <a href="#orderSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bag-fill">&nbsp;</i> Orders</a>
                     <ul class="collapse list-unstyled" id="orderSubmenu">
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Orders</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders</a>
                         </li>
                         <li>
                             <a asp-area="" asp-controller="ReturnReason" asp-action="Index">Return Reasons</a>
@@ -63,13 +67,13 @@
                     <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bar-chart-fill">&nbsp;</i> Inventory</a>
                     <ul class="collapse list-unstyled" id="inventorySubmenu">
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Inventory Items</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Items</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Inventory Types</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Types</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Inventory Levels</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Levels</a>
                         </li>
                     </ul>
                 </li>
@@ -86,7 +90,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Province" asp-action="Index"> Provinces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Countries" asp-action="Index">Country</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Countries" asp-action="Index">Countries</a>
                         </li>
                     </ul>
                 </li>
@@ -94,19 +98,19 @@
                     <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-card-list"> &nbsp;</i>Reports</a>
                     <ul class="collapse list-unstyled" id="reportSubmenu">
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Sales Report</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Sales Report</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Product Report</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Product Report</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Customer Report</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Customer Report</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Inventory Report</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Report</a>
                         </li>
                         <li>
-                            <a asp-area="" asp-controller="Home" asp-action="Index">Orders Report</a>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders Report</a>
                         </li>
                     </ul>
                 </li>
@@ -116,7 +120,7 @@
                     <a asp-area="Admin" asp-controller="User" asp-action="Index"><i class="bi bi-person-fill">&nbsp;</i> Users</a>
                 </li>
                 <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-question-circle">&nbsp;</i> Help</a>
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-question-circle">&nbsp;</i> Help</a>
                 </li>
             </ul>
         </nav>
@@ -127,14 +131,10 @@
                     <div class="one">N a t u u r l i k</div>
                 </h5>
                 <ul class="nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Hello, </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" id="logout">Log Out</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Client</a>
+                    <li class="nav-item">
+                        <form id="logoutForm" class="form-inline log" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button id="alogout" type="submit" class="nav-link btn btn-link">LOGOUT</button>
+                        </form>
                     </li>
                 </ul>
             </nav>
@@ -214,6 +214,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
