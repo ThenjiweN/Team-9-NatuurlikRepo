@@ -61,7 +61,7 @@ namespace NatuurlikBase.Controllers
                 {
                     ViewBag.ReturnError = "Return reason Already exist in the database.";
 
-                    TempData["AlertMessages"] = "Return reason Already exist in the database.";
+                 
                 }
                 else
                 {

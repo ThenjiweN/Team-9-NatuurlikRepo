@@ -75,7 +75,7 @@
 
                     <div class="modal-footer  border-0">
                         <div class="form-actions no-color">
-                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"  onclick="location.href='@Url.Action("Index", "Province")'"/>
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"  onclick="location.href='@Url.Action("Index", "ReturnReason")'"/>
 
                         </div>
                     </div>
@@ -89,7 +89,7 @@
 @section Scripts {
   
 
-     @if (ViewBag.CountryError != null)
+     @if (ViewBag.ReturnError != null)
     {
         <script>
 
