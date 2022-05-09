@@ -98,7 +98,7 @@ namespace NatuurlikBase.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var objList = _unitOfWork.User.GetAll(includeProperties: "Country,Province,City,Suburb");
+            var objList = _unitOfWork.User.GetAll(includeProperties: "");
             return Json(new {data = objList });
         }
         [HttpDelete]

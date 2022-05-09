@@ -1,4 +1,6 @@
-﻿var dataTable;
+﻿
+
+var dataTable;
 
 $(document).ready(function () {
     loadDataTable();
@@ -36,13 +38,12 @@ function loadDataTable() {
 
 function Delete(url) {
     Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
+        title: '',
+        text: "Are ypu sure you want to delete this?",
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Confirm'
     }).then((result) => {
         if (result.isConfirmed) {
             $.ajax({

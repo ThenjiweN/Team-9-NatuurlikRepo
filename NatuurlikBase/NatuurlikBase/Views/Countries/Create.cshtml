@@ -2,17 +2,19 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
  
 }
 
+<div id="page-content-wrapper">
 <form method="post" asp-action="Create" enctype="multipart/form-data">
     <input asp-for="Id" hidden />
 
 
-    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+    <div>
         <div class="card">
-            <div class="card-header text-white" style="background-color: #292b2c">
-                <h5>Add Country</h5>
+            <div class="card-header" style="background-color: #F2F2F2">
+                <h5>Country</h5>
             </div>
             <div class="card-body">
       @*  <div asp-validation-summary="All"></div>*@
@@ -25,7 +27,7 @@
         <br />
        
         <div>
-               <button type="submit" onclick="return ValidateInput()" class="btn btn-outline-dark" data-toggle="modal" style="width:150px;"> Create </button>            
+               <button type="submit" onclick="return ValidateInput()" class="btn btn btn-success" data-toggle="modal" style="width:150px;"> Create </button>            
             <a asp-controller="Countries" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
         </div>
           </div>
@@ -43,43 +45,32 @@
 
                 </div>
                 <h6 class="col-md-10">
-                    Country Name Already Exist On The Database
+                    Country Name Already Exists
                 </h6>
 
                 <div class="modal-footer border-0">
                     <div class="form-actions no-color">
                         <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "Countries")'" />
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 </form>
+</div>
+
 
 @section Scripts{
     @{
         <partial name="_ValidationScriptsPartial" />
-     }
-     
-
-    
+     }       
       @if (ViewBag.CountryError != null)
     {
         <script>
 
-
-
             $(function () {
                 $("#exampleModal1").modal("show");
             });
-
-
-        </script>
-    
-    }
-    
-    
-    }
+        </script>   
+    }        
+}

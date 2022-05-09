@@ -117,17 +117,44 @@ namespace NatuurlikBase.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
-            if (obj == null)
+            
+            ViewBag.CountryConfirmation = "Are you sure you want to delete this Product Category?";
+
+            var hasFk = _unitOfWork.Product.GetAll().Any(x => x.CategoryId == id);
+
+            if (!hasFk)
             {
-                return NotFound();
+                var category = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+                if (category == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                _unitOfWork.Category.Remove(category);
+                _unitOfWork.Save();
+                TempData["success"] = "Product Category Successfully Deleted.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["success"] = "Product Category cannot be deleted since it is associated to a product";
+                return RedirectToAction("Index");
             }
 
-            _unitOfWork.Category.Remove(obj);
-            ViewBag.Confirmation = "Are You Sure You Want To Delete This Category?.";
-            _unitOfWork.Save();
-            TempData["success"] = "Category deleted successfully";
-            return RedirectToAction("Index");
+
+
+
+
+            //var obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            //if (obj == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //_unitOfWork.Category.Remove(obj);
+            //ViewBag.Confirmation = "Are You Sure You Want To Delete This Category?.";
+            //_unitOfWork.Save();
+            //TempData["success"] = "Category deleted successfully";
+            //return RedirectToAction("Index");
 
         }
     }

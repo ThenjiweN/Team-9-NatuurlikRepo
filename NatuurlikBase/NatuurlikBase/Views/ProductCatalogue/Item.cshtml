@@ -1,34 +1,34 @@
-﻿@section catalogue {
+﻿@model Cart
+
+
+@section catalogue {
     <link href="@Url.Content("~/css/catalogue.css")" rel="stylesheet" type="text/css" />
 }
 
 <div class="container">
     <div class="itemspace row justify-content-center">
         <div class="col-lg-6 left">
-            <img class="prodimg" src="~/images/chili.png">
+            <img class="prodimg" src="@Model.Product.PictureUrl">
         </div>
         <div class="col-lg-6">
-            <h2 class="itemTitle">Chili Sauce</h2>
-            <h3><strong>R150.00</strong> </h3> 
+            <h2 class="itemTitle">@Model.Product.Name</h2>
+            <h3><strong>R @Model.Product.CustomerPrice.ToString("0.00")</strong> </h3> 
             <p id="itemdesc">
-                Lorem ipsum dolor sit amet, consecte1tur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consecte1tur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consecte1tur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               @Model.Product.Description
             </p>
             
             <div class="row">
                 <div class="col-4">
-                    <button class="btn btn-primary btn-block" id="itembtn">Add</button>
+                    <a asp-area="" asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-primary btn-block" id="itembtn">Back</a>
                 </div>
                 <div class="col-5">
-                    <button asp-area="" asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-primary btn-block" id="itembtn">Add to Cart</button>
+                    <button href="#" class="btn btn-primary btn-block" id="itembtn">Add to Cart</button>
                 </div>
             </div>
-            <h6>Categories</h6>
-            <p id="itemcat">Sauce</p>
+            <h6>Category</h6>
+            <p id="itemcat">@Model.Product.Category.Name</p>
+             <h6>By</h6>
+            <p id="itemcat">@Model.Product.Brand.Name</p>
         </div>       
     </div>
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Source\\Repos\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {}
+    "C:\\Users\\User\\Documents\\370\\inf370\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Source\\Repos\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {
+    "C:\\Users\\User\\Documents\\370\\inf370\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\370\\inf370\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
         "projectName": "NatuurlikBase",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\370\\inf370\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\370\\inf370\\NatuurlikBase\\NatuurlikBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,10 @@
 ﻿@model IEnumerable<Province>
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
 @if (TempData["success"] != null)
 {
     <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
@@ -8,17 +14,20 @@
 
 }
 
-<div class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2>Province List</h2>
+
+
+ <div class="container-fluid">
+     <div class="row justify-content-start">
+            <div class="col-10 col-sm-10 col-md-10">
+            <h2 class="cheading">Provinces List</h2>
 		</div>
-        <div class="col-6 text-end">
+        <div class="col-md-9 col-lg-8">
             <a asp-controller="Province" asp-action="Create" class="btn btn-success">
-               <i class="bi bi-plus-circle"></i> &nbsp; Create New Product Brand
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Province
 			</a>
 		</div>
 	</div>
+
     <br /><br />
 
 <table class="table" id="tblData" style="background-color: #232323">
@@ -27,6 +36,9 @@
             <th class="text-light">
                 Province Name
 			</th>
+            <th class="text-light">
+                Country Name
+            </th>
             <th class="text-light">Action</th>
 		</tr>
 	</thead>
@@ -37,12 +49,15 @@
                 <td width="50%">
                     @obj.ProvinceName
 				</td>
+                <td width="50%">
+                    @obj.Country.CountryName
+				</td>
                 <td>
-                    <div class="w-75 btn-group" role="group">
+                    <div class= "btn-group" role="group">
                         <a asp-action="Edit" asp-route-id="@obj.Id"
-                        class="btn btn btn-outline-dark mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        class="btn btn-sm editbtn"> <i class="bi bi-pencil-square"></i>&nbsp; Edit</a>
                         <a asp-action="Delete" asp-route-id="@obj.Id"
-                        class="btn btn btn-outline-dark mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+                        class="btn btn-sm deletebtn"> <i class="bi bi-trash-fill"></i>&nbsp; Delete</a>
 					</div>
 				</td>
 			</tr>
@@ -51,7 +66,7 @@
 
 </table>
 </div>
-
+</div>
 @section Scripts {
      <script>
           var dataTable;
@@ -63,7 +78,7 @@
         })
         $(document).ready(function () {
             $("#success-alert").hide();
-            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+            $("#success-alert").fadeTo(5000, 500).slideUp(500, function () {
                 $("#success-alert").slideUp(500);
             });
 

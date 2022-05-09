@@ -8,10 +8,64 @@
     position: absolute;
     top: 0;
     right: 0;
+    padding-bottom: 50px;
 }
-.table{
+
+.crudheading {
     background-color: #232323;
+    color: white;
 }
-.headertext{
-    color:white
+
+.cheading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.deldetails{
+    padding-bottom: 15px;
+}
+
+
+.editbtn {
+    background-color: royalblue;
+    color: white;
+}
+
+    .editbtn:hover {
+        color: royalblue;
+        border: 1px solid royalblue;
+        background-color: white;
+    }
+
+
+.deletebtn {
+    background-color: #DA3F48;
+    color: white;
+}
+
+    .deletebtn:hover {
+        color: #DA3F48;
+        border: 1px solid #DA3F48;
+        background-color: white;
+    }
+
+
+/*.modal-header{
+    background-color: black;
+}*/
+
+
+@media (max-width: 768px) {
+    #page-content-wrapper {
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #page-content-wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

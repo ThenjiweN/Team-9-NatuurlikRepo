@@ -64,7 +64,7 @@ namespace NatuurlikBase.Controllers
                 {
                     ViewBag.CountryError = "Country name Already exist in the database.";
 
-                    TempData["AlertMessage"] = "Country name Already exist in the database.";
+                  
                 }
                 else
                 {

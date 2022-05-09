@@ -1,10 +1,15 @@
 ﻿@model ProductBrand
 
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";    
+}
+
+<div id="page-content-wrapper">
 <form method="post" asp-action="Edit">
 	
-    <div class="shadow-lg p-3 mb-5 bg-white rounded">
+    <div>
         <div class="card">
-            <div class="card-header text-white" style="background-color: #292b2c">
+            <div class="card-header" style="background-color: #F2F2F2">
                 <h5>Update Product Brand</h5>
             </div>
             <div class="card-body">
@@ -15,7 +20,7 @@
 			<span asp-validation-for="Name" class="text-danger"></span>
 		</div>
 		
-		<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
 		<a asp-controller="ProductBrand" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
 			Cancel
 		</a>
@@ -40,7 +45,7 @@
 
                     <div class="modal-footer border-0">
                         <div class="form-actions no-color">
-                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
                             <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
                         </div>
                     </div>
@@ -58,7 +63,7 @@
 
                     </div>
                       <h6 class="col-md-10">
-                    Product Brand Already Exist On The Database
+                    Product Brand Already Exists
                 </h6>
 
                     <div class="modal-footer  border-0">
@@ -73,7 +78,7 @@
             </div>
         </div>
 </form>
-
+</div>
 @section Scripts{
 	@{
 		<partial name="_ValidationScriptsPartial" />

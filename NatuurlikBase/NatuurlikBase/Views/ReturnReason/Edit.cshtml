@@ -2,17 +2,18 @@
 
 @{
     ViewData["Title"] = "Edit";
-   
+    Layout = "~/Views/Shared/_AdminLayout.cshtml"; 
 }
 
  <body id="body">
+    <div id="page-content-wrapper">
     @using (Html.BeginForm(new { @id = "country" }))
     {
         @Html.AntiForgeryToken()
 
-        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+        <div>
             <div class="card">
-                <div class="card-header text-white" style="background-color: #292b2c">
+                <div class="card-header" style="background-color: #F2F2F2">
                     <h5>Update Return Reason</h5>
                 </div>
 
@@ -25,9 +26,9 @@
                             @Html.ValidationMessageFor(model => model.ReturnReasonName, "", new { @class = "text-danger" })
                         </div>
                     </div>
-                        <div class="form-actions no-color col-md-2">
-                            <input type="button" value="Update" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal" />
-                            <button type="button" class="btn btn-outline-dark"  onclick="location.href='@Url.Action("Index", "Countries")'">
+                        <div class="form-actions col-md-10">
+                            <input type="button" value="Update" class="btn btn-success" style="width:150px;" data-toggle="modal" data-target="#exampleModal" />
+                            <button type="button" class="btn btn-outline-dark" style="width:150px;" onclick="location.href='@Url.Action("Index", "Countries")'">
                                 Cancel
                             </button>            
                     </div>
@@ -51,7 +52,7 @@
 
                     <div class="modal-footer border-0">
                         <div class="form-actions no-color">
-                            <input type="submit" value="Confirm" class="btn btn-outline-dark" style="width:150px;"/> 
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
                             <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
                         </div>
                     </div>
@@ -69,12 +70,12 @@
 
                     </div>
                       <h6 class="col-md-10">
-                   Return Reason already exist on the database
+                   Return Reason already exists
                 </h6>
 
                     <div class="modal-footer  border-0">
                         <div class="form-actions no-color">
-                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"  onclick="location.href='@Url.Action("Index", "Province")'"/>
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"  onclick="location.href='@Url.Action("Index", "ReturnReason")'"/>
 
                         </div>
                     </div>
@@ -83,11 +84,12 @@
             </div>
         </div>
     }
+    </div>
     </body>
 @section Scripts {
   
 
-     @if (ViewBag.CountryError != null)
+     @if (ViewBag.ReturnError != null)
     {
         <script>
 

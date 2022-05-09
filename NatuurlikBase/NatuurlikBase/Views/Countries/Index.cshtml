@@ -2,55 +2,61 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
   
 }
+
+<div id="page-content-wrapper">
 @if (TempData["AlertMessage"] != null)
 {
     <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
         @TempData["AlertMessage"]
 
     </div>
-
 }
 
- <div class="container pt-3">
- <div class="row pt-4">
-        <div class="col-6">
-            <h2>Countries List</h2>
+ <div class="container-fluid">
+     <div class="row justify-content-start">
+            <div class="col-10 col-sm-10 col-md-10">
+            <h2 class="cheading">Countries List</h2>
 		</div>
-        <div class="col-6 text-end">
+        <div class="col-md-9 col-lg-8">
             <a asp-controller="Countries" asp-action="Create" class="btn btn-success">
                <i class="bi bi-plus-circle"></i> &nbsp; Create New Country
 			</a>
 		</div>
 	</div>
+
       <br /><br />
 
-<table class="table" id="tblData">
-    <thead style="background-color: #232323">
-        <tr>
-            <th class="text-light">
-                @Html.DisplayNameFor(model => model.CountryName)
-            </th>
-            <th class="text-light">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CountryName)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id"  class="btn btn btn-outline-dark mx-2"> <i class="bi bi-pencil-square"></i>Edit</a> 
+        <table class="table" id="tblData">
+                <thead class="crudheading">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CountryName)
+                        </th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+            @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CountryName)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id"  class="btn btn-sm editbtn"> <i class="bi bi-pencil-square"></i>&nbsp; Edit</a> 
              
-                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn btn-outline-dark mx-2"> <i class="bi bi-trash-fill"></i>Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm deletebtn"> <i class="bi bi-trash-fill"></i>&nbsp; Delete</a>
+                        </td>
+                    </tr>
+            }
+                </tbody>
+        </table>
+    </div>
 </div>
+
+
 @section Scripts {
      <script>
           var dataTable;
@@ -62,7 +68,7 @@
         })
         $(document).ready(function () {
             $("#success-alert").hide();
-            $("#success-alert").fadeTo(1000, 500).slideUp(500, function () {
+            $("#success-alert").fadeTo(5000, 500).slideUp(500, function () {
                 $("#success-alert").slideUp(500);
             });
 

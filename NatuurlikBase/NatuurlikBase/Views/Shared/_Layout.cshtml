@@ -56,8 +56,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">CONTACT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">ADMIN</a>
-                        </li>                                                                       
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">MANAGE STORE</a>
+                        </li> 
+@*                        @if(User.IsInRole(SR.Role_Admin))
+                    {
+
+                    }*@
+                                                                                          
                     </ul>
                    <partial name="_loginPartial"/>           
                 </div>

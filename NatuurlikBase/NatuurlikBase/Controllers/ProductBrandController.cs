@@ -112,18 +112,27 @@ namespace NatuurlikBase.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePOST(int? id)
         {
-            var obj = _unitOfWork.Brand.GetFirstOrDefault(u => u.Id == id);
-            if (obj == null)
+            ViewBag.CountryConfirmation = "Are you sure you want to delete this Product Brand?";
+
+            var hasFk = _unitOfWork.Product.GetAll().Any(x => x.ProductBrandId == id);
+
+            if (!hasFk)
             {
-                return NotFound();
+                var brand = _unitOfWork.Brand.GetFirstOrDefault(u => u.Id == id);
+                if (brand == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                _unitOfWork.Brand.Remove(brand);
+                _unitOfWork.Save();
+                TempData["success"] = "Product Brand Successfully Deleted.";
+                return RedirectToAction("Index");
             }
-
-            _unitOfWork.Brand.Remove(obj);
-            ViewBag.Confirmation = "Are You Sure You Want To Delete A Product.";
-            _unitOfWork.Save();
-            TempData["success"] = "Product Brand deleted successfully";
-            return RedirectToAction("Index");
-
+            else
+            {
+                TempData["success"] = "Product Brand cannot be deleted since it is associated to a product";
+                return RedirectToAction("Index");
+            }
         }
     }
 }

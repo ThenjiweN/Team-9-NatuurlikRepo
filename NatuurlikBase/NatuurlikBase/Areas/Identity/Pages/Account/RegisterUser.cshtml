@@ -1,15 +1,18 @@
 ﻿@page
 @model RegisterUserModel
 
-@section account {
-<link href="@Url.Content("~/css/account.css")" rel="stylesheet" type="text/css" />
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div class="container-fluid">
-    <div class="row justify-content-center" id="reg">
-        <div class="card col-md-4">
+<div id="page-content-wrapper">
+<div>
+        <div class="card">
             <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-                <h2 class="head">REGISTER</h2>
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Register User</h5>
+                </div>
+                <div class="card-body">               
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="row">
                     <div class="form-floating col-md-6 " id="formspace">
@@ -23,87 +26,106 @@
                         <span asp-validation-for="Input.Surname" class="text-danger"></span>
                     </div>
                 </div>
-
-                <div class="form-floating col-md-6 " id="formspace">
-                    <label asp-for="Input.PhoneNumber">Phone Number</label>
-                    <input asp-for="Input.PhoneNumber" class="form-control" aria-required="true" />
-                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.PhoneNumber">Phone Number</label>
+                        <input asp-for="Input.PhoneNumber" class="form-control" aria-required="true" />
+                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Email">Email</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.StreetAddress">Street Address</label>
+                        <input asp-for="Input.StreetAddress" class="form-control" autocomplete="lastname" aria-required="true" />
+                        <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                 <div class="row">
+                    <div class="form-floating col-md-3"  id="countryControl">
+                        <label asp-for="Input.Country">Country</label>
+                        <select asp-for="Input.Country" asp-items="@Model.Input.CountryList" class="form-control" onchange="onCountryChange()">
+                            <option disabled selected>- Select Country -</option>
+                        </select>
+                        <span asp-validation-for="Input.Country" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-floating col-md-3" id="provinceControl" hidden>
+                        <label asp-for="Input.Province">Province</label>
+                        <select asp-for="Input.Province" asp-items="@Model.Input.ProvinceList" class="form-control" onchange="onProvinceChange()">
+                            <option disabled selected>- Select Province -</option>
+                        </select>
+                        <span asp-validation-for="Input.Province" class="text-danger"></span>
+                    </div>
+                    <br />
                 </div>
 
-                <div class="form-floating" id="formspace">
-                    <label asp-for="Input.Email">Email</label>
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
+                <br />
 
-                <div class="form-floating" id="countryControl">
-                    <label asp-for="Input.Country">Country</label>
-
-                    <select asp-for="Input.Country" asp-items="@Model.Input.CountryList" class="form-control" onchange="onCountryChange()">
-                        <option disabled selected>- Select Country -</option>
-                    </select>
-                    <span asp-validation-for="Input.Country" class="text-danger"></span>
-                <br/>
-                </div>
-
-                <div class="form-floating" id="provinceControl" hidden>
-                    <label asp-for="Input.Province">Province</label>
-
-                    <select asp-for="Input.Province" asp-items="@Model.Input.ProvinceList" class="form-control" onchange="onProvinceChange()">
-                        <option disabled selected>- Select Province -</option>
-                    </select>
-                    <span asp-validation-for="Input.Province" class="text-danger"></span>
-                <br/>
-                </div>
-
-                <div class="form-floating" id="cityControl" hidden>
+                <div class="row">
+                <div class="form-floating col-md-3" id="cityControl" hidden>
                     <label asp-for="Input.City">City</label>
                     <select asp-for="Input.City" asp-items="@Model.Input.CityList" class="form-control" onchange="onCityChange()">
                         <option disabled selected>- Select City -</option>
                     </select>
                     <span asp-validation-for="Input.City" class="text-danger"></span>
-                <br/>
                 </div>
-
-                <div class="form-floating" id="suburbControl" hidden>
+                <br />
+                <div class="form-floating col-md-3" id="suburbControl" hidden>
                     <label asp-for="Input.Suburb">Suburb</label>
                     <select asp-for="Input.Suburb" asp-items="@Model.Input.SuburbList" class="form-control">
                         <option disabled selected>- Select Suburb -</option>
                     </select>
                     <span asp-validation-for="Input.Suburb" class="text-danger"></span>
-                <br/>
+                </div>
+                <br />
                 </div>
 
-                <div class="form-floating col-md-6 " id="formspace">
-                    <label asp-for="Input.StreetAddress">Street Address</label>
-                    <input asp-for="Input.StreetAddress" class="form-control" autocomplete="lastname" aria-required="true" />
-                    <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
-                </div>
+                <br />
 
-                <div class="form-floating" id="formspace">
-                    <label asp-for="Input.Password">Password</label>
-                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                <div class="row">
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Password">Password</label>
+                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>  
                 </div>
-                <div class="form-floating" id="formspace">
-                    <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
                 </div>
-                 <div class="form-floating" id="formspace">
-                    <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-select">
-                        <option disabled selected>- Select Role -</option>
-                    </select>
+                <br />
+                
+                <div class="row">
+                     <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Role">User Role</label>
+                        <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-control">
+                            <option disabled selected>- Select Role -</option>
+                        </select>
+                    </div>
                 </div>
-                <button id="registerSubmit" type="submit" class="btn btn-primary btn-block">Create Account</button>
-            </form>
-            <p id="center">
-                Already have an account?
-                <a class="one" asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login</a>
-            </p>
+                <br />
+                <br />
+
+                <button id="registerSubmit" type="submit" style="width:150px;" class="btn btn-success">Create Account</button>           
+                <a asp-controller="User" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
+            </div>
+             </form>                      
         </div>
     </div>
 </div>
+
 <script>
 
     function onCountryChange()

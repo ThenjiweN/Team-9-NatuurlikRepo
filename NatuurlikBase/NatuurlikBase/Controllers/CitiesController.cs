@@ -8,16 +8,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
+using NatuurlikBase.Repository.IRepository;
 
 namespace NatuurlikBase.Controllers
 {
     public class CitiesController : Controller
     {
         private readonly DatabaseContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CitiesController(DatabaseContext context)
+        public CitiesController(DatabaseContext context, IUnitOfWork unitOfWork)
         {
             _context = context;
+            _unitOfWork = unitOfWork;   
         }
 
         // GET: Cities
@@ -66,7 +69,7 @@ namespace NatuurlikBase.Controllers
                 if (_context.City.Any(c => c.CityName.Equals(city.CityName)))
                 {
                     ViewBag.Error = "City Already Exist In The Database.";
-                    ViewData["ProvinceId"] = new SelectList(_context.Province, "Id", "CountryName", city.ProvinceId);
+                  
                 }
                 else
                 {
@@ -166,11 +169,29 @@ namespace NatuurlikBase.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var city = await _context.City.FindAsync(id);
+            City city = _context.City.Find(id);
             _context.City.Remove(city);
-            TempData["success"] = "City Deleted Successfully";
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            ViewBag.CountryConfirmation = "Are you sure you want to delete this city?";
+
+            var hasFk = _unitOfWork.Suburb.GetAll().Any(x => x.CityId == id);
+
+            if (!hasFk)
+            {
+                var obj = _unitOfWork.City.GetFirstOrDefault(u => u.Id == id);
+                if (obj == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                _unitOfWork.City.Remove(obj);
+                _unitOfWork.Save();
+                TempData["success"] = "City Successfully Deleted.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["success"] = "City cannot be deleted since it has a Suburb associated";
+                return RedirectToAction("Index");
+            }
         }
 
         private bool CityExists(int id)

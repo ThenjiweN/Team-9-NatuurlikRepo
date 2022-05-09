@@ -122,7 +122,7 @@ namespace NatuurlikBase.Controllers
                 {
                         _db.Entry(province).State = EntityState.Modified;
                         
-                        TempData["success"] = "Province Created Successfully";
+                        TempData["success"] = "Province Updated Successfully";
                         await _db.SaveChangesAsync();
                     }
                
@@ -157,11 +157,29 @@ namespace NatuurlikBase.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var province = await _db.Province.FindAsync(id);
+            Province province = _db.Province.Find(id);
             _db.Province.Remove(province);
-            await _db.SaveChangesAsync();
-            TempData["success"] = "Province Deleted successfully";
-            return RedirectToAction(nameof(Index));
+            ViewBag.CountryConfirmation = "Are you sure you want to delete this province?";
+
+            var hasFk = _unitOfWork.City.GetAll().Any(x => x.ProvinceId == id);
+
+            if (!hasFk)
+            {
+                var obj = _unitOfWork.Province.GetFirstOrDefault(u => u.Id == id);
+                if (obj == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                _unitOfWork.Province.Remove(obj);
+                _unitOfWork.Save();
+                TempData["success"] = "Province Successfully Deleted.";
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["success"] = "Province cannot be deleted since it has a City associated";
+                return RedirectToAction("Index");
+            }
         }
 
         private bool ProvinceExists(int id)
