@@ -15,6 +15,7 @@
 
 }
 
+
  <div class="container-fluid">
      <div class="row justify-content-start">
             <div class="col-10 col-sm-10 col-md-10">
@@ -34,6 +35,9 @@
             <th class="text-light">
                 City Name
 			</th>
+             <th class="text-light">
+                Province Name
+			</th>
             <th class="text-light">Action</th>
 		</tr>
 	</thead>
@@ -43,6 +47,9 @@
             <tr>
                 <td width="50%">
                     @obj.CityName
+				</td>
+                <td width="50%">
+                    @obj.Province.ProvinceName
 				</td>
                 <td>
                     <div class=" btn-group" role="group">
