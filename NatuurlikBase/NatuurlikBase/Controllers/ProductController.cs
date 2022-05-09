@@ -83,7 +83,7 @@ namespace NatuurlikBase.Controllers
                                         
                                             
                                             
-                                                ViewBag.Error = "Product Already Exist In The Database.";
+                                                ViewBag.Error = "Product Already Exists!";
                                             
                                         
                                     }

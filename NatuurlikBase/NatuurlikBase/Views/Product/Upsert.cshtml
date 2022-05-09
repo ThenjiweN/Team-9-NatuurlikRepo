@@ -93,7 +93,7 @@
 				<button type="submit" data-toggle="modal" onclick="return ValidateInput()"  class="btn btn-success" style="width:150px">Create</button>
 			}
 			<a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
-				Back to List
+				Cancel
 			</a>
 		</div>
 		</div>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="modal-body">
                         <h6 class="col-md-10"> 
-                       Confirm Prdouct Details
+                       Confirm Product Details
                     </h6>
                     </div>
 
@@ -169,17 +169,16 @@
       toolbar_mode: 'floating',
    });
   
-	@*function ValidateInput(){
+	function ValidateInput(){
 		if(document.getElementById("uploadBox").value==""){
 			Swal.fire({
-			  icon: 'error',
-			  title: 'Oops...',
+			  title: '',
 			  text: 'Please upload an Image!',
 			});
 			return false;
 		}
 		return true;
-	}*@
+	}
 </script>
        @if (ViewBag.Error != null)
     {
