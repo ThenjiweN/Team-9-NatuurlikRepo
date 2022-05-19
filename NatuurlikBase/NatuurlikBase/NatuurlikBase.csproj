@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="wwwroot\images\products\" />
     <Folder Include="wwwroot\lib\bootstrap\" />

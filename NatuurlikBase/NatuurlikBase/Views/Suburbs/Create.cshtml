@@ -8,62 +8,64 @@
 
 <div id="page-content-wrapper">
 <div>
-        <div class="card">
-            <div class="card-header" style="background-color: #F2F2F2">
-                <h5>Add Suburb</h5>
-            </div>
-            <div class="card-body">
-    <div class="col-md-10">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="SuburbName" class="control-label"></label>
-                <input asp-for="SuburbName" class="form-control" />
-                <span asp-validation-for="SuburbName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PostalCode" class="control-label"></label>
-                <input asp-for="PostalCode" class="form-control" />
-                <span asp-validation-for="PostalCode" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-              
-                @if(ViewBag.Error==null){
-                      <label asp-for="CityId" class="control-label">City Name</label>
-                <select asp-for="CityId" class ="form-control col-md-10" asp-items="ViewBag.CityId"></select>}
-            </div>
-           <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
-		<a asp-controller="Suburbs" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
-			Cancel
-		</a>
-                 <div class="modal" id="exampleModal1" >
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-
+        @if (ViewBag.Error == null)
+        {
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Add Suburb</h5>
                 </div>
-                <h6 class="col-md-10">
-                   Province Already Exists
-                </h6>
+                <div class="card-body">
+                    <div class="col-md-10">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="SuburbName" class="control-label"></label>
+                                <input asp-for="SuburbName" class="form-control" />
+                                <span asp-validation-for="SuburbName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PostalCode" class="control-label"></label>
+                                <input asp-for="PostalCode" class="form-control" />
+                                <span asp-validation-for="PostalCode" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
 
-                <div class="modal-footer border-0">
-                    <div class="form-actions no-color">
-                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "Suburbs")'"/>
 
+                                <label asp-for="CityId" class="control-label">City Name</label>
+                                <select asp-for="CityId" class ="form-control col-md-10" asp-items="ViewBag.CityId"></select>
+                            </div>
+                            <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
+                            <a asp-controller="Suburbs" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+                                Cancel
+                            </a>
+
+                        </form>
                     </div>
                 </div>
-
             </div>
-        </div>
+        }
     </div>
-        </form>
-    </div>
-</div>
-</div>
-     </div>
+                                <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" >
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+
+
+                                        </div>
+                                        <h6 class="col-md-10">
+                                            Province Already Exists
+                                        </h6>
+
+                                        <div class="modal-footer border-0">
+                                            <div class="form-actions no-color">
+                                                <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "Suburbs")'"/>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
 </div>     
 
 @section Scripts{

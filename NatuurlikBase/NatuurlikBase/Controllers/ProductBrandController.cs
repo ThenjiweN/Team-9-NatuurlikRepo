@@ -44,7 +44,8 @@ namespace NatuurlikBase.Controllers
                 _unitOfWork.Brand.Add(obj);
                 _unitOfWork.Save();
                 TempData["success"] = "Product Brand created successfully";
-                return RedirectToAction("Index");
+                    TempData["NextCreation"] = "Hello World.";
+                    return RedirectToAction("Index");
                 }
             }
             return View(obj);
@@ -130,7 +131,7 @@ namespace NatuurlikBase.Controllers
             }
             else
             {
-                TempData["success"] = "Product Brand cannot be deleted since it is associated to a product";
+                TempData["Delete"] = "Product Brand cannot be deleted since it is associated to a product";
                 return RedirectToAction("Index");
             }
         }

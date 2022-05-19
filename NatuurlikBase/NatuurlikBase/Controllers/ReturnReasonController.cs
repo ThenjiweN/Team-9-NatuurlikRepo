@@ -61,7 +61,6 @@ namespace NatuurlikBase.Controllers
                 {
                     ViewBag.ReturnError = "Return reason Already exist in the database.";
 
-                 
                 }
                 else
                 {
@@ -70,7 +69,7 @@ namespace NatuurlikBase.Controllers
                     ViewBag.CountryConfirmation = "Are you sure you want to add a return reason.";
                     db.SaveChanges();
 
-                    TempData["AlertMessage"] = "Return reason successfully added.";
+                    TempData["success"] = "Return reason successfully added.";
                     return RedirectToAction("Index");
                 }
 
@@ -119,7 +118,7 @@ namespace NatuurlikBase.Controllers
                 else
                 {
                     db.Entry(returnReason).State = EntityState.Modified;
-                    TempData["AlertMessage"] = "Return reason successfully Edited.";
+                    TempData["success"] = "Return reason successfully Updated.";
                     ViewBag.ReturnReasonConfirmation = "Are you sure with your return reason changes.";
                     db.SaveChanges();
                     return RedirectToAction("Index");
@@ -153,7 +152,7 @@ namespace NatuurlikBase.Controllers
             ReturnReason country = db.ReturnReason.Find(id);
             db.ReturnReason.Remove(country);
             ViewBag.CountryConfirmation = "Are you sure you want to delete a country.";
-            TempData["AlertMessage"] = "Return Reason successfully Deleted.";
+            TempData["success"] = "Return Reason successfully Deleted.";
             db.SaveChanges();
             return RedirectToAction("Index");
         }

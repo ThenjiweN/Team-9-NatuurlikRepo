@@ -22,6 +22,8 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<ProductBrand> Brands { get; set; }
     public DbSet<ProductCategory> Categories { get; set; }
     public DbSet<ReturnReason> ReturnReason { get; set; }
+    public DbSet<InventoryItem> InventoryItem { get; set; }
+    public DbSet<InventoryType> InventoryType { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

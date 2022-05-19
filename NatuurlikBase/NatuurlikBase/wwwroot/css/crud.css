@@ -69,3 +69,6 @@
         padding-right: 0px;
     }
 }
+.input-validation-error {
+    border: 1px solid #DC3545 !important;
+}

@@ -61,7 +61,7 @@ namespace NatuurlikBase.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (_db.Province.Any(c => c.ProvinceName.Equals(province.ProvinceName)))
+                if (_db.Province.Any(c => c.ProvinceName == province.ProvinceName && c.CountryId == province.CountryId))
                 {
                     ViewBag.Error = "Province Name Already Exist In The Database.";
 
@@ -72,6 +72,7 @@ namespace NatuurlikBase.Controllers
                     _db.Province.Add(province);
                     await _db.SaveChangesAsync();
                     TempData["success"] = "Province Created Successfully";
+                    TempData["NextCreation"] = "Hello World.";
                     return RedirectToAction(nameof(Index));
                   
                 }
@@ -111,11 +112,12 @@ namespace NatuurlikBase.Controllers
             }
 
             if (ModelState.IsValid)
+               
             {
-                if (_db.Province.Any(c => c.ProvinceName.Equals(province.ProvinceName)))
+                if (_db.Province.Any(c => c.ProvinceName==province.ProvinceName && c.CountryId==province.CountryId))
                 {
                     ViewBag.Error = "Province Name Already Exist In The Database.";
-                    ViewData["CountryId"] = new SelectList(_db.Province, "Id", "CountryName", province.CountryId);
+             
                 }
                 else { 
                 
@@ -125,9 +127,9 @@ namespace NatuurlikBase.Controllers
                         TempData["success"] = "Province Updated Successfully";
                         await _db.SaveChangesAsync();
                     }
-               
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
+             
             }
             ViewData["CountryId"] = new SelectList(_db.Province, "Id", "CountryName", province.CountryId);
             return View(province);
@@ -177,7 +179,7 @@ namespace NatuurlikBase.Controllers
             }
             else
             {
-                TempData["success"] = "Province cannot be deleted since it has a City associated";
+                TempData["Delete"] = "Province cannot be deleted since it has a City associated";
                 return RedirectToAction("Index");
             }
         }

@@ -69,7 +69,7 @@ namespace NatuurlikBase.Controllers
                 if (_context.City.Any(c => c.CityName.Equals(city.CityName)))
                 {
                     ViewBag.Error = "City Already Exist In The Database.";
-                  
+                    ViewData["ProvinceId"] = new SelectList(_context.Province, "Id", "CountryName", city.ProvinceId);
                 }
                 else
                 {
@@ -137,9 +137,11 @@ namespace NatuurlikBase.Controllers
                         {
                             throw;
                         }
+
                     }
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
+             
             }
             ViewData["ProvinceId"] = new SelectList(_context.Province, "Id", "ProvinceName", city.ProvinceId);
             return View(city);
