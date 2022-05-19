@@ -61,8 +61,9 @@ namespace NatuurlikBase.Controllers
         public async Task<IActionResult> Create([Bind("Id,SuburbName,PostalCode,CityId")] Suburb suburb)
         {
             if (ModelState.IsValid)
+                
             {
-                if (_context.Suburb.Any(c => c.SuburbName.Equals(suburb.SuburbName)))
+                if (_context.Suburb.Any(c => c.SuburbName==suburb.SuburbName && c.PostalCode==suburb.PostalCode && c.CityId==suburb.CityId))
                 {
                     ViewBag.Error = "Suburb Already Exist In The Database.";
                     ViewData["CityId"] = new SelectList(_context.Province, "Id", "CountryName", suburb.CityId);
@@ -71,6 +72,7 @@ namespace NatuurlikBase.Controllers
                 {
                     _context.Add(suburb);
                     TempData["success"] = "Suburb Created Successfully";
+                   
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }
@@ -110,7 +112,7 @@ namespace NatuurlikBase.Controllers
 
             if (ModelState.IsValid)
             {
-                if (_context.Suburb.Any(c => c.SuburbName.Equals(suburb.SuburbName)))
+                if (_context.Suburb.Any(c => c.SuburbName == suburb.SuburbName && c.PostalCode == suburb.PostalCode && c.CityId == suburb.CityId))
                 {
                     ViewBag.Error = "Suburb Already Exist In The Database.";
                     ViewData["CityId"] = new SelectList(_context.Province, "Id", "CountryName", suburb.CityId);

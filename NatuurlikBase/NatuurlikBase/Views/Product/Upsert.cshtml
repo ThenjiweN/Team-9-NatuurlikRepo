@@ -8,7 +8,7 @@
 <form method="post" asp-action="Upsert" enctype="multipart/form-data">
 	<input asp-for="Product.Id" hidden />
 	<input asp-for="Product.PictureUrl" hidden />
-
+	 @if(ViewBag.Error==null){
 	<div class="row">
 		<div class="col-10">
 			<div class="card">
@@ -105,7 +105,7 @@
 		</div>
 	</div>
 
-	
+	}
 
 	 <div class="modal fade" id="exampleModal">
             <div class="modal-dialog modal-dialog-centered">

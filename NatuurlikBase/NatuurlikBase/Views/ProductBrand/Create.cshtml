@@ -8,6 +8,7 @@
 <form method="post">
 	
     <div>
+         @if(ViewBag.Error==null){
         <div class="card">
             <div class="card-header" style="background-color: #F2F2F2">
                 <h5>Add Product Brand</h5>
@@ -26,14 +27,13 @@
 		</a>
 	</div>
      </div>
+     }
         </div>
-	     <div class="modal" id="exampleModal1" >
+	     <div class="modal" id="exampleModal1"  data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                   
 
                 </div>
                 <h6 class="col-md-10">

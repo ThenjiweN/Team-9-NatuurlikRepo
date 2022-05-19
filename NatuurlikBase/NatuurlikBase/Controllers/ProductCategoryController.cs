@@ -45,6 +45,7 @@ namespace NatuurlikBase.Controllers
                     _unitOfWork.Category.Add(obj);
                     _unitOfWork.Save();
                     TempData["success"] = "Category created successfully";
+                    TempData["NextCreation"] = "Hello World.";
                     return RedirectToAction("Index");
                 }
             }
@@ -136,7 +137,7 @@ namespace NatuurlikBase.Controllers
             }
             else
             {
-                TempData["success"] = "Product Category cannot be deleted since it is associated to a product";
+                TempData["Delete"] = "Product Category cannot be deleted since it is associated to a product";
                 return RedirectToAction("Index");
             }
 
