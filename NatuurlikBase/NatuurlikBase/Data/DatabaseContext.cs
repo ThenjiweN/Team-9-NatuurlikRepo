@@ -26,6 +26,7 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<InventoryType> InventoryType { get; set; }
     public DbSet<WriteOffReason> WriteOffReason { get; set; }
     public DbSet<Courier> Courier { get; set; }
+    public DbSet<Supplier> Suppliers { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

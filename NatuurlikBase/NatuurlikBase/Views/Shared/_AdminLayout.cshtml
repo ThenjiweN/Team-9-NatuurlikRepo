@@ -33,13 +33,13 @@
             <ul class="list-unstyled components">
 
                 <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-house-door-fill">&nbsp;</i> Store</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-house-door">&nbsp;</i> Store</a>
                 </li>
                 <li>
-                    <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-chat-dots-fill">&nbsp;</i> Blogs</a>
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-chat-dots">&nbsp;</i> Blogs</a>
                 </li>
                 <li>
-                    <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-cart-fill">&nbsp;</i> Products</a>
+                    <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-cart">&nbsp;</i> Products</a>
                     <ul class="collapse list-unstyled" id="productSubmenu">
                         <li>
                             <a asp-area="" asp-controller="Product" asp-action="Index">Products</a>
@@ -53,7 +53,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#orderSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bag-fill">&nbsp;</i> Orders</a>
+                    <a href="#orderSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bag">&nbsp;</i> Orders</a>
                     <ul class="collapse list-unstyled" id="orderSubmenu">
                         <li>
                             <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders</a>
@@ -67,7 +67,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bar-chart-fill">&nbsp;</i> Inventory</a>
+                    <a asp-area="" asp-controller="Supplier" asp-action="Index"><i class="bi bi-truck">&nbsp;</i>Suppliers</a>
+                </li>
+                <li>
+                    <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bar-chart">&nbsp;</i> Inventory</a>
                     <ul class="collapse list-unstyled" id="inventorySubmenu">
                         <li>
                             <a asp-area="" asp-controller="InventoryItem" asp-action="Index">Inventory Items</a>
@@ -76,15 +79,16 @@
                             <a asp-area="" asp-controller="InventoryType" asp-action="Index">Inventory Types</a>
                         </li>
                         <li>
-                            <li>
                             <a asp-area="" asp-controller="WriteOffReason" asp-action="Index">Write-Off Reasons</a>
                         </li>
+                        <li>
                             <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Levels</a>
                         </li>
                     </ul>
                 </li>
+
                 <li>
-                    <a href="#returnSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-geo-alt-fill"> &nbsp;</i>Locations</a>
+                    <a href="#returnSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-geo-alt"> &nbsp;</i>Locations</a>
                     <ul class="collapse list-unstyled" id="returnSubmenu">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Suburbs" asp-action="Index"> Suburbs</a>
@@ -100,6 +104,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <li>
                     <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-card-list"> &nbsp;</i>Reports</a>
                     <ul class="collapse list-unstyled" id="reportSubmenu">
@@ -119,16 +124,14 @@
                             <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders Report</a>
                         </li>
                     </ul>
-                </li>
-
-               
+                </li>               
                 <li>
-                    <a asp-area="Admin" asp-controller="User" asp-action="Index"><i class="bi bi-person-fill">&nbsp;</i> Users</a>
+                    <a asp-area="Admin" asp-controller="User" asp-action="Index"><i class="bi bi-person">&nbsp;</i> Users</a>
                 </li>
                 <li>
                     <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-question-circle">&nbsp;</i> Help</a>
                 </li>
-            </ul>
+           </ul>
         </nav>
 
         <div class="d-none d-lg-block" id="full">

@@ -26,6 +26,7 @@ namespace NatuurlikBase.Repository
             Product = new ProductRepository(_db);
             Brand = new ProductBrandRepository(_db);
             Category = new ProductCategoryRepository(_db);
+            Supplier = new SupplierRepository(_db);
 
         }
         public ICountryRepository Country { get; private set; }
@@ -36,6 +37,7 @@ namespace NatuurlikBase.Repository
         public IProductRepository Product { get; private set; }
         public IProductBrandRepository Brand { get; private set; }
         public IProductCategoryRepository Category { get; private set; }
+        public ISupplierRepository Supplier { get; private set; }
 
 
         public void Save()
