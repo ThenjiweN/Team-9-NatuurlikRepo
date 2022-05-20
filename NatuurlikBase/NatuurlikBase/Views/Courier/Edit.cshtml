@@ -1,0 +1,137 @@
+﻿@model NatuurlikBase.Models.Courier
+
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml"; 
+}
+
+ <body id="body">
+    <div id="page-content-wrapper">
+    @using (Html.BeginForm(new { @id = "courier" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div>
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Update Courier</h5>
+                </div>
+
+                <div class="card-body">
+                    <div class="form-group">
+                        @Html.LabelFor(model =>model.CourierName , htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.HiddenFor(model => model.Id)
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CourierName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CourierName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model =>model.CourierFee , htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.HiddenFor(model => model.Id)
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.CourierFee, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.CourierFee, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        @Html.LabelFor(model =>model.EstimatedDeliveryTime , htmlAttributes: new { @class = "control-label col-md-2" })
+                        @Html.HiddenFor(model => model.Id)
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.EstimatedDeliveryTime, new { htmlAttributes = new { @class = "form-control" } }) 
+                            @Html.ValidationMessageFor(model => model.EstimatedDeliveryTime, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                        <div class="form-actions col-md-10">
+                            <input type="button" value="Update" class="btn btn-success" style="width:150px;" data-toggle="modal" data-target="#exampleModal" />
+                            <button type="button" class="btn btn-outline-dark" style="width:150px;" onclick="location.href='@Url.Action("Index", "Courier")'">
+                                Cancel
+                            </button>            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Courier Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header  border-0">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                      <h6 class="col-md-10">
+                   Courier already exists!
+                </h6>
+
+                    <div class="modal-footer  border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"  onclick="location.href='@Url.Action("Index", "Courier")'"/>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+    </div>
+    </body>
+@section Scripts {
+  
+
+     @if (ViewBag.ReturnError != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    }
+
+    @if (ViewBag.CourierConfirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}

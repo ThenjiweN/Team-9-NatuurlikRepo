@@ -1,0 +1,90 @@
+﻿@model NatuurlikBase.Models.Courier
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+    <form method="post">	
+        <div>
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Add Courier</h5>
+                </div>
+                <div class="card-body">
+		    @*<div asp-validation-summary="All"></div>*@
+		    <div class="col-md-10">
+			    <label asp-for="CourierName"></label>
+			    <input asp-for="CourierName" class="form-control" />
+			    <span asp-validation-for="CourierName" class="text-danger"></span>
+                </div>
+             <div class="col-md-10">
+			    <label asp-for="CourierFee"></label>
+			    <input asp-for="CourierFee" class="form-control" />
+			    <span asp-validation-for="CourierFee" class="text-danger"></span>
+                 </div>
+                <div class="col-md-10">
+			    <label asp-for="EstimatedDeliveryTime"></label> 
+			    <select asp-for="EstimatedDeliveryTime" class="form-control">
+                    <option disabled selected>--Select Estimated Delivery Time--</option>
+                    <option> 1-3 Days </option>
+                    <option> 3-5 Days </option>
+                    <option> 5-7 Days </option>
+                    <option> 7+  Days </option>
+                    </select>
+			    <span asp-validation-for="EstimatedDeliveryTime" class="text-danger"></span>
+                 </div>
+                 <br />
+            <div>
+		        <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
+		        <a asp-controller="Courier" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			        Cancel
+		        </a>
+                </div>
+	    </div>
+         </div>
+            </div>
+	         <div class="modal" id="exampleModal1" >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <h6 class="col-md-10">
+                       Courier Already Exists!
+                    </h6>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "Courier")'" />
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{
+	
+	 
+      @if (ViewBag.ReturnError != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+}
