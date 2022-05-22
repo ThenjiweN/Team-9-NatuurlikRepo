@@ -45,9 +45,10 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(Input.Email);
-                if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                if (user == null)
                 {
-                    return RedirectToPage("./ForgotPasswordConfirmation");
+                    TempData["success"] = "Email address does not exists!";
+                    return RedirectToPage();
                 }
 
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
