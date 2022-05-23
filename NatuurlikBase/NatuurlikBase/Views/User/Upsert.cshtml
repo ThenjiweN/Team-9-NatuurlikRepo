@@ -48,40 +48,53 @@
                 <input asp-for="User.StreetAddress" class="form-control" />
                 <span asp-validation-for="User.StreetAddress" class="text-danger"></span>
                 </div>
-          </div>
+            </div>
+            <br />
 
-
-            <div class="col-3">
+            <div class="row">
+                 <div class="col-md-6">
 			<label asp-for="User.CountryId">Country: </label>
-			<select asp-for="User.CountryId" asp-items="@Model.CountryList" class="form-select">
+			<select asp-for="User.CountryId" asp-items="@Model.CountryList" class="form-control">
 				<option disabled selected>--Select Country--</option>
 			</select>
 			<span asp-validation-for="User.CountryId" class="text-danger"></span>
 		</div>
 
-		<div class="col-3">
+		<div class="col-md-6">
 			<label asp-for="User.ProvinceId"> Province: </label>
-			<select asp-for="User.ProvinceId" asp-items="@Model.ProvinceForCountryList" class="form-select">
+			<select asp-for="User.ProvinceId" asp-items="@Model.ProvinceForCountryList" class="form-control">
 				<option disabled selected>--Select Province--</option>
 			</select>
 			<span asp-validation-for="User.ProvinceId" class="text-danger"></span>
 		</div>
 
-        <div class="col-3">
+        <div class="col-md-6">
 			<label asp-for="User.CityId">City: </label>
-			<select asp-for="User.CityId" asp-items="@Model.CityForProvinceList" class="form-select">
+			<select asp-for="User.CityId" asp-items="@Model.CityForProvinceList" class="form-control">
 				<option disabled selected>--Select City--</option>
 			</select>
 			<span asp-validation-for="User.CityId" class="text-danger"></span>
 		</div>
 
-        <div class="col-3">
+        <div class="col-md-6">
 			<label asp-for="User.SuburbId">Suburb: </label>
-			<select asp-for="User.SuburbId" asp-items="@Model.SuburbForCityList" class="form-select">
+			<select asp-for="User.SuburbId" asp-items="@Model.SuburbForCityList" class="form-control">
 				<option disabled selected>--Select Suburb--</option>
 			</select>
 			<span asp-validation-for="User.SuburbId" class="text-danger"></span>
 		</div>
+        
+          <br />
+             @if (Model.User.Id != null)
+            {
+                <div class="col-md-6"> 
+                    <label>Account Status:</label>
+                    @Html.DropDownListFor(modelItem => modelItem.User.EmailConfirmed, new [] { new SelectListItem { Text = "Active", Value="True" } , new SelectListItem { Text = "Disabled", Value="False"}})
+
+                </div>
+            }
+          </div>
+           
 
 
         	<div class="col-12 text-end">
@@ -97,23 +110,117 @@
 				Back to List
 			</a>
 		</div>
-     
-        
-       
-
-    
+   
 </div>  
 </form>
 </div>
 </div>
-@section Scripts{
-    @{
-        <partial name="_ValidationScriptsPartial" />
-     }
-     
 
-    
-     <script>
- 
+<script>
+ function onCountryChange()
+    {
+        if(!$('#Input_Country').val())
+        {
+            $('#suburbControl').attr('hidden',true);
+            $('#cityControl').attr('hidden',true);
+            $('#provinceControl').attr('hidden',true);
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/DropDownList/GetProvince",
+                data: { countryId: $('#Input_Country').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_Province').html('');
+                    options += '<option value="0" disabled >--Select Province--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_Province').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Input_Province').val(0);
+                    $('#provinceControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onProvinceChange()
+    {
+        if(!$('#Input_Province').val())
+        {
+            $('#cityControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/DropDownList/GetCity",
+                data: { ProvinceId: $('#Input_Province').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_City').html('');
+                    options += '<option value="0" disabled >--Select City--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_City').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Input_City').val(0);
+                    $('#cityControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onCityChange()
+    {
+        if(!$('#Input_City').val())
+        {
+            $('#suburbControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/DropDownList/GetSuburb",
+                data: { CityId: $('#Input_City').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_Suburb').html('');
+                    options += '<option value="0" disabled >--Select Suburb--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_Suburb').append(options);
+
+                    //Sets the DDL to the placeholder value
+                    $('#Input_Suburb').val(0);
+                    $('#suburbControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
     </script>
     }
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}
+
+    
+     
