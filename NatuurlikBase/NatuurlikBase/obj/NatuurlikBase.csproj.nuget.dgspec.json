@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {}
   },
   "projects": {
-    "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
         "projectName": "NatuurlikBase",
-        "projectPath": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
-        "packagesPath": "C:\\Users\\vumis\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vumis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

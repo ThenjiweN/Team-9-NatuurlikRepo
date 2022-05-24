@@ -8,8 +8,12 @@ using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using NatuurlikBase.Areas.Identity.Data;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using NatuurlikBase.Data;
+using NatuurlikBase.Models;
+using NatuurlikBase.Repository.IRepository;
 
 namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
 {
@@ -17,13 +21,16 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IUnitOfWork _unitOfWork;
 
         public IndexModel(
             UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+            SignInManager<ApplicationUser> signInManager, 
+            IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _unitOfWork = unitOfWork;
         }
 
 
@@ -41,22 +48,55 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
         public class InputModel
         {
             [Required]
-            [StringLength(225, ErrorMessage = "The first name field cannot be longer then 225 characters")]
-            [Display(Name = "FirstName")]
-            [DataType(DataType.Text)]
+            [RegularExpression(@"^[ a-zA-Z ]+$", ErrorMessage = "Invalid First Name provided. No digits or special characters are allowed.")]
+            [MaxLength(50)]
+            [Display(Name = "First Name")]
             public string FirstName { get; set; }
 
 
             [Required]
-            [StringLength(225, ErrorMessage = "The last name field cannot be longer then 225 characters")]
-            [DataType(DataType.Text)]
-            [Display(Name = "LastName")]
-            public string LastName { get; set; }
+            [RegularExpression(@"^[ a-zA-Z ]+$", ErrorMessage = "Invalid First Name provided. No digits or special characters are allowed.")]
+            [MaxLength(50)]
+            [Display(Name = "Surname")]
+            public string Surname { get; set; }
 
-            [Phone]
-            [Display(Name = "Phone number")]
-            [DataType(DataType.PhoneNumber)]
+            [Required]
+            [RegularExpression(@"^(\d{10})$", ErrorMessage = "Please enter a valid phone number.")]
+            [Display(Name = "Phone Number")]
+            [MaxLength(10)]
             public string PhoneNumber { get; set; }
+
+            
+            [EmailAddress]
+            public string Email { get; set; }
+
+            [Required]
+            [Display(Name = "Street Address")]
+            public string StreetAddress { get; set; }
+            [Required]
+            public int? Country { get; set; }
+            [Required]
+            public int? Province { get; set; }
+            [Required]
+            public int? Suburb { get; set; }
+            [Required]
+            public int? City { get; set; }
+
+        
+            [ValidateNever]
+            public IEnumerable<SelectListItem> CountryList { get; set; }
+
+            [ValidateNever]
+            public IEnumerable<SelectListItem> ProvinceList { get; set; }
+
+            [ValidateNever]
+            public IEnumerable<SelectListItem> CityList { get; set; }
+
+            [ValidateNever]
+            public IEnumerable<SelectListItem> SuburbList { get; set; }
+
+
+
         }
 
         private async Task LoadAsync(ApplicationUser user)
@@ -68,10 +108,36 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
+                CountryList = _unitOfWork.Country.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.CountryName,
+                    Value = u.Id.ToString()
+                }),
+                ProvinceList = _unitOfWork.Province.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.ProvinceName,
+                    Value = u.Id.ToString()
+                }),
+                CityList = _unitOfWork.City.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.CityName,
+                    Value = u.Id.ToString()
+                }),
+                SuburbList = _unitOfWork.Suburb.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.SuburbName,
+                    Value = u.Id.ToString()
+                }),
 
                 FirstName = user.FirstName,
-                LastName = user.LastName,
-                PhoneNumber = user.PhoneNumber
+                Surname = user.Surname,
+                PhoneNumber = user.PhoneNumber,
+                Email = user.Email,
+                StreetAddress = user.StreetAddress,
+                Country = user.CountryId,
+                Province = user.ProvinceId,
+                City = user.CityId,
+                Suburb = user.SuburbId
 
             };
         }
@@ -84,8 +150,16 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
-            await LoadAsync(user);
-            return Page();
+            else
+            {
+
+              await LoadAsync(user);
+                return Page();
+            }
+
+          
+
+            
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -118,9 +192,9 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
                 user.FirstName = Input.FirstName;
             }
 
-            if (Input.LastName != user.LastName)
+            if (Input.Surname != user.Surname)
             {
-                user.LastName = Input.LastName;
+                user.Surname = Input.Surname;
             }
 
             if (Input.PhoneNumber != user.PhoneNumber)
@@ -128,9 +202,34 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
                 user.PhoneNumber = Input.PhoneNumber;
             }
 
+            if (Input.StreetAddress != user.StreetAddress)
+            {
+                user.StreetAddress = Input.StreetAddress;
+            }
+
+            if (Input.Country != user.CountryId)
+            {
+                user.CountryId = Input.Country;
+            }
+
+            if (Input.Province != user.ProvinceId)
+            {
+                user.ProvinceId = Input.Province;
+            }
+
+            if (Input.City != user.CityId)
+            {
+                user.CityId = Input.City;
+            }
+
+            if (Input.Suburb != user.SuburbId)
+            {
+                user.SuburbId = Input.Suburb;
+            }
+
             await _userManager.UpdateAsync(user);
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = "Your profile has been updated successfully";
             return RedirectToPage();
         }
     }

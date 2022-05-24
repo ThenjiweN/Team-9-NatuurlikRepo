@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+
+<partial name="_Notification" />
+
+
+ <div class="container-fluid">
+     <div class="row justify-content-start">
+            <div class="col-10 col-sm-10 col-md-10">
+            <h2 class="cheading"> All Users</h2>
+        </div>
+        <div class="col-md-9 col-lg-8">
+            <a asp-area="Identity" asp-page="/Account/RegisterUser" class="btn btn-success">
+                <i class="bi bi-plus-circle"></i> &nbsp; Register New User &nbsp;
+            </a>
+        </div>
+    </div>
+
+        <br /><br />
+
+    <table class="table" id="tblData" style="background-color: #232323">
+        <thead>
+            <tr>
+                <th class="text-light"> First Name </th>
+                <th class="text-light"> Surname</th>
+                <th class="text-light"> Email</th>
+                <th class="text-light"> Phone Number</th>
+                @*<th> Country </th>
+                <th> Province </th>
+                <th> City </th>
+                <th> Suburb</th>*@
+                <th class="text-light">Action</th>
+            </tr>
+        </thead>
+
+    </table>
+</div>
+</div>
+
+ @section Scripts {
+<script src="~/js/user.js"></script>
+ }
+
+
+

@@ -1,0 +1,212 @@
+﻿@model NatuurlikBase.Models.ViewModels.ProductVM
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
+	<input asp-for="Product.Id" hidden />
+	<input asp-for="Product.PictureUrl" hidden />
+	 @if(ViewBag.Error==null){
+	<div class="row">
+		<div class="col-10">
+			<div class="card">
+		<div class="card-header" style="background-color: #F2F2F2">
+			<h5>@(Model.Product.Id!=0?"Update": "Create")  Product</h5>
+		</div>
+		<div class="card-body">
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="col">
+			<label asp-for="Product.Name"></label>
+			<input asp-for="Product.Name" class="form-control" />
+			<span asp-validation-for="Product.Name" class="text-danger"></span>
+		</div>
+		<br />
+		<div class="col">
+			<label asp-for="Product.QuantityOnHand"></label>
+			<input asp-for="Product.QuantityOnHand" class="form-control" disabled />
+		</div>
+		<br />
+		<div class="col">
+			<label asp-for="Product.Description"></label>
+			<textarea asp-for="Product.Description" rows="3" class="form-control"></textarea>
+			<span asp-validation-for="Product.Description" class="text-danger"></span>
+		</div>
+		<br />
+		<div class="row col">
+			<div class="col-6 col">
+				<label asp-for="Product.CustomerPrice"></label>
+				<input asp-for="Product.CustomerPrice" class="form-control" />
+				<span asp-validation-for="Product.CustomerPrice" class="text-danger"></span>
+			</div>
+
+			<div class="col-6 col">
+				<label asp-for="Product.ResellerPrice"></label>
+				<input asp-for="Product.ResellerPrice" class="form-control" />
+				<span asp-validation-for="Product.ResellerPrice" class="text-danger"></span>
+			</div>
+		</div>
+		<br />
+		<div class="row col">
+			<div class="col-6 col">
+				<label asp-for="Product.CategoryId"></label>
+				<select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-control">
+					<option disabled selected>--Select Category--</option>
+				</select>
+				<span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+			</div>
+			<div class="col-6 col">
+				<label asp-for="Product.ProductBrandId"></label>
+				<select asp-for="Product.ProductBrandId" asp-items="@Model.CoverTypeList" class="form-control">
+					<option disabled selected>--Select Brand--</option>
+				</select>
+				<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
+			</div>
+		</div>
+		<br />
+		<div class="row col">
+			<div class="col-6 col">
+				<label asp-for="Product.PictureUrl"></label>
+				<input type="file" id="uploadBox" name="file" class="form-control" />
+			</div>
+		</div>
+		<br />
+		<div class="col-4  col">
+			<label asp-for="Product.DisplayProduct"></label>
+			<select asp-for="Product.DisplayProduct" class="form-control">
+				<option disabled selected>--Select Display Options--</option>
+				<option> Yes </option>
+				<option> No </option>
+			</select>
+			<span asp-validation-for="Product.ProductBrandId" class="text-danger"></span>
+		</div>
+		<br />
+		<br />
+		<div class="col-12">
+			@if (Model.Product.Id != 0)
+			{
+				 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+			}
+			else
+			{
+				<button type="submit" data-toggle="modal" onclick="return ValidateInput()"  class="btn btn-success" style="width:150px">Create</button>
+			}
+			<a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+				Cancel
+			</a>
+		</div>
+		</div>
+	</div>
+		</div>
+		<div class="col-2">
+			<img src="@Model.Product.PictureUrl"
+			width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
+		</div>
+	</div>
+
+	}
+
+	 <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Product Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header  border-0">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                      <h6 class="col-md-10">
+                   Product Already Exists
+                </h6>
+
+                    <div class="modal-footer  border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "Product")'" />
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</form>
+</div>
+
+@section Scripts{
+	@{
+	<partial name="_ValidationScriptsPartial" />
+	}
+<script>
+    tinymce.init({
+      selector: 'textarea',
+      plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+      toolbar_mode: 'floating',
+   });
+  
+	function ValidateInput(){
+		if(document.getElementById("uploadBox").value==""){
+			Swal.fire({
+			  title: '',
+			  text: 'Please upload an Image!',
+			});
+			return false;
+		}
+		return true;
+	}
+</script>
+       @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    
+
+    @if (ViewBag.Confirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}
+}

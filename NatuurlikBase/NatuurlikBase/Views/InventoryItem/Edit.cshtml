@@ -1,0 +1,131 @@
+﻿@model InventoryItem
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+    <form method="post" asp-action="Edit">
+        @if (ViewBag.Error == null)
+        {
+
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                <h5>Update Inventory Item</h5>
+            </div>
+            <div class="card-body">
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="col-md-10">
+			<label asp-for="InventoryItemName"></label>
+			<input asp-for="InventoryItemName" class="form-control" />
+			<span asp-validation-for="InventoryItemName" class="text-danger"></span>
+		</div>
+        <div class="col-md-10">
+			<label asp-for="QuantityOnHand"></label>
+			<input asp-for="QuantityOnHand" class="form-control" />
+			<span asp-validation-for="QuantityOnHand" class="text-danger"></span>
+		</div>
+          <br />
+                        <div class="col-md-10">
+
+                            <label asp-for="InventoryTypeId" class="control-label">Inventory Type</label>
+                            <select asp-for="InventoryTypeId" class="form-control" asp-items="ViewBag.InventoryTypeId"></select>
+                            <span asp-validation-for="InventoryTypeId" class="text-danger"></span>
+
+                        </div>		
+                        <br />
+                         <div class="col-md-10">
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+		<a asp-controller="InventoryItem" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+	</div>
+        </div>
+        </div>
+      }
+	 <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Inventory Item Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header  border-0">
+                      @*  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                            <span aria-hidden="true">&times;</span>
+                        </button>*@
+
+                    </div>
+                      <h6 class="col-md-10">
+                    Inventory Item Already Exists
+                </h6>
+
+                    <div class="modal-footer  border-0">
+                        <div class="form-actions no-color">
+                            <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"
+                            onclick="location.href='@Url.Action("Index", "InventoryItem")'"/>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+</form>
+</div>
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    }
+
+    @if (ViewBag.Confirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}
+

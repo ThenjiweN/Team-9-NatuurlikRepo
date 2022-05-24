@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5HFYMyV5mICHNCG50sMFRvrmaQ5T2Tuhn/2t4gl50AM=",
+  "Hash": "wD8kDGm54aLbMqoSY+72I1t1tUHeuVlUOv9+SFk9u6s=",
   "Source": "NatuurlikBase",
   "BasePath": "_content/NatuurlikBase",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "NatuurlikBase\\wwwroot",
       "Source": "NatuurlikBase",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\css\\site.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\css\\site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\css\\site.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\favicon.ico",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\favicon.ico",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\favicon.ico"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\js\\site.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\js\\site.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\js\\site.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -354,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -371,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -388,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -405,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -422,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -439,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -456,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -473,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -490,13 +490,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -507,13 +507,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -524,13 +524,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -541,13 +541,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -558,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -575,13 +575,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -592,13 +592,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -609,13 +609,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -626,13 +626,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -643,13 +643,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -677,13 +677,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -694,13 +694,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -711,13 +711,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -728,13 +728,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -745,13 +745,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -762,13 +762,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -779,13 +779,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -796,13 +796,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -813,13 +813,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -830,13 +830,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -847,13 +847,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -864,13 +864,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -881,13 +881,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -898,13 +898,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -915,13 +915,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -932,13 +932,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -949,13 +949,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -966,13 +966,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -983,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1000,13 +1000,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1017,13 +1017,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
+      "ContentRoot": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\",
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1034,13 +1034,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\vumis\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\bundle\\NatuurlikBase.styles.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\bundle\\NatuurlikBase.styles.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "NatuurlikBase.styles.css",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\bundle\\NatuurlikBase.styles.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\bundle\\NatuurlikBase.styles.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NatuurlikBase.bundle.scp.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NatuurlikBase.bundle.scp.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "NatuurlikBase.bundle.scp.css",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NatuurlikBase.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\NatuurlikBase.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\account.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\account.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "css/account.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\account.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\admin.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\admin.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "css/admin.css",
       "AssetKind": "All",
@@ -1105,10 +1105,27 @@
       "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\crud.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\catalogue.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "css/catalogue.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\catalogue.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\crud.css",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "css/crud.css",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\crud.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\fonts.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\fonts.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "css/fonts.css",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fonts.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\home.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\home.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "css/home.css",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\css\\site.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\favicon.ico",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Black.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Black.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Black.ttf",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Black.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-BlackItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-BlackItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-BlackItalic.ttf",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-BlackItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Bold.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Bold.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Bold.ttf",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Bold.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-BoldItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-BoldItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-BoldItalic.ttf",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-BoldItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraBold.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraBold.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-ExtraBold.ttf",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-ExtraBold.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraBoldItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraBoldItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-ExtraBoldItalic.ttf",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraLight.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraLight.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-ExtraLight.ttf",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-ExtraLight.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraLightItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ExtraLightItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-ExtraLightItalic.ttf",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Italic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Italic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Italic.ttf",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Italic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Light.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Light.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Light.ttf",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Light.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-LightItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-LightItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-LightItalic.ttf",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-LightItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Medium.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Medium.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Medium.ttf",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Medium.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-MediumItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-MediumItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-MediumItalic.ttf",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-MediumItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Regular.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Regular.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Regular.ttf",
       "AssetKind": "All",
@@ -1428,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Regular.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-SemiBold.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-SemiBold.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-SemiBold.ttf",
       "AssetKind": "All",
@@ -1445,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-SemiBold.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-SemiBoldItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-SemiBoldItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-SemiBoldItalic.ttf",
       "AssetKind": "All",
@@ -1462,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Thin.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-Thin.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-Thin.ttf",
       "AssetKind": "All",
@@ -1479,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-Thin.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ThinItalic.ttf",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\Montserrat-ThinItalic.ttf",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/Montserrat-ThinItalic.ttf",
       "AssetKind": "All",
@@ -1496,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Montserrat-ThinItalic.ttf"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\OFL.txt",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\fonts\\OFL.txt",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "fonts/OFL.txt",
       "AssetKind": "All",
@@ -1513,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\OFL.txt"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\accept.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\accept.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/accept.png",
       "AssetKind": "All",
@@ -1530,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\images\\accept.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\annie.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\annie.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/annie.png",
       "AssetKind": "All",
@@ -1547,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\images\\annie.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\august.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\august.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/august.png",
       "AssetKind": "All",
@@ -1564,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\images\\august.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\bill.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\bill.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/bill.png",
       "AssetKind": "All",
@@ -1581,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bill.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\chili.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\chili.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/chili.png",
       "AssetKind": "All",
@@ -1598,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\images\\chili.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\cofe.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\cofe.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/cofe.png",
       "AssetKind": "All",
@@ -1615,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cofe.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\coffee.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\coffee.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/coffee.png",
       "AssetKind": "All",
@@ -1632,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\images\\coffee.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\copy.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\copy.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/copy.png",
       "AssetKind": "All",
@@ -1649,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\images\\copy.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\emile.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\emile.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/emile.png",
       "AssetKind": "All",
@@ -1666,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\images\\emile.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\hannes.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\hannes.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/hannes.png",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hannes.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\honey.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\honey.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/honey.png",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\images\\honey.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\jannes.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\jannes.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/jannes.png",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jannes.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\logo.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\mail.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\mail.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/mail.png",
       "AssetKind": "All",
@@ -1751,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mail.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\main.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\main.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/main.png",
       "AssetKind": "All",
@@ -1768,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\images\\main.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\meat.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\meat.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/meat.png",
       "AssetKind": "All",
@@ -1785,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\images\\meat.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\mince.jpg",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\mince.jpg",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/mince.jpg",
       "AssetKind": "All",
@@ -1802,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mince.jpg"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\mobhome.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\mobhome.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/mobhome.png",
       "AssetKind": "All",
@@ -1819,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mobhome.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\Natuurlik-Logo.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\Natuurlik-Logo.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/Natuurlik-Logo.png",
       "AssetKind": "All",
@@ -1836,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Natuurlik-Logo.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\nuts.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\nuts.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/nuts.png",
       "AssetKind": "All",
@@ -1853,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\images\\nuts.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\olive.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\olive.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/olive.png",
       "AssetKind": "All",
@@ -1870,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\images\\olive.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\post1.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\post1.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/post1.png",
       "AssetKind": "All",
@@ -1887,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\images\\post1.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\post2.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\post2.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/post2.png",
       "AssetKind": "All",
@@ -1904,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\images\\post2.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\post3.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\post3.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/post3.png",
       "AssetKind": "All",
@@ -1921,10 +1938,129 @@
       "OriginalItemSpec": "wwwroot\\images\\post3.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\slogan.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\0247655b-0889-4638-a2a7-53cbfca0331c.jpg",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/0247655b-0889-4638-a2a7-53cbfca0331c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\0247655b-0889-4638-a2a7-53cbfca0331c.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\79ca646d-a903-4528-b956-18e0b841969e.jpeg",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/79ca646d-a903-4528-b956-18e0b841969e.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\79ca646d-a903-4528-b956-18e0b841969e.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\8858c293-accf-48be-8132-c14ca8a39690.png",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/8858c293-accf-48be-8132-c14ca8a39690.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\8858c293-accf-48be-8132-c14ca8a39690.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\products\\a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/products/a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\products\\a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\slogan.png",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/slogan.png",
       "AssetKind": "All",
@@ -1938,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\images\\slogan.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\soap.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\soap.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/soap.png",
       "AssetKind": "All",
@@ -1955,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\images\\soap.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\try.png",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\try.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/try.png",
       "AssetKind": "All",
@@ -1972,10 +2108,27 @@
       "OriginalItemSpec": "wwwroot\\images\\try.png"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\wors.jpg",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\whitel.png",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "images/whitel.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\whitel.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\images\\wors.jpg",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "images/wors.jpg",
       "AssetKind": "All",
@@ -1989,10 +2142,95 @@
       "OriginalItemSpec": "wwwroot\\images\\wors.jpg"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\city.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/city.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\city.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\country.js",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/country.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\country.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\notifications.js",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/notifications.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\notifications.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\product.js",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\province.js",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/province.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\province.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\site.js",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2006,10 +2244,44 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\suburb.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/suburb.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\suburb.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\js\\user.js",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "js/user.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\user.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2023,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2040,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2057,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2074,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2091,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2108,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2125,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2142,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2159,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2176,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2193,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2210,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2227,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2244,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2261,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2295,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2312,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2329,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2346,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2363,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2380,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2397,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2414,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.css",
       "AssetKind": "All",
@@ -2431,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.css.map",
       "AssetKind": "All",
@@ -2448,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min.css",
       "AssetKind": "All",
@@ -2465,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
       "AssetKind": "All",
@@ -2482,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2499,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2516,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2533,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2550,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2567,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2584,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2601,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2618,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2635,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2652,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2669,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2686,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2703,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2720,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2737,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2754,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2771,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2788,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2805,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2822,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2839,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2856,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2873,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2890,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2907,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2924,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2941,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2958,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2975,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2992,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3009,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3026,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "NatuurlikBase",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
       "BasePath": "_content/NatuurlikBase",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

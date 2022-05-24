@@ -1,0 +1,95 @@
+﻿@model IEnumerable<NatuurlikBase.Models.Product>
+
+
+@section catalogue {
+    <link href="@Url.Content("~/css/catalogue.css")" rel="stylesheet" type="text/css" />
+}
+
+
+<div class="container">
+    <h2 id="catTitle">PRODUCTS</h2>
+        <div class="space row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input name="" class="form-control" type="search" placeholder="Search" id="myInput" onkeyup="myFunction()"  title="Type in a Product">
+                </div>               
+                <h5 id="cat">Categories</h5> 
+                <p id="catp">Sauce</p>
+                <p id="catp">Oil</p>
+                <p id="catp">Soap</p>
+                <p id="catp">Wine</p>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-10">
+                        <p id="catp"> Showing  1-12  of  12  Results</p>
+                    </div>                 
+                </div>    
+                
+
+                                    <div class="row">
+                                        <ul id="myUL" style="list-style-type:none; padding-left:0px">
+                                            @foreach (var product in Model)
+                                            {                   
+                                            @if (User.IsInRole(SR.Role_Reseller))
+                                            {  
+                                                
+                                                <li style="float:left;">
+                                                    <div class="col-lg-4" id=catproducts>
+                                                         <div class="catitem card">
+                                                            <img src="@product.PictureUrl" class="card-img-top"  alt="Product Image">               
+                                                              <p class="catitem"><a>@product</a></p>
+                                                              <p class="catprice">R<a>@product.ResellerPrice.ToString("0.00")</a></p>
+                                                              <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" asp-route-productId="@product.Id" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-info-circle-fill"></i>&nbsp;View Product</a>
+                                                         </div>
+                                                    </div>
+                                                </li>
+                                                
+                                                
+                                                }
+                                                else
+                                                {                                                 
+                                                   
+                                                    <li style="float:left;">
+                                                    <div class="col-lg-4 col-4" id="catproducts">
+                                                         <div class="catitem card">
+                                                                <img src="@product.PictureUrl" class="card-img-top"  alt="Product Image">               
+                                                                  <p class="catitem"><a>@product.Name</a></p>
+                                                                  <p class="catprice">R<a> @product.CustomerPrice.ToString("0.00")</a></p>
+                                                                  <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" asp-route-productId="@product.Id" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-info-circle-fill"></i>&nbsp; View Product</a>
+                                                         </div>
+                                                         </div> 
+                                                    </li>
+                                                                                                  
+                                                }
+                                            }
+                                            </ul>   
+                                   </div>
+ 
+                </div>
+            </div>             
+        </div>
+
+
+
+
+@section Scripts {
+    <script>
+           function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[1];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+}

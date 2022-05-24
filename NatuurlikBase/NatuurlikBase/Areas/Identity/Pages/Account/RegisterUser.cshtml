@@ -1,0 +1,235 @@
+﻿@page
+@model RegisterUserModel
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+<div>
+        <div class="card">
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Register User</h5>
+                </div>
+                <div class="card-body">               
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="row">
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.FirstName">First Name</label>
+                        <input asp-for="Input.FirstName" class="form-control" autocomplete="firstname" aria-required="true" />
+                        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.Surname">Surname</label>
+                        <input asp-for="Input.Surname" class="form-control" autocomplete="lastname" aria-required="true" />
+                        <span asp-validation-for="Input.Surname" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.PhoneNumber">Phone Number</label>
+                        <input asp-for="Input.PhoneNumber" class="form-control" aria-required="true" />
+                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Email">Email</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6 " id="formspace">
+                        <label asp-for="Input.StreetAddress">Street Address</label>
+                        <input asp-for="Input.StreetAddress" class="form-control" autocomplete="lastname" aria-required="true" />
+                        <span asp-validation-for="Input.StreetAddress" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                 <div class="row">
+                    <div class="form-floating col-md-3"  id="countryControl">
+                        <label asp-for="Input.Country">Country</label>
+                        <select asp-for="Input.Country" asp-items="@Model.Input.CountryList" class="form-control" onchange="onCountryChange()">
+                            <option disabled selected>- Select Country -</option>
+                        </select>
+                        <span asp-validation-for="Input.Country" class="text-danger"></span>
+                    </div>
+                    <br />
+                    <div class="form-floating col-md-3" id="provinceControl" hidden>
+                        <label asp-for="Input.Province">Province</label>
+                        <select asp-for="Input.Province" asp-items="@Model.Input.ProvinceList" class="form-control" onchange="onProvinceChange()">
+                            <option disabled selected>- Select Province -</option>
+                        </select>
+                        <span asp-validation-for="Input.Province" class="text-danger"></span>
+                    </div>
+                    <br />
+                </div>
+
+                <br />
+
+                <div class="row">
+                <div class="form-floating col-md-3" id="cityControl" hidden>
+                    <label asp-for="Input.City">City</label>
+                    <select asp-for="Input.City" asp-items="@Model.Input.CityList" class="form-control" onchange="onCityChange()">
+                        <option disabled selected>- Select City -</option>
+                    </select>
+                    <span asp-validation-for="Input.City" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-floating col-md-3" id="suburbControl" hidden>
+                    <label asp-for="Input.Suburb">Suburb</label>
+                    <select asp-for="Input.Suburb" asp-items="@Model.Input.SuburbList" class="form-control">
+                        <option disabled selected>- Select Suburb -</option>
+                    </select>
+                    <span asp-validation-for="Input.Suburb" class="text-danger"></span>
+                </div>
+                <br />
+                </div>
+
+                <br />
+
+                <div class="row">
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Password">Password</label>
+                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    </div>  
+                </div>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
+                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <br />
+                
+                <div class="row">
+                     <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Role">User Role</label>
+                        <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-control">
+                            <option disabled selected>- Select Role -</option>
+                        </select>
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <button id="registerSubmit" type="submit" style="width:150px;" class="btn btn-success">Create Account</button>           
+                <a asp-controller="User" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
+            </div>
+             </form>                      
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function onCountryChange()
+    {
+        if(!$('#Input_Country').val())
+        {
+            $('#suburbControl').attr('hidden',true);
+            $('#cityControl').attr('hidden',true);
+            $('#provinceControl').attr('hidden',true);
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/DropDownList/GetProvince",
+                data: { countryId: $('#Input_Country').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_Province').html('');
+                    options += '<option value="0" disabled >--Select Province--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_Province').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Input_Province').val(0);
+                    $('#provinceControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onProvinceChange()
+    {
+        if(!$('#Input_Province').val())
+        {
+            $('#cityControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/DropDownList/GetCity",
+                data: { ProvinceId: $('#Input_Province').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_City').html('');
+                    options += '<option value="0" disabled >--Select City--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_City').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Input_City').val(0);
+                    $('#cityControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onCityChange()
+    {
+        if(!$('#Input_City').val())
+        {
+            $('#suburbControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/DropDownList/GetSuburb",
+                data: { CityId: $('#Input_City').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_Suburb').html('');
+                    options += '<option value="0" disabled >--Select Suburb--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_Suburb').append(options);
+
+                    //Sets the DDL to the placeholder value
+                    $('#Input_Suburb').val(0);
+                    $('#suburbControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+
+
+</script>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

@@ -2,25 +2,29 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Configuration;
 using Microsoft.AspNetCore.Identity;
-using NatuurlikBase.Areas.Identity.Data;
+using NatuurlikBase.Data;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using NatuurlikBase.Services;
-
+using NatuurlikBase.Repository.IRepository;
+using NatuurlikBase.Repository;
+using NatuurlikBase.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true).AddDefaultTokenProviders().AddDefaultUI()
     .AddEntityFrameworkStores<DatabaseContext>();
 
 
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(connectionString));
 
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IEmailSender, SendGridEmailSender>();
+builder.Services.AddRazorPages();
+//.AddRazorRuntimeCompilation();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
