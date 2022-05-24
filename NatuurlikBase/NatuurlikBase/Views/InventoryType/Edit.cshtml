@@ -1,14 +1,15 @@
 ﻿@model InventoryType
 
 @{
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";    
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div id="page-content-wrapper">
-<form method="post" asp-action="Edit">
-	
-    <div>
-        <div class="card">
+    <form method="post" asp-action="Edit">
+        @if (ViewBag.Error == null)
+        {
+            <div>
+                <div class="card">
             <div class="card-header" style="background-color: #F2F2F2">
                 <h5>Update Inventory Type</h5>
             </div>
@@ -27,7 +28,7 @@
 	</div>
         </div>
         </div>
-    
+    }
 	 <div class="modal fade" id="exampleModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">

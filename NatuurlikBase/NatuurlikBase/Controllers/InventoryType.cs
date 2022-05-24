@@ -40,7 +40,7 @@ namespace NatuurlikBase.Controllers
             {
                 if (db.InventoryType.Any(c => c.InventoryTypeName.Equals(inventoryType.InventoryTypeName)))
                 {
-                    ViewBag.ReturnError = "Inventory Type Already exist in the database.";
+                    ViewBag.Error = "Inventory Type Already exist in the database.";
 
 
                 }
@@ -132,10 +132,27 @@ namespace NatuurlikBase.Controllers
         {
             InventoryType inventoryType = db.InventoryType.Find(id);
             db.InventoryType.Remove(inventoryType);
+
             ViewBag.CountryConfirmation = "Are you sure you want to delete a country.";
-            TempData["success"] = "Inventory Type Successfully Deleted.";
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            var hasFk =db.InventoryItem.Any(c => c.InventoryTypeId == id);
+
+            if (!hasFk)
+            {
+                var obj = db.InventoryType.FirstOrDefault(u => u.Id == id);
+                if (obj == null)
+                {
+                    TempData["AlertMessage"] = "Error occurred while attempting delete";
+                }
+                db.InventoryType.Remove(obj);
+                TempData["success"] = "Inventory Type Successfully Deleted.";
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["Delete"] = "Inventory Type cannot be deleted since it has an Inventory Item associated";
+                return RedirectToAction("Index");
+            }
         }
 
         protected override void Dispose(bool disposing)

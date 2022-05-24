@@ -43,7 +43,7 @@ namespace NatuurlikBase.Controllers
 
                 if (db.InventoryItem.Any(c => c.InventoryItemName == inventoryItem.InventoryItemName && c.InventoryTypeId == inventoryItem.InventoryTypeId && c.QuantityOnHand == inventoryItem.QuantityOnHand))
                 {
-                    ViewBag.ReturnError = "Inventory Type Already exist in the database.";
+                    ViewBag.Error = "Inventory Type Already exist in the database.";
 
 
                 }
