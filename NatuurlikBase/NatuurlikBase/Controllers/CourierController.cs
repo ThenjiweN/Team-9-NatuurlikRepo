@@ -48,7 +48,7 @@ namespace NatuurlikBase.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (_context.WriteOffReason.Any(c => c.Name.Equals(courier.CourierName)))
+                if (_context.Courier.Any(c => c.CourierName == courier.CourierName && c.CourierFee == courier.CourierFee && c.EstimatedDeliveryTime == courier.EstimatedDeliveryTime))
                 {
                     ViewBag.ReturnError = "Courier Already Exists!";
                 }
@@ -94,7 +94,7 @@ namespace NatuurlikBase.Controllers
 
             {
 
-                if (_context.WriteOffReason.Any(c => c.Name.Equals(courier.CourierName)))
+                if (_context.Courier.Any(c => c.CourierName == courier.CourierName && c.CourierFee == courier.CourierFee && c.EstimatedDeliveryTime == courier.EstimatedDeliveryTime))
                 {
                     ViewBag.ReturnError = "Courier Already Exists!";
 
