@@ -477,24 +477,6 @@ namespace NatuurlikBase.Migrations
                     b.ToTable("Province");
                 });
 
-            modelBuilder.Entity("NatuurlikBase.Models.QueryReason", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("QueryReason");
-                });
-
             modelBuilder.Entity("NatuurlikBase.Models.ReturnReason", b =>
                 {
                     b.Property<int>("Id")
@@ -511,24 +493,6 @@ namespace NatuurlikBase.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ReturnReason");
-                });
-
-            modelBuilder.Entity("NatuurlikBase.Models.ReviewReason", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ReviewReason");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.Suburb", b =>

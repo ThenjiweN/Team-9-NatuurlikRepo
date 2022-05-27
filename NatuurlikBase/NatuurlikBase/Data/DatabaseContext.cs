@@ -27,8 +27,6 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<WriteOffReason> WriteOffReason { get; set; }
     public DbSet<Courier> Courier { get; set; }
     public DbSet<Supplier> Suppliers { get; set; }
-    public DbSet<ReviewReason> ReviewReason { get; set; }
-    public DbSet<QueryReason> QueryReason { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
