@@ -10,12 +10,23 @@
         <div class="col-lg-6 left">
             <img class="prodimg" src="@Model.Product.PictureUrl">
         </div>
-        <div class="col-lg-6">
-            <h2 class="itemTitle">@Model.Product.Name</h2>
+          <div class="col-lg-6">
+        @if(User.IsInRole(SR.Role_Reseller))
+        {
+             <h2 class="itemTitle">@Model.Product.Name</h2>
+            <h3><strong>R @Model.Product.ResellerPrice.ToString("0.00")</strong> </h3> 
+            <p id="itemdesc">
+               @Model.Product.Description
+                </p>
+            }
+            else
+            {
+                  <h2 class="itemTitle">@Model.Product.Name</h2>
             <h3><strong>R @Model.Product.CustomerPrice.ToString("0.00")</strong> </h3> 
             <p id="itemdesc">
                @Model.Product.Description
             </p>
+            }
             
             <div class="row">
                 <div class="col-4">

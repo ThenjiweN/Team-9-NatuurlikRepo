@@ -59,6 +59,9 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             _hostEnvironment = hostEnvironment;
         }
 
+        [TempData]
+        public string StatusMessage { get; set; }
+
         [BindProperty]
         public InputModel Input { get; set; }
 
@@ -134,6 +137,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
 
+           
         }
 
 
@@ -231,7 +235,9 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        //return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        return RedirectToAction("Index", "User");
+
                     }
                     else
                     {

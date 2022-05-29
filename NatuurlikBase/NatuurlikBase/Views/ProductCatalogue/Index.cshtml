@@ -38,7 +38,7 @@
                                                     <div class="col-lg-4" id=catproducts>
                                                          <div class="catitem card">
                                                             <img src="@product.PictureUrl" class="card-img-top"  alt="Product Image">               
-                                                              <p class="catitem"><a>@product</a></p>
+                                                              <p class="catitem"><a>@product.Name</a></p>
                                                               <p class="catprice">R<a>@product.ResellerPrice.ToString("0.00")</a></p>
                                                               <a asp-area="" asp-controller="ProductCatalogue" asp-action="Item" asp-route-productId="@product.Id" class="btn btn-primary btn-block" id="prodbtn"><i class="bi bi-info-circle-fill"></i>&nbsp;View Product</a>
                                                          </div>

@@ -25,6 +25,8 @@ public class ApplicationUser : IdentityUser
 
     [Required]
     [RegularExpression(@"^(\d{10})$", ErrorMessage = "Please enter a valid Phone Number.")]
+    [MaxLength(10)]
+    [Display(Name ="Phone Number")]
     public string PhoneNumber { get; set; }
 
     [Required]
