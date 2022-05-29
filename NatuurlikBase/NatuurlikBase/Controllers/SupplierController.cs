@@ -23,6 +23,36 @@ namespace NatuurlikBase.Controllers
             return View(objCoverTypeList);
         }
 
+        public ActionResult GetProvince(int countryId)
+        {
+            return Json(_db.Province.Where(x => x.CountryId == countryId).Select(x => new
+            {
+                Text = x.ProvinceName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
+
+
+        [HttpGet]
+        public ActionResult GetCity(int provinceId)
+        {
+            return Json(_db.City.Where(x => x.ProvinceId == provinceId).Select(x => new
+            {
+                Text = x.CityName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
+
+        [HttpGet]
+        public ActionResult GetSuburb(int cityId)
+        {
+            return Json(_db.Suburb.Where(x => x.CityId == cityId).Select(x => new
+            {
+                Text = x.SuburbName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
+
         public IActionResult Create()
         {
             ViewData["CountryId"] = new SelectList(_db.Country, "Id", "CountryName");
