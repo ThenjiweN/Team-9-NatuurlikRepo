@@ -215,8 +215,8 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your Natuurlik Account",
+                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>. Your temporary password is: N@uurlik_14953 <br> Please Reset your password once account has been confirmed.");
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
