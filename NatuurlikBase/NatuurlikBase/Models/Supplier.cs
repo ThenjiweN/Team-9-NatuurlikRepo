@@ -9,19 +9,8 @@ namespace NatuurlikBase.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Name")]
-        [Required]
-        [MaxLength(50)]
-        [RegularExpression(@"^[ a-zA-Z ]+$", ErrorMessage = "Invalid Name provided.")]
-        public string Name { get; set; }
-
-        [Display(Name = "Surname")]
-        [Required]
-        [MaxLength(50)]
-        [RegularExpression(@"^[ a-zA-Z ]+$", ErrorMessage = "Invalid Surname provided.")]
-        public string Surname { get; set; }
-
         [Display(Name = "Company Name")]
+        [Required]
         [MaxLength(50)]
         public string CompanyName { get; set; }
 

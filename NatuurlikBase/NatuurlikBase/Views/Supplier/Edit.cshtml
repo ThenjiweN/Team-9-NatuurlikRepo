@@ -16,20 +16,6 @@
                     </div>
                     <div class="card-body">
                         @*<div asp-validation-summary="All"></div>*@
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label asp-for="Name"></label>
-                                <input asp-for="Name" class="form-control" />
-                                <span asp-validation-for="Name" class="text-danger"></span>
-                            </div>
-                            <div class="col-md-6">
-                                <label asp-for="Surname"></label>
-                                <input asp-for="Surname" class="form-control" />
-                                <span asp-validation-for="Surname" class="text-danger"></span>
-                            </div>
-                        </div>
-
-                        <br />
 
                         <div class="row">
                             <div class="col-md-6">
@@ -37,6 +23,11 @@
                                 <input asp-for="CompanyName" class="form-control" />
                                 <span asp-validation-for="CompanyName" class="text-danger"></span>
                             </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
                             <div class="col-md-6">
                                 <label asp-for="EmailAddress"></label>
                                 <input asp-for="EmailAddress" class="form-control" />
@@ -102,6 +93,7 @@
                             </div>
         </div>
 
+            <br />
             <br />
 
 		    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>

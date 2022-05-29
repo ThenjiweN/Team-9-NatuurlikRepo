@@ -38,10 +38,7 @@ namespace NatuurlikBase.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                if (_db.Suppliers.Any(c => c.Name==obj.Name && c.Surname==obj.Surname && c.CompanyName==obj.CompanyName && c.PhoneNumber==obj.PhoneNumber 
-                && c.EmailAddress==obj.EmailAddress && c.StreetAddress==obj.StreetAddress && c.CountryId==obj.CountryId && c.ProvinceId==obj.ProvinceId
-                && c.CityId==obj.CityId && c.SuburbId==obj.SuburbId))
+                if (_db.Suppliers.Any(c => c.CompanyName == obj.CompanyName && c.EmailAddress == obj.EmailAddress))
                 {
                     ViewBag.Error = "Supplier Already Exists.";
                 }
@@ -87,9 +84,7 @@ namespace NatuurlikBase.Controllers
             if (ModelState.IsValid)
             {
 
-                if (_db.Suppliers.Any(c => c.Name == obj.Name && c.Surname == obj.Surname && c.CompanyName == obj.CompanyName && c.PhoneNumber == obj.PhoneNumber
-                && c.EmailAddress == obj.EmailAddress && c.StreetAddress == obj.StreetAddress && c.CountryId == obj.CountryId && c.ProvinceId == obj.ProvinceId
-                && c.CityId == obj.CityId && c.SuburbId == obj.SuburbId))
+                if (_db.Suppliers.Any(c => c.CompanyName == obj.CompanyName && c.EmailAddress == obj.EmailAddress))
                 {
                     ViewBag.Error = "Supplier Already Exists.";
                 }
