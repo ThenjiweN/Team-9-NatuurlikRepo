@@ -22,15 +22,18 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
         public EmailModel(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IWebHostEnvironment hostEnvironment)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
+            _hostEnvironment = hostEnvironment;
         }
         public string Email { get; set; }
         public bool IsEmailConfirmed { get; set; }
@@ -105,12 +108,18 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
                     pageHandler: null,
                     values: new { area = "Identity", userId = userId, email = Input.NewEmail, code = code },
                     protocol: Request.Scheme);
-                await _emailSender.SendEmailAsync(
+
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\changeEmailTemp.html"));
+                    template = template.Replace("[URL]", $"{HtmlEncoder.Default.Encode(callbackUrl)}");
+                    string message = template;
+
+                    await _emailSender.SendEmailAsync(
                     Input.NewEmail,
                     "Confirm your email",
-                    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    message);
 
-                TempData["success"] = "Confirmation link to change email sent. Please check your email.";
+                    TempData["success"] = "Confirmation link to change email sent. Please check your email.";
                 return RedirectToPage();
                 }
             }

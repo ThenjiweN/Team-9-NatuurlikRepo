@@ -36,6 +36,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
         public RegisterUserModel(
             UserManager<ApplicationUser> userManager,
@@ -44,7 +45,8 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             RoleManager<IdentityRole> roleManager,
-            IUnitOfWork unitOfWork)
+            IUnitOfWork unitOfWork,
+            IWebHostEnvironment hostEnvironment)
         {
             _roleManager = roleManager;
             _userManager = userManager;
@@ -54,6 +56,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             _logger = logger;
             _emailSender = emailSender;
             _unitOfWork = unitOfWork;
+            _hostEnvironment = hostEnvironment;
         }
 
         [BindProperty]
@@ -215,8 +218,16 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your Natuurlik Account",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>. Your temporary password is: N@uurlik_14953 <br> Please Reset your password once account has been confirmed.");
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\regUserTemp.html"));
+                    template = template.Replace("[URL]", $"{HtmlEncoder.Default.Encode(callbackUrl)}");
+                    string message = template;
+
+                    await _emailSender.SendEmailAsync(
+                    Input.Email,
+                    "Confirm your Natuurlik Account",
+                    message);
+
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {

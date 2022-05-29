@@ -22,12 +22,14 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
 
-        public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender)
+        public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender, IWebHostEnvironment hostEnvironment)
         {
             _userManager = userManager;
             _emailSender = emailSender;
+            _hostEnvironment = hostEnvironment;
         }
 
         [BindProperty]
@@ -60,10 +62,15 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                     values: new { area = "Identity", code, resetEmail = resetEmail },
                     protocol: Request.Scheme);
 
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\forgotPassTemp.html"));
+                template = template.Replace("[URL]", $"{HtmlEncoder.Default.Encode(callbackUrl)}");
+                string message = template;
+
                 await _emailSender.SendEmailAsync(
-                    Input.Email,
-                    "Reset Password",
-                    $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                Input.Email,
+                "Reset Password",
+                message);
 
                 return RedirectToPage("./ForgotPasswordConfirmation");
             }
