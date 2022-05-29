@@ -8,417 +8,417 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NatuurlikBase
 build_property.RootNamespace = NatuurlikBase
-build_property.ProjectDir = C:\KYLE\My UP\INF 370\Natuurlik Code\Team-9-NatuurlikRepo\NatuurlikBase\NatuurlikBase\
+build_property.ProjectDir = C:\Users\preci\OneDrive\Documents\370\Commit QR RR\Team-9-NatuurlikRepo\NatuurlikBase\NatuurlikBase\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\KYLE\My UP\INF 370\Natuurlik Code\Team-9-NatuurlikRepo\NatuurlikBase\NatuurlikBase
+build_property.MSBuildProjectDirectory = C:\Users\preci\OneDrive\Documents\370\Commit QR RR\Team-9-NatuurlikRepo\NatuurlikBase\NatuurlikBase
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/RegisterUser.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/RegisterUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Details.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Cities/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Details.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Countries/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyaWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmllclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmllclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmllclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Courier/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmllclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Dashboard/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Home/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Home/Privacy.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5SXRlbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5SXRlbVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5SXRlbVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5SXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5VHlwZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5VHlwZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5VHlwZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/InventoryType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5VHlwZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEJyYW5kXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEJyYW5kXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEJyYW5kXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductBrand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEJyYW5kXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCatalogue/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCatalogue/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGFsb2d1ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCatalogue/Item.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCatalogue/Item.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGFsb2d1ZVxJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Product/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Product/Upsert.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Product/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2VcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2VcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Upsert.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Province/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmluY2VcVXBzZXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcnlSZWFzb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcnlSZWFzb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcnlSZWFzb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/QueryReason/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlcnlSZWFzb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuUmVhc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuUmVhc29uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Details.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuUmVhc29uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuUmVhc29uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReturnReason/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV0dXJuUmVhc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3UmVhc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3UmVhc29uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3UmVhc29uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ReviewReason/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3UmVhc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/Error.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_Notification.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJic1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJic1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Details.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJic1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJic1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburbs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJic1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburb/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburb/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJiXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburb/Upsert.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Suburb/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VidXJiXFVwc2VydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Supplier/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/User/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/User/Upsert.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/User/Upsert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcHNlcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Create.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVPZmZSZWFzb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Delete.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVPZmZSZWFzb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Edit.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVPZmZSZWFzb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Index.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/WriteOffReason/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVPZmZSZWFzb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/_ViewImports.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/_ViewStart.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_Layout.cshtml]
+[C:/Users/preci/OneDrive/Documents/370/Commit QR RR/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nxsjq65ytc
