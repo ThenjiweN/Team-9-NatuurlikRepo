@@ -56,7 +56,7 @@ namespace NatuurlikBase.Controllers
                 {
                     _context.Add(courier);
                     _context.SaveChanges();
-                    TempData["AlertMessage"] = "Courier Added Successflly!";
+                    TempData["success"] = "Courier Added Successflly!";
                     return RedirectToAction("Index");
                 }
 
@@ -102,7 +102,7 @@ namespace NatuurlikBase.Controllers
                 else
                 {
                     _context.Entry(courier).State = EntityState.Modified;
-                    TempData["AlertMessage"] = "Courier Updated Successfully";
+                    TempData["success"] = "Courier Updated Successfully";
                     ViewBag.CourierConfirmation = "Please confirm your changes";
                     _context.SaveChanges();
                     return RedirectToAction("Index");
@@ -137,7 +137,7 @@ namespace NatuurlikBase.Controllers
             Courier courier = _context.Courier.Find(id);
             _context.Courier.Remove(courier);
             ViewBag.CourierConfirmation = "Are you sure you want to delete this courier";
-            TempData["AlertMessage"] = "Courier Deleted Successfully";
+            TempData["success"] = "Courier Deleted Successfully";
             _context.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -62,7 +62,7 @@ namespace NatuurlikBase.Controllers
                 {
                     _context.Add(writeOffReason);
                     _context.SaveChanges();
-                    TempData["AlertMessage"] = "Write-Off Reason Added Successflly!";
+                    TempData["success"] = "Write-Off Reason Added Successflly!";
                     return RedirectToAction("Index");
                 }
 
@@ -108,7 +108,7 @@ namespace NatuurlikBase.Controllers
                 else
                 {
                     _context.Entry(writeOffReason).State = EntityState.Modified;
-                    TempData["AlertMessage"] = "Write-Off Reason Updated Successfully";
+                    TempData["success"] = "Write-Off Reason Updated Successfully";
                     ViewBag.WriteOffReasonConfirmation = "Please confirm your changes";
                     _context.SaveChanges();
                     return RedirectToAction("Index");
@@ -143,7 +143,7 @@ namespace NatuurlikBase.Controllers
             WriteOffReason writeoff = _context.WriteOffReason.Find(id);
             _context.WriteOffReason.Remove(writeoff);
             ViewBag.WriteOffReasonConfirmation = "Are you sure you want to delete this write-off reason?";
-            TempData["AlertMessage"] = "Write-Off Reason Deleted Successfully";
+            TempData["success"] = "Write-Off Reason Deleted Successfully";
             _context.SaveChanges();
             return RedirectToAction("Index");
         }

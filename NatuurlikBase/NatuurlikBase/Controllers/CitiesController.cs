@@ -75,6 +75,8 @@ namespace NatuurlikBase.Controllers
                 {
                     _context.Add(city);
                     TempData["success"] = "City Created Successfully";
+
+                    TempData["NextCreation"] = "Hello World.";
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
                 }

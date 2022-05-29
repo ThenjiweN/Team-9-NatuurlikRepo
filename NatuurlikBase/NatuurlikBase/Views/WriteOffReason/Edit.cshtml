@@ -12,9 +12,11 @@
     {
         @Html.AntiForgeryToken()
 
-        <div>
-            <div class="card">
-                <div class="card-header" style="background-color: #F2F2F2">
+            <div>
+                @if (ViewBag.ReturnError == null)
+                {
+                    <div class="card">
+                        <div class="card-header" style="background-color: #F2F2F2">
                     <h5>Update Write-Off Reason</h5>
                 </div>
 
@@ -35,6 +37,7 @@
                     </div>
                 </div>
             </div>
+            }
         </div>
         <div class="modal fade" id="exampleModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -61,13 +64,13 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal1">
+        <div class="modal fade" id="exampleModal1"  data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header  border-0">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                       @* <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                        </button>*@  
 
                     </div>
                       <h6 class="col-md-10">

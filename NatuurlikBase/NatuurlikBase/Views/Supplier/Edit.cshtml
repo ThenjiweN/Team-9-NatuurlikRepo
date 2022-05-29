@@ -59,18 +59,15 @@
 
                         <div class="row">
                             <div class="col-md-3">              
-                                @if (ViewBag.Error == null)
-                                {
-                                    <label asp-for="CountryId" class="control-label">Country Name</label>
+                                  <label asp-for="CountryId" class="control-label">Country Name</label>
                                     <select asp-for="CountryId" class ="form-control" asp-items="ViewBag.CountryId"></select>
-                                }
+                                
                             </div>
                             <div class="col-md-3">              
-                                @if (ViewBag.Error == null)
-                                {
+                              
                                     <label asp-for="ProvinceId" class="control-label">Province Name</label>
                                     <select asp-for="ProvinceId" class ="form-control" asp-items="ViewBag.ProvinceId"></select>
-                                }
+                                
                             </div>
                         </div>
 
@@ -78,18 +75,16 @@
 
                         <div class="row">
                             <div class="col-md-3">              
-                                @if (ViewBag.Error == null)
-                                {
+                                
                                     <label asp-for="CityId" class="control-label">City Name</label>
                                     <select asp-for="CityId" class ="form-control" asp-items="ViewBag.CityId"></select>
-                                }
+                                
                             </div>
                             <div class="col-md-3">              
-                                @if (ViewBag.Error == null)
-                                {
+                               
                                     <label asp-for="SuburbId" class="control-label">Suburb Name</label>
                                     <select asp-for="SuburbId" class ="form-control" asp-items="ViewBag.SuburbId"></select>
-                                }
+                                
                             </div>
         </div>
 
@@ -130,13 +125,13 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal1">
+        <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header  border-0">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                      @*  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                        </button>*@
 
                     </div>
                       <h6 class="col-md-10">
