@@ -21,6 +21,8 @@
             <span asp-validation-for="User.FirstName" class="text-danger"></span>
         </div>
 
+        
+
         <div class="col-md-6">
             <label asp-for="User.Surname"> Surname </label>
             <input asp-for="User.Surname" class="form-control" />
@@ -28,6 +30,7 @@
             </div>
         </div>
 
+        <br />
 
           <div class="row">
                <div class="col-md-6">
@@ -41,6 +44,8 @@
                 <span asp-validation-for="User.Email" class="text-danger"></span>
                 </div>
           </div>  
+
+          <br />
 
           <div class="row">
                 <div class="col-md-6">
@@ -60,6 +65,8 @@
                         <span asp-validation-for="User.CountryId" class="text-danger"></span>
 		</div>
 
+
+
 		<div class="col-md-6">
 			 <label asp-for="User.ProvinceId">Province</label>
                         <select asp-for="User.ProvinceId" asp-items="@Model.ProvinceForCountryList" required class="form-control" onchange="onProvinceChange()">
@@ -68,7 +75,9 @@
                         <span asp-validation-for="User.ProvinceId" class="text-danger"></span>
 		</div>
 
-        <div class="col-md-6">
+        <br />
+
+        <div class="col-md-6" style="padding-top: 20px">
 			 <label asp-for="User.CityId">City</label>
                     <select asp-for="User.CityId" asp-items="@Model.CityForProvinceList" required class="form-control" onchange="onCityChange()">
                         <option disabled selected>- Select City -</option>
@@ -76,7 +85,7 @@
                     <span asp-validation-for="User.CityId" class="text-danger"></span>
 		</div>
 
-        <div class="col-md-6">
+        <div class="col-md-6" style="padding-top: 20px">
 			 <label asp-for="User.SuburbId">Suburb</label>
                     <select asp-for="User.SuburbId" asp-items="@Model.SuburbForCityList" required class="form-control">
                         <option disabled selected>- Select Suburb -</option>
@@ -88,10 +97,9 @@
           <br />
              @if (Model.User.Id != null)
             {
-                <div class="col-md-6"> 
+                <div class="col-md-6" style="padding-top: 20px; padding-bottom: 20px"> 
                     <label>Account Status:</label>
                     @Html.DropDownListFor(modelItem => modelItem.User.EmailConfirmed, new [] { new SelectListItem { Text = "Active", Value="True" } , new SelectListItem { Text = "Disabled", Value="False"}})
-
                 </div>
             }
           </div>
@@ -101,11 +109,11 @@
         	<div class="col-12 text-end">
 			@if (Model.User.Id != null)
 			{
-				<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+				<button type="submit" class="btn btn-success" style="width:150px">Update</button>
 			}
 			else
 			{
-				<button type="submit" onclick="return ValidateInput()" class="btn btn-primary" style="width:150px">Create</button>
+				<button type="submit" onclick="return ValidateInput()" class="btn btn-success" style="width:150px">Create</button>
 			}
 			<a asp-controller="User" asp-action="Index" class="btn btn-secondary" style="width:150px">
 				Back to List

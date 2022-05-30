@@ -19,16 +19,24 @@
 			<label asp-for="InventoryItemName"></label>
 			<input asp-for="InventoryItemName" class="form-control" />
 			<span asp-validation-for="InventoryItemName" class="text-danger"></span>
+
+            <br />
+
 		</div><div class=" col-md-10">
 			<label asp-for="QuantityOnHand"></label>
 			<input asp-for="QuantityOnHand" class="form-control" />
 			<span asp-validation-for="QuantityOnHand" class="text-danger"></span>
-             <div class="form-group">
-              
-               
-                      <label asp-for="InventoryTypeId" class="control-label">Inventory Type</label>
+
+            <br />
+
+             <div class="form-group">                            
+                <label asp-for="InventoryTypeId" class="control-label">Inventory Type</label>
                 <select asp-for="InventoryTypeId" class ="form-control" asp-items="ViewBag.InventoryTypeId"></select>
             </div>
+
+
+            <br />
+
 		<button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
 		<a asp-controller="InventoryItem" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
 			Cancel

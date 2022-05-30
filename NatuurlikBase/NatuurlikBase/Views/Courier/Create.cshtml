@@ -13,20 +13,27 @@
             {
                 <div class="card">
                     <div class="card-header" style="background-color: #F2F2F2">
-                    <h5>Add Courier</h5>
+                    <h5>Create Courier</h5>
                 </div>
                 <div class="card-body">
 		    @*<div asp-validation-summary="All"></div>*@
+
 		    <div class="col-md-10">
 			    <label asp-for="CourierName"></label>
 			    <input asp-for="CourierName" class="form-control" />
 			    <span asp-validation-for="CourierName" class="text-danger"></span>
                 </div>
+
+                <br />
+
              <div class="col-md-10">
 			    <label asp-for="CourierFee"></label>
 			    <input asp-for="CourierFee" class="form-control" />
 			    <span asp-validation-for="CourierFee" class="text-danger"></span>
                  </div>
+
+                 <br />
+
                 <div class="col-md-10">
 			    <label asp-for="EstimatedDeliveryTime"></label> 
 			    <select asp-for="EstimatedDeliveryTime" class="form-control">
@@ -39,7 +46,7 @@
 			    <span asp-validation-for="EstimatedDeliveryTime" class="text-danger"></span>
                  </div>
                  <br />
-            <div>
+            <div class="col-md-10">
 		        <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
 		        <a asp-controller="Courier" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
 			        Cancel
