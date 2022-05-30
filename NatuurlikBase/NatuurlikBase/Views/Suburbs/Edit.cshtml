@@ -9,6 +9,7 @@
     <form asp-action="Edit">
 	
         <div>
+            @if(ViewBag.Error==null){
             <div class="card">
                 <div class="card-header" style="background-color: #F2F2F2">
                     <h5>Update Suburb</h5>
@@ -28,11 +29,11 @@
                     <span asp-validation-for="PostalCode" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    @if(ViewBag.Error==null){
+                    
                     <label asp-for="CityId" class="control-label">City Name</label>
                     <select asp-for="CityId" class="form-control col-md-10" asp-items="ViewBag.CityId"></select>
                     <span asp-validation-for="CityId" class="text-danger"></span>
-                    }
+                 
                 </div>
 		
 		    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
@@ -41,6 +42,7 @@
 		    </a>
 	    </div>
             </div>
+               }
             </div>
     
 	     <div class="modal fade" id="exampleModal">
@@ -68,13 +70,11 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="exampleModal1">
+            <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header  border-0">
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                          
 
                         </div>
                           <h6 class="col-md-10">

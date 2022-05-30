@@ -1,0 +1,142 @@
+﻿@model Supplier
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+
+<form method="post" asp-action="Create">
+    <div>
+    @if (ViewBag.Error == null)
+    {
+            
+                <div class="card">
+                    <div class="card-header" style="background-color: #F2F2F2">
+                        <h5>Create Supplier</h5>
+                    </div>
+                    <div class="card-body">
+                        @*<div asp-validation-summary="All"></div>*@
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="CompanyName"></label>
+                                <input asp-for="CompanyName" class="form-control" />
+                                <span asp-validation-for="CompanyName" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="EmailAddress"></label>
+                                <input asp-for="EmailAddress" class="form-control" />
+                                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="PhoneNumber"></label>
+                                <input asp-for="PhoneNumber" class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class ="row">
+                            <div class="col-md-6">
+                                <label asp-for="StreetAddress"></label>
+                                <input asp-for="StreetAddress" class="form-control" />
+                                <span asp-validation-for="StreetAddress" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-3">              
+                              
+                                    <label asp-for="CountryId" class="control-label">Country Name</label>
+                                    <select asp-for="CountryId" class ="form-control" asp-items="ViewBag.CountryId"></select>
+                                
+                            </div>
+                            <div class="col-md-3">              
+                                
+                                    <label asp-for="ProvinceId" class="control-label">Province Name</label>
+                                    <select asp-for="ProvinceId" class ="form-control" asp-items="ViewBag.ProvinceId"></select>
+                                
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-3">              
+                               
+                                    <label asp-for="CityId" class="control-label">City Name</label>
+                                    <select asp-for="CityId" class ="form-control" asp-items="ViewBag.CityId"></select>
+                                
+                            </div>
+                            <div class="col-md-3">              
+                               
+                                    <label asp-for="SuburbId" class="control-label">Suburb Name</label>
+                                    <select asp-for="SuburbId" class ="form-control" asp-items="ViewBag.SuburbId"></select>
+                                
+                            </div>
+                        </div>
+
+                        <br />
+                        <br />
+
+                        <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
+                        <a asp-controller="Supplier" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="modal fade" id="exampleModal1"  data-bs-backdrop="static" data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header  border-0">
+                          @* <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                                <span aria-hidden="true">&times;</span>
+                            </button>*@ 
+
+                        </div>
+                          <h6 class="col-md-10">
+                            Supplier Already Exists
+                          </h6>
+                        <div class="modal-footer  border-0">
+                            <div class="form-actions no-color">
+                                <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"
+                                onclick="location.href='@Url.Action("Index", "Supplier")'"/>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+    </form>
+</div>
+
+@section Scripts{
+	
+	 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+        </script>
+    
+    }
+}

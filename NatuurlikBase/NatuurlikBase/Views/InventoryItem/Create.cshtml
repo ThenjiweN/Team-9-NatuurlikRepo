@@ -1,0 +1,93 @@
+﻿@model InventoryItem
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+<form method="post">
+	
+        @if (ViewBag.Error == null)
+        {
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                <h5>Create Inventory Item</h5>
+            </div>
+            <div class="card-body">
+		@*<div asp-validation-summary="All"></div>*@
+		<div class=" col-md-10">
+			<label asp-for="InventoryItemName"></label>
+			<input asp-for="InventoryItemName" class="form-control" />
+			<span asp-validation-for="InventoryItemName" class="text-danger"></span>
+
+            <br />
+
+		</div><div class=" col-md-10">
+			<label asp-for="QuantityOnHand"></label>
+			<input asp-for="QuantityOnHand" class="form-control" />
+			<span asp-validation-for="QuantityOnHand" class="text-danger"></span>
+
+            <br />
+
+             <div class="form-group">                            
+                <label asp-for="InventoryTypeId" class="control-label">Inventory Type</label>
+                <select asp-for="InventoryTypeId" class ="form-control" asp-items="ViewBag.InventoryTypeId"></select>
+            </div>
+
+
+            <br />
+
+		<button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
+		<a asp-controller="InventoryItem" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+	</div>
+	
+		
+     </div>
+        </div>
+        }
+	     <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                  @*  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
+                        <span aria-hidden="true">&times;</span>
+                    </button>*@
+
+                </div>
+                <h6 class="col-md-10">
+                  Inventory Item Already Exists
+                </h6>
+
+                <div class="modal-footer border-0">
+                    <div class="form-actions no-color">
+                        <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "InventoryItem")'" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+@section Scripts{
+	
+	 
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+}
+

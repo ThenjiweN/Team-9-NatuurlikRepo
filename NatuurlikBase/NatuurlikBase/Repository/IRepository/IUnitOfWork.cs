@@ -16,6 +16,7 @@ namespace NatuurlikBase.Repository.IRepository
         IProductRepository Product { get; }
         IProductBrandRepository Brand { get; }
         IProductCategoryRepository Category { get; }
+        ISupplierRepository Supplier { get; }
 
         void Save();
     }

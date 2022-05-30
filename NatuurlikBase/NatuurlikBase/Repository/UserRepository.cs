@@ -26,11 +26,13 @@ namespace NatuurlikBase.Repository
             {
                 objFromDb.FirstName = obj.FirstName;
                 objFromDb.Surname = obj.Surname;
+                objFromDb.PhoneNumber = obj.PhoneNumber;
                 objFromDb.StreetAddress = obj.StreetAddress;
                 objFromDb.CountryId = obj.CountryId;
                 objFromDb.ProvinceId = obj.ProvinceId;
                 objFromDb.CityId = obj.CityId;
                 objFromDb.SuburbId = obj.SuburbId;
+                objFromDb.EmailConfirmed = obj.EmailConfirmed;
 
 
             }

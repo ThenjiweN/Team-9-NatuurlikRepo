@@ -7,7 +7,9 @@
 
 <div id="page-content-wrapper">
 <div>
-        <div class="card">
+        @if(ViewBag.Error==null){
+            <div class="card">
+           
             <div class="card-header" style="background-color: #F2F2F2">
                 <h5>Add Province</h5>
             </div>
@@ -22,21 +24,28 @@
             </div>
             <div class="form-group">
               
-                @if(ViewBag.Error==null){
+                
                       <label asp-for="CountryId" class="control-label">Country Name</label>
-                <select asp-for="CountryId" class ="form-control col-md-10" asp-items="ViewBag.CountryId"></select>}
+                <select asp-for="CountryId" class ="form-control col-md-10" asp-items="ViewBag.CountryId"></select>
             </div>
            <button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
 		<a asp-controller="Province" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
 			Cancel
 		</a>
-                 <div class="modal" id="exampleModal1" >
+       
+           
+        </form>
+    </div>
+</div>
+</div>
+ }
+     </div>
+
+           <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" >
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-0">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                  
 
                 </div>
                 <h6 class="col-md-10">
@@ -53,11 +62,7 @@
             </div>
         </div>
     </div>
-        </form>
-    </div>
-</div>
-</div>
-     </div>
+
 </div>    
 
 @section Scripts{

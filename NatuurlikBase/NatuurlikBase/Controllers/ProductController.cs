@@ -70,27 +70,15 @@ namespace NatuurlikBase.Controllers
             if (ModelState.IsValid)
             {
 
-                if (_context.Products.Any(c => c.Name.Equals(obj.Product.Name)))
-               
-                    {
-                        if (_context.Products.Any(b => b.CustomerPrice.Equals(obj.Product.CustomerPrice)))
-                        {
-                            {
-                                if (_context.Products.Any(b => b.Description.Equals(obj.Product.Description)))
-                                {
-                                    if (_context.Products.Any(b => b.ResellerPrice.Equals(obj.Product.ResellerPrice)))
-                                    {
-                                        
-                                            
-                                            
-                                                ViewBag.Error = "Product Already Exists!";
-                                            
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    
+                if (_context.Products.Any(c => c.Name==obj.Product.Name && c.CustomerPrice==obj.Product.CustomerPrice && c.ResellerPrice == obj.Product.ResellerPrice 
+                && c.Description == obj.Product.Description && c.CategoryId == obj.Product.CategoryId && c.ProductBrandId == obj.Product.ProductBrandId && c.PictureUrl == obj.Product.PictureUrl))
+           
+                   
+                {
+
+                    ViewBag.Error = "Product Already Exists!";
+                                    
+   
                 }
                     else 
                 {
@@ -120,6 +108,7 @@ namespace NatuurlikBase.Controllers
                     if (obj.Product.Id == 0)
                     {
                         _unitOfWork.Product.Add(obj.Product);
+                      
                     }
                     else
                     {

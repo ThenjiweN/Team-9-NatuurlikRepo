@@ -8,8 +8,9 @@
 
 <div id="page-content-wrapper">
 <form asp-action="Edit">
-	
+	 
     <div>
+        @if(ViewBag.Error==null){
         <div class="card">
             <div class="card-header" style="background-color: #F2F2F2">
                 <h5>Update Province</h5>
@@ -25,21 +26,22 @@
             </div>
             <br />
             <div class="col-md-10">
-                @if(ViewBag.Error==null){
+               
                 <label asp-for="CountryId" class="control-label">Country Name</label>
                 <select asp-for="CountryId" class="form-control" asp-items="ViewBag.CountryId"></select>
                 <span asp-validation-for="CountryId" class="text-danger"></span>
-                }
+              
             </div>		
             <br />
 		    <div class="col-md-10">
-		        <button type="button" class="btn btn-success" style="width:150px;" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+		        <button type="button" class="btn btn-success" style="width:150px;" data-toggle="modal" data-target="#exampleModal">Update</button>
 		        <a asp-controller="Province" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
 			        Cancel
 		        </a>
         </div>
 	</div>
         </div>
+          }
         </div>
     
 	 <div class="modal fade" id="exampleModal">
@@ -67,13 +69,11 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal1">
+        <div class="modal" id="exampleModal1"  data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header  border-0">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" id="b1">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                     
 
                     </div>
                       <h6 class="col-md-10">
@@ -91,11 +91,9 @@
             </div>
         </div>
 </form>
-
+</div>
 @section Scripts{
-	@{
-		<partial name="_ValidationScriptsPartial" />
-	}
+	
       @if (ViewBag.Error != null)
     {
         <script>

@@ -12,18 +12,48 @@ namespace NatuurlikBase.Controllers
 
 
         private readonly IUnitOfWork _unitOfWork;
+        private readonly DatabaseContext _db;
 
-        public UserController(IUnitOfWork unitOfWork)
+        public UserController(IUnitOfWork unitOfWork, DatabaseContext db)
         {
             _unitOfWork = unitOfWork;
+            _db = db;
         }
         public IActionResult Index()
         {
             IEnumerable<Country> countryList = _unitOfWork.Country.GetAll();
             return View(countryList);
-            
+
+        }
+        public ActionResult GetProvince(int countryId)
+        {
+            return Json(_db.Province.Where(x => x.CountryId == countryId).Select(x => new
+            {
+                Text = x.ProvinceName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
         }
 
+
+        [HttpGet]
+        public ActionResult GetCity(int provinceId)
+        {
+            return Json(_db.City.Where(x => x.ProvinceId == provinceId).Select(x => new
+            {
+                Text = x.CityName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
+
+        [HttpGet]
+        public ActionResult GetSuburb(int cityId)
+        {
+            return Json(_db.Suburb.Where(x => x.CityId == cityId).Select(x => new
+            {
+                Text = x.SuburbName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
         //GET
         public IActionResult Upsert(string? id)
         {
@@ -34,7 +64,8 @@ namespace NatuurlikBase.Controllers
                 {
                     Text = i.CountryName,
                     Value = i.Id.ToString()
-                }),
+                })
+                ,
                 ProvinceForCountryList = _unitOfWork.Province.GetAll().Select(i => new SelectListItem
                 {
                     Text = i.ProvinceName,
@@ -52,7 +83,7 @@ namespace NatuurlikBase.Controllers
                 }),
             };
 
-            if (id== null )
+            if (id == null)
             {
                 return View(userVM);
             }
@@ -61,7 +92,7 @@ namespace NatuurlikBase.Controllers
                 userVM.User = _unitOfWork.User.GetFirstOrDefault(u => u.Id == id);
                 return View(userVM);
             }
-      
+
         }
 
         [HttpPost]

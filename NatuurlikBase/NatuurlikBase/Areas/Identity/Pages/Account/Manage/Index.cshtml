@@ -39,35 +39,35 @@
 
             <div class="row">
                 <div class="form-floating col-md-6" id="formspace">
-                    <label asp-for="Input.Country">Country: </label>
-                    <select asp-for="Input.Country" asp-items="@Model.Input.CountryList" class="form-control">
-                        <option disabled selected>--Select Country--</option>
-                    </select>
-                    <span asp-validation-for="Input.Country" class="text-danger"></span>
+			 <label asp-for="Input.Country">Country</label>
+                        <select asp-for="Input.Country" asp-items="@Model.Input.CountryList" required class="form-control" onchange="onCountryChange()">
+                            <option disabled selected>- Select Country -</option>
+                        </select>
+                        <span asp-validation-for="Input.Country" class="text-danger"></span>
                 </div>
 
                 <div class="form-floating col-md-6" id="formspace">
-                    <label asp-for="Input.Province"> Province: </label>
-                    <select asp-for="Input.Province" asp-items="@Model.Input.ProvinceList" class="form-control">
-                        <option disabled selected>--Select Province--</option>
-                    </select>
-                    <span asp-validation-for="Input.Province" class="text-danger"></span>
+			 <label asp-for="Input.Province">Province</label>
+                        <select asp-for="Input.Province" asp-items="@Model.Input.ProvinceList" required class="form-control" onchange="onProvinceChange()">
+                            <option disabled selected>- Select Province -</option>
+                        </select>
+                        <span asp-validation-for="Input.Province" class="text-danger"></span>
                 </div>
             </div>
 
             <div class="row">
                 <div class="form-floating col-md-6" id="formspace">
-                    <label asp-for="Input.City">City: </label>
-                    <select asp-for="Input.City" asp-items="@Model.Input.CityList" class="form-control">
-                        <option disabled selected>--Select City--</option>
+			 <label asp-for="Input.City">City</label>
+                    <select asp-for="Input.City" asp-items="@Model.Input.CityList" required class="form-control" onchange="onCityChange()">
+                        <option disabled selected>- Select City -</option>
                     </select>
                     <span asp-validation-for="Input.City" class="text-danger"></span>
                 </div>
 
                 <div class="form-floating col-md-6" id="formspace">
-                    <label asp-for="Input.Suburb">Suburb: </label>
-                    <select asp-for="Input.Suburb" asp-items="@Model.Input.SuburbList" class="form-control">
-                        <option disabled selected>--Select Suburb--</option>
+			 <label asp-for="Input.Suburb">Suburb</label>
+                    <select asp-for="Input.Suburb" asp-items="@Model.Input.SuburbList" required class="form-control">
+                        <option disabled selected>- Select Suburb -</option>
                     </select>
                     <span asp-validation-for="Input.Suburb" class="text-danger"></span>
                 </div>
@@ -77,6 +77,108 @@
         </form>
     </div>
 </div>
+
+<script>
+        
+    function onCountryChange()
+    {
+        if(!$('#Input_Country').val())
+        {
+            $('#suburbControl').attr('hidden',true);
+            $('#cityControl').attr('hidden',true);
+            $('#provinceControl').attr('hidden',true);
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetProvince",
+                data: { countryId: $('#Input_Country').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_Province').html('');
+                    options += '<option value="0" disabled >--Select Province--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_Province').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Input_Province').val(0);
+                    $('#provinceControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onProvinceChange()
+    {
+        if(!$('#Input_Province').val())
+        {
+            $('#cityControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetCity",
+                data: { ProvinceId: $('#Input_Province').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_City').html('');
+                    options += '<option value="0" disabled >--Select City--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_City').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Input_City').val(0);
+                    $('#cityControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onCityChange()
+    {
+        if(!$('#Input_City').val())
+        {
+            $('#suburbControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetSuburb",
+                data: { CityId: $('#Input_City').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Input_Suburb').html('');
+                    options += '<option value="0" disabled >--Select Suburb--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Input_Suburb').append(options);
+
+                    //Sets the DDL to the placeholder value
+                    $('#Input_Suburb').val();
+                    $('#suburbControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+        
+    </script>
 
 @section Scripts {
 <partial name="_ValidationScriptsPartial" />

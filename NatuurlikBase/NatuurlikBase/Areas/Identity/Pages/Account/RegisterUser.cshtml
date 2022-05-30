@@ -90,22 +90,7 @@
 
                 <br />
 
-                <div class="row">
-                    <div class="form-floating col-md-6" id="formspace">
-                        <label asp-for="Input.Password">Password</label>
-                        <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
-                        <span asp-validation-for="Input.Password" class="text-danger"></span>
-                    </div>  
-                </div>
-                <br />
-                <div class="row">
-                    <div class="form-floating col-md-6" id="formspace">
-                        <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                        <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
-                        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-                    </div>
-                </div>
-                <br />
+              
                 
                 <div class="row">
                      <div class="form-floating col-md-6" id="formspace">
@@ -115,6 +100,22 @@
                         </select>
                     </div>
                 </div>
+                  <div class="row">
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Password" hidden>Password : </label>
+                        <input asp-for="Input.Password" class="form-control" hidden value="N@uurlik_14953" autocomplete="new-password" placeholder="N@tuser432" />
+                        @*<span asp-validation-for="Input.Password" class="text-danger"></span>*@
+                    </div>  
+                </div>
+                <br />
+                <div class="row">
+                    <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.ConfirmPassword" hidden>Confirm Password</label>
+                        <input asp-for="Input.ConfirmPassword"  class="form-control" hidden value="N@uurlik_14953" autocomplete="new-password" placeholder="N@tuser432"/>
+                        @*<span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>*@
+                    </div>
+                </div>
+                <br />
                 <br />
                 <br />
 

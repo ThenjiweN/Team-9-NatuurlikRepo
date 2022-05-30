@@ -64,7 +64,7 @@ namespace NatuurlikBase.Controllers
                 {
                     ViewBag.CountryError = "Country name Already exist in the database.";
 
-                  
+               
                 }
                 else
                 {
@@ -73,7 +73,8 @@ namespace NatuurlikBase.Controllers
                     ViewBag.CountryConfirmation = "Are you sure you want to add a country.";
                     db.SaveChanges();
 
-                    TempData["AlertMessage"] = "Country name successfully added.";
+                    TempData["success"] = "Country name successfully added.";
+                    TempData["NextCreation"] = "Hello World.";
                     return RedirectToAction("Index");
                 }
 
@@ -122,7 +123,7 @@ namespace NatuurlikBase.Controllers
                 else
                 {
                     db.Entry(country).State = EntityState.Modified;
-                    TempData["AlertMessage"] = "Country name successfully Edited.";
+                    TempData["success"] = "Country name successfully Edited.";
                     ViewBag.CountryConfirmation = "Are you sure with your country name changes.";
                     db.SaveChanges();
                     return RedirectToAction("Index");
@@ -169,12 +170,12 @@ namespace NatuurlikBase.Controllers
                 }
                 _unitOfWork.Country.Remove(obj);
                 _unitOfWork.Save();
-                TempData["AlertMessage"] = "Country name successfully Deleted.";
+                TempData["success"] = "Country name successfully Deleted.";
                 return RedirectToAction("Index");
             }
             else
             {
-                TempData["AlertMessage"] = "Country cannot be deleted since it has a Province associated";
+                TempData["Delete"] = "Country cannot be deleted since it has a Province associated";
                 return RedirectToAction("Index");
             }
 
