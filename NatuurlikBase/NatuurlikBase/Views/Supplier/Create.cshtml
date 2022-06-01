@@ -60,15 +60,18 @@
 
                         <div class="row">
                             <div class="col-md-3">              
-                              
-                                    <label asp-for="CountryId" class="control-label">Country Name</label>
-                                    <select asp-for="CountryId" class ="form-control" asp-items="ViewBag.CountryId"></select>
+                                  <label asp-for="CountryId" class="control-label">Country Name</label>
+                                    <select asp-for="CountryId" class ="form-control"  onchange="onCountryChange()" asp-items="ViewBag.CountryId">
+                                        <option disabled selected>- Select Country -</option>
+                                    </select>
                                 
                             </div>
                             <div class="col-md-3">              
-                                
+                              
                                     <label asp-for="ProvinceId" class="control-label">Province Name</label>
-                                    <select asp-for="ProvinceId" class ="form-control" asp-items="ViewBag.ProvinceId"></select>
+                                    <select asp-for="ProvinceId" class ="form-control" onchange="onProvinceChange()" asp-items="ViewBag.ProvinceId">
+                                        <option disabled selected>- Select Province -</option>
+                                    </select>
                                 
                             </div>
                         </div>
@@ -77,15 +80,19 @@
 
                         <div class="row">
                             <div class="col-md-3">              
-                               
+                                
                                     <label asp-for="CityId" class="control-label">City Name</label>
-                                    <select asp-for="CityId" class ="form-control" asp-items="ViewBag.CityId"></select>
+                                    <select asp-for="CityId" class ="form-control" onchange="onCityChange()" asp-items="ViewBag.CityId">
+                                        <option disabled selected>- Select City -</option>
+                                    </select>
                                 
                             </div>
                             <div class="col-md-3">              
                                
                                     <label asp-for="SuburbId" class="control-label">Suburb Name</label>
-                                    <select asp-for="SuburbId" class ="form-control" asp-items="ViewBag.SuburbId"></select>
+                                    <select asp-for="SuburbId" class ="form-control" asp-items="ViewBag.SuburbId">
+                                        <option disabled selected>- Select Suburb -</option>
+                                    </select>
                                 
                             </div>
                         </div>
@@ -126,6 +133,110 @@
     </form>
 </div>
 
+
+<script>
+        
+    function onCountryChange()
+    {
+        if(!$('#User_CountryId').val())
+        {
+            $('#suburbControl').attr('hidden',true);
+            $('#cityControl').attr('hidden',true);
+            $('#provinceControl').attr('hidden',true);
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetProvince",
+                data: { countryId: $('#User_CountryId').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#User_ProvinceId').html('');
+                    options += '<option value="0" disabled >--Select Province--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#User_ProvinceId').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#User_ProvinceId').val(0);
+                    $('#provinceControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onProvinceChange()
+    {
+        if(!$('#User_ProvinceId').val())
+        {
+            $('#cityControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetCity",
+                data: { ProvinceId: $('#User_ProvinceId').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#User_CityId').html('');
+                    options += '<option value="0" disabled >--Select City--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#User_CityId').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#User_CityId').val(0);
+                    $('#cityControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onCityChange()
+    {
+        if(!$('#User_CityId').val())
+        {
+            $('#suburbControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetSuburb",
+                data: { CityId: $('#User_CityId').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#User_SuburbId').html('');
+                    options += '<option value="0" disabled >--Select Suburb--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#User_SuburbId').append(options);
+
+                    //Sets the DDL to the placeholder value
+                    $('#User_SuburbId').val();
+                    $('#suburbControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+        
+    </script>
+
+
 @section Scripts{
 	
 	 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
@@ -135,8 +246,9 @@
 
             $(function () {
                 $("#exampleModal1").modal("show");
-            });
+            })
         </script>
     
     }
+
 }
