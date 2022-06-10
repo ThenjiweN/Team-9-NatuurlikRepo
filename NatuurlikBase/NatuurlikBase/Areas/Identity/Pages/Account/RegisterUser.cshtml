@@ -14,6 +14,17 @@
                 </div>
                 <div class="card-body">               
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="row">
+                     <div class="form-floating col-md-6" id="formspace">
+                        <label asp-for="Input.Role">User Role</label>
+                        <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-control">
+                            <option disabled selected>- Select Role -</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br />
                 <div class="row">
                     <div class="form-floating col-md-6 " id="formspace">
                         <label asp-for="Input.FirstName">First Name</label>
@@ -92,14 +103,7 @@
 
               
                 
-                <div class="row">
-                     <div class="form-floating col-md-6" id="formspace">
-                        <label asp-for="Input.Role">User Role</label>
-                        <select asp-for="Input.Role" asp-items="@Model.Input.RoleList" class="form-control">
-                            <option disabled selected>- Select Role -</option>
-                        </select>
-                    </div>
-                </div>
+                
                   <div class="row">
                     <div class="form-floating col-md-6" id="formspace">
                         <label asp-for="Input.Password" hidden>Password : </label>

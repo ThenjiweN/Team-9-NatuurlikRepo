@@ -29,10 +29,25 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<Supplier> Suppliers { get; set; }
     public DbSet<QueryReason> QueryReason { get; set; }
     public DbSet<ReviewReason> ReviewReason { get; set; }
+ 
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
+
+        builder.Entity<ProductInventory>()
+                .HasKey(pi => new { pi.ProductId, pi.InventoryItemId });
+
+        builder.Entity<ProductInventory>()
+            .HasOne(pi => pi.Product)
+            .WithMany(p => p.ProductInventories)
+            .HasForeignKey(pi => pi.ProductId);
+
+        builder.Entity<ProductInventory>()
+            .HasOne(pi => pi.Inventory)
+            .WithMany(i => i.ProductInventories)
+            .HasForeignKey(pi => pi.InventoryItemId);
+
 
     }
 

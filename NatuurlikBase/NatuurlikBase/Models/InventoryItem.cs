@@ -24,5 +24,7 @@ namespace NatuurlikBase.Models
         [ForeignKey("InventoryTypeId")]
         public InventoryType InventoryType { get; set; }
 
+        public List<ProductInventory>? ProductInventories { get; set; }
+
     }
 }

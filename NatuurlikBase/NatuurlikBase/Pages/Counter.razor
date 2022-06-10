@@ -1,0 +1,36 @@
+﻿@page "/counter"
+@inject NavigationManager NavigationManager
+
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web;
+
+<PageTitle>Issa Blazor Component inside an MVC view! :)</PageTitle>
+
+<h1>Issa Blazor Component :)</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="DecrementCount">Click me for -5</button>
+<button class="btn btn-primary" @onclick="ResetCount">Click me to Reset Count</button>
+<button class="btn btn-primary" @onclick="IncrementCount">Click me to for +5</button>
+
+@code {
+    private int currentCount = 100;
+
+    private void DecrementCount()
+    {
+        currentCount -= 5;
+
+    }
+
+     private void IncrementCount()
+    {
+        currentCount += 5;
+
+    }
+
+    private void ResetCount()
+    {
+        currentCount = 100;
+    }
+}

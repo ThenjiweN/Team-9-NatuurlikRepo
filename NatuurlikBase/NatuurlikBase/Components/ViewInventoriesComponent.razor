@@ -1,0 +1,76 @@
+﻿@using NatuurlikBase.Repository.IRepository
+
+@inject IViewInventoriesByName ViewInventoriesByNameUseCase
+
+<div class="input-group">
+    <input type="text" 
+        class="form-control form-control-lg" 
+        placeholder="Type the Inventory Item Name here to search"
+        @bind-value="inventoryNameToSearch" 
+        @bind-value:event="oninput" />    
+    <button type="button" class="input-group-text btn-success" 
+        @onclick="@( async()=> { await ViewInventories(); } )">View</button>
+</div>
+@if (this.DisplaySearchResult 
+    && _inventories != null
+    && selectedInventory == null)
+{
+    <div style="overflow-y:auto; max-height:300px; border:1px solid silver; padding-top:5px">
+        <ul style="list-style-type:none">
+            @foreach(var inv in _inventories)
+            {
+                <li style="cursor:pointer" @onclick="@(async() => { await SelectInventory(inv); })"
+                    @key="inv.Id">@inv.InventoryItemName</li>
+            }
+        </ul>
+    </div>
+}
+
+@code {
+    private string? _inventoryNameToSearch;
+    public string? inventoryNameToSearch 
+    { 
+        get => _inventoryNameToSearch;
+        set
+        {
+            _inventoryNameToSearch = value;
+            if (!string.IsNullOrWhiteSpace(_inventoryNameToSearch) &&
+                _inventoryNameToSearch.Length > 2)
+            {
+                ViewInventories();
+            }
+        } 
+    }
+
+    private List<InventoryItem>? _inventories;
+    private InventoryItem? selectedInventory;
+
+    [Parameter]
+    public EventCallback<List<InventoryItem>> OnSearchInventories{ get; set; }
+
+    [Parameter]
+    public EventCallback<InventoryItem> OnSelectInventory { get; set; }
+
+    [Parameter]
+    public bool DisplaySearchResult { get; set; } = false;
+
+    private async Task ViewInventories()
+    {
+        var inventories = (await ViewInventoriesByNameUseCase
+            .ExecuteAsync(inventoryNameToSearch??string.Empty))?.ToList();
+
+        await OnSearchInventories.InvokeAsync(inventories);
+        _inventories = inventories;
+        this.selectedInventory = null;
+
+        //we don't need this when clicking on the button, but we do need this when typing
+        StateHasChanged();
+    }
+
+    private async Task SelectInventory(InventoryItem inventory)
+    {
+        await OnSelectInventory.InvokeAsync(inventory);
+        selectedInventory = inventory;
+    }
+
+}

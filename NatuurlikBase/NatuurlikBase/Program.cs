@@ -21,6 +21,15 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.S
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(connectionString));
 
+builder.Services.AddServerSideBlazor();
+builder.Services.AddTransient<IProductInventoryRepository, ProductInventoryRepository>();
+builder.Services.AddTransient<IInventoryItemRepository, InventoryItemRepository>();
+builder.Services.AddTransient<IViewProductsByName, ViewProductsByName>();
+builder.Services.AddTransient<IViewInventoriesByName, ViewInventoriesByName>();
+builder.Services.AddTransient<IViewInventoryById, ViewInventoryById>();
+builder.Services.AddTransient<IViewProductById, ViewProductById>();
+builder.Services.AddTransient<IEditProduct, EditProduct>();
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IEmailSender, SendGridEmailSender>();
 builder.Services.AddRazorPages();
@@ -48,12 +57,19 @@ app.UseRouting();
 app.UseAuthentication();;
 
 app.UseAuthorization();
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.MapRazorPages();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapBlazorHub();
+    app.MapFallbackToPage("/_Host");
+});
+
+
 
 app.Run();
 

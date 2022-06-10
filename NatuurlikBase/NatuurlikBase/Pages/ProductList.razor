@@ -1,0 +1,76 @@
+﻿@page "/products"
+@using NatuurlikBase.Components
+@using NatuurlikBase.Repository.IRepository
+
+
+
+@inject NavigationManager NavigationManager
+@inject IViewProductsByName ViewProductsByName
+
+@code {
+      private async Task LoadProducts()
+    {
+        var prods = await ViewProductsByName.ExecuteAsync();
+        this.productsList = prods.ToList();
+    }
+}
+
+<h3>Products List</h3>
+<br/>
+
+<ViewProductsComponent OnSearchProducts="OnSearchProducts"></ViewProductsComponent>
+
+@if (productsList != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var product in this.productsList)
+            {
+                <ProductItemComponent 
+                    Product="product"
+                    OnProductDeleted="OnProductDeleted"></ProductItemComponent>
+            }
+        </tbody>
+    </table>    
+}
+<br/>
+@*<button type="button" class="btn btn-primary" @onclick="AddProduct">Add Product</button>*@
+
+
+@code {
+    private List<Product>? productsList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadProducts();
+    }
+
+    private void OnSearchProducts(List<Product> products)
+    {
+        this.productsList = products;
+    }
+
+    //private void AddProduct()
+    //{
+    //    NavigationManager.NavigateTo("/addproduct");
+    //}
+
+    private async Task OnProductDeleted()
+    {
+        await LoadProducts();
+    }
+
+    //private async Task LoadProducts()
+    //{
+    //    var prods = await ViewProductsByName.ExecuteAsync();
+    //    this.productsList = prods.ToList();
+    //}
+
+}

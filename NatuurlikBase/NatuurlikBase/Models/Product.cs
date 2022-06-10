@@ -47,5 +47,7 @@ namespace NatuurlikBase.Models
 
         [Display(Name = "Display Product")]
         public string DisplayProduct { get; set; }
+
+        public List<ProductInventory>? ProductInventories { get; set; }
     }
 }
