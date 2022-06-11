@@ -1,0 +1,229 @@
+﻿@model InventoryProcured
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+
+<form method="post" asp-action="Create">
+    <div>
+    @if (ViewBag.Error == null)
+    {
+            
+                <div class="card">
+                    <div class="card-header" style="background-color: #F2F2F2">
+                        <h5>Capture Procured Inventory</h5>
+                    </div>
+                    <div class="card-body">
+                        @*<div asp-validation-summary="All"></div>*@
+
+    
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="SupplierId">Supplier</label>
+                               <select asp-for="SupplierId" class ="form-control" asp-items="ViewBag.SupplierId">
+                                        <option disabled selected>- Select Supplier -</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="InvoiceNo">Invoice Number</label>
+                                <input asp-for="InvoiceNo" class="form-control" />
+                                <span asp-validation-for="InvoiceNo" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+@*                         <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="InvoiceFile">Invoice File</label>
+                                <input type="file" name="file" class="form-control" />
+                            </div>
+                        </div>*@
+
+                        <br />
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="ItemID">Inventory Item</label>
+                               <select asp-for="ItemID" class ="form-control" asp-items="ViewBag.ItemID">
+                                        <option disabled selected>- Select Inventory Item -</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                        <br />
+
+                          <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="QuantityReceived"></label>
+                                <input asp-for="QuantityReceived" class="form-control" />
+                                <span asp-validation-for="QuantityReceived" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Capture</button>
+                        <a asp-controller="InventoryProcured" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+                }
+            </div>  
+            <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Procured Inventory Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script>
+        
+    function onCountryChange()
+    {
+        if(!$('#User_CountryId').val())
+        {
+            $('#suburbControl').attr('hidden',true);
+            $('#cityControl').attr('hidden',true);
+            $('#provinceControl').attr('hidden',true);
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetProvince",
+                data: { countryId: $('#User_CountryId').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#User_ProvinceId').html('');
+                    options += '<option value="0" disabled >--Select Province--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#User_ProvinceId').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#User_ProvinceId').val(0);
+                    $('#provinceControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onProvinceChange()
+    {
+        if(!$('#User_ProvinceId').val())
+        {
+            $('#cityControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetCity",
+                data: { ProvinceId: $('#User_ProvinceId').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#User_CityId').html('');
+                    options += '<option value="0" disabled >--Select City--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#User_CityId').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#User_CityId').val(0);
+                    $('#cityControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onCityChange()
+    {
+        if(!$('#User_CityId').val())
+        {
+            $('#suburbControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetSuburb",
+                data: { CityId: $('#User_CityId').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#User_SuburbId').html('');
+                    options += '<option value="0" disabled >--Select Suburb--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#User_SuburbId').append(options);
+
+                    //Sets the DDL to the placeholder value
+                    $('#User_SuburbId').val();
+                    $('#suburbControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+        
+    </script>
+
+
+@section Scripts{
+	
+	 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            })
+        </script>
+    
+    }
+
+}
+

@@ -29,7 +29,8 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<Supplier> Suppliers { get; set; }
     public DbSet<QueryReason> QueryReason { get; set; }
     public DbSet<ReviewReason> ReviewReason { get; set; }
- 
+    public DbSet<InventoryProcured> InventoryProcured { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
