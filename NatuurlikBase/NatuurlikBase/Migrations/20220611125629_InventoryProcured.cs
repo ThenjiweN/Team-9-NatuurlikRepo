@@ -48,30 +48,7 @@ namespace NatuurlikBase.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "ProductInventory",
-                columns: table => new
-                {
-                    ProductId = table.Column<int>(type: "int", nullable: false),
-                    InventoryItemId = table.Column<int>(type: "int", nullable: false),
-                    InventoryItemQuantity = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ProductInventory", x => new { x.ProductId, x.InventoryItemId });
-                    table.ForeignKey(
-                        name: "FK_ProductInventory_InventoryItem_InventoryItemId",
-                        column: x => x.InventoryItemId,
-                        principalTable: "InventoryItem",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ProductInventory_Products_ProductId",
-                        column: x => x.ProductId,
-                        principalTable: "Products",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
+           
 
             migrationBuilder.CreateIndex(
                 name: "IX_InventoryProcured_ItemID",
@@ -83,10 +60,6 @@ namespace NatuurlikBase.Migrations
                 table: "InventoryProcured",
                 column: "SupplierId");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_ProductInventory_InventoryItemId",
-                table: "ProductInventory",
-                column: "InventoryItemId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

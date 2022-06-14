@@ -10,7 +10,7 @@
 @code {
       private async Task LoadProducts()
     {
-        var prods = await ViewProductsByName.ExecuteAsync();
+        var prods = await ViewProductsByName.ExecuteSearchAsync();
         this.productsList = prods.ToList();
     }
 }

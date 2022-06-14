@@ -353,6 +353,40 @@ namespace NatuurlikBase.Migrations
                     b.ToTable("InventoryItem");
                 });
 
+            modelBuilder.Entity("NatuurlikBase.Models.InventoryItemTransaction", b =>
+                {
+                    b.Property<int>("InventoryItemTransactionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InventoryItemTransactionId"), 1L, 1);
+
+                    b.Property<int>("ActivityType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Actor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("InventoryItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuantityAfter")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuantityBefore")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("InventoryItemTransactionId");
+
+                    b.HasIndex("InventoryItemId");
+
+                    b.ToTable("InventoryItemTransaction");
+                });
+
             modelBuilder.Entity("NatuurlikBase.Models.InventoryProcured", b =>
                 {
                     b.Property<int>("Id")
@@ -507,6 +541,40 @@ namespace NatuurlikBase.Migrations
                     b.HasIndex("InventoryItemId");
 
                     b.ToTable("ProductInventory");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.ProductTransaction", b =>
+                {
+                    b.Property<int>("ProductTransactionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductTransactionId"), 1L, 1);
+
+                    b.Property<int>("ActivityType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Actor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuantityAfter")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuantityBefore")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ProductTransactionId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductTransaction");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.Province", b =>
@@ -792,6 +860,17 @@ namespace NatuurlikBase.Migrations
                     b.Navigation("InventoryType");
                 });
 
+            modelBuilder.Entity("NatuurlikBase.Models.InventoryItemTransaction", b =>
+                {
+                    b.HasOne("NatuurlikBase.Models.InventoryItem", "InventoryItem")
+                        .WithMany()
+                        .HasForeignKey("InventoryItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("InventoryItem");
+                });
+
             modelBuilder.Entity("NatuurlikBase.Models.InventoryProcured", b =>
                 {
                     b.HasOne("NatuurlikBase.Models.InventoryItem", "InventoryItem")
@@ -845,6 +924,17 @@ namespace NatuurlikBase.Migrations
                         .IsRequired();
 
                     b.Navigation("Inventory");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.ProductTransaction", b =>
+                {
+                    b.HasOne("NatuurlikBase.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Product");
                 });

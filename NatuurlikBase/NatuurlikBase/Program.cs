@@ -10,6 +10,7 @@ using NatuurlikBase.Repository;
 using NatuurlikBase.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(connectionString));
@@ -17,26 +18,27 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true).AddDefaultTokenProviders().AddDefaultUI()
     .AddEntityFrameworkStores<DatabaseContext>();
 
+builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DatabaseContext>(options =>
-    options.UseSqlServer(connectionString));
-
-builder.Services.AddServerSideBlazor();
+builder.Services.AddServerSideBlazor().AddCircuitOptions(option => { option.DetailedErrors = true; });
 builder.Services.AddTransient<IProductInventoryRepository, ProductInventoryRepository>();
 builder.Services.AddTransient<IInventoryItemRepository, InventoryItemRepository>();
+builder.Services.AddTransient<IProductTransactionRepository, ProductTransactionRepository>();
+builder.Services.AddTransient<IInventoryItemTransactionRepository, InventoryItemTransactionRepository>();
 builder.Services.AddTransient<IViewProductsByName, ViewProductsByName>();
 builder.Services.AddTransient<IViewInventoriesByName, ViewInventoriesByName>();
 builder.Services.AddTransient<IViewInventoryById, ViewInventoryById>();
 builder.Services.AddTransient<IViewProductById, ViewProductById>();
 builder.Services.AddTransient<IEditProduct, EditProduct>();
+builder.Services.AddTransient<IProduceFinishedProduct, ProduceFinishedProduct>();
+builder.Services.AddTransient<IValidateEnoughInventories, ValidateEnoughInventories>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IEmailSender, SendGridEmailSender>();
 builder.Services.AddRazorPages();
-//.AddRazorRuntimeCompilation();
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+
 //var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 //builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 

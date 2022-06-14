@@ -13,6 +13,7 @@ namespace NatuurlikBase.Repository.IRepository
         Task<List<Product>> GetProductsByNameAsync(string name);
         Task<Product> GetProductByIdAsync(int productId);
         Task UpdateProductAsync(Product product);
+
        
     }
 }

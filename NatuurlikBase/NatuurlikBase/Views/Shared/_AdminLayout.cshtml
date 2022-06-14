@@ -53,6 +53,9 @@
                          <li>
                             <a asp-area="" asp-controller="ConfigureProduct" asp-action="Index">Product Configuration</a>
                         </li>
+                        <li>
+                            <a asp-area="" asp-controller="Produce" asp-action="Index">Produce Product</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -79,7 +82,7 @@
                     <a asp-area="" asp-controller="Supplier" asp-action="Index"><i class="bi bi-truck">&nbsp;</i>Suppliers</a>
                 </li>
                 <li>
-                    <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bar-chart">&nbsp;</i> Inventory</a>
+                    <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bar-chart">&nbsp;</i> Inventory Management</a>
                     <ul class="collapse list-unstyled" id="inventorySubmenu">
                         <li>
                             <a asp-area="" asp-controller="InventoryItem" asp-action="Index">Inventory Items</a>
@@ -239,5 +242,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
 </body>
 </html>

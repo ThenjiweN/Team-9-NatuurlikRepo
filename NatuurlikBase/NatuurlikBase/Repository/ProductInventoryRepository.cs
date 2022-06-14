@@ -23,7 +23,7 @@ namespace NatuurlikBase.Repository
 
         public async Task<Product> GetProductByIdAsync(int productId)
         {
-            // this is definitely not enough, let's work on fixing this
+           
             return await _db.Products.Include(x => x.ProductInventories)
                 .ThenInclude(x => x.Inventory)
                 .FirstOrDefaultAsync(x => x.Id == productId);

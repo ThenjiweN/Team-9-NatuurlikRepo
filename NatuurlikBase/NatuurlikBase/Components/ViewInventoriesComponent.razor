@@ -5,15 +5,15 @@
 <div class="input-group">
     <input type="text" 
         class="form-control form-control-lg" 
-        placeholder="Type the Inventory Item Name here to search"
+        placeholder="Enter the Inventory Item Name here to search"
         @bind-value="inventoryNameToSearch" 
         @bind-value:event="oninput" />    
     <button type="button" class="input-group-text btn-success" 
-        @onclick="@( async()=> { await ViewInventories(); } )">View</button>
+        @onclick="@( async()=> { await ViewInventories(); } )">View All</button>
 </div>
 @if (this.DisplaySearchResult 
     && _inventories != null
-    && selectedInventory == null)
+    && selectedInventoryItem == null)
 {
     <div style="overflow-y:auto; max-height:300px; border:1px solid silver; padding-top:5px">
         <ul style="list-style-type:none">
@@ -43,7 +43,7 @@
     }
 
     private List<InventoryItem>? _inventories;
-    private InventoryItem? selectedInventory;
+    private InventoryItem? selectedInventoryItem;
 
     [Parameter]
     public EventCallback<List<InventoryItem>> OnSearchInventories{ get; set; }
@@ -61,16 +61,16 @@
 
         await OnSearchInventories.InvokeAsync(inventories);
         _inventories = inventories;
-        this.selectedInventory = null;
+        this.selectedInventoryItem = null;
 
         //we don't need this when clicking on the button, but we do need this when typing
         StateHasChanged();
     }
 
-    private async Task SelectInventory(InventoryItem inventory)
+    private async Task SelectInventory(InventoryItem inventoryItem)
     {
-        await OnSelectInventory.InvokeAsync(inventory);
-        selectedInventory = inventory;
+        await OnSelectInventory.InvokeAsync(inventoryItem);
+        selectedInventoryItem = inventoryItem;
     }
 
 }

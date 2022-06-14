@@ -18,7 +18,7 @@ namespace NatuurlikBase.Repository
             _productInventoryRepository = productInventoryRepository;
         }
 
-        public async Task<List<Product>> ExecuteAsync(string name = "")
+        public async Task<List<Product>> ExecuteSearchAsync(string name = "")
         {
             return await _productInventoryRepository.GetProductsByNameAsync(name);
         }

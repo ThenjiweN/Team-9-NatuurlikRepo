@@ -1,48 +1,53 @@
 ﻿@using NatuurlikBase.Repository.IRepository
 
-@inject IViewProductsByName ViewProductsByName
+@inject IViewProductsByName SearchProductsByName
 
 <div class="input-group">
     <input type="text" 
         class="form-control form-control-lg" 
-        placeholder="Type product name here to search"
+        style="max-width:600px"
+        placeholder="Enter Name of Product to Search"
         @bind-value="productNameToSearch" 
         @bind-value:event="oninput"
         />    
-    <button type="button" class="input-group-text btn-success" 
-        @onclick="@( async()=> { await ViewProducts(); } )">View</button>
+    <button type="button" class="input-group-text" 
+        @onclick="@( async()=> { await ViewProducts(); } )">View All</button>
 </div>
 @if (this.DisplaySearchResult 
     && _products != null
     && selectedProduct == null)
 {
-    <div style="overflow-y:auto; max-height:300px; border:1px solid silver; padding-top:5px">
-        <ul style="list-style-type:none">
-            @foreach(var inv in _products)
+    <div style="overflow-y:auto; max-height:300px; max-width:600px; border:2px solid; padding-top:5px">
+        <ul style="list-style-type:disc;">
+            @foreach(var product in _products)
             {
-                <li style="cursor:pointer" @onclick="@(async() => { await SelectProduct(inv); })"
-                    @key="inv.Id">@inv.Name</li>
+                <li style="cursor:pointer; font-weight:normal;" @onclick="@(async() => { await SelectProduct(product); })"
+                    @key="product.Id">@product.Name</li>
+                    
             }
         </ul>
     </div>
 }
 
 @code {
-    private string? _productNameToSearch;   
+  
+    private string? _searchByProductName;
+
+
     public string productNameToSearch
     {
-        get => _productNameToSearch;
+        get => _searchByProductName;
         set
         {
-             _productNameToSearch = value;
-            if (!string.IsNullOrWhiteSpace(_productNameToSearch) &&
-                _productNameToSearch.Length > 2)
+            _searchByProductName = value;
+            if (!string.IsNullOrWhiteSpace(_searchByProductName) &&
+                //more than three characters have been typed
+                _searchByProductName.Length > 3)
             {
                 ViewProducts();
             }
         }
     }
-
 
     private List<Product>? _products;
     private Product? selectedProduct;
@@ -50,28 +55,37 @@
     [Parameter]
     public EventCallback<List<Product>> OnSearchProducts{ get; set; }
 
-    [Parameter]
-    public bool DisplaySearchResult { get; set; } = false;
+
 
     [Parameter]
     public EventCallback<Product> OnSelectProduct { get; set; }
-
-    private async Task ViewProducts()
-    {
-        var products = (await ViewProductsByName
-            .ExecuteAsync(productNameToSearch??string.Empty))?.ToList();
-
-        await OnSearchProducts.InvokeAsync(products);
-        _products = products;
-        this.selectedProduct = null;
-
-        StateHasChanged();
-    }
 
     private async Task SelectProduct(Product product)
     {
         await OnSelectProduct.InvokeAsync(product);
         selectedProduct = product;
+        _searchByProductName = "";
     }
 
+    [Parameter]
+    public bool DisplaySearchResult { get; set; } = false;
+    
+    private async Task ViewProducts()
+    {
+
+        
+        var products = (await SearchProductsByName
+            .ExecuteSearchAsync(productNameToSearch??string.Empty))?.ToList();
+        
+        //await search results and populate s 
+        await OnSearchProducts.InvokeAsync(products);
+        _products = products;
+
+        //Initialize product search list box.
+        this.selectedProduct = null;
+        //Product has been selected
+        StateHasChanged();
+    }
+
+  
 }

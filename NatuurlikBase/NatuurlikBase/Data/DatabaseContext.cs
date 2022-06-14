@@ -30,10 +30,13 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<QueryReason> QueryReason { get; set; }
     public DbSet<ReviewReason> ReviewReason { get; set; }
     public DbSet<InventoryProcured> InventoryProcured { get; set; }
+    public DbSet<InventoryItemTransaction> InventoryItemTransaction { get; set; }
+    public DbSet<ProductTransaction> ProductTransaction { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
+        //Establish relationships 
         base.OnModelCreating(builder);
 
         builder.Entity<ProductInventory>()
