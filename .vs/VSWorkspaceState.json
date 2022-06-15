@@ -1,14 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\NatuurlikBase",
-    "\\NatuurlikBase\\NatuurlikBase",
-    "\\NatuurlikBase\\NatuurlikBase\\Areas",
-    "\\NatuurlikBase\\NatuurlikBase\\Areas\\Identity",
-    "\\NatuurlikBase\\NatuurlikBase\\Areas\\Identity\\Pages",
-    "\\NatuurlikBase\\NatuurlikBase\\Areas\\Identity\\Pages\\Account",
-    "\\NatuurlikBase\\NatuurlikBase\\Areas\\Identity\\Pages\\Account\\Manage"
+    ""
   ],
-  "SelectedNode": "\\NatuurlikBase\\NatuurlikBase\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+  "SelectedNode": "\\NatuurlikBase.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -55,10 +55,15 @@
             <div class="col-10 col-sm-10 col-md-10">
             <h2 class="cheading">Inventory Items List</h2>
 		</div>
-        <div class="col-md-9 col-lg-8">
-            <a asp-controller="InventoryItem" asp-action="Create" class="btn btn-success" >
+             <div class="col-md-9 col-lg-8">
+                 <div class="btn-group" role="group">
+                        <a asp-controller="InventoryItem" asp-action="Create" class="btn btn-success" >
                <i class="bi bi-plus-circle"></i> &nbsp; Create New Inventory Item
 			</a>
+                        <a asp-controller="InventoryWriteOffs" asp-action="writeOff" class="btn btn-dark" >
+               <i class="bi bi-x-circle"></i> &nbsp; Write-Off Inventory Item
+			</a>
+          </div>
 		</div>
 	</div>
     <br /><br />

@@ -1,0 +1,115 @@
+﻿@model NatuurlikBase.Models.WriteOffInventory
+
+@{
+    ViewData["Title"] = "writeOff";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div id="page-content-wrapper">
+<div>
+        
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>Write-Off Inventory </h5>
+                </div>
+                <div class="card-body">
+                    <div class="col-md-10">
+                        <form asp-action="writeOff">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                          
+                            <div class="form-group">
+
+
+                                <label asp-for="InventoryItemId" class="control-label">Inventory Item</label>
+                                <select asp-for="InventoryItemId" class ="form-control col-md-10" asp-items="ViewBag.InventoryItemId"> <option disabled selected>- Select Inventory Item -</option></select>
+                            </div>  <div class="form-group">
+
+
+                                <label asp-for="writeOffReasonId" class="control-label">Write-Off Reason</label>
+                                <select asp-for="writeOffReasonId" class ="form-control col-md-10" asp-items="ViewBag.writeOffReasonId"> <option disabled selected>- Select Write-Off Reason -</option></select>
+                            </div>
+                              <div class="form-group">
+                                <label asp-for="writeOffQuantity" class="control-label"></label>
+                                <input asp-for="writeOffQuantity" class="form-control col-md-10" />
+                                <span asp-validation-for="writeOffQuantity" class="text-danger"></span>
+                            </div>
+
+                         
+                            <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#exampleModal" style="width:150px">Write-Off</button>
+                            <a asp-controller="InventoryItem" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+                                Cancel
+                            </a>
+                             <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Confirm Write-Off Details
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    	
+                                <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" >
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+
+
+                                        </div>
+                                        <h6 class="col-md-10">
+                                            Inventory Quantity On Hand Is Less Than Write-Off Quantity, Please Adjust Write-Off Quantity Value
+                                        </h6>
+
+                                        <div class="modal-footer border-0">
+                                            <div class="form-actions no-color">
+                                                <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" />
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+</div>     
+
+@section Scripts{
+	
+	 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+}

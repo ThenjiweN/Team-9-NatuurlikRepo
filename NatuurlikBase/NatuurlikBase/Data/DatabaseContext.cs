@@ -32,7 +32,8 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<InventoryProcured> InventoryProcured { get; set; }
     public DbSet<InventoryItemTransaction> InventoryItemTransaction { get; set; }
     public DbSet<ProductTransaction> ProductTransaction { get; set; }
-
+    public DbSet<WriteOffInventory> InventoryWriteOff { get; set; } 
+    public DbSet<WriteOffProduct> ProductWriteOff { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

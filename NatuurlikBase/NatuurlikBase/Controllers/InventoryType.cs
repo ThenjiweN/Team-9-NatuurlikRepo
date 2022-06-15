@@ -100,7 +100,7 @@ namespace NatuurlikBase.Controllers
                 else
                 {
                     db.Entry(inventoryType).State = EntityState.Modified;
-                    TempData["success"] = "Inventory Type Successfully Edited.";
+                    TempData["success"] = "Inventory Type Successfully Updated.";
                     ViewBag.ReturnReasonConfirmation = "Are you sure with your return reason changes.";
                     db.SaveChanges();
                     return RedirectToAction("Index");
