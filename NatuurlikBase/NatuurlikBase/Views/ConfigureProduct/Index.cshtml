@@ -1,9 +1,35 @@
 ﻿@using NatuurlikBase.Pages
 
+@{
+    Layout = "_AdminLayout";
+}
+<div id="page-content-wrapper">
+@if (TempData["success"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success-alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+       &nbsp @TempData["success"]
 
+    </div>
+ 
+
+}
+
+@if (TempData["Delete"] != null)
+{
+    <div class="alert alert-warning  alert-dismissible fade show" role="alert" id="success-alert">
+ 
+         <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+       &nbsp @TempData["Delete"]
+
+    </div>
+ 
+
+}
 <component type="typeof(ProductList)" render-mode="ServerPrerendered" />
+<a asp-controller="Dashboard" asp-action="Index"  class="btn btn-primary">Back</a>
+</div>
 
 @section Scripts {
-<script src="~/js/user.js"></script>
 <script src="_framework/blazor.server.js"></script> 
 }

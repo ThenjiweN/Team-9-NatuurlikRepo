@@ -2,11 +2,6 @@
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
 using NatuurlikBase.Repository.IRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NatuurlikBase.Repository
 {
@@ -43,7 +38,7 @@ namespace NatuurlikBase.Repository
             return await query.Include(x => x.Product).ToListAsync();
         }
 
-        public async Task ProduceAsync(Product product, int quantity, string actor)
+        public async Task ProduceAsync(Product product, int productionQuantity, string actor)
         {
        
             var prod = await _productInventoryRepository.GetProductByIdAsync(product.Id);     
@@ -54,7 +49,7 @@ namespace NatuurlikBase.Repository
                 foreach(var pi in prod.ProductInventories)
                 {
                     int qtyBefore = pi.Inventory.QuantityOnHand;
-                    pi.Inventory.QuantityOnHand -= quantity * pi.InventoryItemQuantity;                  
+                    pi.Inventory.QuantityOnHand -= productionQuantity * pi.InventoryItemQuantity;                  
 
                     _db.InventoryItemTransaction.Add(new InventoryItemTransaction
                     {
@@ -75,7 +70,7 @@ namespace NatuurlikBase.Repository
                 ProductId = product.Id,
                 QuantityBefore = product.QuantityOnHand,
                 ActivityType = ProductTransactionType.ProduceProduct,
-                QuantityAfter = product.QuantityOnHand + quantity,
+                QuantityAfter = product.QuantityOnHand + productionQuantity,
                 TransactionDate = DateTime.Now,
                 Actor = actor
             });

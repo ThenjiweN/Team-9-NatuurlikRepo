@@ -11,7 +11,7 @@
         @bind-value:event="oninput"
         />    
     <button type="button" class="input-group-text" 
-        @onclick="@( async()=> { await ViewProducts(); } )">View All</button>
+        @onclick="@( async()=> { await ViewProducts(); } )">Search</button>
 </div>
 @if (this.DisplaySearchResult 
     && _products != null

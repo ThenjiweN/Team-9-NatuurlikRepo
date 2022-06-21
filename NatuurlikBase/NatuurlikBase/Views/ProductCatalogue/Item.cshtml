@@ -1,11 +1,11 @@
 ﻿@model Cart
-
-
+@*
 @section catalogue {
     <link href="@Url.Content("~/css/catalogue.css")" rel="stylesheet" type="text/css" />
-}
+}*@
+<form method="post">
+    <input hidden asp-for="ProductId" />
 
-<div class="container">
     <div class="itemspace row justify-content-center">
         <div class="col-lg-6 left">
             <img class="prodimg" src="@Model.Product.PictureUrl">
@@ -21,12 +21,17 @@
             }
             else
             {
-                  <h2 class="itemTitle">@Model.Product.Name</h2>
+            <h2 class="itemTitle">@Model.Product.Name</h2>
             <h3><strong>R @Model.Product.CustomerPrice.ToString("0.00")</strong> </h3> 
             <p id="itemdesc">
                @Model.Product.Description
             </p>
             }
+
+             <div class="row pt-3">
+             <div class="col-2 text-primary"><h4>Count</h4></div>
+             <div class="col-10"><input asp-for="Count" min=1 class="form-control"  /></div>
+             </div>
             
             <div class="row">
                 <div class="col-4">
@@ -42,6 +47,10 @@
             <p id="itemcat">@Model.Product.Brand.Name</p>
         </div>       
     </div>
+
+</form>
+
+
 
     <h4>Related Products</h4>
         <div class="container" >

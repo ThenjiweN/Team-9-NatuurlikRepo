@@ -7,6 +7,7 @@
 @inject NavigationManager NavigationManager
 @inject IViewProductsByName ViewProductsByName
 
+
 @code {
       private async Task LoadProducts()
     {
@@ -19,6 +20,7 @@
 <br/>
 
 <ViewProductsComponent OnSearchProducts="OnSearchProducts"></ViewProductsComponent>
+<br />
 
 @if (productsList != null)
 {
@@ -35,14 +37,14 @@
             {
                 <ProductItemComponent 
                     Product="product"
-                    OnProductDeleted="OnProductDeleted"></ProductItemComponent>
+                    OnPageLoad="OnPageLoad"></ProductItemComponent>
             }
         </tbody>
     </table>    
 }
 <br/>
-@*<button type="button" class="btn btn-primary" @onclick="AddProduct">Add Product</button>*@
-
+@*<button type="button" class="btn btn-primary" @onclick="OnBack">Back</button>
+*@
 
 @code {
     private List<Product>? productsList;
@@ -57,20 +59,14 @@
         this.productsList = products;
     }
 
-    //private void AddProduct()
-    //{
-    //    NavigationManager.NavigateTo("/addproduct");
-    //}
+    private void OnBack()
+    {
+        NavigationManager.NavigateTo("/Dashboard");
+    }
 
-    private async Task OnProductDeleted()
+    private async Task OnPageLoad()
     {
         await LoadProducts();
     }
-
-    //private async Task LoadProducts()
-    //{
-    //    var prods = await ViewProductsByName.ExecuteAsync();
-    //    this.productsList = prods.ToList();
-    //}
 
 }

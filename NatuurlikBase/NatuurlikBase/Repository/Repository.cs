@@ -19,7 +19,7 @@ namespace NatuurlikBase.Models
         public Repository(DatabaseContext db)
         {
             _db = db;
-            //_db.Products.Include(u => u.ProductCategory).Include(u=>u.Brand);
+            //_db.UserCart.Include(u => u.Product);
             this.dbSet = _db.Set<T>();
         }
         public void Add(T entity)
@@ -27,9 +27,14 @@ namespace NatuurlikBase.Models
             dbSet.Add(entity);
         }
 
-        public IList<T> GetAll(string? includeProperties = null)
+        public IList<T> GetAll(Expression<Func<T, bool>>? filter=null, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+            if(filter != null)
+            {
+                query = query.Where(filter);
+            }
+           
             if (includeProperties != null)
             {
                 foreach(var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))

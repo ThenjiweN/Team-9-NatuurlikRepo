@@ -1,0 +1,192 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace NatuurlikBase.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>@ViewData["Title"] - NatuurlikBase</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <base href="~/" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="~/css/crud.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
+    @RenderSection("fonts", false)
+    @RenderSection("crud", false)
+    @RenderSection("admin", false)
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="~/images/whitel.png" height="30">
+            </div>
+            <ul class="list-unstyled components">
+
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><i class="bi bi-house-door">&nbsp;</i> Store</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-chat-dots">&nbsp;</i> Blogs</a>
+                </li>
+                <li>
+                    <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-cart">&nbsp;</i> Products</a>
+                    <ul class="collapse list-unstyled" id="productSubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="Product" asp-action="Index">Products</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="ProductBrand" asp-action="Index">Product Brands</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="ProductCategory" asp-action="Index">Product Categories</a>
+                        </li>
+                         <li>
+                            <a asp-area="" asp-controller="ConfigureProduct" asp-action="Index">Product Configuration</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Produce" asp-action="Index">Produce Product</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#orderSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bag">&nbsp;</i> Orders</a>
+                    <ul class="collapse list-unstyled" id="orderSubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="ReturnReason" asp-action="Index">Return Reasons</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="QueryReason" asp-action="Index">Query Reasons</a>
+                        </li>
+                         <li>
+                            <a asp-area="" asp-controller="ReviewReason" asp-action="Index">Review Reasons</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Courier" asp-action="Index">Couriers</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Supplier" asp-action="Index"><i class="bi bi-truck">&nbsp;</i>Suppliers</a>
+                </li>
+                <li>
+                    <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bar-chart">&nbsp;</i> Inventory Management</a>
+                    <ul class="collapse list-unstyled" id="inventorySubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="InventoryItem" asp-action="Index">Inventory Items</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="InventoryType" asp-action="Index">Inventory Types</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="WriteOffReason" asp-action="Index">Write-Off Reasons</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Levels</a>
+                        </li>
+                              <li>
+                            <a asp-area="" asp-controller="InventoryProcured" asp-action="Index">Capture Procured Inventory</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#returnSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-geo-alt"> &nbsp;</i>Locations</a>
+                    <ul class="collapse list-unstyled" id="returnSubmenu">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Suburbs" asp-action="Index"> Suburbs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cities" asp-action="Index"> Cities</a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Province" asp-action="Index"> Provinces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Countries" asp-action="Index">Countries</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-card-list"> &nbsp;</i>Reports</a>
+                    <ul class="collapse list-unstyled" id="reportSubmenu">
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Sales Report</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Product Report</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Customer Report</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Inventory Report</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders Report</a>
+                        </li>
+                    </ul>
+                </li>               
+                <li>
+                    <a asp-area="Admin" asp-controller="User" asp-action="Index"><i class="bi bi-person">&nbsp;</i> Users</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Dashboard" asp-action="Index"><i class="bi bi-question-circle">&nbsp;</i> Help</a>
+                </li>
+           </ul>
+        </nav>
+
+        <div class="d-none d-lg-block" id="full">
+            <nav class="navbar">
+                <h5>
+                    <div class="one">N a t u u r l i k</div>
+                </h5>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <form id="logoutForm" class="form-inline log" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button id="alogout" type="submit" class="nav-link btn btn-link">LOGOUT</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+   
+   <main class="pl-4" role="main" style="width:60%; height:100%;">
+        <div id="page-content-wrapper">
+         @RenderBody()
+         </div>
+    </main>
+    
+
+
+    
+
+    <script src="_framework/blazor.server.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+    </body>
+</html>

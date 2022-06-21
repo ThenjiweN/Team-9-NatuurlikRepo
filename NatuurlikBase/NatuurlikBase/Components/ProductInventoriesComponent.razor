@@ -7,7 +7,7 @@
 </div>
 @if (ProductInventories != null && ProductInventories.Count > 0)
 {   
-     <table class="table">   
+     <table class="table" style="justify-content:center">   
          <thead>
              <tr>
                  <th>Name</th>
@@ -29,7 +29,9 @@
                             @onchange="OnInventoryItemQtyChanged"/>
                      </td>
                      <td>
-                         <button class="btn btn-link" type="button" @onclick="@(()=>RemoveInventory(productInventory))">Remove</button>
+                         <a class="btn btn-link" type="button" @onclick="@(()=>RemoveInventory(productInventory))" style="border-color: white;color: white;
+                            background-color: red;
+                            text-decoration: none;">Remove <i class="bi bi-trash3-fill"></i></a>
                      </td>
                  </tr>   
             }            

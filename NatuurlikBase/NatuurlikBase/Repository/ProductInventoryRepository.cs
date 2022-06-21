@@ -43,8 +43,8 @@ namespace NatuurlikBase.Repository
                 productInv.Name = product.Name;
                 productInv.QuantityOnHand = product.QuantityOnHand;
                 productInv.ProductInventories = product.ProductInventories;
-
                 await _db.SaveChangesAsync();
+                
             }
         }
     }

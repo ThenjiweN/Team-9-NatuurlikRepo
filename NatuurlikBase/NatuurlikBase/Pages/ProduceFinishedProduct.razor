@@ -5,8 +5,10 @@
 
 @inject IProduceFinishedProduct ProduceProduct
 @inject IValidateEnoughInventories ValidateEnoughInventories
+@inject NavigationManager NavigationManager
 
 <ErrorMessageComponent ErrorMessage="@exceptionMessage"></ErrorMessageComponent>
+<SuccessMessageComponent SuccessMessage="@producedSuccessfully"></SuccessMessageComponent>
 <div class="pt-4">
     <h3>Produce Finished Product</h3>
 </div>
@@ -41,13 +43,24 @@
             <InputNumber id="qty" @bind-Value="produceVM.QuantityToProduce" class="form-control"></InputNumber>
         </div>
         <br/>
-        <button type="submit" class="btn btn-primary">Produce</button>
+        <button type="button"  @onclick="@(()=> OnCancel())" class="btn btn-primary">Cancel</button>
+        <button type="submit" class="btn btn-success">Produce</button>
+         
+       
 
     </EditForm>
 }
 
 @code {
+
+    private void OnCancel()
+    {
+        NavigationManager.NavigateTo($"/Dashboard", true);
+    }
+
+
     private ProduceVM produceVM = new ProduceVM();
+    private string producedSuccessfully;
     private string exceptionMessage;
     private Product selectedProduct;
 
@@ -60,24 +73,31 @@
 
             return;
         }
+
+        else if(this.selectedProduct == null)
+        {
+              exceptionMessage = $"No product has been selected for production";
+        }
+        
         else
         {
-            exceptionMessage = string.Empty;
-        }
-
-        await ProduceProduct.ExecuteAsync(
+             await ProduceProduct.ExecuteAsync(
             this.selectedProduct,
             this.produceVM.QuantityToProduce,
             "Hannes"
         );
-        //Call Produce View Model
-        this.produceVM = new ProduceVM();
+        this.producedSuccessfully =  $"Produced {this.produceVM.QuantityToProduce} x {this.selectedProduct.Name} successfully";
+            //Reinitialize Produce View Model
+            this.produceVM = new ProduceVM();
+            //No product is selected on form load
+            this.selectedProduct = null;
+            return;
+        }
 
-        //No product is selected on form load
-        this.selectedProduct = null;
-
+       
+       
         //set error message to empty string while not having being called
-        this.exceptionMessage = string.Empty;
+        
     }
 
     public void OnSelectProduct(Product product)

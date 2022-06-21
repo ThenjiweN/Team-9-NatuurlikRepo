@@ -1,0 +1,105 @@
+﻿@model NatuurlikBase.ViewModels.UserCartVM
+
+<form method="post">
+	<br />
+	<div class="container">
+		<div class="card">
+			<div class="card-header bg-dark text-light ml-0">
+				<div class="row">
+					<div class="col-6  pt-2">
+						<i class="fa fa-shopping-cart"></i> &nbsp;
+						Your Shopping Cart: 
+					</div>
+					<div class="col-2 col-sm-4 col-lg-2 text-right pt-2">
+						<a asp-area="" asp-controller="ProductCatalogue" asp-action="Index"  class="btn btn-outline-info btn-sm">Continue Shopping</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-body">
+				
+					@foreach (var cartItem in Model.CartList)
+					{
+					@if (cartItem.Count > 0)
+					{
+						<div class="row">
+							<div class="d-none d-lg-block col-lg-1 text-center">
+								<img src="@cartItem.Product.PictureUrl" class="rounded" width="100%" />
+							</div>
+							<div class="col-12 col-lg-6 pt-md-3">
+								<h5><strong>@cartItem.Product.Name</strong></h5>
+								<p><small>@cartItem.Product.Description</small></p>
+							</div>
+							<div class="col-12  col-lg-5 text-center row">
+								@if (User.IsInRole(SR.Role_Reseller))
+								{
+									<div class="col-4 text-md-right pt-4">
+										<h6><strong>R @cartItem.Product.ResellerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </strong></h6>
+									</div>
+								}
+
+								else
+								{
+									<div class="col-4 text-md-right pt-4">
+										<h6><strong>R @cartItem.Product.CustomerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </strong></h6>
+									</div>
+								}
+
+
+								<div class="col-6 col-sm-4 col-lg-6 pt-2">
+									<div class="col-12" role="group">
+										<a asp-action="increment" asp-route-cartId="@cartItem.Id" class="btn btn-primary">
+											<i class="bi bi-plus-square"></i>
+										</a> &nbsp;
+										<label class="text-black pt-1" style="font-size: x-large"> @cartItem.Count </label>
+										&nbsp;
+										<a asp-action="decrement" asp-route-cartId="@cartItem.Id" class="btn btn-primary">
+											<i class="bi bi-dash-square"></i>
+										</a>
+									</div>
+
+								</div>
+								<div class="col-2 col-sm-4 col-lg-2 text-right pt-3">
+									<a asp-action="remove" asp-route-cartId="@cartItem.Id" class="btn btn-danger">
+										<i class="bi bi-trash-fill"></i>
+									</a>
+								</div>
+
+
+							</div>
+						</div>
+						<hr />
+					}
+					else
+					{
+							
+					}
+					
+					}
+				
+
+				
+
+				<div class="row">
+					<div class="col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 pr-4">
+						<ul class="list-group">
+							<li class="list-group-item d-flex justify-content-between bg-light">
+								<span> Total (ZAR):</span>
+								<strong> R @Model.CartTotal.ToString("0.00")</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="card-footer">
+				<div class="card-footer row">
+					<div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
+						<a asp-action="Summary" class="btn btn-success form-control">Continue to Checkout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

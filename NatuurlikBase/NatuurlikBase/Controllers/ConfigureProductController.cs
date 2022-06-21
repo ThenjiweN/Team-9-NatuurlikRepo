@@ -1,21 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NatuurlikBase.Data;
+using NatuurlikBase.Models;
 
 namespace NatuurlikBase.Controllers
 {
     public class ConfigureProductController : Controller
     {
+        private readonly DatabaseContext _db;
+        public ConfigureProductController(DatabaseContext db)
+        {
+            _db = db;
+        }
+
         public IActionResult Index(int Id)
         {
             return View();
         }
 
-        public IActionResult EditProduct(int? id)
+        public IActionResult ProductConfiguration()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            
             return View();
         }
     }

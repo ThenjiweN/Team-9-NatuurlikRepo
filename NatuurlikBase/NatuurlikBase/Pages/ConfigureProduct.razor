@@ -1,0 +1,90 @@
+﻿@page "/configureproduct/{id:int}"
+
+@using NatuurlikBase.Components
+@using NatuurlikBase.Repository.IRepository
+
+@inject NavigationManager NavigationManager
+@inject IViewProductById ViewProductById
+@inject IEditProduct ConfigureProductInventories
+
+
+
+    <SuccessMessageComponent SuccessMessage="@configuredSuccessfully"></SuccessMessageComponent>
+<h1 style="text-align: center;"> Configure Product</h1>
+<br/>
+@if (this.product != null)
+{
+    <EditForm Model="product" OnValidSubmit="OnValidSubmit">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary></ValidationSummary>
+
+        <label class="pl-4">Product Name:</label>
+     
+            <InputText class="pl-4 form-control" disabled id="name"  @bind-Value="product.Name"></InputText>
+        
+        <br>
+        <br>
+
+        @*<label for="qty">Quantity</label>
+        <div class="form-control">
+            <InputNumber disabled id="qty" @bind-Value="product.QuantityOnHand" class="form-control"></InputNumber>
+        </div>
+        <br>
+        <br>*@
+
+       @* Consider adding pricing for further business intellignce reporting*@
+
+       @* <div class="form-group">
+            <label for="price">Price</label>
+            <InputNumber id="price" @bind-Value="product.Price" class="form-control"></InputNumber>
+        </div>*@
+
+        <ProductInventoriesComponent 
+            ProductInventories = "product.ProductInventories"
+            OnInventorySelected="OnInventorySelected"
+        ></ProductInventoriesComponent>
+
+        <br/>
+        <button type="submit" class="btn btn-primary" style="border-color: white;color: white;
+                            background-color: lightgreen;
+                            text-decoration: none;">Apply Configuration</button>
+        <button type="button"  @onclick="@(()=> OnBack())" class="btn btn-primary">Cancel</button>
+
+    </EditForm>
+
+
+}
+
+@code {
+
+    private string configuredSuccessfully;
+
+    //ALT Step: Cancel operation
+      private void OnBack()
+    {
+        NavigationManager.NavigateTo($"/ConfigureProduct", true);
+    }
+    
+
+    private Product product;
+
+    [Parameter]
+    public int Id { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        this.product = await ViewProductById.ExecuteAsync(this.Id);
+    }
+
+    private void OnInventorySelected(List<ProductInventory> productInventories)
+    {
+        this.product.ProductInventories = productInventories;
+    }
+
+    private void OnValidSubmit()
+    {
+        ConfigureProductInventories.ExecuteAsync(this.product);
+        //NavigationManager.NavigateTo($"/ConfigureProduct", true);
+        this.configuredSuccessfully =  $"Product configuration details saved successfully";
+    }
+}
