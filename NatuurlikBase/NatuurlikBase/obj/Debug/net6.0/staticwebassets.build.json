@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TxeoUN6gjYmIXZOBUsg2LcKapyDx37kF6zOL1DgQkOU=",
+  "Hash": "6KWU6tylF1Ju2ctTmbEF6Z6m5cU0G/mzal+i3SUQqMI=",
   "Source": "NatuurlikBase",
   "BasePath": "_content/NatuurlikBase",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\emailTemp\\forgotPassTemp.html"
+    },
+    {
+      "Identity": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\emailTemp\\regCustomerTemp.html",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "emailTemp/regCustomerTemp.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\emailTemp\\regCustomerTemp.html"
     },
     {
       "Identity": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\emailTemp\\regUserTemp.html",

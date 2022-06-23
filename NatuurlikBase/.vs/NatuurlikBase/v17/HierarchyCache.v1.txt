@@ -3,47 +3,61 @@ i:{00000000-0000-0000-0000-000000000000}:NatuurlikBase.sln
 ++NatuurlikBase
 i:{00000000-0000-0000-0000-000000000000}:NatuurlikBase
 ++Connected Services 
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1742
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1744
 ++Dependencies
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1741
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1743
 ++Properties
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\properties\
 ++wwwroot
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\
-++css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\
-++account.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\account.css
-++admin.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\admin.css
-++blazorsite.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\blazorsite.css
-++catalogue.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\catalogue.css
-++crud.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\crud.css
-++fonts.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\fonts.css
-++home.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\home.css
-++site.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\site.css
-++emailTemp
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\emailtemp\
-++fonts
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\fonts\
-++images
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\
-++js
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\js\
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\
-++lib
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\
-++favicon.ico
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\favicon.ico
 ++Areas
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\
+++Identity
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\
+++Pages
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\pages\
+++Account
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\
+++Manage
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\
+++_ViewImports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\_viewimports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\_viewimports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\_viewimports.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_viewimports.cshtml
+++ConfirmEmail.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\confirmemail.cshtml
+++ForgotPassword.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpassword.cshtml
+++ForgotPasswordConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpasswordconfirmation.cshtml
+++Login.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\login.cshtml
+++Logout.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\logout.cshtml
+++Register.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\register.cshtml
+++Register.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\register.cshtml.cs
+++RegisterConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registerconfirmation.cshtml
+++RegisterUser.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registeruser.cshtml
+++RegisterUser.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registeruser.cshtml.cs
+++ResendEmailConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resendemailconfirmation.cshtml
+++ResetPassword.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpassword.cshtml
+++ResetPasswordConfirmation.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpasswordconfirmation.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\_validationscriptspartial.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\_validationscriptspartial.cshtml
+++_ViewStart.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\_viewstart.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\_viewstart.cshtml
 ++Components
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\components\
 ++ErrorMessageComponent.razor
@@ -118,13 +132,62 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\controllers\writeoffreasoncontroller.cs
 ++Data
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\data\
+++DatabaseContext.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\data\databasecontext.cs
 ++Migrations
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\
 ++Models
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\
-++Pages
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\pages\
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\
+++ApplicationUser.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\applicationuser.cs
+++Cart.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\cart.cs
+++City.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\city.cs
+++Country.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\country.cs
+++Courier.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\courier.cs
+++ErrorViewModel.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\errorviewmodel.cs
+++InventoryItemTransaction.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\inventoryitemtransaction.cs
+++InventoryItemTransactionType.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\inventoryitemtransactiontype.cs
+++InventoryProcured.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\inventoryprocured.cs
+++Product.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\product.cs
+++ProductBrand.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\productbrand.cs
+++ProductCategory.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\productcategory.cs
+++ProductInventory.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\productinventory.cs
+++ProductTransaction.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\producttransaction.cs
+++ProductTransactionType.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\producttransactiontype.cs
+++Province.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\province.cs
+++QueryReason.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\queryreason.cs
+++ReturnReason.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\returnreason.cs
+++ReviewReason.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\reviewreason.cs
+++SR.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\sr.cs
+++Suburb.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\suburb.cs
+++Supplier.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\supplier.cs
+++WriteOffInventory.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\writeoffinventory.cs
+++WriteOffProduct.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\writeoffproduct.cs
+++WriteOffReason.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\writeoffreason.cs
 ++_BlazorLayout.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\pages\_blazorlayout.cshtml
 ++_Host.cshtml
@@ -254,6 +317,8 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\configureproduct\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\produce\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\productcatalogue\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\usercart\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\countries\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\courier\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\dashboard\index.cshtml
@@ -274,9 +339,8 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\suburbs\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\supplier\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\user\index.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\usercart\index.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\writeoffreason\index.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\index.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\supplierorder\index.cshtml
 ++ConfigureProduct
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\configureproduct\
 ++ProductConfiguration.cshtml
@@ -330,9 +394,6 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\_loginpartial.cshtml
 ++_Notification.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\_notification.cshtml
-++_ValidationScriptsPartial.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\_validationscriptspartial.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\_validationscriptspartial.cshtml
 ++Error.cshtml
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\error.cshtml
 ++Suburb
@@ -347,14 +408,6 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\usercart\
 ++WriteOffReason
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\writeoffreason\
-++_ViewImports.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\_viewimports.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\_viewimports.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\_viewimports.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_viewimports.cshtml
-++_ViewStart.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\_viewstart.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\_viewstart.cshtml
 ++_Imports.razor
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\_imports.razor
 ++App.razor
@@ -368,7 +421,7 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 ++ScaffoldingReadMe.txt
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\scaffoldingreadme.txt
 ++SQL Server Express LocalDB (Local) (ConnectionStrings:ApplicationDbContextConnection)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1792
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1775
 ++Analyzers
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:analyzers
 ++Frameworks
@@ -379,6 +432,247 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:packages
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\properties\launchsettings.json
 ++serviceDependencies.json
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\properties\servicedependencies.json
+++css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\
+++emailTemp
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\emailtemp\
+++fonts
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\fonts\
+++images
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\
+++js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\js\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\
+++favicon.ico
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\favicon.ico
+++_ManageNav.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_managenav.cshtml
+++_StatusMessage.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_statusmessage.cshtml
+++Email.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\email.cshtml
+++ManageNavPages.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\managenavpages.cs
+++PersonalData.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\personaldata.cshtml
+++ConfirmEmail.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\confirmemail.cshtml.cs
+++ForgotPassword.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpassword.cshtml.cs
+++ForgotPasswordConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpasswordconfirmation.cshtml.cs
+++Login.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\login.cshtml.cs
+++Logout.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\logout.cshtml.cs
+++RegisterConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registerconfirmation.cshtml.cs
+++ResendEmailConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resendemailconfirmation.cshtml.cs
+++ResetPassword.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpassword.cshtml.cs
+++ResetPasswordConfirmation.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
+++20220507182959_fixReferentialIntegrity.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220507182959_fixreferentialintegrity.cs
+++20220519120209_inventory.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220519120209_inventory.cs
+++20220520180206_AddedWRandC.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220520180206_addedwrandc.cs
+++20220520223856_supplier.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220520223856_supplier.cs
+++20220528075026_qrrrr.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528075026_qrrrr.cs
+++20220528075427_dhf.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528075427_dhf.cs
+++20220528081629_jr.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528081629_jr.cs
+++20220528083827_newjnj.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528083827_newjnj.cs
+++20220528085039_lastone.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528085039_lastone.cs
+++20220529144606_commitment issues.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220529144606_commitment issues.cs
+++20220529150817_removeRequired.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220529150817_removerequired.cs
+++20220529160419_supplierAttributes.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220529160419_supplierattributes.cs
+++20220611125629_InventoryProcured.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220611125629_inventoryprocured.cs
+++20220611203817_ReconfigureDb.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220611203817_reconfiguredb.cs
+++20220611215449_addProduceProduct.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220611215449_addproduceproduct.cs
+++20220612101657_inventoriesTransactions.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612101657_inventoriestransactions.cs
+++20220612101938_inventoriesTransactions1.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612101938_inventoriestransactions1.cs
+++20220612102457_testUpdate.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612102457_testupdate.cs
+++20220612110549_testUpdate1.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612110549_testupdate1.cs
+++20220614180306_writeoffs.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220614180306_writeoffs.cs
+++20220619111914_addUserCart.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220619111914_addusercart.cs
+++DatabaseContextModelSnapshot.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\databasecontextmodelsnapshot.cs
+++ConfigureProduct.razor.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\pages\configureproduct.razor.css
+++ICategoryRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\icategoryrepository.cs
+++ICityRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\icityrepository.cs
+++ICountryRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\icountryrepository.cs
+++IEditProduct.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\ieditproduct.cs
+++IInventoryItemRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iinventoryitemrepository.cs
+++IInventoryItemTransactionRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iinventoryitemtransactionrepository.cs
+++IProduceFinishedProduct.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproducefinishedproduct.cs
+++IProductBrandRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproductbrandrepository.cs
+++IProductInventoryRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproductinventoryrepository.cs
+++IProductRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproductrepository.cs
+++IProductTransactionRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproducttransactionrepository.cs
+++IProvinceRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iprovincerepository.cs
+++IRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\irepository.cs
+++ISuburbRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\isuburbrepository.cs
+++ISupplierRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\isupplierrepository.cs
+++IUnitOfWork.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iunitofwork.cs
+++IUserCartRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iusercartrepository.cs
+++IUserRepository.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iuserrepository.cs
+++IValidateEnoughInventories.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\ivalidateenoughinventories.cs
+++IViewInventoriesByName.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewinventoriesbyname.cs
+++IViewInventoryById.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewinventorybyid.cs
+++IViewProductById.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewproductbyid.cs
+++IViewProductsByNameUseCase.cs
+++SendGridEmailSender.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\services\sendgridemailsender.cs
+++CityVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\cityvm.cs
+++CountryProvinceVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\countryprovincevm.cs
+++CountryVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\countryvm.cs
+++LocationVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\locationvm.cs
+++ProduceVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\producevm.cs
+++ProductVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\productvm.cs
+++ProvinceVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\provincevm.cs
+++SuburbVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\suburbvm.cs
+++UserCartVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\usercartvm.cs
+++UserVM.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\uservm.cs
+++Privacy.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\home\privacy.cshtml
+++WriteOff.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\inventorywriteoffs\writeoff.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\productwriteoff\writeoff.cshtml
+++Upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\product\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\province\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\suburb\upsert.cshtml
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\user\upsert.cshtml
+++_Layout.cshtml.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\appsettings.development.json
+++MessagePackAnalyzer
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\microsoft.netcore.app
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1770
+++Microsoft.AspNetCore.Identity.UI (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1774
+++Microsoft.EntityFrameworkCore (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1766
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1767
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1772
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1773
+++SendGrid (9.27.0)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1769
+++Swashbuckle.AspNetCore (6.3.0)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1768
+++System.Configuration.ConfigurationManager (6.0.0)
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1771
+++serviceDependencies.local.json
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\properties\servicedependencies.local.json
+++account.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\account.css
+++admin.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\admin.css
+++blazorsite.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\blazorsite.css
+++catalogue.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\catalogue.css
+++crud.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\crud.css
+++fonts.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\fonts.css
+++home.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\home.css
+++site.css
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\css\site.css
 ++changeEmailTemp.html
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\emailtemp\changeemailtemp.html
 ++forgotPassTemp.html
@@ -507,273 +801,12 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\
-++Identity
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\
-++DatabaseContext.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\data\databasecontext.cs
-++20220507182959_fixReferentialIntegrity.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220507182959_fixreferentialintegrity.cs
-++20220519120209_inventory.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220519120209_inventory.cs
-++20220520180206_AddedWRandC.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220520180206_addedwrandc.cs
-++20220520223856_supplier.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220520223856_supplier.cs
-++20220528075026_qrrrr.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528075026_qrrrr.cs
-++20220528075427_dhf.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528075427_dhf.cs
-++20220528081629_jr.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528081629_jr.cs
-++20220528083827_newjnj.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528083827_newjnj.cs
-++20220528085039_lastone.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220528085039_lastone.cs
-++20220529144606_commitment issues.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220529144606_commitment issues.cs
-++20220529150817_removeRequired.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220529150817_removerequired.cs
-++20220529160419_supplierAttributes.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220529160419_supplierattributes.cs
-++20220611125629_InventoryProcured.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220611125629_inventoryprocured.cs
-++20220611203817_ReconfigureDb.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220611203817_reconfiguredb.cs
-++20220611215449_addProduceProduct.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220611215449_addproduceproduct.cs
-++20220612101657_inventoriesTransactions.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612101657_inventoriestransactions.cs
-++20220612101938_inventoriesTransactions1.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612101938_inventoriestransactions1.cs
-++20220612102457_testUpdate.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612102457_testupdate.cs
-++20220612110549_testUpdate1.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220612110549_testupdate1.cs
-++20220614180306_writeoffs.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220614180306_writeoffs.cs
-++20220619111914_addUserCart.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220619111914_addusercart.cs
-++DatabaseContextModelSnapshot.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\databasecontextmodelsnapshot.cs
-++ApplicationUser.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\applicationuser.cs
-++Cart.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\cart.cs
-++City.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\city.cs
-++Country.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\country.cs
-++Courier.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\courier.cs
-++ErrorViewModel.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\errorviewmodel.cs
-++InventoryItemTransaction.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\inventoryitemtransaction.cs
-++InventoryItemTransactionType.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\inventoryitemtransactiontype.cs
-++InventoryProcured.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\inventoryprocured.cs
-++Product.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\product.cs
-++ProductBrand.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\productbrand.cs
-++ProductCategory.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\productcategory.cs
-++ProductInventory.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\productinventory.cs
-++ProductTransaction.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\producttransaction.cs
-++ProductTransactionType.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\producttransactiontype.cs
-++Province.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\province.cs
-++QueryReason.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\queryreason.cs
-++ReturnReason.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\returnreason.cs
-++ReviewReason.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\reviewreason.cs
-++SR.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\sr.cs
-++Suburb.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\suburb.cs
-++Supplier.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\supplier.cs
-++WriteOffInventory.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\writeoffinventory.cs
-++WriteOffProduct.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\writeoffproduct.cs
-++WriteOffReason.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\writeoffreason.cs
-++ConfigureProduct.razor.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\pages\configureproduct.razor.css
-++ICategoryRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\icategoryrepository.cs
-++ICityRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\icityrepository.cs
-++ICountryRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\icountryrepository.cs
-++IEditProduct.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\ieditproduct.cs
-++IInventoryItemRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iinventoryitemrepository.cs
-++IInventoryItemTransactionRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iinventoryitemtransactionrepository.cs
-++IProduceFinishedProduct.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproducefinishedproduct.cs
-++IProductBrandRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproductbrandrepository.cs
-++IProductInventoryRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproductinventoryrepository.cs
-++IProductRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproductrepository.cs
-++IProductTransactionRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iproducttransactionrepository.cs
-++IProvinceRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iprovincerepository.cs
-++IRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\irepository.cs
-++ISuburbRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\isuburbrepository.cs
-++ISupplierRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\isupplierrepository.cs
-++IUnitOfWork.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iunitofwork.cs
-++IUserCartRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iusercartrepository.cs
-++IUserRepository.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iuserrepository.cs
-++IValidateEnoughInventories.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\ivalidateenoughinventories.cs
-++IViewInventoriesByName.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewinventoriesbyname.cs
-++IViewInventoryById.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewinventorybyid.cs
-++IViewProductById.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewproductbyid.cs
-++IViewProductsByNameUseCase.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewproductsbynameusecase.cs
-++SendGridEmailSender.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\services\sendgridemailsender.cs
-++CityVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\cityvm.cs
-++CountryProvinceVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\countryprovincevm.cs
-++CountryVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\countryvm.cs
-++LocationVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\locationvm.cs
-++ProduceVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\producevm.cs
-++ProductVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\productvm.cs
-++ProvinceVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\provincevm.cs
-++SuburbVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\suburbvm.cs
-++UserCartVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\usercartvm.cs
-++UserVM.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\viewmodels\uservm.cs
-++Privacy.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\home\privacy.cshtml
-++WriteOff.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\inventorywriteoffs\writeoff.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\productwriteoff\writeoff.cshtml
-++Upsert.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\product\upsert.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\province\upsert.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\suburb\upsert.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\user\upsert.cshtml
-++_Layout.cshtml.css
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\shared\_layout.cshtml.css
-++appsettings.Development.json
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\appsettings.development.json
-++MessagePackAnalyzer
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
-++Microsoft.AspNetCore.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-++Microsoft.AspNetCore.App.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
-++Microsoft.AspNetCore.App.CodeFixes
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
-++Microsoft.AspNetCore.Components.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-++Microsoft.AspNetCore.Mvc.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
-++Microsoft.CodeAnalysis.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-++Microsoft.CodeAnalysis.NetAnalyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-++Microsoft.EntityFrameworkCore.Analyzers
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\users\kyle\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
-++Microsoft.Extensions.Logging.Generators
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
-++Microsoft.NET.Sdk.Razor.SourceGenerators
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\sdk\6.0.202\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
-++System.Text.Json.SourceGeneration
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.4\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
-++Microsoft.AspNetCore.App
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\microsoft.aspnetcore.app
-++Microsoft.NETCore.App
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\microsoft.netcore.app
-++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.4)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1787
-++Microsoft.AspNetCore.Identity.UI (6.0.4)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1791
-++Microsoft.EntityFrameworkCore (6.0.4)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1783
-++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1784
-++Microsoft.EntityFrameworkCore.Tools (6.0.4)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1789
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1790
-++SendGrid (9.27.0)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1786
-++Swashbuckle.AspNetCore (6.3.0)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1785
-++System.Configuration.ConfigurationManager (6.0.0)
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:>1788
-++serviceDependencies.local.json
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\properties\servicedependencies.local.json
-++0247655b-0889-4638-a2a7-53cbfca0331c.jpg
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\0247655b-0889-4638-a2a7-53cbfca0331c.jpg
-++30acd026-252e-4edf-a86f-904f77d1de2b.png
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\30acd026-252e-4edf-a86f-904f77d1de2b.png
-++6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png
-++75c47ed2-c29c-4ab4-8c59-1c97bf1d48c0.png
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\75c47ed2-c29c-4ab4-8c59-1c97bf1d48c0.png
-++79ca646d-a903-4528-b956-18e0b841969e.jpeg
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\79ca646d-a903-4528-b956-18e0b841969e.jpeg
-++8858c293-accf-48be-8132-c14ca8a39690.png
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\8858c293-accf-48be-8132-c14ca8a39690.png
-++90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png
-++a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg
-++a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg
-++dist
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\
-++LICENSE
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\license
-++LICENSE.txt
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\license.txt
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\license.txt
-++LICENSE.md
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\license.md
-++jquery.validate.unobtrusive.js
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++Email.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\email.cshtml.cs
+++Index.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\index.cshtml.cs
+++PersonalData.cshtml.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\personaldata.cshtml.cs
 ++20220507182959_fixReferentialIntegrity.Designer.cs
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220507182959_fixreferentialintegrity.designer.cs
 ++20220519120209_inventory.Designer.cs
@@ -816,6 +849,37 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220614180306_writeoffs.designer.cs
 ++20220619111914_addUserCart.Designer.cs
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\migrations\20220619111914_addusercart.designer.cs
+++0247655b-0889-4638-a2a7-53cbfca0331c.jpg
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\0247655b-0889-4638-a2a7-53cbfca0331c.jpg
+++30acd026-252e-4edf-a86f-904f77d1de2b.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\30acd026-252e-4edf-a86f-904f77d1de2b.png
+++6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\6b01b9a0-77c6-4882-b96c-ab8f69afc3c1.png
+++75c47ed2-c29c-4ab4-8c59-1c97bf1d48c0.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\75c47ed2-c29c-4ab4-8c59-1c97bf1d48c0.png
+++79ca646d-a903-4528-b956-18e0b841969e.jpeg
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\79ca646d-a903-4528-b956-18e0b841969e.jpeg
+++8858c293-accf-48be-8132-c14ca8a39690.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\8858c293-accf-48be-8132-c14ca8a39690.png
+++90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\90c84a44-b9c7-4fd6-a02f-5d348f7d5aea.png
+++a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\a00c97ef-22ba-4f4a-b64b-a7cd6d2c0c5b.jpg
+++a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\images\products\a0d21f42-6061-4dc9-9a11-009ef64cf027.jpeg
+++dist
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\license.txt
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 ++jquery.js
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\jquery.js
 ++additional-methods.js
@@ -824,8 +888,6 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 ++jquery.validate.unobtrusive.min.js
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
-++Account
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\
 ++bootstrap.css
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 ++bootstrap-grid.css
@@ -844,30 +906,6 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 ++jquery.validate.min.js
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
-++Manage
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\
-++ConfirmEmail.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\confirmemail.cshtml
-++ForgotPassword.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpassword.cshtml
-++ForgotPasswordConfirmation.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpasswordconfirmation.cshtml
-++Login.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\login.cshtml
-++Logout.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\logout.cshtml
-++Register.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\register.cshtml
-++RegisterConfirmation.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registerconfirmation.cshtml
-++RegisterUser.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registeruser.cshtml
-++ResendEmailConfirmation.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resendemailconfirmation.cshtml
-++ResetPassword.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpassword.cshtml
-++ResetPasswordConfirmation.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpasswordconfirmation.cshtml
 ++bootstrap.css.map
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 ++bootstrap.min.css
@@ -906,38 +944,6 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 ++jquery.min.map
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\jquery\dist\jquery.min.map
-++_ManageNav.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_managenav.cshtml
-++_StatusMessage.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\_statusmessage.cshtml
-++Email.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\email.cshtml
-++ManageNavPages.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\managenavpages.cs
-++PersonalData.cshtml
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\personaldata.cshtml
-++ConfirmEmail.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\confirmemail.cshtml.cs
-++ForgotPassword.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpassword.cshtml.cs
-++ForgotPasswordConfirmation.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\forgotpasswordconfirmation.cshtml.cs
-++Login.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\login.cshtml.cs
-++Logout.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\logout.cshtml.cs
-++Register.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\register.cshtml.cs
-++RegisterConfirmation.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registerconfirmation.cshtml.cs
-++RegisterUser.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\registeruser.cshtml.cs
-++ResendEmailConfirmation.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resendemailconfirmation.cshtml.cs
-++ResetPassword.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpassword.cshtml.cs
-++ResetPasswordConfirmation.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
 ++bootstrap.min.css.map
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 ++bootstrap.rtl.css.map
@@ -974,12 +980,6 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
 ++bootstrap.min.js.map
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-++Email.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\email.cshtml.cs
-++Index.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\index.cshtml.cs
-++PersonalData.cshtml.cs
-i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\areas\identity\pages\account\manage\personaldata.cshtml.cs
 ++bootstrap.rtl.min.css.map
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
 ++bootstrap-grid.rtl.min.css.map
@@ -992,3 +992,36 @@ i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\te
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++ProductList - Copy.razor
+++SupplierOrder.razor
+++ViewProductsComponent - Copy.razor
+++ViewSupliersComponent.razor
+++ViewProductById - Copy.cs
+++ViewSupplierById.cs
+++ConfigureProduct - Copy.razor
+++ConfigureProduct - Copy.razor.css
+++SupplierOrder.razor.css
+++ViewSupplierComponent.razor
+++IViewProductsByName.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\repository\irepository\iviewproductsbyname.cs
+++IViewProductsByName - Copy.cs
+++IViewSupplierByName.cs
+++ViewProductsByName - Copy.cs
+++ViewSupplierByName.cs
+++IProductInventoryRepository - Copy.cs
+++ISupplierOrderRepository.cs
+++ProductInventoryRepository - Copy.cs
+++SupplierOrderRepository.cs
+++ProduceController - Copy.cs
+++SupplierOrderController.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\controllers\supplierordercontroller.cs
+++SupplierOrder
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\views\supplierorder\
+++ProductInventoriesComponent - Copy.razor
+++SupplierInventoriesComponent.razor
+++ProductInventory - Copy.cs
+++SupplierInventory.cs
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\models\supplierinventory.cs
+++regUserTemp - Copy.html
+++regCustomerTemp.html
+i:{4f63a478-dd09-4bd3-b45f-d83fa043ff02}:c:\kyle\my up\inf 370\natuurlik code\team-9-natuurlikrepo\natuurlikbase\natuurlikbase\wwwroot\emailtemp\regcustomertemp.html

@@ -36,6 +36,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
         public RegisterModel(
             UserManager<ApplicationUser> userManager,
@@ -44,7 +45,8 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             RoleManager<IdentityRole> roleManager,
-            IUnitOfWork unitOfWork)
+            IUnitOfWork unitOfWork,
+            IWebHostEnvironment hostEnvironment)
         {
             _roleManager = roleManager;
             _userManager = userManager;
@@ -54,6 +56,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
             _logger = logger;
             _emailSender = emailSender;
             _unitOfWork = unitOfWork;
+            _hostEnvironment = hostEnvironment;
         }
 
         [BindProperty]
@@ -234,8 +237,15 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\regCustomerTemp.html"));
+                    template = template.Replace("[URL]", $"{HtmlEncoder.Default.Encode(callbackUrl)}");
+                    string message = template;
+
+                    await _emailSender.SendEmailAsync(
+                      Input.Email,
+                      "Confirm your Natuurlik Account",
+                      message);
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
