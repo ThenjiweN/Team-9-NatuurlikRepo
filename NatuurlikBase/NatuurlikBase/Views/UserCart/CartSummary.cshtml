@@ -1,0 +1,304 @@
+﻿@model NatuurlikBase.ViewModels.UserCartVM
+@using Microsoft.Extensions.Options
+
+<form method="post">
+	<br />
+	<div class="container">
+		<div class="card">
+			<div class="card-header bg-dark text-light ml-0">
+				<div class=" row container">
+					<div class="col-6">
+						<i class="fa fa-shopping-cart"></i> &nbsp;
+						Order Summary
+					</div>
+					
+				</div>
+			</div>
+			@*<div class="card-header">
+				<div class="row">
+					<div class="col-12 col-md-8 pt-2">
+						<p style="color:maroon; font-size:14px;">Estimate Arrival Date: </p>
+					</div>
+			</div>
+			</div>*@
+			<div class="card-body">
+				<div class="container rounded p-2">
+					<div class="row">
+						<div class="col-12 col-lg-6 pb-4">
+							<div class="row">
+								<h4 class="d-flex justify-content-between align-items-center mb-3">
+									<span class="text-info">Delivery Details:</span>
+								</h4>
+								
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>First Name</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.FirstName" class="form-control" />
+									<span asp-validation-for="Order.FirstName" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Surname</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.Surname" class="form-control" />
+									<span asp-validation-for="Order.Surname" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Phone Number</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.PhoneNumber" class="form-control" />
+									<span asp-validation-for="Order.PhoneNumber" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Street Address</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.StreetAddress" class="form-control" />
+									<span asp-validation-for="Order.StreetAddress" class="text-danger"></span>
+								</div>
+							</div>
+							
+
+							@*<div class="row my-1">
+								<div class="col-3">
+									<label>Country</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.Country" class="form-control" />
+									<span asp-validation-for="Order.Country" class="text-danger"></span>
+								</div>
+							</div>*@
+
+				<div class="row">
+                <div class="form-floating col-md-6" id="formspace">
+				<label asp-for="Order.Country">Country</label>
+                        <select asp-for="Order.Country" asp-items="@Model.CountryList" required class="form-control" onchange="onCountryChange()">
+                            <option disabled selected>- Select Country -</option>
+                        </select>
+                        <span asp-validation-for="Order.Country" class="text-danger"></span>
+                </div>
+
+				<div class="form-floating col-md-6" id="formspace">
+				<label asp-for="Order.Province">Province</label>
+                        <select asp-for="Order.Province" asp-items="@Model.ProvinceList" required class="form-control" onchange="onProvinceChange()">
+                            <option disabled selected>- Select Province -</option>
+                        </select>
+                        <span asp-validation-for="Order.Province" class="text-danger"></span>
+                </div>
+				</div>
+
+				<div class="row">
+                <div class="form-floating col-md-6" id="formspace">
+				<label asp-for="Order.City">City</label>
+                    <select asp-for="Order.City" asp-items="@Model.CityList" required class="form-control" onchange="onCityChange()">
+                        <option disabled selected>- Select City -</option>
+                    </select>
+                    <span asp-validation-for="Order.City" class="text-danger"></span>
+                </div>
+
+				 <div class="form-floating col-md-6" id="formspace">
+				 <label asp-for="Order.Suburb">Suburb</label>
+                    <select asp-for="Order.Suburb" asp-items="@Model.SuburbList" required class="form-control">
+                        <option disabled selected>- Select Suburb -</option>
+                    </select>
+                    <span asp-validation-for="Order.Suburb" class="text-danger"></span>
+                </div>
+				</div>
+
+
+							<div class="row my-1">
+								@*<div class="col-3">
+									<label>Province</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.Province" class="form-control" />
+									<span asp-validation-for="Order.Province" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>City</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.City" class="form-control" />
+									<span asp-validation-for="Order.City" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Suburb</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.Suburb" class="form-control" />
+									<span asp-validation-for="Order.Suburb" class="text-danger"></span>
+								</div>
+							</div>*@
+							@*<div class="row my-1">
+								<div class="col-3">
+									<label>Postal Code</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="Order.Suburb.PostalCode" class="form-control" />
+									<span asp-validation-for="Order.Suburb.PostalCode" class="text-danger"></span>
+								</div>
+							</div>*@
+						</div>
+						<div class="col-12 col-lg-5 offset-lg-1">
+							<h4 class="d-flex justify-content-between align-items-center mb-3">
+								<span class="text-info">Order Summary:</span>
+							</h4>
+							<ul class="list-group mb-3">
+								@foreach(var orderItem in Model.CartList)
+								{
+									<li class="list-group-item d-flex justify-content-between">
+									<div>
+										<h6 class="my-0">@orderItem.Product.Name</h6>
+										<small class="text-muted">Quantity: @orderItem.Count</small>
+									</div>
+
+									@*Calculate price for each Order Item based on quantity*@
+									<span class="text-muted"> @((orderItem.CartItemPrice * orderItem.Count).ToString("0.00")) </span>
+								</li>
+								}
+								
+								<li class="list-group-item d-flex justify-content-between bg-light">
+									<small class="text-info">Total (ZAR)</small>
+									<strong class="text-info">@Model.Order.OrderTotal.ToString("0.00")</strong>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="row">
+					<div class="col-md-4">
+					<button asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-outline-dark form-control">Back</button>
+					</div>
+					<div class="col-12 col-md-4">
+						
+						<button type="submit" value="Place Order" class="btn btn-success form-control">Proceed to Payment</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</form>
+
+<script>
+        
+    function onCountryChange()
+    {
+        if(!$('#Order_Country').val())
+        {
+            $('#suburbControl').attr('hidden',true);
+            $('#cityControl').attr('hidden',true);
+            $('#provinceControl').attr('hidden',true);
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetProvince",
+                data: { countryId: $('#Order_Country').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Order_Province').html('');
+                    options += '<option value="0" disabled >--Select Province--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Order_Province').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Order_Province').val(0);
+                    $('#provinceControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onProvinceChange()
+    {
+        if(!$('#Order_Province').val())
+        {
+            $('#cityControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetCity",
+                data: { ProvinceId: $('#Order_Province').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Order_City').html('');
+                    options += '<option value="0" disabled >--Select City--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Order_City').append(options);
+
+                    //Sets teh DDL to the placeholder value
+                    $('#Order_City').val(0);
+                    $('#cityControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+
+    function onCityChange()
+    {
+        if(!$('#Order_City').val())
+        {
+            $('#suburbControl').hide();
+        }
+        else
+        {
+            $.ajax({
+                type: "GET",
+                url: "/User/GetSuburb",
+                data: { CityId: $('#Order_City').val() },
+                datatype: "json",
+                success: function (data) {
+                    var options = '';
+                    $('#Order_Suburb').html('');
+                    options += '<option value="0" disabled >--Select Suburb--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        console.log(data[i]);
+                        options += '<option value=' + data[i].value + '>' + data[i].text + '</option>';
+                    }
+                    $('#Order_Suburb').append(options);
+
+                    //Sets the DDL to the placeholder value
+                    $('#Order_Suburb').val();
+                    $('#suburbControl').attr('hidden',false);
+                }
+            });
+        }
+    }
+        
+    </script>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}

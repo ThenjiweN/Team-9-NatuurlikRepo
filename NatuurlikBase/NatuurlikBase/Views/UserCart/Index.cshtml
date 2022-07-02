@@ -10,9 +10,6 @@
 						<i class="fa fa-shopping-cart"></i> &nbsp;
 						Your Shopping Cart: 
 					</div>
-					<div class="col-2 col-sm-4 col-lg-2 text-right pt-2">
-						<a asp-area="" asp-controller="ProductCatalogue" asp-action="Index"  class="btn btn-outline-info btn-sm">Continue Shopping</a>
-					</div>
 				</div>
 			</div>
 
@@ -85,7 +82,7 @@
 						<ul class="list-group">
 							<li class="list-group-item d-flex justify-content-between bg-light">
 								<span> Total (ZAR):</span>
-								<strong> R @Model.CartTotal.ToString("0.00")</strong>
+								<strong> R @Model.Order.OrderTotal.ToString("0.00")</strong>
 							</li>
 						</ul>
 					</div>
@@ -93,13 +90,27 @@
 
 			</div>
 
+			@if(@Model.CartList.Count == 0)
+			{
 			<div class="card-footer">
 				<div class="card-footer row">
 					<div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
-						<a asp-action="Summary" class="btn btn-success form-control">Continue to Checkout</a>
+						<a asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-success form-control">Browse Products</a>
+					</div>
+				</div>
+				</div>
+			}
+			else
+			{
+				<div class="card-footer">
+				<div class="card-footer row">
+					<div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
+						<a asp-controller="UserCart" asp-action="CartSummary" class="btn btn-success form-control">Continue to Checkout</a>
 					</div>
 				</div>
 			</div>
+			}
+			
 		</div>
 	</div>
 </form>

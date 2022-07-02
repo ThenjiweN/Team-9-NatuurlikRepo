@@ -36,6 +36,9 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<WriteOffProduct> ProductWriteOff { get; set; }
     public DbSet<Cart> UserCart { get; set; }
 
+    public DbSet<Order> Order { get; set; }
+    public DbSet<OrderLine> OrderLine { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         //Establish relationships 
