@@ -23,21 +23,25 @@
 
         <br />
 
-       @* <div class="col-md-10">
-			<label asp-for="QuantityOnHand"></label>
-			<input asp-for="QuantityOnHand" class="form-control" />
-			<span asp-validation-for="QuantityOnHand" class="text-danger"></span>
-		</div>
-          <br />*@
-                        <div class="col-md-10">
+			<input asp-for="QuantityOnHand" class="form-control" type="hidden"/>
+			<span asp-validation-for="QuantityOnHand" class="text-danger" type="hidden"></span>
 
-                            <label asp-for="InventoryTypeId" class="control-label">Inventory Type</label>
-                            <select asp-for="InventoryTypeId" class="form-control" asp-items="ViewBag.InventoryTypeId"></select>
-                            <span asp-validation-for="InventoryTypeId" class="text-danger"></span>
 
-                        </div>		
+        <div class="col-md-10">
+           <label asp-for="InventoryTypeId" class="control-label">Inventory Type</label>
+           <select asp-for="InventoryTypeId" class="form-control" asp-items="ViewBag.InventoryTypeId"></select>
+           <span asp-validation-for="InventoryTypeId" class="text-danger"></span>
+        </div>		
                         <br />
-                         <div class="col-md-10">
+
+        <div class="col-md-10">
+			<label asp-for="ThresholdValue"></label>
+			<input asp-for="ThresholdValue" class="form-control" />
+			<span asp-validation-for="ThresholdValue" class="text-danger"></span>
+		</div>
+          <br />
+
+    <div class="col-md-10">
 		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
 		<a asp-controller="InventoryItem" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
 			Cancel

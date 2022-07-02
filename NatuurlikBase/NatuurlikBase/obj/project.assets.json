@@ -10080,23 +10080,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kyle\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\vumis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+      "projectUniqueName": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
       "projectName": "NatuurlikBase",
-      "projectPath": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
-      "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-      "outputPath": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
+      "projectPath": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
+      "packagesPath": "C:\\Users\\vumis\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vumis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10179,7 +10175,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

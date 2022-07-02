@@ -7,7 +7,7 @@ namespace NatuurlikBase.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        [Display(Name = "Inventory Item")]
+        [Display(Name = "Inventory Type Name")]
         [MaxLength(50)]
         public string InventoryTypeName { get; set; }
     }

@@ -35,17 +35,16 @@ namespace NatuurlikBase.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,InventoryItemName,InventoryTypeId,QuantityOnHand")] InventoryItem inventoryItem)
+        public IActionResult Create([Bind("Id,InventoryItemName,InventoryTypeId,QuantityOnHand,ThresholdValue")] InventoryItem inventoryItem)
         {
             if (ModelState.IsValid)
 
             {
 
-                if (db.InventoryItem.Any(c => c.InventoryItemName == inventoryItem.InventoryItemName && c.InventoryTypeId == inventoryItem.InventoryTypeId && c.QuantityOnHand == inventoryItem.QuantityOnHand))
+                if (db.InventoryItem.Any(c => c.InventoryItemName == inventoryItem.InventoryItemName && c.InventoryTypeId == inventoryItem.InventoryTypeId && c.QuantityOnHand == inventoryItem.QuantityOnHand
+                && c.ThresholdValue == inventoryItem.ThresholdValue))
                 {
                     ViewBag.Error = "Inventory Type Already exist in the database.";
-
-
                 }
                 else
                 {
@@ -84,14 +83,13 @@ namespace NatuurlikBase.Controllers
    
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit([Bind("Id,InventoryItemName,InventoryTypeId,QuantityOnHand")] InventoryItem inventoryItem)
+        public IActionResult Edit([Bind("Id,InventoryItemName,InventoryTypeId,QuantityOnHand,ThresholdValue")] InventoryItem inventoryItem)
         {
             if (ModelState.IsValid)
 
             {
-               
-
-                    if (db.InventoryItem.Any(c => c.InventoryItemName==inventoryItem.InventoryItemName &&c.InventoryTypeId==inventoryItem.InventoryTypeId && c.QuantityOnHand==inventoryItem.QuantityOnHand))
+                    if (db.InventoryItem.Any(c => c.InventoryItemName==inventoryItem.InventoryItemName &&c.InventoryTypeId==inventoryItem.InventoryTypeId && c.QuantityOnHand==inventoryItem.QuantityOnHand
+                    && c.ThresholdValue == inventoryItem.ThresholdValue))
                 {
                     ViewBag.Error = "Already exist in the database.";
 

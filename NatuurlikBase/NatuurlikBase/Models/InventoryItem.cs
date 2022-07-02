@@ -19,6 +19,10 @@ namespace NatuurlikBase.Models
 
         [Display(Name = "Quantity on Hand")]
         public int QuantityOnHand { get; set; }
+
+        [Display(Name = "Threshold Value")]
+        public int ThresholdValue { get; set; }
+
         public int InventoryTypeId { get; set; }
         [ValidateNever]
         [ForeignKey("InventoryTypeId")]
