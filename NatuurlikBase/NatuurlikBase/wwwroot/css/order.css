@@ -1,0 +1,154 @@
+﻿#cartTitle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: Montserrat-Medium;
+}
+
+#montserret {
+    font-family: Montserrat-Regular;
+}
+
+.dark {
+    background-color: black;
+    font-size: medium;
+    padding:0;
+}
+
+.carttable{
+    margin-bottom: 100px;
+}
+
+#gone, #bin{
+    color:black;
+}
+
+     #bin :hover {
+        color: #DA3F48;
+    }
+
+#bin{
+    padding-left:25px;
+    padding-right:25px;
+    font-size:20px;
+}
+
+
+#pic{
+    margin-top: 10px;
+    margin-bottom:10px;
+    height: 100px;
+    padding-left:10px
+}
+
+#mpic {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+}
+
+#main {
+    border-bottom: 1px solid #E6E6E7;
+    border-right: 1px solid #E6E6E7;
+    border-left: 1px solid #E6E6E7;
+}
+
+#move{
+    margin-left:20px;
+}
+
+.plus {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    padding-top: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mobplus {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+    padding-top: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: small;
+}
+
+#green{
+    color:green;
+}
+
+#go {
+    padding-left: 20px;
+}
+
+#come {
+    padding-right: 20px;
+}
+
+#total {
+    font-family: Montserrat-SemiBold;
+}
+
+#cartitems {
+    font-family: Montserrat-Medium;
+}
+
+/*ORDER SUMMARY PAGE*/
+#new {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    font-family: Montserrat-Medium;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: medium;
+}
+
+
+.delivery {
+    background-color: #FDFDFD;
+}
+
+#delprice{
+    margin-bottom:8px;
+}
+
+.back{
+    text-align:center;
+    margin-top:10px;
+}
+
+.color{
+    color: black;
+    font-size: 14px;
+}
+
+.back :hover {
+    text-decoration:none;
+}
+
+#corner, #new{
+    border-radius:0px;
+}
+
+#paybtn {
+    border: 2px solid #4FA643;
+    color: white;
+    background-color: #4FA643;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+    #paybtn:hover {
+        border: 2px solid #4FA643;
+        background-color: white;
+        color: #4FA643;
+        border-radius: 0;
+        font-family: Montserrat-Medium;
+    }
+
+.small {
+    font-size: 14px;
+}

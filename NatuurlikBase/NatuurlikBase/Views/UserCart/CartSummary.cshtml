@@ -1,201 +1,137 @@
 ﻿@model NatuurlikBase.ViewModels.UserCartVM
 @using Microsoft.Extensions.Options
 
+@section order {
+    <link href="@Url.Content("~/css/order.css")" rel="stylesheet" type="text/css" />
+}
+
 <form method="post">
-	<br />
-	<div class="container">
-		<div class="card">
-			<div class="card-header bg-dark text-light ml-0">
-				<div class=" row container">
-					<div class="col-6">
-						<i class="fa fa-shopping-cart"></i> &nbsp;
-						Order Summary
-					</div>
-					
-				</div>
-			</div>
-			@*<div class="card-header">
-				<div class="row">
-					<div class="col-12 col-md-8 pt-2">
-						<p style="color:maroon; font-size:14px;">Estimate Arrival Date: </p>
-					</div>
-			</div>
-			</div>*@
-			<div class="card-body">
-				<div class="container rounded p-2">
-					<div class="row">
-						<div class="col-12 col-lg-6 pb-4">
-							<div class="row">
-								<h4 class="d-flex justify-content-between align-items-center mb-3">
-									<span class="text-info">Delivery Details:</span>
-								</h4>
-								
-							</div>
-							<div class="row my-1">
-								<div class="col-3">
-									<label>First Name</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.FirstName" class="form-control" />
-									<span asp-validation-for="Order.FirstName" class="text-danger"></span>
-								</div>
-							</div>
-							<div class="row my-1">
-								<div class="col-3">
-									<label>Surname</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.Surname" class="form-control" />
-									<span asp-validation-for="Order.Surname" class="text-danger"></span>
-								</div>
-							</div>
-							<div class="row my-1">
-								<div class="col-3">
-									<label>Phone Number</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.PhoneNumber" class="form-control" />
-									<span asp-validation-for="Order.PhoneNumber" class="text-danger"></span>
-								</div>
-							</div>
-							<div class="row my-1">
-								<div class="col-3">
-									<label>Street Address</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.StreetAddress" class="form-control" />
-									<span asp-validation-for="Order.StreetAddress" class="text-danger"></span>
-								</div>
-							</div>
-							
+	<div class="container" id="montserret">
+		<h2 id="cartTitle">CHECKOUT</h2>
+			<div class="row carttable">
+                <div class="col-md-8 order-md-1">
+		            <div class="card" id="corner">
+			            <div class="card-header" id="new">
+				            Delivery Details
+			            </div>
+                            <div class="card-body">
+				                <div class="row">
+							        <div class="col-md-6" id="formspace">
+                                        <label class="small" asp-for="Order.FirstName">First Name</label>
+							            <input asp-for="Order.FirstName" class="form-control" />
+								        <span asp-validation-for="Order.FirstName" class="text-danger"></span>
+							        </div>
+							        <div class="col-md-6" id="formspace">
+                                        <label class="small" asp-for="Order.Surname">Surname</label>
+								        <input asp-for="Order.Surname" class="form-control" />
+								        <span asp-validation-for="Order.Surname" class="text-danger"></span>
+							        </div>
+						        </div>
 
-							@*<div class="row my-1">
-								<div class="col-3">
-									<label>Country</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.Country" class="form-control" />
-									<span asp-validation-for="Order.Country" class="text-danger"></span>
-								</div>
-							</div>*@
+						        <div class="row">
+							        <div class="col-md-6" id="formspace">
+                                        <label class="small" asp-for="Order.PhoneNumber">Phone Number</label>
+								        <input asp-for="Order.PhoneNumber" class="form-control" />
+								        <span asp-validation-for="Order.PhoneNumber" class="text-danger"></span>
+							        </div>
+						        </div>
 
-				<div class="row">
-                <div class="form-floating col-md-6" id="formspace">
-				<label asp-for="Order.Country">Country</label>
-                        <select asp-for="Order.Country" asp-items="@Model.CountryList" required class="form-control" onchange="onCountryChange()">
-                            <option disabled selected>- Select Country -</option>
-                        </select>
-                        <span asp-validation-for="Order.Country" class="text-danger"></span>
-                </div>
-
-				<div class="form-floating col-md-6" id="formspace">
-				<label asp-for="Order.Province">Province</label>
-                        <select asp-for="Order.Province" asp-items="@Model.ProvinceList" required class="form-control" onchange="onProvinceChange()">
-                            <option disabled selected>- Select Province -</option>
-                        </select>
-                        <span asp-validation-for="Order.Province" class="text-danger"></span>
-                </div>
-				</div>
-
-				<div class="row">
-                <div class="form-floating col-md-6" id="formspace">
-				<label asp-for="Order.City">City</label>
-                    <select asp-for="Order.City" asp-items="@Model.CityList" required class="form-control" onchange="onCityChange()">
-                        <option disabled selected>- Select City -</option>
-                    </select>
-                    <span asp-validation-for="Order.City" class="text-danger"></span>
-                </div>
-
-				 <div class="form-floating col-md-6" id="formspace">
-				 <label asp-for="Order.Suburb">Suburb</label>
-                    <select asp-for="Order.Suburb" asp-items="@Model.SuburbList" required class="form-control">
-                        <option disabled selected>- Select Suburb -</option>
-                    </select>
-                    <span asp-validation-for="Order.Suburb" class="text-danger"></span>
-                </div>
-				</div>
-
-
-							<div class="row my-1">
-								@*<div class="col-3">
-									<label>Province</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.Province" class="form-control" />
-									<span asp-validation-for="Order.Province" class="text-danger"></span>
-								</div>
-							</div>
-							<div class="row my-1">
-								<div class="col-3">
-									<label>City</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.City" class="form-control" />
-									<span asp-validation-for="Order.City" class="text-danger"></span>
-								</div>
-							</div>
-							<div class="row my-1">
-								<div class="col-3">
-									<label>Suburb</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.Suburb" class="form-control" />
-									<span asp-validation-for="Order.Suburb" class="text-danger"></span>
-								</div>
-							</div>*@
-							@*<div class="row my-1">
-								<div class="col-3">
-									<label>Postal Code</label>
-								</div>
-								<div class="col-9">
-									<input asp-for="Order.Suburb.PostalCode" class="form-control" />
-									<span asp-validation-for="Order.Suburb.PostalCode" class="text-danger"></span>
-								</div>
-							</div>*@
-						</div>
-						<div class="col-12 col-lg-5 offset-lg-1">
-							<h4 class="d-flex justify-content-between align-items-center mb-3">
-								<span class="text-info">Order Summary:</span>
-							</h4>
-							<ul class="list-group mb-3">
-								@foreach(var orderItem in Model.CartList)
-								{
-									<li class="list-group-item d-flex justify-content-between">
-									<div>
-										<h6 class="my-0">@orderItem.Product.Name</h6>
-										<small class="text-muted">Quantity: @orderItem.Count</small>
-									</div>
-
-									@*Calculate price for each Order Item based on quantity*@
-									<span class="text-muted"> @((orderItem.CartItemPrice * orderItem.Count).ToString("0.00")) </span>
-								</li>
-								}
-								
-								<li class="list-group-item d-flex justify-content-between bg-light">
-									<small class="text-info">Total (ZAR)</small>
-									<strong class="text-info">@Model.Order.OrderTotal.ToString("0.00")</strong>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card-footer">
-				<div class="row">
-					<div class="col-md-4">
-					<button asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-outline-dark form-control">Back</button>
-					</div>
-					<div class="col-12 col-md-4">
+						        <div class="row">
+							        <div class="col" id="formspace">
+                                        <label class="small" asp-for="Order.StreetAddress">Street Address</label>
+								        <input asp-for="Order.StreetAddress" class="form-control" />
+								        <span asp-validation-for="Order.StreetAddress" class="text-danger"></span>
+							        </div>
+						        </div>
 						
-						<button type="submit" value="Place Order" class="btn btn-success form-control">Proceed to Payment</button>
-					</div>
-				</div>
+			                    <div class="row">
+                                    <div class="form-floating col-md-6" id="formspace">
+				                        <label class="small" asp-for="Order.Country">Country</label>
+                                        <select asp-for="Order.Country" asp-items="@Model.CountryList" required class="form-control" onchange="onCountryChange()">
+                                            <option disabled selected>- Select Country -</option>
+                                        </select>
+                                        <span asp-validation-for="Order.Country" class="text-danger"></span>
+                                    </div>
+				                    <div class="form-floating col-md-6" id="formspace">
+				                        <label class="small" asp-for="Order.Province">Province</label>
+                                        <select asp-for="Order.Province" asp-items="@Model.ProvinceList" required class="form-control" onchange="onProvinceChange()">
+                                            <option disabled selected>- Select Province -</option>
+                                        </select>
+                                        <span asp-validation-for="Order.Province" class="text-danger"></span>
+                                    </div>
+				                </div>
+
+				                <div class="row">
+                                    <div class="form-floating col-md-6" id="formspace">
+				                        <label class="small" asp-for="Order.City">City</label>
+                                        <select asp-for="Order.City" asp-items="@Model.CityList" required class="form-control" onchange="onCityChange()">
+                                            <option disabled selected>- Select City -</option>
+                                        </select>
+                                        <span asp-validation-for="Order.City" class="text-danger"></span>
+                                    </div>
+				                    <div class="form-floating col-md-6" id="formspace">
+				                        <label class="small" asp-for="Order.Suburb">Suburb</label>
+                                        <select asp-for="Order.Suburb" asp-items="@Model.SuburbList" required class="form-control">
+                                            <option disabled selected>- Select Suburb -</option>
+                                        </select>
+                                        <span asp-validation-for="Order.Suburb" class="text-danger"></span>
+                                    </div>
+				                </div>	
+                               </div>
+		            </div>
+                </div>
+
+		        <div class="col-md-4 order-md-2" >
+                    <div class="card ">
+			            <div class="card-header" id="new">
+				            Order Summary
+			            </div>
+                            <div class="card-body">
+								@foreach(var orderItem in Model.CartList)
+								    {
+									    <div class= "d-flex justify-content-between" id="cartitems">
+										     <small>@orderItem.Product.Name</small>									        
+                                             <small>R @((orderItem.CartItemPrice * orderItem.Count).ToString("0.00")) </small>
+									    </div>
+                                        <small class="text-muted">Quantity: @orderItem.Count</small>		
+                                        <hr />
+								    }  
+
+								<div class="d-flex justify-content-between" id="delprice">
+									 <strong>Subtotal</strong>
+									 <strong>R **</strong>
+								</div>                             
+
+ 								<div class="d-flex justify-content-between">
+								    <small class="text-muted">Delivery</small>										        
+                                    <small class="text-muted">R **</small>
+							    </div>                                   
+
+                                <div class="d-flex justify-content-between">
+									<small class="text-muted">VAT 15%</small>										        
+                                    <small class="text-muted">R **</small>
+								</div>  
+
+                                <hr />
+
+								<div class="d-flex justify-content-between" id="total">
+									<p>Total (ZAR)</p>
+									<p>R @Model.Order.OrderTotal.ToString("0.00")</p>
+								</div>
+
+				                <div>			                                 
+					                <button type="submit" value="Place Order" class="btn form-control" id="paybtn">Proceed to Payment</button>
+                                    <p class="back">
+                                        <a asp-controller="ProductCatalogue" asp-action="Index" class="color">Back</a>
+                                    </p>				                
+				                </div>
+                            </div>
+                    </div>                      
+                </div>
 			</div>
-		</div>
 	</div>
-
-
 </form>
+
 
 <script>
         

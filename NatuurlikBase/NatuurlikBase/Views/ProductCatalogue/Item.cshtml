@@ -1,13 +1,16 @@
 ﻿@model Cart
-@*
+
 @section catalogue {
     <link href="@Url.Content("~/css/catalogue.css")" rel="stylesheet" type="text/css" />
-}*@
+}
+
+<div class="container">
+
 <form method="post">
     <input hidden asp-for="ProductId" />
 
     <div class="itemspace row justify-content-center">
-        <div class="col-lg-6 left">
+        <div class="col-lg-6 right">
             <img class="prodimg" src="@Model.Product.PictureUrl">
         </div>
           <div class="col-lg-6">
@@ -26,21 +29,21 @@
             <p id="itemdesc">
                @Model.Product.Description
             </p>
-            }
+            }           
 
-             <div class="row pt-3">
-             <div class="col-2 text-primary"><h4>Count</h4></div>
-             <div class="col-10"><input asp-for="Count" min=1 class="form-control"  /></div>
+             <div class="row">
+                 <div class="col-3">
+                     <label class="small" asp-for="Count">Count</label>
+                     <input asp-for="Count" min=1 class="form-control" />
+                 </div>
+                 <div class="col-5">
+                     <button href="#" class="btn btn-primary btn-block" id="itembtn">Add to Cart</button> @*STAY ON PAGE*@
+                 </div>
+                <div class="col-4 backbtn">
+                    <a asp-area="" asp-controller="ProductCatalogue" asp-action="Index" class="underline">Back</a>
+                </div>
              </div>
             
-            <div class="row">
-                <div class="col-4">
-                    <a asp-area="" asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-primary btn-block" id="itembtn">Back</a>
-                </div>
-                <div class="col-5">
-                    <button href="#" class="btn btn-primary btn-block" id="itembtn">Add to Cart</button>
-                </div>
-            </div>
             <h6>Category</h6>
             <p id="itemcat">@Model.Product.Category.Name</p>
              <h6>By</h6>
@@ -89,4 +92,6 @@
               </div>
             </div>
         </div>
+</div>
+
 </div>

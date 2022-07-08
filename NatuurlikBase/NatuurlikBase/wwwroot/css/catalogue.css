@@ -21,6 +21,17 @@
     border: none;
 }
 
+.underline {
+    text-decoration: underline;
+    color: black;
+    font-family: Montserrat-SemiBold;
+    font-size: 14px;
+}
+
+.backbtn{
+    margin-top:35px;
+}
+
 .card-img-top {
     background-color: #EBEBEB;
 }
@@ -61,20 +72,22 @@
 }
 
 .prodimg {
-    height: 450px;
+    height: 530px;
 }
 
-.left {
-    text-align: left;
+.right {
+    text-align: right;
 }
 
 .itemTitle {
+    padding-top: 40px;
     padding-bottom: 20px;
     font-family: Montserrat-light;
 }
 
 #itemdesc {
     margin-top: 8%;
+    margin-bottom: 30px;
 }
 
 

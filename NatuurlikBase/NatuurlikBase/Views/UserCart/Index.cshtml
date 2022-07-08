@@ -1,116 +1,181 @@
 ﻿@model NatuurlikBase.ViewModels.UserCartVM
 
+@section order {
+    <link href="@Url.Content("~/css/order.css")" rel="stylesheet" type="text/css" />
+}
+
+
 <form method="post">
-	<br />
-	<div class="container">
-		<div class="card">
-			<div class="card-header bg-dark text-light ml-0">
-				<div class="row">
-					<div class="col-6  pt-2">
-						<i class="fa fa-shopping-cart"></i> &nbsp;
-						Your Shopping Cart: 
-					</div>
-				</div>
-			</div>
+	<div class="container" id="montserret">
+		<h2 id="cartTitle">CART</h2>
+			<div class="row carttable">		
+				<div class="table-responsive col-md-9 order-md-1">
+				<table class="table-sm d-none d-lg-block">
+					<thead class="dark">
+						<tr>
+							<th class="text-light col-1" id="go">
+								Product
+							</th>
+							<th class="col-5" id="gone">
+								Description
+							</th>
+							 <th class="text-light col-2">
+								Price
+							</th>
+							 <th class="text-light col-2">
+								Quantity
+							</th>
+							<th class="text-light col-1" id="come">
+								Remove
+							</th>
+						</tr>
+					</thead>
+					<tbody>											
+						@foreach (var cartItem in Model.CartList)
+						{
+							@if (cartItem.Count > 0)
+							{
+								<tr id="main">
+									<td>
+										<img id="pic" src="@cartItem.Product.PictureUrl" />
 
-			<div class="card-body">
-				
-					@foreach (var cartItem in Model.CartList)
-					{
-					@if (cartItem.Count > 0)
-					{
-						<div class="row">
-							<div class="d-none d-lg-block col-lg-1 text-center">
-								<img src="@cartItem.Product.PictureUrl" class="rounded" width="100%" />
-							</div>
-							<div class="col-12 col-lg-6 pt-md-3">
-								<h5><strong>@cartItem.Product.Name</strong></h5>
-								<p><small>@cartItem.Product.Description</small></p>
-							</div>
-							<div class="col-12  col-lg-5 text-center row">
-								@if (User.IsInRole(SR.Role_Reseller))
-								{
-									<div class="col-4 text-md-right pt-4">
-										<h6><strong>R @cartItem.Product.ResellerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </strong></h6>
-									</div>
-								}
+										@*//ONLY FOR DEMOSTRATION PURPOSES//*@
+										@*<img id="pic" src="~/images/products/75c47ed2-c29c-4ab4-8c59-1c97bf1d48c0.png"/> *@
+									</td>
+									<td>
+										<h6><strong>@cartItem.Product.Name</strong></h6>
+										<p><small>@cartItem.Product.Description</small></p>											
+									</td>
+									<td>
+										@if (User.IsInRole(SR.Role_Reseller))
+										{
+											<h6><strong>R @cartItem.Product.ResellerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </strong></h6>
+										}
 
-								else
-								{
-									<div class="col-4 text-md-right pt-4">
-										<h6><strong>R @cartItem.Product.CustomerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </strong></h6>
-									</div>
-								}
-
-
-								<div class="col-6 col-sm-4 col-lg-6 pt-2">
-									<div class="col-12" role="group">
-										<a asp-action="increment" asp-route-cartId="@cartItem.Id" class="btn btn-primary">
-											<i class="bi bi-plus-square"></i>
-										</a> &nbsp;
-										<label class="text-black pt-1" style="font-size: x-large"> @cartItem.Count </label>
-										&nbsp;
-										<a asp-action="decrement" asp-route-cartId="@cartItem.Id" class="btn btn-primary">
-											<i class="bi bi-dash-square"></i>
+										else
+										{
+											<h6><strong>R @cartItem.Product.CustomerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </strong></h6>
+										}
+									</td>
+									<td>
+										<div role="group" class="plus">
+											<a asp-action="decrement" asp-route-cartId="@cartItem.Id" id="gone">
+												<i class="bi bi-dash-lg"></i>
+											</a>
+											&nbsp;
+											<label><strong>@cartItem.Count</strong></label>
+											&nbsp;
+											<a asp-action="increment" asp-route-cartId="@cartItem.Id" id="gone">
+												<strong>
+													<i class="bi bi-plus-lg"></i>
+												</strong>
+											</a>
+										</div>
+									</td>
+									<td id="bin">
+										<a asp-action="remove" asp-route-cartId="@cartItem.Id" id="gone">
+											<i class="bi bi-trash" ></i>
 										</a>
-									</div>
-
-								</div>
-								<div class="col-2 col-sm-4 col-lg-2 text-right pt-3">
-									<a asp-action="remove" asp-route-cartId="@cartItem.Id" class="btn btn-danger">
-										<i class="bi bi-trash-fill"></i>
-									</a>
-								</div>
-
-
-							</div>
-						</div>
-						<hr />
-					}
-					else
-					{
+									</td>										
+								</tr>
 							
+						}
+						else
+						{
+						}}
+											
+					</tbody>
+				</table>
+
+				<div class="d-lg-none">
+
+					<div id="new">
+						<p>Products</p>
+					</div>
+
+					<div class="row">
+						@foreach (var cartItem in Model.CartList)
+						{
+							@if (cartItem.Count > 0)
+							{
+								<div class="col-5">
+										<img id="mpic" src="@cartItem.Product.PictureUrl" />
+								</div>
+
+								<div class="col">
+									<br >
+										<h6><strong>@cartItem.Product.Name</strong></h6>
+										<p><small>@cartItem.Product.Description</small></p>											
+
+										@if (User.IsInRole(SR.Role_Reseller))
+										{
+											<h6 id="total">R @cartItem.Product.ResellerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </h6>
+										}
+
+										else
+										{
+											<h6 id="total">R @cartItem.Product.CustomerPrice.ToString("0.00")<span class="text-muted">&nbsp;x&nbsp;</span> @cartItem.Count </h6>
+										}
+
+										<div role="group" class="mobplus">
+											<a asp-action="decrement" asp-route-cartId="@cartItem.Id" id="gone">
+												<i class="bi bi-dash-lg"></i>
+											</a>
+											&nbsp;
+											<label><strong>@cartItem.Count</strong></label>
+											&nbsp;
+											<a asp-action="increment" asp-route-cartId="@cartItem.Id" id="gone">
+												<strong>
+													<i class="bi bi-plus-lg"></i>
+												</strong>
+											</a>
+										</div>																			
+@*									<div id="bin">
+										<a asp-action="remove" asp-route-cartId="@cartItem.Id" id="gone">
+											<i class="bi bi-trash" ></i>
+										</a>
+									</div>	*@	
+								</div>	
+								<br />
+								
+								<hr />
+							}
+						else
+						{}
 					}
-					
-					}
-				
-
-				
-
-				<div class="row">
-					<div class="col-12 col-md-6 offset-md-6 col-lg-4 offset-lg-8 pr-4">
-						<ul class="list-group">
-							<li class="list-group-item d-flex justify-content-between bg-light">
-								<span> Total (ZAR):</span>
-								<strong> R @Model.Order.OrderTotal.ToString("0.00")</strong>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
-
-			@if(@Model.CartList.Count == 0)
-			{
-			<div class="card-footer">
-				<div class="card-footer row">
-					<div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
-						<a asp-controller="ProductCatalogue" asp-action="Index" class="btn btn-success form-control">Browse Products</a>
 					</div>
 				</div>
 				</div>
-			}
-			else
-			{
-				<div class="card-footer">
-				<div class="card-footer row">
-					<div class="col-sm-12 col-lg-4 col-md-6 offset-lg-8 offset-md-6 ">
-						<a asp-controller="UserCart" asp-action="CartSummary" class="btn btn-success form-control">Continue to Checkout</a>
-					</div>
-				</div>
-			</div>
-			}
-			
+
+		        <div class="col-md-3 order-md-2">
+                    <div class="card" id="corner">
+			            <div class="card-header" id="new">
+				            Cart Total
+			            </div>
+                            <div class="card-body">                                  
+								<div class="d-flex justify-content-between" id="total">
+									<p> Total (ZAR):</p>
+									<p> R @Model.Order.OrderTotal.ToString("0.00")</p>
+								</div>
+
+
+				                <div>						
+									@if(@Model.CartList.Count == 0)
+									{
+										<div>
+											<a asp-controller="ProductCatalogue" asp-action="Index" class="btn form-control" id="paybtn">Browse Products</a>
+										</div>
+									}
+									else
+									{
+										<div>
+											<a asp-controller="UserCart" asp-action="CartSummary" class="btn form-control" id="paybtn">Continue to Checkout</a>
+										</div>
+									}
+				                </div>
+                            </div>
+                    </div>                      
+                </div>						
+			</div>	
 		</div>
-	</div>
 </form>
