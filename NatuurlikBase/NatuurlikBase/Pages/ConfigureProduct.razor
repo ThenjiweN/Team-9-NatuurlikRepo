@@ -9,51 +9,54 @@
 
 
 
-    <SuccessMessageComponent SuccessMessage="@configuredSuccessfully"></SuccessMessageComponent>
-<h1 style="text-align: center;"> Configure Product</h1>
-<br/>
-@if (this.product != null)
-{
-    <EditForm Model="product" OnValidSubmit="OnValidSubmit">
-        <DataAnnotationsValidator></DataAnnotationsValidator>
-        <ValidationSummary></ValidationSummary>
+<SuccessMessageComponent SuccessMessage="@configuredSuccessfully"></SuccessMessageComponent>
 
-        <label class="pl-4">Product Name:</label>
-     
-            <InputText class="pl-4 form-control" disabled id="name"  @bind-Value="product.Name"></InputText>
+<div class="card">
+    <div class="card-header" style="background-color: #F2F2F2">
+        <h5>Configure Product</h5>
+    </div>
+        <div class="card-body">
+            @if (this.product != null)
+            {
+                <EditForm Model="product" OnValidSubmit="OnValidSubmit">
+                    <DataAnnotationsValidator></DataAnnotationsValidator>
+                    <ValidationSummary></ValidationSummary>
+
+                    <label class="">Product Name:</label>    
+                    <InputText class="form-control" disabled id="name"  @bind-Value="product.Name"></InputText>
         
-        <br>
-        <br>
+                    <br>
 
-        @*<label for="qty">Quantity</label>
-        <div class="form-control">
-            <InputNumber disabled id="qty" @bind-Value="product.QuantityOnHand" class="form-control"></InputNumber>
+                    @*<label for="qty">Quantity</label>
+                    <div class="form-control">
+                        <InputNumber disabled id="qty" @bind-Value="product.QuantityOnHand" class="form-control"></InputNumber>
+                    </div>
+                    <br>
+                    <br>*@
+
+                   @* Consider adding pricing for further business intellignce reporting*@
+
+                   @* <div class="form-group">
+                        <label for="price">Price</label>
+                        <InputNumber id="price" @bind-Value="product.Price" class="form-control"></InputNumber>
+                    </div>*@
+
+                    <ProductInventoriesComponent 
+                        ProductInventories = "product.ProductInventories"
+                        OnInventorySelected="OnInventorySelected"
+                    ></ProductInventoriesComponent>
+
+                    <br/>
+                    <br/>
+
+                    <button type="submit" class="btn btn-success">Apply Configuration</button>
+                    <button type="button"  @onclick="@(()=> OnBack())" class="btn btn-outline-dark" style="width:150px">Cancel</button>
+    
+                </EditForm>
+
+            }
         </div>
-        <br>
-        <br>*@
-
-       @* Consider adding pricing for further business intellignce reporting*@
-
-       @* <div class="form-group">
-            <label for="price">Price</label>
-            <InputNumber id="price" @bind-Value="product.Price" class="form-control"></InputNumber>
-        </div>*@
-
-        <ProductInventoriesComponent 
-            ProductInventories = "product.ProductInventories"
-            OnInventorySelected="OnInventorySelected"
-        ></ProductInventoriesComponent>
-
-        <br/>
-        <button type="submit" class="btn btn-primary" style="border-color: white;color: white;
-                            background-color: lightgreen;
-                            text-decoration: none;">Apply Configuration</button>
-        <button type="button"  @onclick="@(()=> OnBack())" class="btn btn-primary">Cancel</button>
-
-    </EditForm>
-
-
-}
+</div>
 
 @code {
 

@@ -2,8 +2,6 @@
 @using NatuurlikBase.Components
 @using NatuurlikBase.Repository.IRepository
 
-
-
 @inject NavigationManager NavigationManager
 @inject IViewProductsByName ViewProductsByName
 
@@ -16,7 +14,18 @@
     }
 }
 
-<h3>Products List</h3>
+<style>
+    table{
+        border-bottom: 1px solid black;
+    }
+</style>
+
+ <div class="container-fluid">
+     <div class="row justify-content-start">
+            <div class="col-10 col-sm-10 col-md-10">
+            <h2 class="cheading">Products List</h2>
+		</div>
+     </div>
 <br/>
 
 <ViewProductsComponent OnSearchProducts="OnSearchProducts"></ViewProductsComponent>
@@ -25,11 +34,11 @@
 @if (productsList != null)
 {
     <table class="table">
-        <thead>
+        <thead style="background-color: #232323">
             <tr>
-                <th>Name</th>
-                <th>Quantity</th>
-                <th></th>
+                <th class="text-light">Name</th>
+                <th class="text-light">Quantity</th>
+                <th class="text-light"></th>
             </tr>
         </thead>
         <tbody>
@@ -45,6 +54,8 @@
 <br/>
 @*<button type="button" class="btn btn-primary" @onclick="OnBack">Back</button>
 *@
+
+</div>
 
 @code {
     private List<Product>? productsList;

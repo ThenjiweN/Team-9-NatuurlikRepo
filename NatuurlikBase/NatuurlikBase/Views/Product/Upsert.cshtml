@@ -70,6 +70,13 @@
 				<label asp-for="Product.PictureUrl"></label>
 				<input type="file" id="uploadBox" name="file" class="form-control" />
 			</div>
+
+          <div class="col-6"> 
+           <label asp-for="Product.ThresholdValue"></label>
+			<input asp-for="Product.ThresholdValue" class="form-control" />
+			<span asp-validation-for="Product.ThresholdValue" class="text-danger"></span>
+           </div>
+
 		</div>
 		<br />
 		<div class="col-4  col">

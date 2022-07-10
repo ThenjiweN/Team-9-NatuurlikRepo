@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "n7bw0CUfrY5W2EtNrMWfaZQ4dHywMFDo6ClVp0/eQTc=",
+  "Hash": "9C7e8aOlQ9Dps+iCeoyHcY6+kvIb1vk3bbFJIMoiUDM=",
   "Source": "NatuurlikBase",
   "BasePath": "_content/NatuurlikBase",
   "Mode": "Default",
@@ -1273,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\emailTemp\\lowInvTemp.html"
+    },
+    {
+      "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\emailTemp\\lowProdTemp.html",
+      "SourceId": "NatuurlikBase",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\",
+      "BasePath": "_content/NatuurlikBase",
+      "RelativePath": "emailTemp/lowProdTemp.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\emailTemp\\lowProdTemp.html"
     },
     {
       "Identity": "D:\\Users\\vumis\\Desktop\\NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\wwwroot\\emailTemp\\regCustomerTemp.html",

@@ -8,9 +8,7 @@
         <td>@Product.QuantityOnHand</td>
        
         <td>
-            <button type="submit" class="btn btn-light" @onclick="@(()=> ConfigureProduct(Product.Id))">Configure Inventories</button>
-           
-            
+            <button type="submit" class="btn btn-success" @onclick="@(()=> ConfigureProduct(Product.Id))"><i class="bi bi-tools"></i> &nbsp; Configure Inventories</button>
         </td>
     </tr>    
 }

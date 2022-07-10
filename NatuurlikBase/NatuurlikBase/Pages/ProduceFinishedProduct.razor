@@ -9,9 +9,13 @@
 
 <ErrorMessageComponent ErrorMessage="@exceptionMessage"></ErrorMessageComponent>
 <SuccessMessageComponent SuccessMessage="@producedSuccessfully"></SuccessMessageComponent>
-<div class="pt-4">
-    <h3>Produce Finished Product</h3>
-</div>
+ 
+<div class="container-fluid">
+     <div class="row justify-content-start">
+            <div class="col-10 col-sm-10 col-md-10">
+            <h2 class="cheading">Produce Finished Product</h2>
+		</div>
+     </div>
 
 <br/>
 @if (produceVM != null)
@@ -27,7 +31,7 @@
                 OnSelectProduct="OnSelectProduct"
                 DisplaySearchResult="true"></ViewProductsComponent> 
                 <br/>
-            <InputText id="inv" class="form-control" style="width:300px" @bind-Value="produceVM.ProductName" disabled></InputText>            
+            <InputText id="inv" class="form-control" style="width:625px" @bind-Value="produceVM.ProductName" disabled></InputText>            
             <input type="hidden" value="@produceVM.ProductId" />  
             @if (selectedProduct != null)
             {
@@ -38,18 +42,22 @@
             
         </div>
 
-        <div class="form-group">
-            <label for="qty">Quantity to Produce:</label>
-            <InputNumber id="qty" @bind-Value="produceVM.QuantityToProduce" class="form-control"></InputNumber>
+        <div class="row">
+            <div class="col-md-3 col">
+                <div class="form-group">
+                    <label for="qty">Quantity to Produce:</label>
+                    <InputNumber id="qty" @bind-Value="produceVM.QuantityToProduce" class="form-control"></InputNumber>
+                </div>
+            </div>
         </div>
-        <br/>
-        <button type="button"  @onclick="@(()=> OnCancel())" class="btn btn-primary">Cancel</button>
-        <button type="submit" class="btn btn-success">Produce</button>
-         
-       
 
+        <br/>
+        @*<button type="button"  @onclick="@(()=> OnCancel())" class="btn btn-primary">Cancel</button>*@
+        <button type="submit" class="btn btn-success" style="width:150px">Produce</button>
+              
     </EditForm>
 }
+</div>
 
 @code {
 

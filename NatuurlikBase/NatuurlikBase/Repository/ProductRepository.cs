@@ -27,6 +27,7 @@ namespace NatuurlikBase.Repository
                 objFromDb.ProductBrandId = obj.ProductBrandId;
                 objFromDb.QuantityOnHand = obj.QuantityOnHand;
                 objFromDb.DisplayProduct = obj.DisplayProduct;
+                objFromDb.ThresholdValue = obj.ThresholdValue;
                 if (obj.PictureUrl != null)
                 {
                     objFromDb.PictureUrl = obj.PictureUrl;

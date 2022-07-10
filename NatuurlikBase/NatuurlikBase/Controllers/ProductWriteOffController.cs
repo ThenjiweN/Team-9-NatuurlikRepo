@@ -1,19 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
+using NatuurlikBase.Repository.IRepository;
 
 namespace NatuurlikBase.Controllers
 {
     public class ProductWriteOffController : Controller
     {
         private readonly DatabaseContext _context;
+        private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _hostEnvironment;
+        private readonly IUnitOfWork _unitOfWork;
 
 
-        public ProductWriteOffController(DatabaseContext context)
+        public ProductWriteOffController(DatabaseContext context, IEmailSender emailSender, IWebHostEnvironment hostEnvironment, IUnitOfWork unitOfWork)
         {
             _context = context;
+            _emailSender = emailSender;
+            _hostEnvironment = hostEnvironment;
+            _unitOfWork = unitOfWork;
 
         }
 
@@ -46,13 +54,53 @@ namespace NatuurlikBase.Controllers
 
                 {
                     item.QuantityOnHand -= productWriteOff.writeOffQuantity;
-                   
-
-
                     _context.Add(productWriteOff);
 
                     TempData["success"] = "Product Written-Off Successfully";
                     await _context.SaveChangesAsync();
+
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\lowProdTemp.html"));
+
+                    var users = await (from user in _context.Users
+                                       join userRole in _context.UserRoles on user.Id equals userRole.UserId
+                                       join role in _context.Roles on userRole.RoleId equals role.Id
+                                       where role.Name == "Admin" || role.Name == "Inventory Manager"
+                                       select user.Email)
+                                       .ToListAsync();
+
+
+                    string quantity = item.QuantityOnHand.ToString();
+                    template = template.Replace("[ITEM]", item.Name).Replace("[QUANTITY]", quantity);
+
+
+                    if (item.QuantityOnHand <= item.ThresholdValue && item.QuantityOnHand > 0)
+                    {
+                        template = template.Replace("[TEXT]", "LOW STOCK ALERT!");
+                        string message = template;
+
+                        foreach (var user in users)
+                        {
+                            await _emailSender.SendEmailAsync(
+                                user,
+                                "LOW STOCK ALERT",
+                                message);
+                        }
+                    }
+                    else if (item.QuantityOnHand == 0)
+                    {
+                        template = template.Replace("[TEXT]", "OUT OF STOCK ALERT!");
+                        string message = template;
+
+                        foreach (var user in users)
+                        {
+                            await _emailSender.SendEmailAsync(
+                                user,
+                                "OUT OF STOCK ALERT",
+                                message);
+                        }
+                    }
+
                     return RedirectToAction(nameof(Index));
                 }
                 else
