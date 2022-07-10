@@ -877,6 +877,29 @@ namespace NatuurlikBase.Migrations
                     b.ToTable("Suppliers");
                 });
 
+            modelBuilder.Entity("NatuurlikBase.Models.VAT", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<decimal>("VATFactor")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("VATPercentage")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VATStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VAT");
+                });
+
             modelBuilder.Entity("NatuurlikBase.Models.WriteOffInventory", b =>
                 {
                     b.Property<int>("Id")

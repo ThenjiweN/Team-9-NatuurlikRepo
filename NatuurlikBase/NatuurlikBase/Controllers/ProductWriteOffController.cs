@@ -105,7 +105,7 @@ namespace NatuurlikBase.Controllers
                 }
                 else
                 {
-                    ViewBag.Error = "Quantity On Hand Is...";
+                    ViewBag.Error = "Quantity On Hand is less than the write-off value.";
                 }
 
 

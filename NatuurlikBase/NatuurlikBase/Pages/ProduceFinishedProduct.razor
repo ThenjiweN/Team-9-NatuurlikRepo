@@ -89,7 +89,7 @@
         
         else
         {
-             await ProduceProduct.ExecuteAsync(
+            await ProduceProduct.ExecuteAsync(
             this.selectedProduct,
             this.produceVM.QuantityToProduce,
             "Hannes"
@@ -99,6 +99,7 @@
             this.produceVM = new ProduceVM();
             //No product is selected on form load
             this.selectedProduct = null;
+             //NavigationManager.NavigateTo($"/produce", true);
             return;
         }
 

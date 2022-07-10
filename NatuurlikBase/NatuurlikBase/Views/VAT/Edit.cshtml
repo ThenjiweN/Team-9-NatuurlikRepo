@@ -1,0 +1,123 @@
+﻿@model VAT
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+    <form method="post" asp-action="Edit">
+        @if (ViewBag.Error == null)
+        {
+            <div>
+                <div class="card">
+            <div class="card-header" style="background-color: #F2F2F2">
+                <h5>Update VAT Details</h5>
+            </div>
+            <div class="card-body">
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="mb-3">
+			<label asp-for="VATPercentage"> VAT: @Model.VATPercentage %</label>
+			<input asp-for="VATPercentage" hidden class="form-control" />
+			<span asp-validation-for="VATPercentage" class="text-danger"></span>
+
+		</div>
+
+        <div class="mb-3">
+			<label asp-for="VATStatus">VAT Status:</label>
+			<select asp-for="VATStatus" class="form-control">
+				<option disabled selected>--Select a Status--</option>
+				<option> Active </option>
+				<option> Inactive </option>
+			</select>
+			<span asp-validation-for="VATStatus" class="text-danger"></span>
+		</div>
+
+		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="width:150px">Update</button>
+		<a asp-controller="VAT" asp-action="Index"  class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+	</div>
+        </div>
+        </div>
+    }
+	 <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <br />
+                       
+                    </div>
+                     <h6 class="col-md-10"> 
+                       Are you sure you wish to save the changes?
+                        </h6>
+                    
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0"  style="background-color: black;">
+                      <h6 style="color: whitesmoke"; >
+                      <i class="bi bi-info-circle"></i> &nbsp;@ViewBag.Error </h6>
+                </div>
+              
+
+                <div class="modal-footer border-0">
+                   
+                    <div class="form-actions no-color">
+                        <input type="button" value="Close" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "VAT")'" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    }
+
+    @if (ViewBag.Confirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}
+

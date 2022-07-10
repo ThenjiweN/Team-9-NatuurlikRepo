@@ -41,7 +41,7 @@
 
      <div class="row justify-content-start">
             <div class="col-10 col-sm-10 col-md-10">
-            <h2 class="cheading">Write-OffInventory Item Record</h2>
+            <h2 class="cheading">Product Write-Off Log:</h2>
 		</div>
 	</div>
     <br />
@@ -50,12 +50,12 @@
     <thead>
         <tr>
             <th class="text-light">
-               InventoryItem
+               Name
 			</th>
             <th class="text-light">
-               Associated ProductBrand Id
+               Brand
 			</th> <th class="text-light">
-               Associated ProductCategory Id
+               Category
 			</th>
             <th class="text-light">
                 Write-Off Quantity
@@ -76,9 +76,9 @@
                 <td >
                     @obj.product.Name
 				</td><td >
-                    @obj.product.ProductBrandId
+                    @obj.product.Brand.Name
 				</td><td >
-                    @obj.product.CategoryId
+                    @obj.product.Category.Name
 				</td> <td>
                     @obj.writeOffQuantity
 				</td>

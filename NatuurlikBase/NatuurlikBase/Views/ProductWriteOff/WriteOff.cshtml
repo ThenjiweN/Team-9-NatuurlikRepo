@@ -71,27 +71,28 @@
             </div>
         
     </div>
-                                <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" >
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content">
-                                        <div class="modal-header border-0">
 
 
-                                        </div>
-                                        <h6 class="col-md-10">
-                                            Product Quantity On Hand Is Less Than Write-Off Quantity, Please Adjust Write-Off Quantity Value
-                                        </h6>
+    <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0" style="background-color: black;">
+                    <h6 style="color: whitesmoke" ;>
+                        <i class="bi bi-info-circle"></i> &nbsp;@ViewBag.Error
+                    </h6>
+                </div>
 
-                                        <div class="modal-footer border-0">
-                                            <div class="form-actions no-color">
-                                                <input type="button" value="Okay" class="btn btn-outline-dark" data-bs-dismiss="modal" />
 
-                                            </div>
-                                        </div>
+                <div class="modal-footer border-0">
 
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="form-actions no-color">
+                        <input type="button" value="Close" class="btn btn-outline-dark" data-bs-dismiss="modal" onclick="location.href='@Url.Action("Index", "InventoryItem")'" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>     
 
 @section Scripts{

@@ -1,0 +1,89 @@
+﻿@model VAT
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+<form method="post">
+	
+        @if (ViewBag.Error == null)
+        {
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                <h5>Create VAT Details:</h5>
+            </div>
+            <div class="card-body">
+		@*<div asp-validation-summary="All"></div>*@
+		<div class=" col-md-10">
+			<label asp-for="VATPercentage">VAT Percentage :</label>
+			<input asp-for="VATPercentage" min="1" class="form-control" />
+			<span asp-validation-for="VATPercentage" class="text-danger"></span>
+		</div>
+
+        <br />
+        <div class="col-md-10">
+			<label asp-for="VATStatus"> Status: </label>
+			<select asp-for="VATStatus" class="form-control">
+				<option disabled selected>--Select a Status--</option>
+				<option> Active </option>
+				<option> Inactive </option>
+			</select>
+			<span asp-validation-for="VATStatus" class="text-danger"></span>
+		</div>
+       
+         <div class=" col-md-10">
+            
+         <br />
+
+		<button type="submit" class="btn btn-success" data-toggle="modal" style="width:150px">Create</button>
+		<a asp-controller="VAT" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+			Cancel
+		</a>
+	</div>
+	
+		
+     </div>
+        </div>
+        }
+	     <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0"  style="background-color: black;">
+                      <h6 style="color: whitesmoke"; >
+                      <i class="bi bi-info-circle"></i> &nbsp;@ViewBag.Error </h6>
+                </div>
+              
+
+                <div class="modal-footer border-0">
+                   
+                    <div class="form-actions no-color">
+                        <input type="button" value="Close" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "VAT")'" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+@section Scripts{
+	
+	 
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+            });
+
+
+        </script>
+    
+    }
+}
+

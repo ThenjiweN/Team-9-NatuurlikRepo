@@ -1,0 +1,83 @@
+﻿@model VAT
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";    
+}
+
+<div id="page-content-wrapper">
+<div>
+            <div class="card">
+                <div class="card-header" style="background-color: #F2F2F2">
+                    <h5>VAT Details: </h5>
+                </div>
+<div>
+    
+     <div class="card-body">
+        <div class="deldetails">
+                       
+        <div class="form-group">
+             <div class="form-group">
+
+                 <label> <strong>VAT % :</strong>  @Html.DisplayFor(model => model.VATPercentage)</label> 
+                 <br />
+                <label> <strong>VAT Status:</strong>  @Html.DisplayFor(model => model.VATStatus)</label> 
+            </div>
+            <div class="col">
+               <button type="submit"  class="btn btn-danger" data-toggle="modal" style="width:150px;" data-target="#exampleModal"> Delete </button>            
+               <a asp-controller="VAT" asp-action="Index" class="btn btn-outline-dark" style="width:150px;"> Cancel </a>
+            </div>
+</div>
+
+       </div>
+                </div>
+            </div>
+             <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="col-md-10"> 
+                       Do you wish to proceed with the removal?
+                    </h6>
+                    </div>
+
+                    <div class="modal-footer border-0">
+                         <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-danger" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Close</button>
+                        </div>
+                              
+                    </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+
+ @section scripts{
+   
+    @if (ViewBag.Confirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}
