@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jYB1OtMofhOW1Sq10PaoQ6Zp2FeGxGIx5/non7XlYrKnnMpUHHIBNWcPCyTyIiFnTpWQGNe+nr+YQjFgMsRx5g==",
+  "dgSpecHash": "/EvnEFXAvluiUFX4bpzIrPEpwntnsb3fWb60UnpaDwPl0EDUwn8TwMa4vErMnVD/7tF3BJ5XM7Wb2vH4qLHqMQ==",
   "success": true,
   "projectFilePath": "C:\\KYLE\\My UP\\INF 370\\Natuurlik Code\\Team-9-NatuurlikRepo\\NatuurlikBase\\NatuurlikBase\\NatuurlikBase.csproj",
   "expectedPackageFiles": [
@@ -108,6 +108,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Kyle\\.nuget\\packages\\sendgrid\\9.27.0\\sendgrid.9.27.0.nupkg.sha512",
     "C:\\Users\\Kyle\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
+    "C:\\Users\\Kyle\\.nuget\\packages\\stripe.net\\39.122.0\\stripe.net.39.122.0.nupkg.sha512",
     "C:\\Users\\Kyle\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.0\\swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
     "C:\\Users\\Kyle\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.0\\swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
     "C:\\Users\\Kyle\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.0\\swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",

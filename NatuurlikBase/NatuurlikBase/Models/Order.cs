@@ -27,7 +27,13 @@ namespace NatuurlikBase.Models
 
         public decimal OrderTotal { get; set; }
 
-        public string? CourierName { get; set; }
+        public int? CourierId { get; set; }
+
+        [ValidateNever]
+        public Courier Courier { get; set; }
+
+        [Required]
+        public decimal DeliveryFee { get; set; }
 
         public string? ParcelTrackingNumber { get; set; }
 
@@ -60,14 +66,32 @@ namespace NatuurlikBase.Models
         public string StreetAddress { get; set; }
 
         [Required]
-        public int? Country { get; set; }
+        public int? CountryId { get; set; }
+        [ValidateNever]
+        public Country Country { get; set; }
+
         [Required]
-        public int? Province { get; set; }
+        public int? ProvinceId { get; set; }
+        [ValidateNever]
+        public Province Province { get; set; }
+
         [Required]
 
-        public int? Suburb { get; set; }
+        public int? SuburbId { get; set; }
+
+        [ValidateNever]
+        public Suburb Suburb { get; set; }
         [Required]
-        public int? City { get; set; }
+        public int? CityId { get; set; }
+        [ValidateNever]
+        public City City { get; set; }
+
+        public int? VATId { get; set; }
+        [ValidateNever]
+        public VAT VAT { get; set; }
+
+        [Required]
+        public decimal InclusiveVAT { get; set; }
 
     }
 }

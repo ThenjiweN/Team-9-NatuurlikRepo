@@ -287,6 +287,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5V3JpdGVPZmZzXFdyaXRlT2ZmLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Order/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Produce/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -493,6 +501,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/UserCart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckNhcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/UserCart/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckNhcnRcT3JkZXJDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/UserCart/ResellerOrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckNhcnRcUmVzZWxsZXJPcmRlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/User/Index.cshtml]

@@ -33,12 +33,12 @@
                     <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>
                 </div>
             }
-            <div class="form-floating" >
+            <div class="form-floating pb-2" >
                 <label asp-for="Input.NewEmail" class="form-label"></label>
-                <input asp-for="Input.NewEmail" class="form-control" autocomplete="email" aria-required="true" />               
+                <input asp-for="Input.NewEmail" class="form-control"  aria-required="true" />               
                 <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
             </div>
-            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-primary btn-block">Change email</button>
+            <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-success btn-block">Change email</button>
         </form>
     </div>
 </div>

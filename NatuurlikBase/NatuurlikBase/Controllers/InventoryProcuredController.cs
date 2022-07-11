@@ -37,28 +37,6 @@ namespace NatuurlikBase.Controllers
             if (ModelState.IsValid)
 
             {
-                //string wwwRootPath = _hostEnvironment.WebRootPath;
-                //if(file != null)
-                //{
-                //    string fileName =Guid.NewGuid().ToString();
-                //    var uploads = Path.Combine(wwwRootPath, @"files\supplier");
-                //    var extension = Path.GetExtension(file.FileName);
-
-                //    if (inventoryProcured.InvoiceFile != null)
-                //    {
-                //        var oldFilePath = Path.Combine(wwwRootPath, inventoryProcured.InvoiceFile.TrimStart('\\'));
-                //        if (System.IO.File.Exists(oldFilePath))
-                //        {
-                //            System.IO.File.Delete(oldFilePath);
-                //        }
-
-                //    }
-                //    using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
-                //    {
-                //        file.CopyTo(fileStreams);
-                //    }
-                //    inventoryProcured.InvoiceFile = @"\files\supplier" + fileName + extension;
-                //}
                 var inv = db.InventoryItem.Where(s => s.Id == inventoryProcured.ItemID).FirstOrDefault();
                 if (inv != null)
                 {

@@ -19,6 +19,10 @@ namespace NatuurlikBase.Repository.IRepository
         ISupplierRepository Supplier { get; }
         IUserCartRepository UserCart { get; }
 
+        IOrderRepository Order { get; }
+
+        IOrderLineRepository OrderLine { get; }
+
         void Save();
     }
 }

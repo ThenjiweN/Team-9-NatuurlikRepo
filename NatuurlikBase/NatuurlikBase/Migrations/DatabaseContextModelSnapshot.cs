@@ -483,19 +483,22 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("City")
+                    b.Property<int?>("CityId")
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<int?>("Country")
+                    b.Property<int?>("CountryId")
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<string>("CourierName")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("CourierId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal>("DeliveryFee")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("DispatchedDate")
                         .HasColumnType("datetime2");
@@ -503,6 +506,9 @@ namespace NatuurlikBase.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("InclusiveVAT")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("OrderPaymentStatus")
                         .HasColumnType("nvarchar(max)");
@@ -526,7 +532,7 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Province")
+                    b.Property<int?>("ProvinceId")
                         .IsRequired()
                         .HasColumnType("int");
 
@@ -537,7 +543,7 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Suburb")
+                    b.Property<int?>("SuburbId")
                         .IsRequired()
                         .HasColumnType("int");
 
@@ -545,9 +551,24 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("VATId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("CityId");
+
+                    b.HasIndex("CountryId");
+
+                    b.HasIndex("CourierId");
+
+                    b.HasIndex("ProvinceId");
+
+                    b.HasIndex("SuburbId");
+
+                    b.HasIndex("VATId");
 
                     b.ToTable("Order");
                 });
@@ -1141,7 +1162,51 @@ namespace NatuurlikBase.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("NatuurlikBase.Models.City", "City")
+                        .WithMany()
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Country", "Country")
+                        .WithMany()
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Courier", "Courier")
+                        .WithMany()
+                        .HasForeignKey("CourierId");
+
+                    b.HasOne("NatuurlikBase.Models.Province", "Province")
+                        .WithMany()
+                        .HasForeignKey("ProvinceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Suburb", "Suburb")
+                        .WithMany()
+                        .HasForeignKey("SuburbId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.VAT", "VAT")
+                        .WithMany()
+                        .HasForeignKey("VATId");
+
                     b.Navigation("ApplicationUser");
+
+                    b.Navigation("City");
+
+                    b.Navigation("Country");
+
+                    b.Navigation("Courier");
+
+                    b.Navigation("Province");
+
+                    b.Navigation("Suburb");
+
+                    b.Navigation("VAT");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.OrderLine", b =>

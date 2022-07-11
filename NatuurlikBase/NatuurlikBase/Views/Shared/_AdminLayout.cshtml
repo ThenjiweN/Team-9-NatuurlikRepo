@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="~/css/crud.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/fonts.css" asp-append-version="true" />
+    <link href="@Url.Content("~/css/orderfilters.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("Styles", false)
     @RenderSection("fonts", false)
     @RenderSection("crud", false)
     @RenderSection("admin", false)
@@ -62,7 +64,7 @@
                     <a href="#orderSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bi bi-bag">&nbsp;</i> Orders</a>
                     <ul class="collapse list-unstyled" id="orderSubmenu">
                         <li>
-                            <a asp-area="" asp-controller="Dashboard" asp-action="Index">Orders</a>
+                            <a asp-area="" asp-controller="Order" asp-action="Index">Manage Orders</a>
                         </li>
                         <li>
                             <a asp-area="" asp-controller="ReturnReason" asp-action="Index">Return Reasons</a>

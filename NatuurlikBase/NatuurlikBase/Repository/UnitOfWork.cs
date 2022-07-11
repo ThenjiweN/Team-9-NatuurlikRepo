@@ -28,6 +28,8 @@ namespace NatuurlikBase.Repository
             Category = new ProductCategoryRepository(_db);
             Supplier = new SupplierRepository(_db);
             UserCart = new UserCartRepository(_db);
+            Order = new OrderRepository(_db);
+            OrderLine = new OrderLineRepository(_db);
 
         }
         public ICountryRepository Country { get; private set; }
@@ -41,6 +43,8 @@ namespace NatuurlikBase.Repository
         public ISupplierRepository Supplier { get; private set; }
 
         public IUserCartRepository UserCart { get; private set; }
+        public IOrderRepository Order { get; private set; }
+        public IOrderLineRepository OrderLine { get; private set; }
 
         public void Save()
         {

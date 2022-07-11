@@ -56,7 +56,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                NewEmail = email,
+                NewEmail = "",
             };
 
             IsEmailConfirmed = await _userManager.IsEmailConfirmedAsync(user);
@@ -124,7 +124,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account.Manage
                 }
             }
 
-            TempData["success"] = "Your email is unchanged.";
+            TempData["success"] = "Your email remained unchanged.";
             return RedirectToPage();
         }
 
