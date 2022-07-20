@@ -10,14 +10,12 @@
 <ErrorMessageComponent ErrorMessage="@exceptionMessage"></ErrorMessageComponent>
 <SuccessMessageComponent SuccessMessage="@producedSuccessfully"></SuccessMessageComponent>
  
-<div class="container-fluid">
-     <div class="row justify-content-start">
-            <div class="col-10 col-sm-10 col-md-10">
+<div class="card">
+    <div class="card-header" style="background-color: #F2F2F2">
             <h2 class="cheading">Produce Finished Product</h2>
-		</div>
      </div>
-
 <br/>
+<div class="card-body">
 @if (produceVM != null)
 {
     <EditForm Model="produceVM" OnValidSubmit="OnValidSubmit">
@@ -54,14 +52,19 @@
         <br/>
         @*<button type="button"  @onclick="@(()=> OnCancel())" class="btn btn-primary">Cancel</button>*@
         <button type="submit" class="btn btn-success" style="width:150px">Produce</button>
+        <button @onclick="Cancel" class="btn btn-danger" style="width:150px">Cancel</button>
               
     </EditForm>
 }
 </div>
+</div>
+
 
 @code {
 
-    private void OnCancel()
+
+    
+    private void Cancel()
     {
         NavigationManager.NavigateTo($"/Dashboard", true);
     }
@@ -117,3 +120,4 @@
     }
 
 }
+

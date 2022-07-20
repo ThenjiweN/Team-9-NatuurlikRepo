@@ -40,6 +40,9 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<OrderLine> OrderLine { get; set; }
     public DbSet<VAT> VAT { get; set; }
 
+    public DbSet<PackageOrderProduct> OrderProduct { get; set; }
+    public DbSet<OrderQuery> OrderQuery { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         //Establish relationships for ProductInventory on creating the model.

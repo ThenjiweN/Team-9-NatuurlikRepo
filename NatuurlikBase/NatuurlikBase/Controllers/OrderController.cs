@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using NatuurlikBase.Data;
 using NatuurlikBase.Models;
 using NatuurlikBase.Repository.IRepository;
 using NatuurlikBase.ViewModels;
@@ -11,48 +13,38 @@ namespace NatuurlikBase.Controllers
     public class OrderController : Controller
     {
         private readonly IUnitOfWork _uow;
+        private readonly DatabaseContext _db;
         [BindProperty]
         public OrderVM OrderVM { get; set; }
-        public OrderController(IUnitOfWork uow)
+        public OrderController(IUnitOfWork uow, DatabaseContext db)
         {
             _uow = uow;
+            _db = db;
         }
+
+        public ActionResult GetQueryReasons(int queryReasonId)
+        {
+            return Json(_uow.QueryReason.GetAll(x => x.Id == queryReasonId).Select(x => new
+            {
+                Text = x.Name,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
+
 
         public IActionResult Detail(int? orderId)
         {
             //Load all order details
             OrderVM orderVM = new OrderVM()
             {
-                Order = _uow.Order.GetFirstOrDefault(u => u.Id == orderId, includeProperties: "ApplicationUser,Country,Province,City,Suburb"),
+                Order = _uow.Order.GetFirstOrDefault(u => u.Id == orderId, includeProperties: "ApplicationUser,Country,Province,City,Suburb,Courier"),
                 OrderLine = _uow.OrderLine.GetAll(ol => ol.OrderId == orderId, includeProperties: "Product")
             };
 
             return View(orderVM);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult UpdateOrderStatus ()
-        {
-            //Retrieve Order details from the db
-            var orderRetrieved = _uow.Order.GetFirstOrDefault(u => u.Id == OrderVM.Order.Id);
-
-            orderRetrieved.FirstName = OrderVM.Order.FirstName;
-            orderRetrieved.Surname = OrderVM.Order.Surname;
-            orderRetrieved.PhoneNumber = OrderVM.Order.PhoneNumber;
-
-            if(OrderVM.Order.ParcelTrackingNumber != null)
-            {
-                orderRetrieved.ParcelTrackingNumber = OrderVM.Order.ParcelTrackingNumber;
-            }
-
-            //Save changes
-            _uow.Order.Update(orderRetrieved);
-            _uow.Save();
-            TempData["Success"] = "Order details have been saved.";
-            return RedirectToAction("Detail", "Order", new { orderId = orderRetrieved.Id });
-
-        }
+       
 
         [HttpPost]
         [ValidateAntiForgeryToken]

@@ -1,0 +1,32 @@
+﻿#rectangleOne {
+    position: relative;
+    height: 800px;
+    left: 0px;
+    top: 0px;
+    background: #ededed;
+}
+
+#header {
+    position:relative;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background: #F5F5F5;
+    border: 5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing:border-box;
+}
+
+#headtext {
+    position: relative;
+    width: 907px;
+    height: 105px;
+    left: 41px;
+    top: 93px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}

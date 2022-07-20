@@ -19,8 +19,8 @@ namespace NatuurlikBase.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Supplier> objCoverTypeList = _unitOfWork.Supplier.GetAll();
-            return View(objCoverTypeList);
+            IEnumerable<Supplier> supplierList = _unitOfWork.Supplier.GetAll();
+            return View(supplierList);
         }
 
         public ActionResult GetProvince(int countryId)

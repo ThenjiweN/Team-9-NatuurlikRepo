@@ -1,0 +1,150 @@
+﻿@model NatuurlikBase.Models.PackageOrderProduct
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div id="page-content-wrapper">
+
+<form method="post" asp-action="Create">
+    <div>
+    @if (ViewBag.Error == null)
+    {
+            
+                <div class="card">
+                    <div class="card-header" style="background-color: #F2F2F2">
+                        <h5>Capture Prepared Order Details</h5>
+                    </div>
+                    <div class="card-body">
+                        @*<div asp-validation-summary="All"></div>*@
+
+    
+                <div class="row col">
+			
+			</div>
+
+                        <br />
+
+                      @*<div class="form-group">
+
+
+                                <label asp-for="PackageOrderProduct.ProductId" class="control-label">Product :</label>
+                                <select asp-for="PackageOrderProduct.ProductId" class ="form-control col-md-10" asp-items="@Model.ProductList"> <option disabled selected>- Select Product -</option></select>
+                            </div>  <div class="form-group">
+
+
+                                <label asp-for="PackageOrderProduct.OrderId" class="control-label">Order Number:</label>
+                                <select asp-for="PackageOrderProduct.OrderId" class ="form-control col-md-10" asp-items="@Model.OrdersList"> <option disabled selected>- Select Order Number -</option></select>
+                            </div>*@
+
+
+                        <div class="form-group">
+                             <label asp-for="OrderId" class="control-label">Select an Order:</label>
+                            <select asp-for="OrderId" class="form-control col-md-10" asp-items="ViewBag.OrderId"> <option disabled selected>- Select Order -</option></select>
+                        </div> 
+                            <div class="form-group">
+                             <label asp-for="ProductId" class="control-label">Select a product:</label>
+                            <select asp-for="ProductId" class="form-control col-md-10" asp-items="ViewBag.ProductId"> <option disabled selected>- Select Product -</option></select>
+                        </div>  
+
+                     
+                          <div class="row">
+                            <div class="col-md-6">
+                                <label asp-for="ProductQuantity"></label>
+                                <input asp-for="ProductQuantity" class="form-control" />
+                                <span asp-validation-for="ProductQuantity" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#confirmationModal" style="width:150px">Package Order</button>
+                        <a asp-controller="PrepareOrder" asp-action="Index" class="btn btn-outline-dark" style="width:150px">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
+                }
+             <div class="modal fade" id="exampleModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <br />
+                       
+                    </div>
+                     <h6 class="col-md-10"> 
+                       @ViewBag.Confirmation
+                        </h6>
+                    
+
+                    <div class="modal-footer border-0">
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Confirm" class="btn btn-success" style="width:150px;"/> 
+                            <button type="button" class="btn btn btn-outline-dark" data-dismiss="modal" style="width:150px;">Cancel</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <div class="modal" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0"  style="background-color: black;">
+                      <h6 style="color: whitesmoke"; >
+                      <i class="bi bi-info-circle"></i> &nbsp;@ViewBag.Error </h6>
+                </div>
+              
+
+                <div class="modal-footer border-0">
+                   
+                    <div class="form-actions no-color">
+                        <input type="button" value="Close" class="btn btn-outline-dark" data-bs-dismiss="modal"onclick="location.href='@Url.Action("Index", "PrepareOrder")'" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+    </form>
+</div>
+
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+      @if (ViewBag.Error != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal1").modal("show");
+                $("#b1").modal("hide");
+            });
+
+
+        </script>
+    }
+
+    @if (ViewBag.Confirmation != null)
+    {
+        <script>
+
+
+
+            $(function () {
+                $("#exampleModal").modal("show");
+            });
+
+
+        </script>
+    }
+}
+

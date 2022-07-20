@@ -45,9 +45,7 @@ namespace NatuurlikBase.Controllers
 
             if (id == null || id == 0)
             {
-                //create product
-                //ViewBag.CategoryList = CategoryList;
-                //ViewData["CoverTypeList"] = CoverTypeList;
+               
                 return View(productVM);
             }
             else
@@ -55,7 +53,6 @@ namespace NatuurlikBase.Controllers
                 productVM.Product = _unitOfWork.Product.GetFirstOrDefault(u => u.Id == id);
                 return View(productVM);
 
-                //update product
             }
 
 

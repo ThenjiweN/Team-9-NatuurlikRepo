@@ -130,6 +130,21 @@ namespace NatuurlikBase.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "VAT",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    VATPercentage = table.Column<int>(type: "int", nullable: false),
+                    VATFactor = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    VATStatus = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VAT", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "WriteOffReason",
                 columns: table => new
                 {
@@ -160,7 +175,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.RoleId,
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -177,7 +192,8 @@ namespace NatuurlikBase.Migrations
                     PictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     ProductBrandId = table.Column<int>(type: "int", nullable: false),
-                    DisplayProduct = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    DisplayProduct = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ThresholdValue = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -281,13 +297,13 @@ namespace NatuurlikBase.Migrations
                         column: x => x.ProductId,
                         principalTable: "Products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_ProductWriteOff_WriteOffReason_writeOffReasonId",
                         column: x => x.writeOffReasonId,
                         principalTable: "WriteOffReason",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -487,25 +503,25 @@ namespace NatuurlikBase.Migrations
                         column: x => x.CityId,
                         principalTable: "City",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Suppliers_Country_CountryId",
                         column: x => x.CountryId,
                         principalTable: "Country",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Suppliers_Province_ProvinceId",
                         column: x => x.ProvinceId,
                         principalTable: "Province",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Suppliers_Suburb_SuburbId",
                         column: x => x.SuburbId,
                         principalTable: "Suburb",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -526,7 +542,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -546,7 +562,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -564,13 +580,13 @@ namespace NatuurlikBase.Migrations
                         column: x => x.RoleId,
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_AspNetUserRoles_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -590,7 +606,7 @@ namespace NatuurlikBase.Migrations
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -603,7 +619,8 @@ namespace NatuurlikBase.Migrations
                     OrderStatus = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OrderPaymentStatus = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     OrderTotal = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    CourierName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CourierId = table.Column<int>(type: "int", nullable: false),
+                    DeliveryFee = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ParcelTrackingNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     PaymentDueDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -614,10 +631,12 @@ namespace NatuurlikBase.Migrations
                     Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StreetAddress = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Country = table.Column<int>(type: "int", nullable: false),
-                    Province = table.Column<int>(type: "int", nullable: false),
-                    Suburb = table.Column<int>(type: "int", nullable: false),
-                    City = table.Column<int>(type: "int", nullable: false)
+                    CountryId = table.Column<int>(type: "int", nullable: false),
+                    ProvinceId = table.Column<int>(type: "int", nullable: false),
+                    SuburbId = table.Column<int>(type: "int", nullable: false),
+                    CityId = table.Column<int>(type: "int", nullable: false),
+                    VATId = table.Column<int>(type: "int", nullable: true),
+                    InclusiveVAT = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -628,6 +647,41 @@ namespace NatuurlikBase.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Order_City_CityId",
+                        column: x => x.CityId,
+                        principalTable: "City",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Order_Country_CountryId",
+                        column: x => x.CountryId,
+                        principalTable: "Country",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Order_Courier_CourierId",
+                        column: x => x.CourierId,
+                        principalTable: "Courier",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Order_Province_ProvinceId",
+                        column: x => x.ProvinceId,
+                        principalTable: "Province",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Order_Suburb_SuburbId",
+                        column: x => x.SuburbId,
+                        principalTable: "Suburb",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Order_VAT_VATId",
+                        column: x => x.VATId,
+                        principalTable: "VAT",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -648,13 +702,13 @@ namespace NatuurlikBase.Migrations
                         column: x => x.ApplicationUserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_UserCart_Products_ProductId",
                         column: x => x.ProductId,
                         principalTable: "Products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -706,11 +760,68 @@ namespace NatuurlikBase.Migrations
                         column: x => x.OrderId,
                         principalTable: "Order",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_OrderLine_Products_ProductId",
                         column: x => x.ProductId,
                         principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderProduct",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ProductQuantity = table.Column<int>(type: "int", nullable: false),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    ProductId = table.Column<int>(type: "int", nullable: false),
+                    TransactionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ActorName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderProduct", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderProduct_Order_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Order",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_OrderProduct_Products_ProductId",
+                        column: x => x.ProductId,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderQuery",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderId = table.Column<int>(type: "int", nullable: false),
+                    QueryReasonId = table.Column<int>(type: "int", nullable: false),
+                    OrderQueryDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UploadEvidenceUrl = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderQuery", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_OrderQuery_Order_OrderId",
+                        column: x => x.OrderId,
+                        principalTable: "Order",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_OrderQuery_QueryReason_QueryReasonId",
+                        column: x => x.QueryReasonId,
+                        principalTable: "QueryReason",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -815,6 +926,36 @@ namespace NatuurlikBase.Migrations
                 column: "ApplicationUserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Order_CityId",
+                table: "Order",
+                column: "CityId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_CountryId",
+                table: "Order",
+                column: "CountryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_CourierId",
+                table: "Order",
+                column: "CourierId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_ProvinceId",
+                table: "Order",
+                column: "ProvinceId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_SuburbId",
+                table: "Order",
+                column: "SuburbId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_VATId",
+                table: "Order",
+                column: "VATId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_OrderLine_OrderId",
                 table: "OrderLine",
                 column: "OrderId");
@@ -823,6 +964,26 @@ namespace NatuurlikBase.Migrations
                 name: "IX_OrderLine_ProductId",
                 table: "OrderLine",
                 column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderProduct_OrderId",
+                table: "OrderProduct",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderProduct_ProductId",
+                table: "OrderProduct",
+                column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderQuery_OrderId",
+                table: "OrderQuery",
+                column: "OrderId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderQuery_QueryReasonId",
+                table: "OrderQuery",
+                column: "QueryReasonId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductInventory_InventoryItemId",
@@ -913,9 +1074,6 @@ namespace NatuurlikBase.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Courier");
-
-            migrationBuilder.DropTable(
                 name: "InventoryItemTransaction");
 
             migrationBuilder.DropTable(
@@ -928,6 +1086,12 @@ namespace NatuurlikBase.Migrations
                 name: "OrderLine");
 
             migrationBuilder.DropTable(
+                name: "OrderProduct");
+
+            migrationBuilder.DropTable(
+                name: "OrderQuery");
+
+            migrationBuilder.DropTable(
                 name: "ProductInventory");
 
             migrationBuilder.DropTable(
@@ -935,9 +1099,6 @@ namespace NatuurlikBase.Migrations
 
             migrationBuilder.DropTable(
                 name: "ProductWriteOff");
-
-            migrationBuilder.DropTable(
-                name: "QueryReason");
 
             migrationBuilder.DropTable(
                 name: "ReturnReason");
@@ -958,6 +1119,9 @@ namespace NatuurlikBase.Migrations
                 name: "Order");
 
             migrationBuilder.DropTable(
+                name: "QueryReason");
+
+            migrationBuilder.DropTable(
                 name: "InventoryItem");
 
             migrationBuilder.DropTable(
@@ -968,6 +1132,12 @@ namespace NatuurlikBase.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Courier");
+
+            migrationBuilder.DropTable(
+                name: "VAT");
 
             migrationBuilder.DropTable(
                 name: "InventoryType");

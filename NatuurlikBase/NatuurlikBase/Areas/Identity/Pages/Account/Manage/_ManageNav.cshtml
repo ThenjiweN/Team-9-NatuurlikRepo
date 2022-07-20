@@ -14,8 +14,13 @@
             <li class="nav-item"><a class="nav-link man @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index">Profile</a></li>
             <li class="nav-item"><a class="nav-link man @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password" asp-page="./ChangePassword">Reset Password</a></li>
             <li class="nav-item"><a class="nav-link man @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
+            @if(User.IsInRole(SR.Role_Customer) || User.IsInRole(SR.Role_Reseller))
+            {
             <li class="nav-item"><a class="nav-link man" asp-controller="Order" asp-action="Index">Orders</a></li>
+            <li class="nav-item"><a class="nav-link man" asp-controller="Order" asp-action="ViewQueries">Queries</a></li>
             <li class="nav-item"><a class="nav-link man">Returns</a></li>
+            }
+            
         @*    @if (hasExternalLogins)
             {
                 <li id="external-logins" class="nav-item"><a id="external-login" class="nav-link @ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins">External logins</a></li>

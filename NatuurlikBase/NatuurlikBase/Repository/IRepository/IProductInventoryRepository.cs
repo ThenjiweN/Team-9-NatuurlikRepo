@@ -11,6 +11,7 @@ namespace NatuurlikBase.Repository.IRepository
     public interface IProductInventoryRepository
     {
         Task<List<Product>> GetProductsByNameAsync(string name);
+        Task<List<Product>> GetAllProductsAsync();
         Task<Product> GetProductByIdAsync(int productId);
         Task UpdateProductAsync(Product product);
 

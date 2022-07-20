@@ -21,5 +21,8 @@ namespace NatuurlikBase.ViewModels
 
         [ValidateNever]
         public IEnumerable<SelectListItem> SuburbList { get; set; }
+
+        [ValidateNever]
+        public IEnumerable<SelectListItem> CourierList { get; set; }
     }
 }

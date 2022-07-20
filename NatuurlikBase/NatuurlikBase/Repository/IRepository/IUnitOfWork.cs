@@ -22,6 +22,10 @@ namespace NatuurlikBase.Repository.IRepository
         IOrderRepository Order { get; }
 
         IOrderLineRepository OrderLine { get; }
+        ICourierRepository Courier { get; }
+        IOrderQueryRepository OrderQuery { get; }
+
+        IQueryReasonRepository QueryReason { get; }
 
         void Save();
     }

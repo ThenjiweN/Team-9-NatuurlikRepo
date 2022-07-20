@@ -20,6 +20,12 @@ namespace NatuurlikBase.Repository
             _db = db;
         }
 
+        public async Task<List<Product>> GetAllProductsAsync()
+        {
+            return await _db.Products.Include(x => x.ProductInventories)
+                .ThenInclude(x => x.Inventory)
+                .ToListAsync();
+        }
 
         public async Task<Product> GetProductByIdAsync(int productId)
         {

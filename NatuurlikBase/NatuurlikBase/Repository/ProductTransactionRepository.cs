@@ -77,19 +77,36 @@ namespace NatuurlikBase.Repository
             await _db.SaveChangesAsync();
         }
 
-        public async Task SellProductAsync(Product product, int qty, string actor)
+        public async Task PackageOrderAsync(Product product, int prodQty, string actor)
         {
             _db.ProductTransaction.Add(new ProductTransaction
             {
                 ProductId = product.Id,
-                ActivityType = ProductTransactionType.SellProduct,
+                ActivityType = ProductTransactionType.PackageProduct,
                 QuantityBefore = product.QuantityOnHand,
-                QuantityAfter = product.QuantityOnHand - qty,
+                QuantityAfter =- prodQty,
                 TransactionDate = DateTime.Now,
                 Actor = actor
                 
             });
             await _db.SaveChangesAsync();
+        }
+
+
+        //Product Transactions Index
+        public async Task<IEnumerable<ProductTransaction>> ProductTransactions(string prodName, ProductTransactionType? transactionType, DateTime? dateFromValue, DateTime? dateToValue)
+        {
+            if (dateToValue.HasValue) dateToValue = dateToValue.Value.AddDays(1);
+            var query = from pt in _db.ProductTransaction
+                        join prod in _db.Products on pt.ProductId equals prod.Id
+                        where
+                            (string.IsNullOrWhiteSpace(prodName) || prod.Name.ToLower().IndexOf(prodName.ToLower()) >= 0) &&
+                            (!dateFromValue.HasValue || pt.TransactionDate >= dateFromValue.Value.Date) &&
+                            (!dateToValue.HasValue || pt.TransactionDate <= dateToValue.Value.Date) &&
+                            (!transactionType.HasValue || pt.ActivityType == transactionType)
+                        select pt;
+
+            return await query.Include(x => x.Product).ToListAsync();
         }
     }
 }

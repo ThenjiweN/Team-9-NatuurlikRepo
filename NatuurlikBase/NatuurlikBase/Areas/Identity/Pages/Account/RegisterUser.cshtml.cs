@@ -236,6 +236,7 @@ namespace NatuurlikBase.Areas.Identity.Pages.Account
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
                         //return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        TempData["success"] = "User registered successfully.";
                         return RedirectToAction("Index", "User");
 
                     }

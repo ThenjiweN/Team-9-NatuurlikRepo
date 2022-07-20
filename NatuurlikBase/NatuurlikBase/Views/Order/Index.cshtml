@@ -123,15 +123,14 @@ else
                 }
             
 		</div>
-        <div class="p-2">
+         @if(User.IsInRole(SR.Role_Admin) || User.IsInRole(SR.Role_SA))
+            {
+                  <div class="p-2">
             <ul class="list-group list-group-horizontal-sm">
                
-                 @if(User.IsInRole(SR.Role_Admin) || User.IsInRole(SR.Role_SA) || User.IsInRole(SR.Role_Reseller) )
-                    {
                          <a class="button-88 mx-1" role="button"  asp-controller="Order" asp-action="Index" asp-route-status="pending">
                     <li class="list-group-item" @pending>Pending</li>
                 </a>
-                    }
                    
                  <a class="button-88 mx-1"  asp-controller="Order" asp-action="Index" asp-route-status="processing">
                     <li class="list-group-item" @processing>Processing</li>
@@ -140,17 +139,6 @@ else
                     <li class="list-group-item" @dispatched>Dispatched</li>
                 </a>
 
-               @*  @if(User.IsInRole(SR.Role_Admin))
-                    {
-                    <a class="button-88 mx-1"  asp-controller="Order" asp-action="Index" asp-route-status="refundpending">
-                    <li class="list-group-item" @refundpending>Pending Refund</li>
-                    </a>
-               
-                  <a class="button-88 mx-1" asp-controller="Order" asp-action="Index" asp-route-status="refunded">
-                    <li class="list-group-item" @refunded>Refunded</li>
-                </a>
-                 
-                    }*@
                     <a class="button-88 mx-1" asp-controller="Order" asp-action="Index" asp-route-status="cancelled">
                     <li class="list-group-item" @cancelled>Cancelled</li>
                 </a>
@@ -160,8 +148,10 @@ else
                 </a>
                 </ul>
         </div>
-     
+            }
+          
 	</div>
+
     <br /><br />
 
 <table class="table" id="tblData" style="background-color: #232323">

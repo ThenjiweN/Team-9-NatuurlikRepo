@@ -19,6 +19,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Components/ConfigurationDetailsSavedComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb25maWd1cmF0aW9uRGV0YWlsc1NhdmVkQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Components/ErrorMessageComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFcnJvck1lc3NhZ2VDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -295,6 +299,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/PrepareOrder/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlcGFyZU9yZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/PrepareOrder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlcGFyZU9yZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/Produce/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -337,6 +349,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductionCapacity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGlvbkNhcGFjaXR5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/KYLE/My UP/INF 370/Natuurlik Code/Team-9-NatuurlikRepo/NatuurlikBase/NatuurlikBase/Views/ProductWriteOff/Index.cshtml]

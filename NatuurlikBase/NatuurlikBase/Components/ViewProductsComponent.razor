@@ -10,15 +10,16 @@
         @bind-value="productNameToSearch" 
         @bind-value:event="oninput"
         />    
-    <button type="button" class="input-group-text" 
+    <button type="button" class="input-group-text mx-1" 
         @onclick="@( async()=> { await ViewProducts(); } )">Search</button>
+
 </div>
 @if (this.DisplaySearchResult 
     && _products != null
     && selectedProduct == null)
 {
-    <div style="overflow-y:auto; max-height:300px; max-width:600px; border:2px solid; padding-top:5px">
-        <ul style="list-style-type:disc;">
+    <div style="overflow-y:auto; max-height:200px; width:510px; border:1px solid silver; padding-top:5px">
+        <ul style="list-style-type:none">
             @foreach(var product in _products)
             {
                 <li style="cursor:pointer; font-weight:normal;" @onclick="@(async() => { await SelectProduct(product); })"
@@ -30,7 +31,7 @@
 }
 
 @code {
-  
+
     private string? _searchByProductName;
 
 
@@ -69,14 +70,14 @@
 
     [Parameter]
     public bool DisplaySearchResult { get; set; } = false;
-    
+
     private async Task ViewProducts()
     {
 
-        
+
         var products = (await SearchProductsByName
             .ExecuteSearchAsync(productNameToSearch??string.Empty))?.ToList();
-        
+
         //await search results and populate s 
         await OnSearchProducts.InvokeAsync(products);
         _products = products;
@@ -87,5 +88,13 @@
         StateHasChanged();
     }
 
-  
+
+    //private async Task ViewAll()
+    //{
+    //        _searchByProductName = "";
+    //        var products = (await SearchProductsByName
+    //        .ExecuteSearchAsync(productNameToSearch??string.Empty))?.ToList();
+            
+    //}
+
 }

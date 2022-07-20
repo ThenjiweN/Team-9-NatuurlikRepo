@@ -9,7 +9,6 @@ namespace NatuurlikBase.Models
     public enum ProductTransactionType
     {        
         ProduceProduct = 1,
-        WriteOffProduct = 2,
-        SellProduct = 3
+        PackageProduct = 2
     }
 }

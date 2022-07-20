@@ -35,7 +35,6 @@ builder.Services.AddTransient<IViewProductById, ViewProductById>();
 builder.Services.AddTransient<IEditProduct, EditProduct>();
 builder.Services.AddTransient<IProduceFinishedProduct, ProduceFinishedProduct>();
 builder.Services.AddTransient<IValidateEnoughInventories, ValidateEnoughInventories>();
-
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IEmailSender, SendGridEmailSender>();
 builder.Services.AddRazorPages();

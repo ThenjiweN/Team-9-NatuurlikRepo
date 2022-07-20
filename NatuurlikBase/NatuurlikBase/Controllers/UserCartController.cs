@@ -19,7 +19,7 @@ namespace NatuurlikBase.Controllers
 
         public UserCartVM UserCartVM { get; set; }
         public int OrderSubTotal { get; set; }
-        public UserCartController(IUnitOfWork unitOfWork, DatabaseContext db )
+        public UserCartController(IUnitOfWork unitOfWork, DatabaseContext db)
         {
             _unitOfWork = unitOfWork;
             _db = db;
@@ -58,6 +58,23 @@ namespace NatuurlikBase.Controllers
                 Text = x.SuburbName,
                 Value = x.Id
             }).OrderBy(x => x.Text).ToList());
+        }
+
+        [HttpGet]
+        public ActionResult GetCouriers(int courierId)
+        {
+            return Json(_db.Courier.Where(x => x.Id == courierId).Select(x => new
+            {
+                Text = x.CourierName,
+                Value = x.Id
+            }).OrderBy(x => x.Text).ToList());
+        }
+
+        [HttpPost]
+        public IActionResult GetCourierFee(int courierId)
+        {
+            return Json(_db.Courier.Where(x => x.Id == courierId).Select(x => x.CourierFee).FirstOrDefault());
+                
         }
         public IActionResult Index()
         {
@@ -131,25 +148,32 @@ namespace NatuurlikBase.Controllers
                 Text = i.SuburbName,
                 Value = i.Id.ToString()
             });
+            UserCartVM.CourierList = _unitOfWork.Courier.GetAll().Select(i => new SelectListItem
+            {
+                Text = i.CourierName,
+                Value = i.Id.ToString()
+            });
 
             //var deliveryMethods = _db.Courier.ToList();
 
             //UserCartVM.Couriers = deliveryMethods;
 
-            //var selectedCourier = _db.Courier.Where(x => x.Id == UserCartVM.Order.CourierId);
+            var courier = _db.Courier.FirstOrDefault();
 
-            var currentVAT = _db.VAT.First(x => x.VATStatus == "Active").Id;
+            var currentVAT = _db.VAT.FirstOrDefault(x => x.VATStatus == "Active");
 
-            //Get Current VAT and calculate inclusive VAT amount for Order.
-            var activeVAT = _db.VAT.First(x => x.VATStatus == "Active");
-            //VAT + 100 numerator value for calculation
-            var vatFactor = Convert.ToDecimal(activeVAT.VATPercentage / 100.00);
+           //Get Current VAT and calculate inclusive VAT amount for Order.
+           var activeVAT = _db.VAT.FirstOrDefault(x => x.VATStatus == "Active");
+           
+
+            var vatFactor = Convert.ToDecimal(activeVAT?.VATPercentage / 100.00);
 
             var calculatedVAT = UserCartVM.Order.OrderTotal * vatFactor;
 
-            var vat = _db.VAT.First(x => x.VATStatus == "Active");
+            var vat = _db.VAT.FirstOrDefault(x => x.VATStatus == "Active");
 
-            var courierId = _db.VAT.First().Id;
+
+            
             //Populate Cart VM with the user's stored details.
             UserCartVM.Order.ApplicationUser = _unitOfWork.User.GetFirstOrDefault(u => u.Id == claim.Value);
             //Populate Order Summary Details
@@ -161,11 +185,21 @@ namespace NatuurlikBase.Controllers
             UserCartVM.Order.ProvinceId = UserCartVM.Order.ApplicationUser.ProvinceId;
             UserCartVM.Order.CityId = UserCartVM.Order.ApplicationUser.CityId;
             UserCartVM.Order.SuburbId = UserCartVM.Order.ApplicationUser.SuburbId;
-            //UserCartVM.Order.CourierId = courierId;
-            //UserCartVM.Order.Courier = selectedCourier;
             UserCartVM.Order.VAT = vat;
-            UserCartVM.Order.VATId = currentVAT;
+            if(vat == null)
+            {
+
+            }
+            else
+            {
+                UserCartVM.Order.VATId = vat.Id;
+            }
+            
             UserCartVM.Order.InclusiveVAT = calculatedVAT;
+
+          
+            
+
 
 
             if (User.IsInRole(SR.Role_Reseller))
@@ -200,11 +234,21 @@ namespace NatuurlikBase.Controllers
             var claimsId = (ClaimsIdentity)User.Identity;
             var claim = claimsId.FindFirst(ClaimTypes.NameIdentifier);
 
+
+
+
             UserCartVM.CartList = _unitOfWork.UserCart.GetAll(x => x.ApplicationUserId == claim.Value, includeProperties: "Product");
             UserCartVM.Order.OrderPaymentStatus = SR.ResellerDelayedPayment;
             UserCartVM.Order.OrderStatus = SR.OrderPending;
             UserCartVM.Order.CreatedDate = System.DateTime.Now;
             UserCartVM.Order.ApplicationUserId = claim.Value;
+            //Add Courier fees
+            UserCartVM.Order.CourierId = UserCartVM.Order.CourierId;
+            var deliveryFee = _db.Courier.FirstOrDefault(x => x.Id == UserCartVM.Order.CourierId);
+            if (deliveryFee != null)
+            {
+                UserCartVM.Order.DeliveryFee = deliveryFee.CourierFee;
+            }
 
 
 
@@ -221,6 +265,8 @@ namespace NatuurlikBase.Controllers
                     userCartItem.CartItemPrice = GetCartItemPrices(userCartItem.Count, userCartItem.Product.ResellerPrice);
 
                     UserCartVM.Order.OrderTotal += (userCartItem.CartItemPrice * userCartItem.Count);
+                    UserCartVM.Order.OrderTotal += UserCartVM.Order.DeliveryFee;
+                    UserCartVM.Order.IsResellerOrder = true;
                 }
             }
             //Display Customer prices where user role not "Reseller"
@@ -232,14 +278,25 @@ namespace NatuurlikBase.Controllers
                     UserCartVM.Order.OrderStatus = SR.ProcessingOrder;
                     userCartItem.CartItemPrice = GetCartItemPrices(userCartItem.Count, userCartItem.Product.CustomerPrice);
                     UserCartVM.Order.OrderTotal += (userCartItem.CartItemPrice * userCartItem.Count);
+                    UserCartVM.Order.OrderTotal += UserCartVM.Order.DeliveryFee;
+                    UserCartVM.Order.IsResellerOrder = false;
                 }
             }
             //Get the Current VAT % from db
             var activeVAT = _db.VAT.Where(x => x.VATStatus == "Active").FirstOrDefault();
+            var calculatedVAT=0.00M;
             //VAT + 100 numerator value for calculation
-            var vatFactor = Convert.ToDecimal(activeVAT.VATPercentage / 100.00);
+            if (activeVAT != null)
+            {
+                var vatFactor = Convert.ToDecimal(activeVAT.VATPercentage / 100.00);
 
-            var calculatedVAT = UserCartVM.Order.OrderTotal * vatFactor;
+                 calculatedVAT = UserCartVM.Order.OrderTotal * vatFactor;
+            }
+            else
+            {
+                calculatedVAT = 0.00M;
+            }
+            
             //calculate inclusive VAT
             UserCartVM.Order.InclusiveVAT = calculatedVAT;
 
@@ -295,7 +352,7 @@ namespace NatuurlikBase.Controllers
                         PriceData = new SessionLineItemPriceDataOptions
                         {
                             UnitAmount = (long)(item.CartItemPrice * 100),
-                            Currency = "usd",
+                            Currency = "zar",
                             ProductData = new SessionLineItemPriceDataProductDataOptions
                             {
                                 Name = item.Product.Name
@@ -317,7 +374,7 @@ namespace NatuurlikBase.Controllers
             }
         }
 
-       
+
 
         public IActionResult OrderConfirmation(int id)
         {
@@ -358,15 +415,15 @@ namespace NatuurlikBase.Controllers
         }
 
 
-        public IActionResult Increment (int cartId)
-		{
+        public IActionResult Increment(int cartId)
+        {
             var cart = _unitOfWork.UserCart.GetFirstOrDefault(x => x.Id == cartId);
             _unitOfWork.UserCart.increaseCount(cart, 1);
             //Save new count to DB
             _unitOfWork.Save();
             return RedirectToAction(nameof(Index));
-            
-		}
+
+        }
 
         public IActionResult Decrement(int cartId)
         {
@@ -394,10 +451,10 @@ namespace NatuurlikBase.Controllers
 
         //get the prices of cart items to calculate cart total.
         private decimal GetCartItemPrices(decimal quantity, decimal price)
-		{
+        {
             return price;
-		}
+        }
 
-     
+
     }
 }

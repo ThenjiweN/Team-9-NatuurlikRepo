@@ -23,6 +23,7 @@
     @RenderSection("account", false)
     @RenderSection("catalogue", false)
     @RenderSection("order", false)
+   
 </head>
 
 
@@ -66,6 +67,7 @@
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Dashboard" asp-action="Index">MANAGE STORE</a>
                         </li> 
+
                        
                       @if(User.IsInRole(SR.Role_Admin))
                     {

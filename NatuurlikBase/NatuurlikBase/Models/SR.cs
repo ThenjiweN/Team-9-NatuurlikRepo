@@ -27,6 +27,11 @@
         public const string OrderPaymentApproved = "Paid";
         public const string ResellerDelayedPayment = "Payment Outstanding";
 
+        //Query Status Management
+        public const string QueryLogged = "Pending Review";
+        public const string QueryReview = "Reviewed";
+
+
 
     }
 }

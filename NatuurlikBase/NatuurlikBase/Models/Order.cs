@@ -27,6 +27,8 @@ namespace NatuurlikBase.Models
 
         public decimal OrderTotal { get; set; }
 
+        [Required]
+        [Display(Name ="Courier")]
         public int? CourierId { get; set; }
 
         [ValidateNever]
@@ -92,6 +94,8 @@ namespace NatuurlikBase.Models
 
         [Required]
         public decimal InclusiveVAT { get; set; }
+
+        public bool? IsResellerOrder { get; set; }
 
     }
 }

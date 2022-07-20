@@ -76,6 +76,30 @@
                                     </select>
                                     <span asp-validation-for="Order.SuburbId" class="text-danger"></span>
                                 </div>
+
+                                  <div class="form-floating col-md-6" id="formspace">
+                                    <label class="small" asp-for="Order.CourierId">Courier</label>
+                                    <select asp-for="Order.CourierId" asp-items="@Model.CourierList" required class="form-control" onchange="getCourierFee()">
+                                        <option disabled selected>- Select Courier -</option>
+                                    </select>
+                                    <span asp-validation-for="Order.CourierId" class="text-danger"></span>
+                                </div>
+
+
+                                @*Change value of delivery fee based on courier fee of selected courier*@
+                                <div class="row">
+                                <div class="col-md-6" id="formspace" hidden>
+                                    <label class="small" asp-for="Order.DeliveryFee"></label>
+                                    <input  asp-for="Order.DeliveryFee" class="form-control" />
+                                    <span asp-validation-for="Order.DeliveryFee" class="text-danger"></span>
+                                </div>
+
+                                 <div class="col-md-6" id="formspace" hidden>
+                                    <label class="small" asp-for="Order.VATId"></label>
+                                    <input asp-for="Order.VATId" class="form-control" />
+                                </div>
+                            </div>
+
                             </div>
                         </div>
                     </div>
@@ -97,26 +121,38 @@
                             <hr />
                         }
 
-                        <div class="d-flex justify-content-between" id="delprice">
+                      @*  <div class="d-flex justify-content-between" id="delprice">
                             <strong>Subtotal</strong>
                             <strong>R **</strong>
-                        </div>
+                        </div>*@
 
                         <div class="d-flex justify-content-between">
                             <small class="text-muted">Delivery Fee</small>
-                            <small class="text-muted">R **</small>
+                            <small class="text-muted"> <p id="courierFee"></p></small>
                         </div>
 
-                        <div class="d-flex justify-content-between">
-                            <small class="text-muted">VAT @Model.Order.VAT.VATPercentage% (Inclusive)</small>
+                        @if(Model.Order.VAT == null)
+                        {
+                          <div class="d-flex justify-content-between">
+                            <small class="text-muted">VAT (Inclusive)</small>
+                            <small class="text-muted">R @((Model.Order.InclusiveVAT).ToString("0.00"))</small>
+                            </div>
+                        }
+                        else
+                        {
+                         <div class="d-flex justify-content-between">
+                            <small class="text-muted">VAT (Inclusive)</small>
                             <small class="text-muted">R @((Model.Order.VAT.VATFactor * Model.Order.OrderTotal).ToString("0.00"))</small>
                         </div>
+                        }
+
 
                         <hr />
+                        <div id="orderSubTotal" hidden>@Model.Order.OrderTotal</div>
 
                         <div class="d-flex justify-content-between" id="total">
                             <p>Total (ZAR)</p>
-                            <p>R @Model.Order.OrderTotal.ToString("0.00")</p>
+                            <p id="orderTotal"> R @Model.Order.OrderTotal</p>
                         </div>
                         @if (User.IsInRole(SR.Role_Reseller))
                         {
@@ -144,6 +180,8 @@
         </div>
     </div>
 </form>
+
+
 
 <script>
 
@@ -235,6 +273,43 @@
             });
         }
     }
+
+     function getCourierFee() { 
+         $.ajax({
+             url: "/UserCart/GetCourierFee",
+             data: { CourierId: $('#Order_CourierId').val() } ,
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+
+               var decimal = parseFloat(data).toFixed(2);
+               $("#orderTotal").html('');
+                console.log(data);
+               $("#courierFee").html('R ' + decimal);
+                console.log(data);
+                //Get int value
+                var parseSubTotal = parseInt($("#orderSubTotal").html());
+                $("#orderTotal").val(parseSubTotal + data);
+                console.log(data);
+                console.log(parseSubTotal);
+                var orderTotal = parseFloat($("#orderTotal").val()).toFixed(2);;
+                console.log('Order TOt:' + orderTotal);
+                $("#orderTotal").html('R '+orderTotal);
+                //$("#orderTotal").val(currentOrderTotal + data);
+                //var orderTotalValue = $("#orderTotal").val();
+                
+                //$("#orderTotal").html('R ' +orderTotalValue + '.00')
+                //console.log(currentOrderTotal);
+                //console.log('Order Total value is:' + orderTotalValue);
+                //data = null;
+               
+                
+            },
+            error: function (data) {
+                alert(data);
+            }
+        });
+     }
 
 </script>
 

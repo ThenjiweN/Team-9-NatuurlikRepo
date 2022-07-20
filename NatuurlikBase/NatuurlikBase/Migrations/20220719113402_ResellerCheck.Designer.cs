@@ -12,8 +12,8 @@ using NatuurlikBase.Data;
 namespace NatuurlikBase.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20220709050231_reInitDb")]
-    partial class reInitDb
+    [Migration("20220719113402_ResellerCheck")]
+    partial class ResellerCheck
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -485,19 +485,23 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("City")
+                    b.Property<int?>("CityId")
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<int?>("Country")
+                    b.Property<int?>("CountryId")
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<string>("CourierName")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("CourierId")
+                        .IsRequired()
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<decimal>("DeliveryFee")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<DateTime>("DispatchedDate")
                         .HasColumnType("datetime2");
@@ -505,6 +509,12 @@ namespace NatuurlikBase.Migrations
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("InclusiveVAT")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool?>("IsResellerOrder")
+                        .HasColumnType("bit");
 
                     b.Property<string>("OrderPaymentStatus")
                         .HasColumnType("nvarchar(max)");
@@ -528,7 +538,7 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Province")
+                    b.Property<int?>("ProvinceId")
                         .IsRequired()
                         .HasColumnType("int");
 
@@ -539,7 +549,7 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Suburb")
+                    b.Property<int?>("SuburbId")
                         .IsRequired()
                         .HasColumnType("int");
 
@@ -547,9 +557,24 @@ namespace NatuurlikBase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("VATId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("CityId");
+
+                    b.HasIndex("CountryId");
+
+                    b.HasIndex("CourierId");
+
+                    b.HasIndex("ProvinceId");
+
+                    b.HasIndex("SuburbId");
+
+                    b.HasIndex("VATId");
 
                     b.ToTable("Order");
                 });
@@ -581,6 +606,76 @@ namespace NatuurlikBase.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("OrderLine");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.OrderQuery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("LoggedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("OrderId")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("OrderQueryDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("QueryFeedback")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("QueryReasonId")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("QueryStatus")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("QueryReasonId");
+
+                    b.ToTable("OrderQuery");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.PackageOrderProduct", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ActorName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductQuantity")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderProduct");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.Product", b =>
@@ -622,6 +717,9 @@ namespace NatuurlikBase.Migrations
 
                     b.Property<decimal>("ResellerPrice")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ThresholdValue")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -876,6 +974,29 @@ namespace NatuurlikBase.Migrations
                     b.ToTable("Suppliers");
                 });
 
+            modelBuilder.Entity("NatuurlikBase.Models.VAT", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<decimal>("VATFactor")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("VATPercentage")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VATStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VAT");
+                });
+
             modelBuilder.Entity("NatuurlikBase.Models.WriteOffInventory", b =>
                 {
                     b.Property<int>("Id")
@@ -1117,10 +1238,94 @@ namespace NatuurlikBase.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("NatuurlikBase.Models.City", "City")
+                        .WithMany()
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Country", "Country")
+                        .WithMany()
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Courier", "Courier")
+                        .WithMany()
+                        .HasForeignKey("CourierId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Province", "Province")
+                        .WithMany()
+                        .HasForeignKey("ProvinceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Suburb", "Suburb")
+                        .WithMany()
+                        .HasForeignKey("SuburbId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.VAT", "VAT")
+                        .WithMany()
+                        .HasForeignKey("VATId");
+
                     b.Navigation("ApplicationUser");
+
+                    b.Navigation("City");
+
+                    b.Navigation("Country");
+
+                    b.Navigation("Courier");
+
+                    b.Navigation("Province");
+
+                    b.Navigation("Suburb");
+
+                    b.Navigation("VAT");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.OrderLine", b =>
+                {
+                    b.HasOne("NatuurlikBase.Models.Order", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.OrderQuery", b =>
+                {
+                    b.HasOne("NatuurlikBase.Models.Order", "Order")
+                        .WithMany()
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NatuurlikBase.Models.QueryReason", "QueryReason")
+                        .WithMany()
+                        .HasForeignKey("QueryReasonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("QueryReason");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.PackageOrderProduct", b =>
                 {
                     b.HasOne("NatuurlikBase.Models.Order", "Order")
                         .WithMany()

@@ -52,11 +52,7 @@
             <th class="text-light">
                Name
 			</th>
-            <th class="text-light">
-               Brand
-			</th> <th class="text-light">
-               Category
-			</th>
+           
             <th class="text-light">
                 Write-Off Quantity
 			</th> 
@@ -73,13 +69,9 @@
         @foreach(var obj in Model)
         {
             <tr>
-                <td >
+                <td>
                     @obj.product.Name
-				</td><td >
-                    @obj.product.Brand.Name
-				</td><td >
-                    @obj.product.Category.Name
-				</td> <td>
+                 <td>
                     @obj.writeOffQuantity
 				</td>
                 <td>

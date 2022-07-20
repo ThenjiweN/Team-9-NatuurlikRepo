@@ -94,7 +94,7 @@
                                 </div>
 
                                 <div class="row my-1">
-                                    <div class="col-3">Phone No.:</div>
+                                    <div class="col-3">Phone No:</div>
                                     <div class="col-9">
                                         @if (User.IsInRole(SR.Role_Reseller) || User.IsInRole(SR.Role_Customer))
                                         {
@@ -114,6 +114,14 @@
                                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                                         <span class="text-dark">Delivery Details:</span>
                                     </h4>
+                                </div>
+
+                                <div class="row my-1">
+                                    <div class="col-3">Courier:</div>
+                                    <div class="col-9">
+
+                                        <input asp-for="Order.Courier.CourierName" readonly type="text" class="form-control" />
+                                    </div>
                                 </div>
 
                                 <div class="row my-1">
@@ -162,6 +170,12 @@
 
                                         <input asp-for="Order.Suburb.PostalCode" readonly type="text" class="form-control" />
                                     </div>
+                                </div>
+                                <br />
+                                  <div class="row">
+                                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="text-dark">Order Details:</span>
+                                    </h4>
                                 </div>
 
 
@@ -328,7 +342,7 @@
 
                                 @if (User.IsInRole(SR.Role_Customer) || User.IsInRole(SR.Role_Reseller))
                                 {
-                                    <input type="submit" asp-action="QueryOrder" class="queryOrder my-1" value="Query Order" />
+                                    <a asp-controller="Order" asp-action="LogQuery" asp-route-orderId="@Model.Order.Id" class="btn btn-warning my-1" value="Query Order">Query Order</a>
 
                                    if (Model.Order.OrderStatus == SR.OrderPending && Model.Order.OrderPaymentStatus== SR.OrderPaymentApproved)
                                     {

@@ -30,6 +30,10 @@ namespace NatuurlikBase.Repository
             UserCart = new UserCartRepository(_db);
             Order = new OrderRepository(_db);
             OrderLine = new OrderLineRepository(_db);
+            Courier = new CourierRepository(_db);
+            OrderQuery = new OrderQueryRepository(_db);
+            QueryReason = new QueryReasonRepository(_db);
+
 
         }
         public ICountryRepository Country { get; private set; }
@@ -45,6 +49,11 @@ namespace NatuurlikBase.Repository
         public IUserCartRepository UserCart { get; private set; }
         public IOrderRepository Order { get; private set; }
         public IOrderLineRepository OrderLine { get; private set; }
+        public ICourierRepository Courier { get; private set; }
+        public IOrderQueryRepository OrderQuery { get; private set; }
+
+        public IQueryReasonRepository QueryReason { get; private set; }
+
 
         public void Save()
         {
