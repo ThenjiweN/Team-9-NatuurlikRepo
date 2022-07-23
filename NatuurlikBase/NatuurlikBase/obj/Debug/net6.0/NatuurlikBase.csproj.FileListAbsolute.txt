@@ -3676,3 +3676,7 @@ C:\Users\preci\OneDrive\Documents\370\Commit QR RR\Team-9-NatuurlikRepo\Natuurli
 C:\KYLE\My UP\INF 370\Natuurlik Code\Team-9-NatuurlikRepo\NatuurlikBase\NatuurlikBase\obj\Debug\net6.0\scopedcss\Pages\ConfigureProduct.razor.rz.scp.css
 D:\Users\vumis\Desktop\NatuurlikRepo\NatuurlikBase\NatuurlikBase\obj\Debug\net6.0\scopedcss\Pages\ConfigureProduct.razor.rz.scp.css
 C:\KYLE\My UP\INF 370\Natuurlik Code\Team-9-NatuurlikRepo\NatuurlikBase\NatuurlikBase\bin\Debug\net6.0\Stripe.net.dll
+D:\Users\vumis\Desktop\NatuurlikRepo\NatuurlikBase\NatuurlikBase\bin\Debug\net6.0\Stripe.net.dll
+D:\Users\vumis\Desktop\NatuurlikRepo\NatuurlikBase\NatuurlikBase\bin\Debug\net6.0\PhoneNumbers.dll
+D:\Users\vumis\Desktop\NatuurlikRepo\NatuurlikBase\NatuurlikBase\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Users\vumis\Desktop\NatuurlikRepo\NatuurlikBase\NatuurlikBase\bin\Debug\net6.0\Twilio.dll

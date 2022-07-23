@@ -532,6 +532,9 @@ namespace NatuurlikBase.Migrations
                     b.Property<string>("PaymentIntentId")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("PaymentReminderId")
+                        .HasColumnType("int");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -567,6 +570,8 @@ namespace NatuurlikBase.Migrations
                     b.HasIndex("CountryId");
 
                     b.HasIndex("CourierId");
+
+                    b.HasIndex("PaymentReminderId");
 
                     b.HasIndex("ProvinceId");
 
@@ -674,6 +679,30 @@ namespace NatuurlikBase.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("OrderProduct");
+                });
+
+            modelBuilder.Entity("NatuurlikBase.Models.PaymentReminder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Active")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Days")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Value")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PaymentReminder");
                 });
 
             modelBuilder.Entity("NatuurlikBase.Models.Product", b =>
@@ -1254,6 +1283,10 @@ namespace NatuurlikBase.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("NatuurlikBase.Models.PaymentReminder", "PaymentReminder")
+                        .WithMany()
+                        .HasForeignKey("PaymentReminderId");
+
                     b.HasOne("NatuurlikBase.Models.Province", "Province")
                         .WithMany()
                         .HasForeignKey("ProvinceId")
@@ -1277,6 +1310,8 @@ namespace NatuurlikBase.Migrations
                     b.Navigation("Country");
 
                     b.Navigation("Courier");
+
+                    b.Navigation("PaymentReminder");
 
                     b.Navigation("Province");
 

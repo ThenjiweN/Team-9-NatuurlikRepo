@@ -12,6 +12,8 @@ using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHostedService<ReminderService>();
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<DatabaseContext>(options =>
     options.UseSqlServer(connectionString));

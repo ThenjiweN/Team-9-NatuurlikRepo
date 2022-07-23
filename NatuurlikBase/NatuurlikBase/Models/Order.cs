@@ -97,5 +97,9 @@ namespace NatuurlikBase.Models
 
         public bool? IsResellerOrder { get; set; }
 
+        public int? PaymentReminderId { get; set; }
+        [ValidateNever]
+        public PaymentReminder PaymentReminder { get; set; }
+
     }
 }

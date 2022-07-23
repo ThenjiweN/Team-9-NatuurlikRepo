@@ -1,11 +1,16 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NatuurlikBase.Data;
 using NatuurlikBase.Models;
 using NatuurlikBase.Repository.IRepository;
 using NatuurlikBase.ViewModels;
+using PhoneNumbers;
 using System.Security.Claims;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace NatuurlikBase.Controllers
 {
@@ -14,12 +19,19 @@ namespace NatuurlikBase.Controllers
     {
         private readonly IUnitOfWork _uow;
         private readonly DatabaseContext _db;
+        private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _hostEnvironment;
+        private readonly IConfiguration _configuration;
+
         [BindProperty]
         public OrderVM OrderVM { get; set; }
-        public OrderController(IUnitOfWork uow, DatabaseContext db)
+        public OrderController(IUnitOfWork uow, DatabaseContext db,IWebHostEnvironment hostEnvironment, IEmailSender emailSender, IConfiguration configuration)
         {
             _uow = uow;
             _db = db;
+            _hostEnvironment = hostEnvironment;
+            _emailSender = emailSender;
+            _configuration = configuration;
         }
 
         public ActionResult GetQueryReasons(int queryReasonId)
@@ -55,6 +67,26 @@ namespace NatuurlikBase.Controllers
             //Update order status to approved state and save changes to db.
             _uow.Order.UpdateOrderStatus(OrderVM.Order.Id, SR.ProcessingOrder);
             _uow.Save();
+
+            var user = _db.User.Where(z => z.Id == orderRetrieved.ApplicationUserId).FirstOrDefault();
+            string email = user.Email;
+            string name = user.FirstName;
+            string number = orderRetrieved.Id.ToString();
+            string date = orderRetrieved.CreatedDate.ToString("M");
+            string status = orderRetrieved.OrderPaymentStatus.ToString();
+            //var callbackUrl = Url.Page("/Order");
+
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\appOrderTemp.html"));
+            template = template.Replace("[NAME]", name).Replace("[STATUS]", status)
+                .Replace("[ID]", number).Replace("[DATE]", date);
+            string message = template;
+
+            _emailSender.SendEmailAsync(
+            email,
+            "Order Approved",
+            message);
+
             TempData["Success"] = "Reseller Order has been approved successfully.";
             return RedirectToAction("Detail", "Order", new { orderId = OrderVM.Order.Id });
           
@@ -69,6 +101,26 @@ namespace NatuurlikBase.Controllers
             //Update order status to approved state and save changes to db.
             _uow.Order.UpdateOrderStatus(OrderVM.Order.Id, SR.OrderCancelled);
             _uow.Save();
+
+            var user = _db.User.Where(z => z.Id == orderRetrieved.ApplicationUserId).FirstOrDefault();
+            string email = user.Email;
+            string name = user.FirstName;
+            string number = orderRetrieved.Id.ToString();
+            string date = orderRetrieved.CreatedDate.ToString("M");
+            string status = orderRetrieved.OrderPaymentStatus.ToString();
+            //var callbackUrl = Url.Page("/Order");
+
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\canResOrderTemp.html"));
+            template = template.Replace("[NAME]", name).Replace("[STATUS]", status)
+                .Replace("[ID]", number).Replace("[DATE]", date);
+            string message = template;
+
+            _emailSender.SendEmailAsync(
+            email,
+            "Order Cancelled",
+            message);
+
             TempData["Success"] = "Order has been cancelled successfully.";
             return RedirectToAction("Detail", "Order", new { orderId = OrderVM.Order.Id });
 
@@ -97,6 +149,26 @@ namespace NatuurlikBase.Controllers
             //Update order status to approved state and save changes to db.
             _uow.Order.UpdateOrderStatus(OrderVM.Order.Id, SR.OrderRejected);
             _uow.Save();
+
+            var user = _db.User.Where(z => z.Id == orderRetrieved.ApplicationUserId).FirstOrDefault();
+            string email = user.Email;
+            string name = user.FirstName;
+            string number = orderRetrieved.Id.ToString();
+            string date = orderRetrieved.CreatedDate.ToString("M");
+            string status = orderRetrieved.OrderPaymentStatus.ToString();
+            //var callbackUrl = Url.Page("/Order");
+
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\rejOrderTemp.html"));
+            template = template.Replace("[NAME]", name).Replace("[STATUS]", status)
+                .Replace("[ID]", number).Replace("[DATE]", date);
+            string message = template;
+
+            _emailSender.SendEmailAsync(
+            email,
+            "Order Rejected",
+            message);
+
             TempData["Success"] = "Reseller Order has been rejected successfully.";
             return RedirectToAction("Detail", "Order", new { orderId = OrderVM.Order.Id });
 
@@ -126,6 +198,25 @@ namespace NatuurlikBase.Controllers
             orderRetrieved.OrderStatus = SR.OrderDispatched;
             _uow.Order.Update(orderRetrieved);
             _uow.Save();
+
+            string accountId = _configuration["AccountId"];
+            string authToken = _configuration["AuthToken"];
+            TwilioClient.Init(accountId, authToken);
+            var number = orderRetrieved.PhoneNumber;
+            var name = orderRetrieved.FirstName;
+            var order = orderRetrieved.Id;
+            var track = orderRetrieved.ParcelTrackingNumber;
+            var phoneUtil = PhoneNumberUtil.GetInstance();
+            var numberProto = phoneUtil.Parse(number, "ZA");
+            var formattedPhone = phoneUtil.Format(numberProto, PhoneNumberFormat.E164);
+            var to = formattedPhone;
+            var companyNr = "+18305216564";
+
+            var message = MessageResource.Create(
+                to,
+                from: companyNr,
+                body: $"Hi " + name + " your Natuurlik order #" + order + " has been dispatched, your tracking number is " + track);
+
             TempData["Success"] = "Order status updated successfully.";
             return RedirectToAction("Detail", "Order", new { orderId = OrderVM.Order.Id });
 

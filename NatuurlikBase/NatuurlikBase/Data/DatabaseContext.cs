@@ -35,13 +35,12 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<WriteOffInventory> InventoryWriteOff { get; set; } 
     public DbSet<WriteOffProduct> ProductWriteOff { get; set; }
     public DbSet<Cart> UserCart { get; set; }
-
     public DbSet<Order> Order { get; set; }
     public DbSet<OrderLine> OrderLine { get; set; }
     public DbSet<VAT> VAT { get; set; }
-
     public DbSet<PackageOrderProduct> OrderProduct { get; set; }
     public DbSet<OrderQuery> OrderQuery { get; set; }
+    public DbSet<PaymentReminder> PaymentReminder { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

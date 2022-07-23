@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NatuurlikBase.Data;
@@ -16,13 +17,17 @@ namespace NatuurlikBase.Controllers
         //DI
         private readonly IUnitOfWork _unitOfWork;
         private readonly DatabaseContext _db;
+        private readonly IEmailSender _emailSender;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
         public UserCartVM UserCartVM { get; set; }
         public int OrderSubTotal { get; set; }
-        public UserCartController(IUnitOfWork unitOfWork, DatabaseContext db)
+        public UserCartController(IUnitOfWork unitOfWork, DatabaseContext db, IWebHostEnvironment hostEnvironment, IEmailSender emailSender)
         {
             _unitOfWork = unitOfWork;
             _db = db;
+            _hostEnvironment = hostEnvironment;
+            _emailSender = emailSender;
         }
 
         public ActionResult GetCountries()
@@ -399,6 +404,27 @@ namespace NatuurlikBase.Controllers
             List<Cart> userCarts = _unitOfWork.UserCart.GetAll(uc => uc.ApplicationUserId == order.ApplicationUserId).ToList();
             _unitOfWork.UserCart.RemoveRange(userCarts);
             _unitOfWork.Save();
+
+            var user = _db.User.Where(z => z.Id == order.ApplicationUserId).FirstOrDefault();
+            string email = user.Email;
+            string number = order.Id.ToString();
+            string date = order.CreatedDate.ToString("M");
+            string name = user.FirstName;
+            string total = order.OrderTotal.ToString();
+            string delivery = order.DeliveryFee.ToString();
+            string vat = order.InclusiveVAT.ToString();
+
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\custOrderTemp.html"));
+            template = template.Replace("[NAME]", name).Replace("[TOTAL]", total).Replace("[DEL]", delivery).Replace("[VAT]", vat)
+                .Replace("[ID]", number).Replace("[DATE]", date);
+            string message = template;
+
+            _emailSender.SendEmailAsync(
+            email,
+            "Order Placed",
+            message);
+
             return View(id);
 
         }
@@ -407,9 +433,34 @@ namespace NatuurlikBase.Controllers
         public IActionResult ResellerOrderConfirmation(int id)
         {
             Order order = _unitOfWork.Order.GetFirstOrDefault(x => x.Id == id);
+            var reminder = _db.PaymentReminder.First(x => x.Active == "True").Id;
+            order.PaymentReminderId = reminder;
             List<Cart> userCarts = _unitOfWork.UserCart.GetAll(uc => uc.ApplicationUserId == order.ApplicationUserId).ToList();
             _unitOfWork.UserCart.RemoveRange(userCarts);
             _unitOfWork.Save();
+
+            var user = _db.User.Where(z => z.Id == order.ApplicationUserId).FirstOrDefault();
+            string email = user.Email;
+            string number = order.Id.ToString();
+            string date = order.CreatedDate.ToString("M");
+            string name = user.FirstName;
+            string total = order.OrderTotal.ToString();
+            string delivery = order.DeliveryFee.ToString();
+            string vat = order.InclusiveVAT.ToString();
+            string status = order.OrderPaymentStatus.ToString();
+            //var callbackUrl = Url.Page("/Order");
+
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            var template = System.IO.File.ReadAllText(Path.Combine(wwwRootPath, @"emailTemp\resOrderTemp.html"));
+            template = template.Replace("[NAME]", name).Replace("[TOTAL]", total).Replace("[DEL]", delivery).Replace("[VAT]", vat)
+                .Replace("[ID]", number).Replace("[STATUS]", status).Replace("[DATE]", date);
+            string message = template;
+
+            _emailSender.SendEmailAsync(
+            email,
+            "Order Placed",
+            message);
+
             return View(id);
 
         }
